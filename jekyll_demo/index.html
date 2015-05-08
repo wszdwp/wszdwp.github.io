@@ -1,0 +1,15 @@
+---
+layout: default
+title: My blog
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>coding practice</p>
+
+<ul>
+	{% for psot in site.posts %}
+		<li>{{ post.date | date_to_string }} <a herf="{{ site.baseurl }}{{post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+

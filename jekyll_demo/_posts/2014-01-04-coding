@@ -1,0 +1,12 @@
+---
+layout: default
+title: Cracking the Code Interview 150
+---
+
+<h2>{{ page.title }} </h2>
+
+<p>Chapter1</p>
+
+
+<p>< page.date | date_to_string }} </p>
+
