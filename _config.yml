@@ -1,3 +1,5 @@
+markdown: redcarpet
+pygments: true
 baseurl: /wszdwp.github.io
 
 
