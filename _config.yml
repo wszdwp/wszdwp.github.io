@@ -1,5 +1,5 @@
 markdown: redcarpet
-pygments: true
+highlighter: true
 baseurl: /wszdwp.github.io
 
 
