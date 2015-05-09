@@ -13,7 +13,6 @@ title: Codingpan's Blog
         
         <div class="container">
             <header class="jumbotron subhead" id="overview">
-            <h1>Codingpan's code pan</h1>
             <div class="subnav">
                 <ul class="nav nav-pills">
                     <li><a href="https://github.com/wszdwp">About me</a></li>
@@ -31,9 +30,9 @@ title: Codingpan's Blog
                 <div class="row">
                     <div class="span12">
                         <ul>
-				{% for post in sites.posts %}
-                            <li>{{ post.date | date_to_string }} <a href={{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-				{% endfor %}
+				            {% for post in sites.posts %}
+                            <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				            {% endfor %}
                         </ul>
                     </div>
                 </div>

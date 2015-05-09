@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+        <title>UITableView method is not called when cell is clicked on</title>
+        <link rel="stylesheet" href="/wszdwp.github.io/css/main.css" >
+    </head>
+    <body>
+
+
+    <h1>UITableView method is not called when cell is clicked on</h1>
+
+    <p>When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,<br>
+the tab event on the cells would be eaten up. </p>
+
+<p>Solu:(Swift)<br>
+<code>
+yourtableview.cancelsTouchesInView = false
+</code></p>
+
+<p><a href="http://stackoverflow.com/questions/8952688/didselectrowatindexpath-not-being-called/9248827#9248827">Ref link</a></p>
+
+<p>08 May 2015</p>
+
+
+</body>
+</html>
