@@ -1,0 +1,54 @@
+
+/* basic styling */
+@import url("base.css");
+
+/* main layout */
+@import url("layout.css");
+
+/* personal styling */
+
+/* Below is some example code.
+ * You are supposed to modify them for yourself,
+ * but if you are not sure what you do, please
+ * DO NOT TOUCH the first #container part.
+*/
+
+#container{
+	width:100%
+	min-width: 780px;
+	max-width: 1260px;
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+	margin:0px auto;
+}
+
+.content{
+	padding:10px;
+}
+
+#header{
+	background-color:black;
+	color:white;
+}
+
+#footer{
+	background-color:gray;
+	color:white;
+}
+
+#footer .content{
+	padding:0;
+	margin:0;
+	text-align:right;
+}
+
+#primary{
+	background-color:Lavender;	
+} 
+	
+#secondary{
+	background-color:pink;
+}	
+
+#tertiary{
+	background-color:yellow;
+}
