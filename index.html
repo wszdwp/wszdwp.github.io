@@ -12,28 +12,46 @@ title: Codingpan's Blog
    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 
    <title>Codingpan's Blog</title>
-   <!--META name="description" content="" / -->
-   <!--META name="keywords" content="" / -->
+   <META name="description" content="" >
+   <META name="keywords" content="" >
 
 <style type="text/css">
 @import url(style.css );
 </style>
 
-<!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" / -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-<!--link rel="alternate" type="application/atom+xml" title="Atom" href="" / -->
+<link rel="alternate" type="application/atom+xml" title="Atom" href="" >
 
-<!-- script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.3.2.min.js" type="text/javascript"></script -->
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.3.2.min.js" type="text/javascript">
+   $(document).ready(function(){
+         $("form :radio[name='layout']").click(function(){
+            var layout_value ='l'+$(this).attr("value");
+            for(var i=1;i<10;i++){
+               var bodyLayout='l'+i;
+               if($("body").hasClass(bodyLayout)){
+                   $("body").removeClass(bodyLayout);
+                   break;
+                  }              
+            }
+            $("body").addClass(layout_value);   
+            // alert(layout_value);
+            });
+            $("form :checkbox[name='equal']").click(function(){
+               $("body").toggleClass("equal");
+           }); // Your code here
+       });
+</script>
 
 </head>
-<body class="l1 equal">
+<body class="l6 equal">
    <div id="container">
       <div id="header">
             <div class="content">
                <ul>
                   <li><a href="https://github.com/wszdwp" target="_blank">About me</a></li>
                   <li><a href="https://github.com/wszdwp?tab=repositories" target="_blank">Projects</a></li>
-                  <li><a href="http:///photos/photos.html" target="_blank">Yur&#39;s Secrect recepi</a></li>
+                  <li><a href="http:///photos/photos.html" target="_blank">Yur's Secrect recepi</a></li>
                   <li><a href="http:///reading/reading.html" target="_blank">Reading</a></li>
                </ul>
             </div>
