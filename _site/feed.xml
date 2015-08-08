@@ -5,19 +5,23 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Aug 2015 10:19:44 -0400</pubDate>
-    <lastBuildDate>Sat, 08 Aug 2015 10:19:44 -0400</lastBuildDate>
+    <pubDate>Sat, 08 Aug 2015 10:25:38 -0400</pubDate>
+    <lastBuildDate>Sat, 08 Aug 2015 10:25:38 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Didselectrowatindexpath Not Response</title>
-        <description>&lt;h1 id=&quot;didselectrowatindexpath-method-not-called&quot;&gt;didSelectRowAtIndexPath method not called&lt;/h1&gt;
+        <title>Uitableview Method Is Not Called When Cell Is Clicked On</title>
+        <description>&lt;p&gt;When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,
+the tab event on the cells would be eaten up.&lt;/p&gt;
 
-&lt;p&gt;If you add UITapGestureRecognizer in your viewController, you need to set &lt;strong&gt;cancelsTouchesInView&lt;/strong&gt; of your UITapGestureRecognizer to &lt;strong&gt;false&lt;/strong&gt;, otherwise it will eat up your tap event.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Swift
+//Solu:(Swift) 
+yourtableview.cancelsTouchesInView = false
+&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2015/08/07/didSelectRowAtIndexPath-not-response.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2015/08/07/didSelectRowAtIndexPath-not-response.html</guid>
+        <link>/wszdwp.github.io/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html</guid>
         
         
       </item>

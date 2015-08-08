@@ -1,0 +1,7 @@
+<p>When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,
+the tab event on the cells would be eaten up.</p>
+
+<p><code>Swift
+//Solu:(Swift) 
+yourtableview.cancelsTouchesInView = false
+</code></p>
