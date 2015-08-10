@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>UITableView method is not called when cell is clicked on</title>
-  <meta name="description" content="When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,the tab event on the cells would be eaten up.">
+  <title>Set partial bold font in UIAlertView</title>
+  <meta name="description" content="```Swift">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/wszdwp.github.io/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html">
+  <link rel="canonical" href="/wszdwp.github.io/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 </head>
 
@@ -61,17 +61,62 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">UITableView method is not called when cell is clicked on</h1>
-    <p class="post-meta">Aug 7, 2015</p>
+    <h1 class="post-title">Set partial bold font in UIAlertView</h1>
+    <p class="post-meta">Aug 8, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,
-the tab event on the cells would be eaten up.</p>
+    <p>```Swift</p>
 
-<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="c1">//Solu:(Swift) </span>
-<span class="n">yourtableview</span><span class="p">.</span><span class="n">cancelsTouchesInView</span> <span class="o">=</span> <span class="nb">false</span></code></pre></div>
+<pre><code>@IBAction func SubmitAction(sender: AnyObject) { 
+    generatePopupAlert() 
+}
 
+func generatePopupAlert() { 
+    var attributedMessage = convertToAttributedString(“Do you want to delete line “, bold1: lineNum, normal2: “, Click OK to confirm!”, bold2: “”, normal3: “”, size: 14.0) 
+    myAlertController(““,messageStr: attributedMessage) 
+}
+
+func myAlertController(titleStr: String, messageStr: NSMutableAttributedString, selectedVendorId:String) { var alertController = UIAlertController(title: titleStr, message: “”, preferredStyle: .Alert)
+
+alertController.setValue(titleStr, forKey: "attributedTitle")
+alertController.setValue(messageStr, forKey: "attributedMessage")
+
+var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+    UIAlertAction in
+    }
+    var okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+        UIAlertAction in
+        self.sendRequest()
+    }
+    alertController.addAction(cancelAction)
+    alertController.addAction(okAction)
+
+self.presentViewController(alertController, animated: true, completion: nil) 
+}
+func convertToAttributedString(normal1: String, bold1: String, normal2: String, bold2: String, normal3:String, size: CGFloat) -&gt; NSMutableAttributedString { var combined = normal1 + bold1 + normal2 + bold2 + normal3 var attrStr = NSMutableAttributedString( data: combined.dataUsingEncoding(NSUTF8StringEncoding)!, options: nil, documentAttributes: nil, error: nil) attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: 0,length: countElements(normal1)))
+
+attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location:countElements(normal1),length: countElements(bold1)))
+
+attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1),length: countElements(normal2)))
+
+attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2),length: countElements(bold2)))
+
+attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2 + bold2),length: countElements(normal3)))
+
+if attrStr == nil {
+    NSLog("Error")
+}
+
+return attrStr! }
+</code></pre>
+
+<p>```</p>
+
+<p>References  <br />
+1. <a href="http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color">UIAlertController custom font, size, color</a>   <br />
+2. <a href="http://stackoverflow.com/questions/14940514/how-to-use-nskeyvaluecoding-protocol-while-designing-data-models">How to use NSKeyValueCoding protocol while designing data models?</a>   <br />
+3. <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html">Key-Value Prgramming Guide from Apple</a></p>
 
   </article>
 
