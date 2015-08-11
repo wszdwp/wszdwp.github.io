@@ -5,7 +5,7 @@ layout: post
 
 
 
-```Swift
+{% highlight swift %}
 
     @IBAction func SubmitAction(sender: AnyObject) { 
         generatePopupAlert() 
@@ -52,7 +52,8 @@ layout: post
         return attrStr! 
     }
 
-```
+{% endhighlight %}
+
 
 References    
 1. [UIAlertController custom font, size, color](http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color)     
