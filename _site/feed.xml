@@ -5,8 +5,8 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Aug 2015 18:44:44 -0400</pubDate>
-    <lastBuildDate>Mon, 10 Aug 2015 18:44:44 -0400</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2015 08:59:31 -0400</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2015 08:59:31 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -34,42 +34,45 @@
 }
 
 func generatePopupAlert() { 
-    var attributedMessage = convertToAttributedString(“Do you want to delete line “, bold1: lineNum, normal2: “, Click OK to confirm!”, bold2: “”, normal3: “”, size: 14.0) 
-    myAlertController(““,messageStr: attributedMessage) 
+    var attributedMessage = convertToAttributedString(&quot;Do you want to delete line &quot;, bold1: lineNum, normal2: &quot;, Click OK to confirm!&quot;, bold2: &quot;&quot;, normal3: &quot;&quot;, size: 14.0) 
+    myAlertController(&quot;&quot;,messageStr: attributedMessage) 
 }
 
-func myAlertController(titleStr: String, messageStr: NSMutableAttributedString, selectedVendorId:String) { var alertController = UIAlertController(title: titleStr, message: “”, preferredStyle: .Alert)
+func myAlertController(titleStr: String, messageStr: NSMutableAttributedString, selectedVendorId:String) { 
+    var alertController = UIAlertController(title: titleStr, message: &quot;&quot;, preferredStyle: .Alert)
 
-alertController.setValue(titleStr, forKey: &quot;attributedTitle&quot;)
-alertController.setValue(messageStr, forKey: &quot;attributedMessage&quot;)
+    alertController.setValue(titleStr, forKey: &quot;attributedTitle&quot;)
+    alertController.setValue(messageStr, forKey: &quot;attributedMessage&quot;)
 
-var cancelAction = UIAlertAction(title: &quot;Cancel&quot;, style: UIAlertActionStyle.Cancel) {
-    UIAlertAction in
-    }
-    var okAction = UIAlertAction(title: &quot;OK&quot;, style: UIAlertActionStyle.Default) {
+    var cancelAction = UIAlertAction(title: &quot;Cancel&quot;, style: UIAlertActionStyle.Cancel) {
         UIAlertAction in
-        self.sendRequest()
+        var okAction = UIAlertAction(title: &quot;OK&quot;, style: UIAlertActionStyle.Default) {
+            UIAlertAction in
+            self.sendRequest()
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+
+        self.presentViewController(alertController, animated: true, completion: nil) 
     }
-    alertController.addAction(cancelAction)
-    alertController.addAction(okAction)
-
-self.presentViewController(alertController, animated: true, completion: nil) 
-}
-func convertToAttributedString(normal1: String, bold1: String, normal2: String, bold2: String, normal3:String, size: CGFloat) -&amp;gt; NSMutableAttributedString { var combined = normal1 + bold1 + normal2 + bold2 + normal3 var attrStr = NSMutableAttributedString( data: combined.dataUsingEncoding(NSUTF8StringEncoding)!, options: nil, documentAttributes: nil, error: nil) attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: 0,length: countElements(normal1)))
-
-attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location:countElements(normal1),length: countElements(bold1)))
-
-attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1),length: countElements(normal2)))
-
-attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2),length: countElements(bold2)))
-
-attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2 + bold2),length: countElements(normal3)))
-
-if attrStr == nil {
-    NSLog(&quot;Error&quot;)
 }
 
-return attrStr! }
+func convertToAttributedString(normal1: String, bold1: String, normal2: String, bold2: String, normal3:String, size: CGFloat) -&amp;gt; NSMutableAttributedString { 
+    var combined = normal1 + bold1 + normal2 + bold2 + normal3 
+    var attrStr = NSMutableAttributedString(data: combined.dataUsingEncoding(NSUTF8StringEncoding)!, options: nil, documentAttributes: nil, error: nil) 
+    
+    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: 0,length: countElements(normal1)))
+    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location:countElements(normal1),length: countElements(bold1)))
+    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1),length: countElements(normal2)))
+    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2),length: countElements(bold2)))
+    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2 + bold2),length: countElements(normal3)))
+
+    if attrStr == nil {
+        NSLog(&quot;Error&quot;)
+    }
+    
+    return attrStr! 
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;```&lt;/p&gt;
@@ -127,6 +130,23 @@ the tab event on the cells would be eaten up.&lt;/p&gt;
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>MD5 in Swift/Java implementation</title>
+        <description>&lt;h2 id=&quot;swift&quot;&gt;Swift&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/58811f685ddcf97a79a3.js&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/601f2bcbc79474deb702.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/08/01/MD5-in-Swift:Java-implementation.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/08/01/MD5-in-Swift:Java-implementation.html</guid>
+        
         
       </item>
     
