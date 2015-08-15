@@ -5,9 +5,26 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2015 08:59:31 -0400</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2015 08:59:31 -0400</lastBuildDate>
+    <pubDate>Sat, 15 Aug 2015 10:38:56 -0400</pubDate>
+    <lastBuildDate>Sat, 15 Aug 2015 10:38:56 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>MD5 in Swift/Java implementation</title>
+        <description>&lt;h2 id=&quot;swift&quot;&gt;Swift&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/58811f685ddcf97a79a3.js&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/601f2bcbc79474deb702.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 12 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Base64 in Swift/Java implementation</title>
@@ -130,23 +147,6 @@ the tab event on the cells would be eaten up.&lt;/p&gt;
         <category>jekyll</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>MD5 in Swift/Java implementation</title>
-        <description>&lt;h2 id=&quot;swift&quot;&gt;Swift&lt;/h2&gt;
-
-&lt;script src=&quot;https://gist.github.com/58811f685ddcf97a79a3.js&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/601f2bcbc79474deb702.js&quot;&gt; &lt;/script&gt;
-
-</description>
-        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2015/08/01/MD5-in-Swift:Java-implementation.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2015/08/01/MD5-in-Swift:Java-implementation.html</guid>
-        
         
       </item>
     
