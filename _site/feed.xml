@@ -5,8 +5,8 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Aug 2015 10:38:56 -0400</pubDate>
-    <lastBuildDate>Sat, 15 Aug 2015 10:38:56 -0400</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2015 10:27:14 -0400</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2015 10:27:14 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,6 +23,8 @@
         <link>/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</guid>
         
+        <category>Code Snippet</category>
+        
         
       </item>
     
@@ -38,6 +40,8 @@
         <pubDate>Mon, 10 Aug 2015 00:00:00 -0400</pubDate>
         <link>/wszdwp.github.io/2015/08/10/Base64-in-Swift.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2015/08/10/Base64-in-Swift.html</guid>
+        
+        <category>Code Snippet</category>
         
         
       </item>
@@ -103,6 +107,8 @@ func convertToAttributedString(normal1: String, bold1: String, normal2: String, 
         <link>/wszdwp.github.io/2015/08/08/Set-partial-bold-font-in-UIAlertView.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2015/08/08/Set-partial-bold-font-in-UIAlertView.html</guid>
         
+        <category>iOS</category>
+        
         
       </item>
     
@@ -118,6 +124,8 @@ the tab event on the cells would be eaten up.&lt;/p&gt;
         <pubDate>Fri, 07 Aug 2015 00:00:00 -0400</pubDate>
         <link>/wszdwp.github.io/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html</guid>
+        
+        <category>iOS</category>
         
         
       </item>

@@ -8,6 +8,16 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+}
+
+#site-introduction {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background: url(https://avatars3.githubusercontent.com/u/3345765?v=3&s=30) no-repeat;
 }
 
 .site-title {

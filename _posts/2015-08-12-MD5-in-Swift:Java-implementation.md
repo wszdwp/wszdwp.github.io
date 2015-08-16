@@ -1,6 +1,7 @@
 ---
 title: MD5 in Swift/Java implementation
 layout: post
+tag: Code Snippet
 ---
 
 ##Swift

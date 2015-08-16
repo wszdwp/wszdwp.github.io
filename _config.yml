@@ -9,5 +9,6 @@ github_username:  wszdwp
 # Build settings
 # Conversion
 markdown:    kramdown
+
 excerpt_separator: "\n\n"
 

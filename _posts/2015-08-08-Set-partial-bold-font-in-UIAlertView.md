@@ -1,6 +1,7 @@
 ---
 title: Set partial bold font in UIAlertView
 layout: post
+tag: iOS
 ---
 
 
