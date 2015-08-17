@@ -5,9 +5,26 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Aug 2015 00:07:08 -0400</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2015 00:07:08 -0400</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2015 14:31:12 -0400</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2015 14:31:12 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The benifit of storing a JSON response in one column of your Db</title>
+        <description>&lt;p&gt;In my previous projects, I store the JSON response into Object, and then I map object’s properties to each column of my SQLiteDb table in iOS or android. The drawback of doing so is cost of updating the table when your JSON response changed. This is a headache thing when your app with those Dbs in production.&lt;/p&gt;
+
+&lt;p&gt;If I treat my whole response as one column and set an unique key, I don’t need to worry about the Db upgrade when my JSON response changed(like adding new field) on the server side.&lt;/p&gt;
+
+&lt;p&gt;Of course, the cost of this is I need parse the String data to json first in my viewController(iOS) or activity(android). Then I can get my information and by parsing JSON to my objects .&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/08/17/The-benifit-of-storing-a-JSON-response-in-one-column-of-your-Db.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/08/17/The-benifit-of-storing-a-JSON-response-in-one-column-of-your-Db.html</guid>
+        
+        <category>SQLiteDb</category>
+        
+        
+      </item>
     
       <item>
         <title>MD5 in Swift/Java implementation</title>
