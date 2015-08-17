@@ -8,15 +8,15 @@ title: Tags
 
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-      <a href="/tags#{{ tag }}-ref" class='list-group-item'>
+      <li><a href="/tags#{{ tag }}-ref" class='list-group-item'>
         {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
-      </a>
+      </a><li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-      <a href="/tags#{{ tag[0] }}-ref" class='list-group-item'>
+      <li><a href="/tags#{{ tag[0] }}-ref" class='list-group-item'>
         {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
-      </a>
+      </a></li>
     {% endfor %}
   {% endif %}
 
