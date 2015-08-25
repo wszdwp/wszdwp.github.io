@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Set partial bold font in UIAlertView</title>
-  <meta name="description" content="```Swift">
+  <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
+  <link href="/css/syntax.css" rel="stylesheet">
   <link rel="canonical" href="/wszdwp.github.io/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 
@@ -78,55 +79,51 @@
   </header>
 
   <article class="post-content">
-    <p>```Swift</p>
-
-<pre><code>@IBAction func SubmitAction(sender: AnyObject) { 
-    generatePopupAlert() 
-}
-
-func generatePopupAlert() { 
-    var attributedMessage = convertToAttributedString("Do you want to delete line ", bold1: lineNum, normal2: ", Click OK to confirm!", bold2: "", normal3: "", size: 14.0) 
-    myAlertController("",messageStr: attributedMessage) 
-}
-
-func myAlertController(titleStr: String, messageStr: NSMutableAttributedString, selectedVendorId:String) { 
-    var alertController = UIAlertController(title: titleStr, message: "", preferredStyle: .Alert)
-
-    alertController.setValue(titleStr, forKey: "attributedTitle")
-    alertController.setValue(messageStr, forKey: "attributedMessage")
-
-    var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
-        UIAlertAction in
-        var okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
-            UIAlertAction in
-            self.sendRequest()
-        }
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-
-        self.presentViewController(alertController, animated: true, completion: nil) 
-    }
-}
-
-func convertToAttributedString(normal1: String, bold1: String, normal2: String, bold2: String, normal3:String, size: CGFloat) -&gt; NSMutableAttributedString { 
-    var combined = normal1 + bold1 + normal2 + bold2 + normal3 
-    var attrStr = NSMutableAttributedString(data: combined.dataUsingEncoding(NSUTF8StringEncoding)!, options: nil, documentAttributes: nil, error: nil) 
     
-    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: 0,length: countElements(normal1)))
-    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location:countElements(normal1),length: countElements(bold1)))
-    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1),length: countElements(normal2)))
-    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2),length: countElements(bold2)))
-    attrStr?.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(size), range: NSRange(location: countElements(normal1 + bold1 + normal2 + bold2),length: countElements(normal3)))
-
-    if attrStr == nil {
-        NSLog("Error")
-    }
-    
-    return attrStr! 
-}
-</code></pre>
-
-<p>```</p>
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="lineno"> 1</span> <span class="p">@</span><span class="kt">IBAction</span> <span class="k">func</span> <span class="n">SubmitAction</span><span class="p">(</span><span class="nl">sender</span><span class="p">:</span> <span class="n">AnyObject</span><span class="p">)</span> <span class="p">{</span> 
+<span class="lineno"> 2</span>     <span class="n">generatePopupAlert</span><span class="p">()</span> 
+<span class="lineno"> 3</span> <span class="p">}</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="k">func</span> <span class="n">generatePopupAlert</span><span class="p">()</span> <span class="p">{</span> 
+<span class="lineno"> 6</span>     <span class="k">var</span> <span class="n">attributedMessage</span> <span class="o">=</span> <span class="n">convertToAttributedString</span><span class="p">(</span><span class="s">&quot;Do you want to delete line &quot;</span><span class="p">,</span> <span class="nl">bold1</span><span class="p">:</span> <span class="n">lineNum</span><span class="p">,</span> <span class="nl">normal2</span><span class="p">:</span> <span class="s">&quot;, Click OK to confirm!&quot;</span><span class="p">,</span> <span class="nl">bold2</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="nl">normal3</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="nl">size</span><span class="p">:</span> <span class="mf">14.0</span><span class="p">)</span> 
+<span class="lineno"> 7</span>     <span class="n">myAlertController</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="nl">messageStr</span><span class="p">:</span> <span class="n">attributedMessage</span><span class="p">)</span> 
+<span class="lineno"> 8</span> <span class="p">}</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> <span class="k">func</span> <span class="n">myAlertController</span><span class="p">(</span><span class="nl">titleStr</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="nl">messageStr</span><span class="p">:</span> <span class="bp">NSMutableAttributedString</span><span class="p">,</span> <span class="nl">selectedVendorId</span><span class="p">:</span><span class="n">String</span><span class="p">)</span> <span class="p">{</span> 
+<span class="lineno">11</span>     <span class="k">var</span> <span class="n">alertController</span> <span class="o">=</span> <span class="n">UIAlertController</span><span class="p">(</span><span class="nl">title</span><span class="p">:</span> <span class="n">titleStr</span><span class="p">,</span> <span class="nl">message</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="nl">preferredStyle</span><span class="p">:</span> <span class="p">.</span><span class="n">Alert</span><span class="p">)</span>
+<span class="lineno">12</span> 
+<span class="lineno">13</span>     <span class="n">alertController</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">titleStr</span><span class="p">,</span> <span class="nl">forKey</span><span class="p">:</span> <span class="s">&quot;attributedTitle&quot;</span><span class="p">)</span>
+<span class="lineno">14</span>     <span class="n">alertController</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">messageStr</span><span class="p">,</span> <span class="nl">forKey</span><span class="p">:</span> <span class="s">&quot;attributedMessage&quot;</span><span class="p">)</span>
+<span class="lineno">15</span> 
+<span class="lineno">16</span>     <span class="k">var</span> <span class="n">cancelAction</span> <span class="o">=</span> <span class="n">UIAlertAction</span><span class="p">(</span><span class="nl">title</span><span class="p">:</span> <span class="s">&quot;Cancel&quot;</span><span class="p">,</span> <span class="nl">style</span><span class="p">:</span> <span class="n">UIAlertActionStyle</span><span class="p">.</span><span class="n">Cancel</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">17</span>         <span class="n">UIAlertAction</span> <span class="k">in</span>
+<span class="lineno">18</span>         <span class="k">var</span> <span class="n">okAction</span> <span class="o">=</span> <span class="n">UIAlertAction</span><span class="p">(</span><span class="nl">title</span><span class="p">:</span> <span class="s">&quot;OK&quot;</span><span class="p">,</span> <span class="nl">style</span><span class="p">:</span> <span class="n">UIAlertActionStyle</span><span class="p">.</span><span class="n">Default</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">19</span>             <span class="n">UIAlertAction</span> <span class="k">in</span>
+<span class="lineno">20</span>             <span class="nb">self</span><span class="p">.</span><span class="n">sendRequest</span><span class="p">()</span>
+<span class="lineno">21</span>         <span class="p">}</span>
+<span class="lineno">22</span>         <span class="n">alertController</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">cancelAction</span><span class="p">)</span>
+<span class="lineno">23</span>         <span class="n">alertController</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">okAction</span><span class="p">)</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span>         <span class="nb">self</span><span class="p">.</span><span class="n">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nl">animated</span><span class="p">:</span> <span class="nb">true</span><span class="p">,</span> <span class="nl">completion</span><span class="p">:</span> <span class="nb">nil</span><span class="p">)</span> 
+<span class="lineno">26</span>     <span class="p">}</span>
+<span class="lineno">27</span> <span class="p">}</span>
+<span class="lineno">28</span> 
+<span class="lineno">29</span> <span class="k">func</span> <span class="n">convertToAttributedString</span><span class="p">(</span><span class="nl">normal1</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="nl">bold1</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="nl">normal2</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="nl">bold2</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="nl">normal3</span><span class="p">:</span><span class="n">String</span><span class="p">,</span> <span class="nl">size</span><span class="p">:</span> <span class="n">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">NSMutableAttributedString</span> <span class="p">{</span> 
+<span class="lineno">30</span>     <span class="k">var</span> <span class="n">combined</span> <span class="o">=</span> <span class="n">normal1</span> <span class="o">+</span> <span class="n">bold1</span> <span class="o">+</span> <span class="n">normal2</span> <span class="o">+</span> <span class="n">bold2</span> <span class="o">+</span> <span class="n">normal3</span> 
+<span class="lineno">31</span>     <span class="k">var</span> <span class="n">attrStr</span> <span class="o">=</span> <span class="bp">NSMutableAttributedString</span><span class="p">(</span><span class="nl">data</span><span class="p">:</span> <span class="n">combined</span><span class="p">.</span><span class="n">dataUsingEncoding</span><span class="p">(</span><span class="n">NSUTF8StringEncoding</span><span class="p">)</span><span class="o">!</span><span class="p">,</span> <span class="nl">options</span><span class="p">:</span> <span class="nb">nil</span><span class="p">,</span> <span class="nl">documentAttributes</span><span class="p">:</span> <span class="nb">nil</span><span class="p">,</span> <span class="nl">error</span><span class="p">:</span> <span class="nb">nil</span><span class="p">)</span> 
+<span class="lineno">32</span>     
+<span class="lineno">33</span>     <span class="n">attrStr</span><span class="o">?</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">NSFontAttributeName</span><span class="p">,</span> <span class="nl">value</span><span class="p">:</span> <span class="bp">UIFont</span><span class="p">.</span><span class="n">systemFontOfSize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="nl">range</span><span class="p">:</span> <span class="n">NSRange</span><span class="p">(</span><span class="nl">location</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="nl">length</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal1</span><span class="p">)))</span>
+<span class="lineno">34</span>     <span class="n">attrStr</span><span class="o">?</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">NSFontAttributeName</span><span class="p">,</span> <span class="nl">value</span><span class="p">:</span> <span class="bp">UIFont</span><span class="p">.</span><span class="n">boldSystemFontOfSize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="nl">range</span><span class="p">:</span> <span class="n">NSRange</span><span class="p">(</span><span class="nl">location</span><span class="p">:</span><span class="n">countElements</span><span class="p">(</span><span class="n">normal1</span><span class="p">),</span><span class="nl">length</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">bold1</span><span class="p">)))</span>
+<span class="lineno">35</span>     <span class="n">attrStr</span><span class="o">?</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">NSFontAttributeName</span><span class="p">,</span> <span class="nl">value</span><span class="p">:</span> <span class="bp">UIFont</span><span class="p">.</span><span class="n">systemFontOfSize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="nl">range</span><span class="p">:</span> <span class="n">NSRange</span><span class="p">(</span><span class="nl">location</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal1</span> <span class="o">+</span> <span class="n">bold1</span><span class="p">),</span><span class="nl">length</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal2</span><span class="p">)))</span>
+<span class="lineno">36</span>     <span class="n">attrStr</span><span class="o">?</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">NSFontAttributeName</span><span class="p">,</span> <span class="nl">value</span><span class="p">:</span> <span class="bp">UIFont</span><span class="p">.</span><span class="n">boldSystemFontOfSize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="nl">range</span><span class="p">:</span> <span class="n">NSRange</span><span class="p">(</span><span class="nl">location</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal1</span> <span class="o">+</span> <span class="n">bold1</span> <span class="o">+</span> <span class="n">normal2</span><span class="p">),</span><span class="nl">length</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">bold2</span><span class="p">)))</span>
+<span class="lineno">37</span>     <span class="n">attrStr</span><span class="o">?</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">NSFontAttributeName</span><span class="p">,</span> <span class="nl">value</span><span class="p">:</span> <span class="bp">UIFont</span><span class="p">.</span><span class="n">systemFontOfSize</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="nl">range</span><span class="p">:</span> <span class="n">NSRange</span><span class="p">(</span><span class="nl">location</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal1</span> <span class="o">+</span> <span class="n">bold1</span> <span class="o">+</span> <span class="n">normal2</span> <span class="o">+</span> <span class="n">bold2</span><span class="p">),</span><span class="nl">length</span><span class="p">:</span> <span class="n">countElements</span><span class="p">(</span><span class="n">normal3</span><span class="p">)))</span>
+<span class="lineno">38</span> 
+<span class="lineno">39</span>     <span class="k">if</span> <span class="n">attrStr</span> <span class="o">==</span> <span class="nb">nil</span> <span class="p">{</span>
+<span class="lineno">40</span>         <span class="n">NSLog</span><span class="p">(</span><span class="s">&quot;Error&quot;</span><span class="p">)</span>
+<span class="lineno">41</span>     <span class="p">}</span>
+<span class="lineno">42</span>     
+<span class="lineno">43</span>     <span class="k">return</span> <span class="n">attrStr</span><span class="o">!</span> 
+<span class="lineno">44</span> <span class="p">}</span></code></pre></div>
 
 <p>References  <br />
 1. <a href="http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color">UIAlertController custom font, size, color</a>   <br />

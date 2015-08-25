@@ -10,5 +10,5 @@ github_username:  wszdwp
 # Conversion
 markdown:    kramdown
 
-excerpt_separator: "\n\n"
+excerpt_separator: ""
 

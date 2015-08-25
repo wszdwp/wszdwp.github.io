@@ -7,7 +7,6 @@ tags: iOS
 When UITapGestureRecognizer is added into the superview,and the super view contains the tableView,
 the tab event on the cells would be eaten up.
 
-{% highlight swift %}
-//Solu:(Swift) 
+{% highlight Swift linenos %}
 yourtableview.cancelsTouchesInView = false
 {% endhighlight %}

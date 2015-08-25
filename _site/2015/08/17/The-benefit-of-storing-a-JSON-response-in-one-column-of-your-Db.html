@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tags</title>
+  <title>The benefit of storing a JSON response in one column of your Db</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="/css/syntax.css" rel="stylesheet">
-  <link rel="canonical" href="/wszdwp.github.io/tags.html">
+  <link rel="canonical" href="/wszdwp.github.io/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 
   <script type="text/javascript">
@@ -74,148 +74,35 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Tags</h1>
+    <h1 class="post-title">The benefit of storing a JSON response in one column of your Db</h1>
+    <p class="post-meta">Aug 17, 2015</p>
   </header>
 
   <article class="post-content">
-    <div class="list-group">
-  
+    <p>In my previous projects, I store the JSON response into Object, and then I map object’s properties to each column of my SQLiteDb table in iOS or android. The drawback of doing so is cost of updating the table when your JSON response changed. This is a headache thing when your app with those Dbs in production.</p>
 
-  
-    
-      <li><a href="/tags#iOS-ref" class="list-group-item">
-        iOS <span class="badge">2</span>
-      </a></li>
-    
-      <li><a href="/tags#Code Snippet-ref" class="list-group-item">
-        Code Snippet <span class="badge">2</span>
-      </a></li>
-    
-      <li><a href="/tags#SQLiteDb-ref" class="list-group-item">
-        SQLiteDb <span class="badge">1</span>
-      </a></li>
-    
-      <li><a href="/tags#Web-ref" class="list-group-item">
-        Web <span class="badge">1</span>
-      </a></li>
-    
-      <li><a href="/tags#HTTP-ref" class="list-group-item">
-        HTTP <span class="badge">1</span>
-      </a></li>
-    
-  
+<p>If I treat my whole response as one column and set an unique key, I don’t need to worry about the Db upgrade when my JSON response changed(like adding new field) on the server side.</p>
 
-  
-</div>
+<p>Of course, the cost of this is I need parse the String data to json first in my viewController(iOS) or activity(android). Then I can get my information and by parsing JSON to my objects .</p>
 
-<h2 class="tag-header" id="iOS-ref">iOS</h2>
-<ul>
-    
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'codingpan'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    
-      
-        
-          
-          <li><a href="/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">Set partial bold font in UIAlertView</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html">UITableView method is not called when cell is clicked on</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-<h2 class="tag-header" id="Code Snippet-ref">Code Snippet</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/12/MD5-in-Swift:Java-implementation.html">MD5 in Swift/Java implementation</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2015/08/10/Base64-in-Swift.html">Base64 in Swift/Java implementation</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-<h2 class="tag-header" id="SQLiteDb-ref">SQLiteDb</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html">The benefit of storing a JSON response in one column of your Db</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-<h2 class="tag-header" id="Web-ref">Web</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/25/Web-cache.html">Web Cache</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-<h2 class="tag-header" id="HTTP-ref">HTTP</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/25/Web-cache.html">Web Cache</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
 
   </article>
+
 </div>
+
 
       </div>
     </div>

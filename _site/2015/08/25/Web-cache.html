@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tags</title>
+  <title>Web Cache</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="/css/syntax.css" rel="stylesheet">
-  <link rel="canonical" href="/wszdwp.github.io/tags.html">
+  <link rel="canonical" href="/wszdwp.github.io/2015/08/25/Web-cache.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 
   <script type="text/javascript">
@@ -74,148 +74,67 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Tags</h1>
+    <h1 class="post-title">Web Cache</h1>
+    <p class="post-meta">Aug 25, 2015</p>
   </header>
 
   <article class="post-content">
-    <div class="list-group">
-  
+    <h1 id="how-to-set-your-cache">How to set your cache?</h1>
 
-  
-    
-      <li><a href="/tags#iOS-ref" class="list-group-item">
-        iOS <span class="badge">2</span>
-      </a></li>
-    
-      <li><a href="/tags#Code Snippet-ref" class="list-group-item">
-        Code Snippet <span class="badge">2</span>
-      </a></li>
-    
-      <li><a href="/tags#SQLiteDb-ref" class="list-group-item">
-        SQLiteDb <span class="badge">1</span>
-      </a></li>
-    
-      <li><a href="/tags#Web-ref" class="list-group-item">
-        Web <span class="badge">1</span>
-      </a></li>
-    
-      <li><a href="/tags#HTTP-ref" class="list-group-item">
-        HTTP <span class="badge">1</span>
-      </a></li>
-    
-  
+<ol>
+  <li>Don’t want the broswer keep cache  <br />
+<a href="http://stackoverflow.com/questions/49547/making-sure-a-web-page-is-not-cached-across-all-browsers">Solution in StackOverflow</a>
+Example:</li>
+</ol>
 
-  
-</div>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno">1</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Cache-Control&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache, no-store, must-revalidate&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.1.</span>
+<span class="lineno">2</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Pragma&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.0.</span>
+<span class="lineno">3</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Expires&quot;</span><span class="o">,</span> <span class="s">&quot;0&quot;</span><span class="o">);</span> <span class="c1">// Proxies.</span></code></pre></div>
 
-<h2 class="tag-header" id="iOS-ref">iOS</h2>
-<ul>
-    
+<p>but in <a href="http://docs.oracle.com/cd/E13158_01/alui/wci/docs103/devguide/tsk_pagelets_settingcaching_httpexpires.html">Oracle WebCenter Interaction Web Service Development Guide</a> it says:</p>
 
-    
-      
-        
-          
-          <li><a href="/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">Set partial bold font in UIAlertView</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2015/08/07/UITableView-method-is-not-called-when-cell-is-clicked-on.html">UITableView method is not called when cell is clicked on</a></li>
-          
-        
-      
-    
+<blockquote>
+  <p>Note: Never use Expires = 0 to prevent caching. The Expires header is sent by the remote server and passed through to the browser by the Portal Server. Unless the time on all three machines is synchronized, an Expires=0 header can mistakenly return cached content. To solve this problem, set the Expires header to a fixed date that is definitely in the past.*</p>
+</blockquote>
 
-    
-    
-  </ul>
+<ol>
+  <li>To understand cache
+Also notice the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html#sec13.13">difference</a> between the “Back” buttons, history lists and caches</li>
+</ol>
 
-<h2 class="tag-header" id="Code Snippet-ref">Code Snippet</h2>
-<ul>
-    
+<blockquote>
+  <p>History mechanisms and caches are different. In particular history mechanisms SHOULD NOT try to show a semantically transparent view of the current state of a resource. Rather, a history mechanism is meant to show exactly what the user saw at the time when the resource was retrieved.</p>
+</blockquote>
 
-    
-      
-        
-          
-          <li><a href="/2015/08/12/MD5-in-Swift:Java-implementation.html">MD5 in Swift/Java implementation</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2015/08/10/Base64-in-Swift.html">Base64 in Swift/Java implementation</a></li>
-          
-        
-      
-    
+<blockquote>
+  <p>By default, an expiration time does not apply to history mechanisms. If the entity is still in storage, a history mechanism SHOULD display it even if the entity has expired, unless the user has specifically configured the agent to refresh expired history documents.</p>
+</blockquote>
 
-    
-    
-  </ul>
+<blockquote>
+  <p>This is not to be construed to prohibit the history mechanism from telling the user that a view might be stale.</p>
+</blockquote>
 
-<h2 class="tag-header" id="SQLiteDb-ref">SQLiteDb</h2>
-<ul>
-    
+<p>To feather research on how cache works read this doc written from Mark Nottingham about <a href="https://www.mnot.net/cache_docs/">Caching Tutorial for Web Authors and Webmasters</a></p>
 
-    
-      
-        
-          
-          <li><a href="/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html">The benefit of storing a JSON response in one column of your Db</a></li>
-          
-        
-      
-    
 
-    
-    
-  </ul>
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'codingpan'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<h2 class="tag-header" id="Web-ref">Web</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/25/Web-cache.html">Web Cache</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-<h2 class="tag-header" id="HTTP-ref">HTTP</h2>
-<ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2015/08/25/Web-cache.html">Web Cache</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
 
   </article>
+
 </div>
+
 
       </div>
     </div>
