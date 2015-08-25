@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The benefit of storing a JSON response in one column of your Db</title>
+  <title>Tech notes</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="/css/syntax.css" rel="stylesheet">
-  <link rel="canonical" href="/wszdwp.github.io/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html">
+  <link rel="canonical" href="/wszdwp.github.io/tech notes/">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 
   <script type="text/javascript">
@@ -74,35 +74,95 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">The benefit of storing a JSON response in one column of your Db</h1>
-    <p class="post-meta">Aug 17, 2015</p>
+    <h1 class="post-title">Tech notes</h1>
   </header>
 
   <article class="post-content">
-    <p>In my previous projects, I store the JSON response into Object, and then I map object’s properties to each column of my SQLiteDb table in iOS or android. The drawback of doing so is cost of updating the table when your JSON response changed. This is a headache thing when your app with those Dbs in production.</p>
+    <h2 id="android">Android</h2>
+<ol>
+  <li><a href="https://www.zybuluo.com/codingpan/note/101066">Two ways to listen/response input event in Android</a></li>
+  <li><a href="http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html">dp dip px sp in Android</a></li>
+</ol>
 
-<p>If I treat my whole response as one column and set an unique key, I don’t need to worry about the Db upgrade when my JSON response changed(like adding new field) on the server side.</p>
+<h2 id="ios">iOS</h2>
+<ol>
+  <li><a href="http://stackoverflow.com/questions/24002369/how-to-call-objective-c-code-from-swift/24005242#24005242">Import objective-c in Swift Project</a></li>
+  <li><a href="https://gist.github.com/wszdwp/205dcccbf096c21f6288">How to use ZbarSDK in your Swift Project</a></li>
+  <li><a href="https://gist.github.com/wszdwp/4427d3678bcbda97840f">Base64 en/decode in Swift</a></li>
+  <li><a href="https://gist.github.com/wszdwp/625a3f3c003c969e9e0e">HideKeyboard</a></li>
+  <li><a href="http://iosdesign.ivomynttinen.com/">iOS device size</a></li>
+  <li><a href="http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions">The Ultimate Guide To iPhone Resolutions</a></li>
+</ol>
 
-<p>Of course, the cost of this is I need parse the String data to json first in my viewController(iOS) or activity(android). Then I can get my information and by parsing JSON to my objects .</p>
+<h2 id="java">Java</h2>
+<ol>
+  <li><a href="https://gist.github.com/wszdwp/9dc0599aeaa8048dfb95">Format output</a></li>
+  <li><a href="http://tutorials.jenkov.com/">jenkov’s site</a></li>
+  <li><a href="https://gist.github.com/wszdwp/da66daa12745f3dba3d4">MyJavaUtility</a></li>
+  <li><a href="https://service.sumologic.com/help/Supported_Time_Stamp_Conventions.htm">Date and Time format cheatsheet</a></li>
+</ol>
 
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'codingpan'; // required: replace example with your forum shortname
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<h2 id="web">Web</h2>
+<ol>
+  <li><a href="http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html">Tomcat installation tutorial</a></li>
+  <li><a href="http://mark-kirby.co.uk/2013/creating-a-true-rest-api/">A simple REST api guide</a></li>
+</ol>
 
+<h2 id="how-to-build-up-website">How to build up website</h2>
+
+<h3 id="html--css">HTML &amp; CSS</h3>
+<ol>
+  <li><a href="http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_i.html">HTML模板和CSS基准样式（一）by RuanYF in 2009</a></li>
+  <li><a href="http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_ii.html">HTML模板和CSS基准样式（二）by RuanYF</a></li>
+  <li><a href="http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_iii.html">HTML模板和CSS基准样式（三）by RuanYF</a></li>
+</ol>
+
+<h2 id="security">Security</h2>
+<ol>
+  <li><a href="https://www.owasp.org/index.php/Testing_for_Browser_cache_weakness_(OTG-AUTHN-006)">Broswer back button issue</a></li>
+  <li><a href="https://www.alchemistowl.org/pocorgtfo/">PoC||GTFO</a></li>
+</ol>
+
+<h2 id="dom-and-javascript">DOM and JavaScript</h2>
+<ol>
+  <li><a href="https://github.com/ruanyf/jstutorial/tree/gh-pages/dom">RuanYF tutorial</a></li>
+  <li><a href="http://javascript.ruanyifeng.com/">JavaScript tutorial by RYF</a></li>
+  <li><a href="http://www.w3schools.com/jsref/default.asp">JavaScript and HTML DOM Reference</a></li>
+</ol>
+
+<h2 id="hack-source">Hack source</h2>
+<ol>
+  <li><a href="https://github.com/jquery/jquery/tree/1.4.2">JQuery core</a></li>
+  <li><a href="https://html.spec.whatwg.org/">HTML live standard</a></li>
+</ol>
+
+<h1 id="resources">Resources</h1>
+
+<h2 id="images-icons-videos">Images icons videos</h2>
+<ol>
+  <li><a href="https://www.materialup.com/">materialup</a></li>
+  <li><a href="https://www.iconfinder.com/">iconfinder</a></li>
+  <li><a href="http://www.pexels.com/">pixels</a></li>
+  <li><a href="http://allthefreestock.com/">allthefreestock</a></li>
+  <li><a href="http://www.designerspics.com/">designers pics</a></li>
+  <li><a href="http://www.splashbase.co/">splashbase</a></li>
+  <li><a href="http://startupstockphotos.com/">startupstockphotos</a></li>
+  <li><a href="http://jaymantri.com/">jaymantri</a></li>
+  <li><a href="https://unsplash.com/">unsplash</a></li>
+  <li><a href="http://travelcoffeebook.com/">travelcoffeebook</a></li>
+  <li><a href="http://moveast.me/">moveast</a></li>
+  <li><a href="http://deathtothestockphoto.com/">death to the stock photo</a></li>
+  <li><a href="http://foodiesfeed.com/">foodie’s feed</a></li>
+</ol>
+
+<h1 id="my-code-gists">My Code gists</h1>
+<ol>
+  <li><a href="https://gist.github.com/wszdwp/601f2bcbc79474deb702">MD5 Hash in Java</a></li>
+  <li><a href="https://gist.github.com/wszdwp/58811f685ddcf97a79a3">MD5 Hash in Swift</a></li>
+</ol>
 
   </article>
-
 </div>
-
 
       </div>
     </div>
