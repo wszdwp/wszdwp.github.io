@@ -5,5 +5,5 @@ tags: Web
 ---
 
 
-[Start your application](http://jp.app/openwith)
+[Start your application](orderentry://)
 
