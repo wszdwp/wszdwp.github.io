@@ -5,5 +5,5 @@ tags: Web
 ---
 
 
-[Start your application](myapp://jp.app/)
+[Start your application](myapp://jp.app/openwith)
 
