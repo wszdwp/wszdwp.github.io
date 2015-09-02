@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="https://avatars3.githubusercontent.com/u/3345765?v=3&s=460">
 
-  <title>MD5 in Swift/Java implementation</title>
+  <title>SQLite FTS Query Example</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="/css/syntax.css" rel="stylesheet">
-  <link rel="canonical" href="/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html">
+  <link rel="canonical" href="/wszdwp.github.io/2015/09/01/SQLite-FTS-Query-Examples.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml" />
 
   <script type="text/javascript">
@@ -75,17 +75,38 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">MD5 in Swift/Java implementation</h1>
-    <p class="post-meta">Aug 12, 2015</p>
+    <h1 class="post-title">SQLite FTS Query Example</h1>
+    <p class="post-meta">Sep 1, 2015</p>
   </header>
 
   <article class="post-content">
-    <h2 id="swift">Swift</h2>
+    <h1 id="crud-queries">CRUD Queries</h1>
 
-<script src="https://gist.github.com/58811f685ddcf97a79a3.js"> </script>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno">1</span> <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;EmployeeDb&quot;</span><span class="o">;</span>
+<span class="lineno">2</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">=</span> <span class="s">&quot;Employee&quot;</span><span class="o">;</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_NAME</span> <span class="o">=</span> <span class="s">&quot;name&quot;</span><span class="o">;</span>
+<span class="lineno">5</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_GENDER</span> <span class="o">=</span> <span class="s">&quot;gender&quot;</span><span class="o">;</span>
+<span class="lineno">6</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_CONTACT</span> <span class="o">=</span> <span class="s">&quot;contact&quot;</span><span class="o">;</span>
+<span class="lineno">7</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_DESCR</span> <span class="o">=</span> <span class="s">&quot;descripion&quot;</span><span class="o">;</span></code></pre></div>
 
-<h2 id="java">Java</h2>
-<script src="https://gist.github.com/601f2bcbc79474deb702.js"> </script>
+<h2 id="create">CREATE</h2>
+
+<h2 id="select">SELECT</h2>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno">1</span> <span class="n">String</span> <span class="n">inputText</span> <span class="o">=</span> <span class="n">getInputText</span><span class="o">();</span>
+<span class="lineno">2</span> <span class="n">String</span> <span class="n">query</span> <span class="o">=</span> <span class="s">&quot;SELECT &quot;</span> <span class="o">+</span> <span class="n">EmployeeDb</span><span class="o">.</span><span class="na">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot;.&quot;</span> <span class="o">+</span>
+<span class="lineno">3</span> 				<span class="s">&quot;docid as _id &quot;</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+<span class="lineno">4</span> 				<span class="o">+</span> <span class="n">KEY_NAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> 
+<span class="lineno">5</span> 				<span class="o">+</span> <span class="n">KEY_GENDER</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+<span class="lineno">6</span> 				<span class="o">+</span> <span class="n">KEY_CONTACT</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+<span class="lineno">7</span> 				<span class="o">+</span> <span class="n">KEY_DESCR</span>
+<span class="lineno">8</span> 				<span class="o">+</span> <span class="s">&quot; FROM &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span><span class="s">&quot; WHERE &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot; MATCH &#39;&quot;</span>
+<span class="lineno">9</span> 				<span class="o">+</span> <span class="nl">name:</span> <span class="n">Chris</span> <span class="nl">gender:</span> <span class="n">male</span> <span class="o">+</span> <span class="n">KEY_SEARCH</span> <span class="o">+</span> <span class="s">&quot;:&quot;</span> <span class="o">+</span><span class="n">inputText</span> <span class="o">+</span> <span class="s">&quot;*&quot;</span> <span class="o">+</span> <span class="s">&quot;&#39;&quot;</span><span class="o">;</span></code></pre></div>
+
+<h2 id="update">UPDATE</h2>
+
+<h2 id="delete">DELETE</h2>
 
 
     <div id="disqus_thread"></div>
