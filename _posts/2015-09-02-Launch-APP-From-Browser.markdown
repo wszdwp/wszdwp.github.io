@@ -1,5 +1,5 @@
 ---
-title: Launch APP From Browser (on going)
+title: Launch APP From Browser
 layout: post
 tags: iOS Android
 ---
@@ -16,3 +16,17 @@ tags: iOS Android
 
 
 ##Android
+### add custom scheme    
+1. In manifest add intent filer as below
+
+{% highlight linenos %}
+<intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <category android:name="android.intent.category.DEFAULT" />
+	<data android:scheme="myApp"/>  
+</intent-filter>
+{% endhighlight %}
+
+2. In your broswer, input myApp://      
+My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains <a href="myApp://"> Start your application</a> 
