@@ -3,9 +3,6 @@ title: Launch APP From Browser
 layout: post
 tags: iOS Android
 ---
-
-#Launch APP from broswer by input an URL.
-
 ##iOS
 1. Create URL Types in project-info.plist
 2. Add new URL Identifier
@@ -17,9 +14,8 @@ tags: iOS Android
 
 ##Android
 ### add custom scheme    
-1. In manifest add intent filer as below
-
-{% highlight linenos %}
+-1. In manifest add intent filer as below
+{% highlight xml linenos %}
 <intent-filter>
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.BROWSABLE" />
@@ -27,6 +23,5 @@ tags: iOS Android
 	<data android:scheme="myApp"/>  
 </intent-filter>
 {% endhighlight %}
-
-2. In your broswer, input myApp://      
-My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains <a href="myApp://"> Start your application</a> 
+-2. In your broswer, input **myApp://**      
+My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains **\<a href="myApp://"> Start your application\<\a>**

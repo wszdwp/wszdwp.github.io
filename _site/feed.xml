@@ -5,12 +5,63 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Sep 2015 10:32:24 -0400</pubDate>
-    <lastBuildDate>Wed, 02 Sep 2015 10:32:24 -0400</lastBuildDate>
+    <pubDate>Wed, 02 Sep 2015 18:39:16 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2015 18:39:16 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>SQLite FTS Query Example</title>
+        <title>Launch app link</title>
+        <description>&lt;p&gt;&lt;a href=&quot;orderentry://&quot;&gt;Start your application&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 02 Sep 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/09/02/Launch-mobile-app-from-browser-test.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/09/02/Launch-mobile-app-from-browser-test.html</guid>
+        
+        <category>Web</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Launch APP From Browser</title>
+        <description>&lt;h2 id=&quot;ios&quot;&gt;iOS&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create URL Types in project-info.plist&lt;/li&gt;
+  &lt;li&gt;Add new URL Identifier&lt;/li&gt;
+  &lt;li&gt;Create custom URL scheme&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://iosdevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html&quot;&gt;Tutorial step by step with pictures&lt;/a&gt;
+&lt;a href=&quot;http://stackoverflow.com/questions/25883113/open-ios-app-from-browser&quot;&gt;SO answer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;android&quot;&gt;Android&lt;/h2&gt;
+&lt;p&gt;### add custom scheme  &lt;br /&gt;
+-1. In manifest add intent filer as below&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;intent-filter&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;action&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;android.intent.action.VIEW&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;category&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;android.intent.category.BROWSABLE&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;&amp;lt;category&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;android.intent.category.DEFAULT&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;data&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:scheme=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;myApp&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/intent-filter&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;-2. In your broswer, input &lt;strong&gt;myApp://&lt;/strong&gt;    &lt;br /&gt;
+My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains &lt;strong&gt;&amp;lt;a href=”myApp://”&amp;gt; Start your application&amp;lt;\a&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 02 Sep 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/09/02/Launch-APP-From-Browser.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/09/02/Launch-APP-From-Browser.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>SQLite FTS Query Example (on going)</title>
         <description>&lt;h1 id=&quot;crud-queries&quot;&gt;CRUD Queries&lt;/h1&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;EmployeeDb&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
