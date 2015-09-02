@@ -13,7 +13,8 @@ tags: iOS Android
 
 
 ##Android
-### add custom scheme    
+
+###Add custom scheme    
 -1. In manifest add intent filer as below
 {% highlight xml linenos %}
 <intent-filter>
