@@ -5,5 +5,5 @@ tags: Web
 ---
 
 
-[Start your application](s2koe://)
+[Start your application](s2koe://p=acc500&q=301)
 
