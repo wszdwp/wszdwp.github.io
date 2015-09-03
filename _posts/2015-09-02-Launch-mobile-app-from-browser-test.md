@@ -5,5 +5,5 @@ tags: Web
 ---
 
 
-[Start your application](orderentry://)
+[Start your application](s2koe://)
 

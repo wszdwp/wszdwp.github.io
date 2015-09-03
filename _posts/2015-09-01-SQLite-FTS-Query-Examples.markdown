@@ -32,7 +32,23 @@ String query = "SELECT " + EmployeeDb.FTS_VIRTUAL_TABLE + "." +
 				+ " FROM " + FTS_VIRTUAL_TABLE +" WHERE " + FTS_VIRTUAL_TABLE + " MATCH '"
 				+ name: Chris gender: male + KEY_SEARCH + ":" +inputText + "*" + "'";
 {% endhighlight %}
+
+{% highlight sql %} 
+SELECT * FROM words_fts WHERE words_fts MATCH 'company';
+{% endhighlight %}
+
+{% highlight sql %} 
+SELECT * FROM words_fts WHERE words_fts MATCH 'description: company';
+{% endhighlight %}
+
+
+{% highlight sql %} 
+SELECT * FROM words_fts WHERE words_fts MATCH 'description: comp*';
+{% endhighlight %}
 ## UPDATE
 
 ## DELETE
 
+
+###References
+1. [Android Quick Tip: Using SQLite FTS Tables](http://blog.andresteingress.com/2011/09/30/android-quick-tip-using-sqlite-fts-tables/)
