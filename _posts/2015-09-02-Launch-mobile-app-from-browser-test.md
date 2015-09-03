@@ -5,5 +5,5 @@ tags: Web
 ---
 
 
-[Start your application](s2koe://?accountId=acc5000&flag=browser)
+[Start your application](s2koe://?customer=acc5000&shipto=001)
 
