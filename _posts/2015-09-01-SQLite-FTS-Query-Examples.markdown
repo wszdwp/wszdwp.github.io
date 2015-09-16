@@ -31,6 +31,17 @@ String query = "SELECT " + EmployeeDb.FTS_VIRTUAL_TABLE + "." +
 				+ KEY_DESCR
 				+ " FROM " + FTS_VIRTUAL_TABLE +" WHERE " + FTS_VIRTUAL_TABLE + " MATCH '"
 				+ name: Chris gender: male + KEY_SEARCH + ":" +inputText + "*" + "'";
+
+"CREATE VIRTUAL TABLE " + FTS_VIRTUAL_TABLE + " USING fts4(" +
+	KEY_FIRSTNAME + "," +
+	KEY_LASTNAME + "," +
+	KEY_GENDER + "," +
+	KEY_AGE + "," +
+	KEY_DEPARTMENT + "," +
+	KEY_MAJOR + "," +
+	KEY_STUDENTID + "," +  
+	UNIQUE (" + KEY_STUDENTID + "," + KEY_DEPARTMENT + "))";
+
 {% endhighlight %}
 
 {% highlight sql %} 
