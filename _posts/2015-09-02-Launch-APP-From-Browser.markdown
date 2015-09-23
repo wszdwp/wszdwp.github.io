@@ -16,7 +16,7 @@ tags: iOS Android
 
 ###Add custom scheme    
 -1. In manifest add intent filer as below
-{% highlight xml linenos %}
+{% highlight xml %}
 <intent-filter>
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.BROWSABLE" />

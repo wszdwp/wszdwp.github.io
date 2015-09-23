@@ -7,7 +7,7 @@ tags: SQLiteDb
 
 #CRUD Queries
 
-{% highlight Java linenos %}
+{% highlight Java %}
 	public static final String LOG_TAG = "EmployeeDb";
 	public static final String FTS_VIRTUAL_TABLE = "Employee";
 
@@ -21,7 +21,7 @@ tags: SQLiteDb
 ## CREATE
 
 ## SELECT
-{% highlight Java linenos %}
+{% highlight Java %}
 String inputText = getInputText();
 String query = "SELECT " + EmployeeDb.FTS_VIRTUAL_TABLE + "." +
 				"docid as _id " + ","

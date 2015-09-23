@@ -100,9 +100,9 @@
 Example:</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno">1</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Cache-Control&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache, no-store, must-revalidate&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.1.</span>
-<span class="lineno">2</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Pragma&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.0.</span>
-<span class="lineno">3</span> <span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Expires&quot;</span><span class="o">,</span> <span class="s">&quot;0&quot;</span><span class="o">);</span> <span class="c1">// Proxies.</span></code></pre></div>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Cache-Control&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache, no-store, must-revalidate&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.1.</span>
+<span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Pragma&quot;</span><span class="o">,</span> <span class="s">&quot;no-cache&quot;</span><span class="o">);</span> <span class="c1">// HTTP 1.0.</span>
+<span class="n">response</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Expires&quot;</span><span class="o">,</span> <span class="s">&quot;0&quot;</span><span class="o">);</span> <span class="c1">// Proxies.</span></code></pre></div>
 
 <p>but in <a href="http://docs.oracle.com/cd/E13158_01/alui/wci/docs103/devguide/tsk_pagelets_settingcaching_httpexpires.html">Oracle WebCenter Interaction Web Service Development Guide</a> it says:</p>
 

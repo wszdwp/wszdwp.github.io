@@ -4,7 +4,7 @@ layout: post
 tag: iOS
 ---
 
-{% highlight Swift linenos %}
+{% highlight Swift %}
 @IBAction func SubmitAction(sender: AnyObject) { 
     generatePopupAlert() 
 }

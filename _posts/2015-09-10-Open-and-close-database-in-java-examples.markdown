@@ -4,7 +4,7 @@ layout: post
 tags: SQLiteDb
 ---
 
-{% highlight Java linenos %}
+{% highlight Java %}
 MyDb db = new MyDb(context);
   
 try {

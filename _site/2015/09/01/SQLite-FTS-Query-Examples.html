@@ -92,37 +92,37 @@
   <article class="post-content">
     <h1 id="crud-queries">CRUD Queries</h1>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno">1</span> <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;EmployeeDb&quot;</span><span class="o">;</span>
-<span class="lineno">2</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">=</span> <span class="s">&quot;Employee&quot;</span><span class="o">;</span>
-<span class="lineno">3</span> 
-<span class="lineno">4</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_NAME</span> <span class="o">=</span> <span class="s">&quot;name&quot;</span><span class="o">;</span>
-<span class="lineno">5</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_GENDER</span> <span class="o">=</span> <span class="s">&quot;gender&quot;</span><span class="o">;</span>
-<span class="lineno">6</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_CONTACT</span> <span class="o">=</span> <span class="s">&quot;contact&quot;</span><span class="o">;</span>
-<span class="lineno">7</span> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_DESCR</span> <span class="o">=</span> <span class="s">&quot;descripion&quot;</span><span class="o">;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;EmployeeDb&quot;</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">=</span> <span class="s">&quot;Employee&quot;</span><span class="o">;</span>
+
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_NAME</span> <span class="o">=</span> <span class="s">&quot;name&quot;</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_GENDER</span> <span class="o">=</span> <span class="s">&quot;gender&quot;</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_CONTACT</span> <span class="o">=</span> <span class="s">&quot;contact&quot;</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">KEY_DESCR</span> <span class="o">=</span> <span class="s">&quot;descripion&quot;</span><span class="o">;</span></code></pre></div>
 
 <h2 id="create">CREATE</h2>
 
 <h2 id="select">SELECT</h2>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="lineno"> 1</span> <span class="n">String</span> <span class="n">inputText</span> <span class="o">=</span> <span class="n">getInputText</span><span class="o">();</span>
-<span class="lineno"> 2</span> <span class="n">String</span> <span class="n">query</span> <span class="o">=</span> <span class="s">&quot;SELECT &quot;</span> <span class="o">+</span> <span class="n">EmployeeDb</span><span class="o">.</span><span class="na">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot;.&quot;</span> <span class="o">+</span>
-<span class="lineno"> 3</span> 				<span class="s">&quot;docid as _id &quot;</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
-<span class="lineno"> 4</span> 				<span class="o">+</span> <span class="n">KEY_NAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> 
-<span class="lineno"> 5</span> 				<span class="o">+</span> <span class="n">KEY_GENDER</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
-<span class="lineno"> 6</span> 				<span class="o">+</span> <span class="n">KEY_CONTACT</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
-<span class="lineno"> 7</span> 				<span class="o">+</span> <span class="n">KEY_DESCR</span>
-<span class="lineno"> 8</span> 				<span class="o">+</span> <span class="s">&quot; FROM &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span><span class="s">&quot; WHERE &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot; MATCH &#39;&quot;</span>
-<span class="lineno"> 9</span> 				<span class="o">+</span> <span class="nl">name:</span> <span class="n">Chris</span> <span class="nl">gender:</span> <span class="n">male</span> <span class="o">+</span> <span class="n">KEY_SEARCH</span> <span class="o">+</span> <span class="s">&quot;:&quot;</span> <span class="o">+</span><span class="n">inputText</span> <span class="o">+</span> <span class="s">&quot;*&quot;</span> <span class="o">+</span> <span class="s">&quot;&#39;&quot;</span><span class="o">;</span>
-<span class="lineno">10</span> 
-<span class="lineno">11</span> <span class="s">&quot;CREATE VIRTUAL TABLE &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot; USING fts4(&quot;</span> <span class="o">+</span>
-<span class="lineno">12</span> 	<span class="n">KEY_FIRSTNAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">13</span> 	<span class="n">KEY_LASTNAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">14</span> 	<span class="n">KEY_GENDER</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">15</span> 	<span class="n">KEY_AGE</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">16</span> 	<span class="n">KEY_DEPARTMENT</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">17</span> 	<span class="n">KEY_MAJOR</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
-<span class="lineno">18</span> 	<span class="n">KEY_STUDENTID</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>  
-<span class="lineno">19</span> 	<span class="n">UNIQUE</span> <span class="o">(</span><span class="s">&quot; + KEY_STUDENTID + &quot;</span><span class="o">,</span><span class="s">&quot; + KEY_DEPARTMENT + &quot;</span><span class="o">))</span><span class="err">&quot;</span><span class="o">;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">inputText</span> <span class="o">=</span> <span class="n">getInputText</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">query</span> <span class="o">=</span> <span class="s">&quot;SELECT &quot;</span> <span class="o">+</span> <span class="n">EmployeeDb</span><span class="o">.</span><span class="na">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot;.&quot;</span> <span class="o">+</span>
+				<span class="s">&quot;docid as _id &quot;</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+				<span class="o">+</span> <span class="n">KEY_NAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> 
+				<span class="o">+</span> <span class="n">KEY_GENDER</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+				<span class="o">+</span> <span class="n">KEY_CONTACT</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span>
+				<span class="o">+</span> <span class="n">KEY_DESCR</span>
+				<span class="o">+</span> <span class="s">&quot; FROM &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span><span class="s">&quot; WHERE &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot; MATCH &#39;&quot;</span>
+				<span class="o">+</span> <span class="nl">name:</span> <span class="n">Chris</span> <span class="nl">gender:</span> <span class="n">male</span> <span class="o">+</span> <span class="n">KEY_SEARCH</span> <span class="o">+</span> <span class="s">&quot;:&quot;</span> <span class="o">+</span><span class="n">inputText</span> <span class="o">+</span> <span class="s">&quot;*&quot;</span> <span class="o">+</span> <span class="s">&quot;&#39;&quot;</span><span class="o">;</span>
+
+<span class="s">&quot;CREATE VIRTUAL TABLE &quot;</span> <span class="o">+</span> <span class="n">FTS_VIRTUAL_TABLE</span> <span class="o">+</span> <span class="s">&quot; USING fts4(&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_FIRSTNAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_LASTNAME</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_GENDER</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_AGE</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_DEPARTMENT</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_MAJOR</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>
+	<span class="n">KEY_STUDENTID</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span>  
+	<span class="n">UNIQUE</span> <span class="o">(</span><span class="s">&quot; + KEY_STUDENTID + &quot;</span><span class="o">,</span><span class="s">&quot; + KEY_DEPARTMENT + &quot;</span><span class="o">))</span><span class="err">&quot;</span><span class="o">;</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">words_fts</span> <span class="k">WHERE</span> <span class="n">words_fts</span> <span class="k">MATCH</span> <span class="s1">&#39;company&#39;</span><span class="p">;</span></code></pre></div>
 

@@ -5,7 +5,7 @@ tags: iOS
 ---
 
 ##NSData and NSString
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 NSString *myNSString = 
     [[NSString alloc]initWithData:myNSData 
                          encoding:NSUTF8StringEncoding];
@@ -15,7 +15,7 @@ NSData *myNSData =
 {% endhighlight %}
 
 ##NSData and NSDictionary
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 NSDictionary *myNSDictionary = 
     [NSJSONSerialization JSONObjectWithData:myNSData 
                                     options:NSJSONReadingAllowFragments 
@@ -27,33 +27,23 @@ NSData * jsonData =
 {% endhighlight %}
 
 ##NSData and NSArray
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 NSData *jsonData = 
     [NSJSONSerialization dataWithJSONObject:myNSArray 
                                     options:NSJSONWritingPrettyPrinted 
                                       error:&error];
 
-//[NSPropertyListSerialization dataWithPropertyList:format:options:error:] 
-//to convert the data, 
-//then check if the result -isKindOfClass:[NSArray class].
+NSArray *myNSArray = [NSJSONSerialization JSONObjectWithData:myNSData options:NSJSONReadingAllowFragments error:&error];
 {% endhighlight %}
 
-##NSString and NSDictioanry
-**NSString <-- NSData --> NSDictionary**
+##NSString <-- NSData --> NSDictioanry
 
-
-##NSString and NSArray
-{% highlight objective-c linenos %}
-NSString *name = 
-    [[array  valueForKey:@"name"] componentsJoinedByString:@","];
-
-????
-{% endhighlight %}
+##NSString <-- NSData --> NSArray
 
 
 ##Getter
 **Access custom class's object in NSDictionary**
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 MyClass1 *myClass1 = 
     [[MyClass1 alloc]initWithNSDictionary:[myNSDictionary objectForKey:@"key1"]];
 NSArray *myNSArrayList = [[NSArray alloc]init];
@@ -61,7 +51,7 @@ myNSArrayList = [myNSDictionary objectForKey:@"myNSArrayList"];
 {% endhighlight %}
 
 **Access custom class's object in NSArray**
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 MyClass *myClass = 
     [[MyClass alloc] initWithNSDictionary:[myNSArray objectAtIndex:i]];
 {% endhighlight %}

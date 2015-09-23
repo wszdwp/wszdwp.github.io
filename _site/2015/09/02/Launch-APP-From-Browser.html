@@ -107,12 +107,12 @@
 <h3 id="add-custom-scheme">Add custom scheme</h3>
 <p>-1. In manifest add intent filer as below</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="lineno">1</span> <span class="nt">&lt;intent-filter&gt;</span>
-<span class="lineno">2</span>     <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.action.VIEW&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">3</span>     <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.category.BROWSABLE&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">4</span>     <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.category.DEFAULT&quot;</span> <span class="nt">/&gt;</span>
-<span class="lineno">5</span> 	<span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&quot;myApp&quot;</span><span class="nt">/&gt;</span>  
-<span class="lineno">6</span> <span class="nt">&lt;/intent-filter&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;intent-filter&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.action.VIEW&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.category.BROWSABLE&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.category.DEFAULT&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&quot;myApp&quot;</span><span class="nt">/&gt;</span>  
+<span class="nt">&lt;/intent-filter&gt;</span></code></pre></div>
 
 <p>-2. In your broswer, input <strong>myApp://</strong>    <br />
 My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains <strong>&lt;a href=”myApp://”&gt; Start your application&lt;\a&gt;</strong></p>
