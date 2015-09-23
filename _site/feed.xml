@@ -5,8 +5,8 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Sep 2015 21:16:55 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Sep 2015 21:16:55 -0400</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 16:25:46 -0400</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 16:25:46 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -103,7 +103,12 @@
 &lt;h2 id=&quot;ios&quot;&gt;ios&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;s2koe://?customer=acc5000&amp;amp;shipto=001&quot;&gt;test1 acc5000 001&lt;/a&gt;  &lt;br /&gt;
 &lt;a href=&quot;s2koe://?customer=acc5000&amp;amp;shipto=&quot;&gt;test2 acc5000&lt;/a&gt;  &lt;br /&gt;
-&lt;a href=&quot;s2koe://?customer=abc123&amp;amp;shipto=&quot;&gt;test3 abc123&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;s2koe://?customer=abc123&amp;amp;shipto=&quot;&gt;test3 abc123&lt;/a&gt;   &lt;br /&gt;
+&lt;a href=&quot;s2koe://?customer=&amp;amp;shipto=&quot;&gt;test4 empty string&lt;/a&gt;  &lt;br /&gt;
+&lt;a href=&quot;s2koe://?customer=xyz&amp;amp;shipto=&quot;&gt;test5 xyz string&lt;/a&gt;    &lt;br /&gt;
+&lt;a href=&quot;s2koe://?customer1=acc5000&amp;amp;shipto=&quot;&gt;test6 param1 change&lt;/a&gt;      &lt;br /&gt;
+&lt;a href=&quot;s2koe://?customer1=acc5000&amp;amp;shipto1=&quot;&gt;test7 param2 change&lt;/a&gt;     &lt;br /&gt;
+&lt;a href=&quot;s2koe://?customer1=acc5000shipto=&quot;&gt;test8 crap format param&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 02 Sep 2015 00:00:00 -0400</pubDate>
