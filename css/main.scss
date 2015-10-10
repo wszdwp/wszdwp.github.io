@@ -27,7 +27,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+@font-face {
+    font-family: 'Miller Display Roman';
+    src: url('http://domain.com/fonts/font.ttf'); /*URL to font*/
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Miller Display Roman';
+  src: url("http://domain.com/fonts/font.ttf");
+  /*URL to font*/ }
 /**
  * Reset some basic elements
  */
