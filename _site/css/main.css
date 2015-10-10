@@ -460,9 +460,9 @@ pre {
  * Badges
  */
 .badge {
-  background-color: #999;
+  background-color: #EBEBFF;
   border-radius: 3.75em;
-  color: black;
+  color: #0000b8;
   display: inline-block;
   font-size: 0.75em;
   font-weight: 600;
