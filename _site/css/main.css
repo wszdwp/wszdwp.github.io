@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Miller Display Roman';
-  src: url("http://domain.com/fonts/font.ttf");
-  /*URL to font*/ }
+  font-family: 'Miller';
+  src: url("https://github.com/wszdwp/wszdwp.github.io/tree/master/css/MillerDisplayRoman.ttf"); }
 /**
  * Reset some basic elements
  */
@@ -15,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Miller, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
