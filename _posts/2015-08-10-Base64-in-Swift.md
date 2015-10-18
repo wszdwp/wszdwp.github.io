@@ -1,7 +1,7 @@
 ---
 title: Base64 in Swift/Java implementation
 layout: post
-tag: Code Snippet
+tags: Android iOS
 ---
 
 ##Swift

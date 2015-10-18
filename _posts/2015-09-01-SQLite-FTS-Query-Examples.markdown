@@ -1,7 +1,7 @@
 ---
-title: SQLite FTS Query Example (on going)
+title: SQLite FTS query example (on going)
 layout: post
-tags: SQLiteDb
+tags: SQL
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: JSON and String Conversion in Android
+title: JSON and string conversion in Android
 layout: post
 tags: Android
 ---

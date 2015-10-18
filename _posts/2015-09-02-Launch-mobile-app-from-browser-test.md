@@ -1,7 +1,7 @@
 ---
 title: Launch app link
 layout: post
-tags: Web
+tags: Android iOS
 ---
 
 # Test links 

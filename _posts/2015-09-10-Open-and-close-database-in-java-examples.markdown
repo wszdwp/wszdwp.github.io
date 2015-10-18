@@ -1,7 +1,7 @@
 ---
 title: Open and close database in Java
 layout: post
-tags: SQLiteDb
+tags: SQL
 ---
 
 {% highlight Java %}

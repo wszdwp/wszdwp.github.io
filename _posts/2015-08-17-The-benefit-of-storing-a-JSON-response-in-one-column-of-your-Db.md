@@ -1,7 +1,7 @@
 ---
-title: The benefit of storing a JSON response in one column of your Db
+title: The benefit of storing a JSON response in one column of your database
 layout: post
-tags: SQLiteDb
+tags: SQL
 ---
 
 In my previous projects, I store the JSON response into Object, and then I map object's properties to each column of my SQLiteDb table in iOS or android. The drawback of doing so is cost of updating the table when your JSON response changed. This is a headache thing when your app with those Dbs in production. 

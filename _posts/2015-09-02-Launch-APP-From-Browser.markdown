@@ -1,7 +1,7 @@
 ---
-title: Launch APP From Browser
+title: Launch app from browser
 layout: post
-tags: iOS Android
+tags: Android iOS
 ---
 ##iOS
 1. Create URL Types in project-info.plist
