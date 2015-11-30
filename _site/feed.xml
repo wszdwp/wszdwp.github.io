@@ -5,9 +5,61 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Oct 2015 21:18:43 -0400</pubDate>
-    <lastBuildDate>Sat, 17 Oct 2015 21:18:43 -0400</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 10:07:00 -0500</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 10:07:00 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>HTML5 and JavaScript</title>
+        <description>&lt;h1 id=&quot;html-5&quot;&gt;HTML 5&lt;/h1&gt;
+
+&lt;h2 id=&quot;submit-form&quot;&gt;Submit form&lt;/h2&gt;
+
+</description>
+        <pubDate>Tue, 03 Nov 2015 00:00:00 -0500</pubDate>
+        <link>/wszdwp.github.io/2015/11/03/Html-and-Javascript-notes.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/11/03/Html-and-Javascript-notes.html</guid>
+        
+        <category>Web</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>UIActionSheet cancel button index trap</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;ButtonIndex of cancel is &lt;strong&gt;0&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objective-c&quot; data-lang=&quot;objective-c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Add Cancel in init&lt;/span&gt;
+	&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;initWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;delegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;cancelButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Cancel&amp;quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;destructiveButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;otherButtonTitles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;addButtonWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;MyItem&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	
+	&lt;span class=&quot;c1&quot;&gt;// Add Cancel after init (I prefer this way)&lt;/span&gt;
+	&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;initWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;delegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;cancelButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;destructiveButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;otherButtonTitles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cancelButtonIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;addButtonWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Cancel&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;addButtonWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;MyItem&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ButtonIndex of cancel is &lt;strong&gt;last one&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Add Cancel and other buttons in init, buttonIndex of cancel button is the last one, done is 0, option1 is 1.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objective-c&quot; data-lang=&quot;objective-c&quot;&gt;&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;UIActionSheet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;initWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;delegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;cancelButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Cancel&amp;quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;destructiveButtonTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;otherButtonTitles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Done&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;@&amp;quot;Done2&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionSheet&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;addButtonWithTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;MyItem&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 26 Oct 2015 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2015/10/26/UIActionSheet-Cancel-Button-Index-Trap.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2015/10/26/UIActionSheet-Cancel-Button-Index-Trap.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>SQL query left (outer) join</title>
@@ -330,44 +382,6 @@ Also notice the &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec
         <guid isPermaLink="true">/wszdwp.github.io/2015/08/25/Web-cache.html</guid>
         
         <category>Web</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>The benefit of storing a JSON response in one column of your database</title>
-        <description>&lt;p&gt;In my previous projects, I store the JSON response into Object, and then I map object’s properties to each column of my SQLiteDb table in iOS or android. The drawback of doing so is cost of updating the table when your JSON response changed. This is a headache thing when your app with those Dbs in production.&lt;/p&gt;
-
-&lt;p&gt;If I treat my whole response as one column and set an unique key, I don’t need to worry about the Db upgrade when my JSON response changed(like adding new field) on the server side.&lt;/p&gt;
-
-&lt;p&gt;Of course, the cost of this is I need parse the String data to json first in my viewController(iOS) or activity(android). Then I can get my information and by parsing JSON to my objects .&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2015/08/17/The-benefit-of-storing-a-JSON-response-in-one-column-of-your-Db.html</guid>
-        
-        <category>SQL</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>MD5 in Swift/Java implementation</title>
-        <description>&lt;h2 id=&quot;swift&quot;&gt;Swift&lt;/h2&gt;
-
-&lt;script src=&quot;https://gist.github.com/58811f685ddcf97a79a3.js&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/601f2bcbc79474deb702.js&quot;&gt; &lt;/script&gt;
-
-</description>
-        <pubDate>Wed, 12 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2015/08/12/MD5-in-Swift:Java-implementation.html</guid>
-        
-        <category>Android</category>
-        
-        <category>iOS</category>
         
         
       </item>
