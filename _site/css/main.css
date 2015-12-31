@@ -18,7 +18,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: sans-serif, Miller;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -48,7 +48,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 21px; }
 
 /**
  * Lists
@@ -284,7 +284,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 21px;
   color: #828282; }
 
 .post-link {
