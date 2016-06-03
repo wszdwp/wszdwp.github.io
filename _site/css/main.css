@@ -465,7 +465,7 @@ pre {
 /**
  * Badges
  */
-.badge {
+.custom-badge {
   background-color: #EBEBFF;
   border-radius: 3.75em;
   color: #0000b8;
