@@ -1,3 +1,10 @@
+---
+title: What is git
+layout: post
+tags: Git
+published: false
+---
+
 # What is git?
 
 ## fast, scalable, distributed

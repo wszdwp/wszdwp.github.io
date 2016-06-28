@@ -1,3 +1,10 @@
+---
+title: Lib bridging header in xcode
+layout: post
+tags: Git
+published: false
+---
+
 CGRect  viewRect = CGRectMake(10, 10, 100, 100);
 UIView* myView = [[UIView alloc] initWithFrame:viewRect];
 

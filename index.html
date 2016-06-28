@@ -11,7 +11,7 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> 
         {% if post.tags %}
         {% for tag in post.tags %}
-          <span class='custom-badge'><a href="\tags.html">{{ tag }}</a></span>
+          <span class='custom-badge'><a href='{{ base }}/tags#{{ tag }}-ref'>{{ tag }}</a></span>
         {% endfor %}
         {% endif %}
         <h2>
@@ -20,7 +20,6 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}

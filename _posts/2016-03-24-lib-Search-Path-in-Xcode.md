@@ -1,3 +1,9 @@
+---
+title: lib search path in xcode
+layout: post
+tags: iOS
+published: false
+---
 
 ```
 //:configuration = Debug

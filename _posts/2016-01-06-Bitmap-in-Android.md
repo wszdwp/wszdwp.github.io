@@ -1,4 +1,9 @@
-# 
+---
+title: Bitmap in android
+layout: post
+tags: Android
+published: false
+---
 
 ## Memory efficiency
 
