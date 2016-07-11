@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/syntax.css">  
   <!-- <link rel="stylesheet" href="/css/custom.css"> -->  
- <link rel="canonical" href="/wszdwp.github.io/2015/09/02/Launch-APP-From-Browser.html">
+ <link rel="canonical" href="/wszdwp.github.io/2015/09/02/Launch-app-from-browser.html">
   <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml">
 
   <script type="text/javascript">
@@ -84,18 +84,21 @@
   </header>
 
   <article class="post-content">
-    <p>##iOS
-1. Create URL Types in project-info.plist
-2. Add new URL Identifier
-3. Create custom URL scheme</p>
+    <h2 id="ios">iOS</h2>
+<ol>
+  <li>Create URL Types in project-info.plist</li>
+  <li>Add new URL Identifier</li>
+  <li>Create custom URL scheme</li>
+</ol>
 
 <p><a href="http://iosdevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html">Tutorial step by step with pictures</a>
 <a href="http://stackoverflow.com/questions/25883113/open-ios-app-from-browser">SO answer</a></p>
 
-<p>##Android</p>
+<h2 id="android">Android</h2>
 
-<p>###Add custom scheme  <br>
--1. In manifest add intent filer as below</p>
+<h3 id="add-custom-scheme">Add custom scheme</h3>
+
+<p>-1. In manifest add intent filer as below</p>
 
 <figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;intent-filter&gt;</span>
     <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">"android.intent.action.VIEW"</span> <span class="nt">/&gt;</span>

@@ -51,7 +51,7 @@ func convertToAttributedString(normal1: String, bold1: String, normal2: String, 
 }
 {% endhighlight %}
 
-References    
-1. [UIAlertController custom font, size, color](http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color)     
-2. [How to use NSKeyValueCoding protocol while designing data models?](http://stackoverflow.com/questions/14940514/how-to-use-nskeyvaluecoding-protocol-while-designing-data-models)     
-3. [Key-Value Prgramming Guide from Apple](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html)
+References      
+1. [UIAlertController custom font, size, color](http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color)       
+2. [How to use NSKeyValueCoding protocol while designing data models?](http://stackoverflow.com/questions/14940514/how-to-use-nskeyvaluecoding-protocol-while-designing-data-models)       
+3. [Key-Value Prgramming Guide from Apple](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html)  

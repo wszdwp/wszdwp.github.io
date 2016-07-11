@@ -4,7 +4,7 @@ layout: post
 tags: iOS
 ---
 
-##NSData and NSString
+## NSData and NSString  
 {% highlight objective-c %}
 NSString *myNSString = 
     [[NSString alloc]initWithData:myNSData 
@@ -14,7 +14,7 @@ NSData *myNSData =
     [myNSString dataUsingEncoding:NSUTF8StringEncoding];
 {% endhighlight %}
 
-##NSData and NSDictionary
+## NSData and NSDictionary  
 {% highlight objective-c %}
 NSDictionary *myNSDictionary = 
     [NSJSONSerialization JSONObjectWithData:myNSData 
@@ -26,7 +26,7 @@ NSData * jsonData =
                             options:0 error:&err];
 {% endhighlight %}
 
-##NSData and NSArray
+## NSData and NSArray  
 {% highlight objective-c %}
 NSData *jsonData = 
     [NSJSONSerialization dataWithJSONObject:myNSArray 
@@ -36,12 +36,12 @@ NSData *jsonData =
 NSArray *myNSArray = [NSJSONSerialization JSONObjectWithData:myNSData options:NSJSONReadingAllowFragments error:&error];
 {% endhighlight %}
 
-##NSString <-- NSData --> NSDictioanry
+## NSString <-- NSData --> NSDictioanry  
 
-##NSString <-- NSData --> NSArray
+## NSString <-- NSData --> NSArray  
 
 
-##Getter
+## Getter  
 **Access custom class's object in NSDictionary**
 {% highlight objective-c %}
 MyClass1 *myClass1 = 
