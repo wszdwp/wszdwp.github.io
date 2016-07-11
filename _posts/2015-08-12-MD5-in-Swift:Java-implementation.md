@@ -4,9 +4,9 @@ layout: post
 tags: Android iOS
 ---
 
-##Swift
+## Swift  
 
 {% gist 58811f685ddcf97a79a3%}
 
-##Java
+## Java  
 {% gist 601f2bcbc79474deb702%}

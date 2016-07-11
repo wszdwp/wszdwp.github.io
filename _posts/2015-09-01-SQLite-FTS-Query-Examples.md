@@ -5,7 +5,7 @@ tags: SQL
 ---
 
 
-#CRUD Queries
+# CRUD Queries  
 
 {% highlight Java %}
 	public static final String LOG_TAG = "EmployeeDb";
@@ -61,5 +61,5 @@ SELECT * FROM words_fts WHERE words_fts MATCH 'description: comp*';
 ## DELETE
 
 
-###References
+### References  
 1. [Android Quick Tip: Using SQLite FTS Tables](http://blog.andresteingress.com/2011/09/30/android-quick-tip-using-sqlite-fts-tables/)

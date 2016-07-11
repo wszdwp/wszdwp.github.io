@@ -3,7 +3,7 @@ title: Launch app from browser
 layout: post
 tags: Android iOS
 ---
-##iOS
+## iOS  
 1. Create URL Types in project-info.plist
 2. Add new URL Identifier
 3. Create custom URL scheme 
@@ -12,9 +12,10 @@ tags: Android iOS
 [SO answer](http://stackoverflow.com/questions/25883113/open-ios-app-from-browser)
 
 
-##Android
+## Android  
 
-###Add custom scheme    
+### Add custom scheme 
+    
 -1. In manifest add intent filer as below
 {% highlight xml %}
 <intent-filter>
@@ -24,5 +25,6 @@ tags: Android iOS
 	<data android:scheme="myApp"/>  
 </intent-filter>
 {% endhighlight %}
+
 -2. In your broswer, input **myApp://**      
 My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains **\<a href="myApp://"> Start your application\<\a>**
