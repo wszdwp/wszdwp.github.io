@@ -5,9 +5,32 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jul 2016 16:07:59 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 16:07:59 -0400</lastBuildDate>
+    <pubDate>Tue, 12 Jul 2016 15:13:40 -0400</pubDate>
+    <lastBuildDate>Tue, 12 Jul 2016 15:13:40 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Some good practice with JavaScript</title>
+        <description>&lt;h2 id=&quot;use-json&quot;&gt;Use JSON&lt;/h2&gt;
+
+&lt;p&gt;When appending json in your url as parameters, use &lt;strong&gt;encodeURIComponent()&lt;/strong&gt; to escapse some specical characters, like &lt;strong&gt;#&lt;/strong&gt;, &lt;strong&gt;&amp;amp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// ex: json_data = {&quot;name&quot;: &quot;H&amp;amp;M Store&quot;, &quot;address&quot;: &quot;#10 ABC road&quot;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&amp;amp;param1=&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;encodeURIComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;json_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;refs&lt;br /&gt;
+&lt;a href=&quot;http://stackoverflow.com/questions/8844814/how-to-safely-use-json-stringify&quot;&gt;SO&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent&quot;&gt;MDN&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 12 Jul 2016 00:00:00 -0400</pubDate>
+        <link>/wszdwp.github.io/2016/07/12/Some-Good-Practice-In-Javascript.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2016/07/12/Some-Good-Practice-In-Javascript.html</guid>
+        
+        <category>Web</category>
+        
+        
+      </item>
     
       <item>
         <title>Python code snippet</title>
@@ -365,41 +388,6 @@ You can drop OUTER keyword and just say LEFT JOIN or RIGHT JOIN or FULL JOIN.&lt
         <guid isPermaLink="true">/wszdwp.github.io/2015/10/26/UIActionSheet-Cancel-Button-Index-Trap.html</guid>
         
         <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>SQL query left (outer) join</title>
-        <description>&lt;p&gt;My application senario &lt;br /&gt;
-Set A and set B, A contains all the data in B, but B only contains part of the data in A.
-Example: my sales orders are table A, once the order is finished, the order will be copied into my history sales orders table which is table B.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Select&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt; 
-	&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY1&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY2&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY3&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIMKEY4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;myPrikey4&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Select&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt; 
-	&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY1&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY2&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY3&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIKEY4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PRIMKEY4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;myPrikey4&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Refs
-&lt;a href=&quot;http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-server&quot;&gt;http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-server&lt;/a&gt;
-&lt;a href=&quot;http://www.oschina.net/question/89964_65912&quot;&gt;http://www.oschina.net/question/89964_65912&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Oct 2015 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2015/10/16/SQL-Query-Left-(Outer)-Join.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2015/10/16/SQL-Query-Left-(Outer)-Join.html</guid>
-        
-        <category>SQL</category>
         
         
       </item>
