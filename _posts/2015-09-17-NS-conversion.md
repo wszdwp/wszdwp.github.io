@@ -4,6 +4,16 @@ layout: post
 tags: iOS
 ---
 
+
+## NSObject serialization/deserialization
+1. Convert NSObject(or your custom object extends from NSObject) to NSDictionary  
+2. Convert NSDictionary to NSData  
+3. Convert NSData to NSString(json format) 
+
+**NSString <-- NSData --> NSDictioanry <--> NSObject**  
+
+**NSString <-- NSData --> NSArray**    
+
 ## NSData and NSString  
 {% highlight objective-c %}
 NSString *myNSString = 
@@ -21,7 +31,7 @@ NSDictionary *myNSDictionary =
                                     options:NSJSONReadingAllowFragments 
                                       error:&error];
 
-NSData * jsonData = 
+NSData *jsonData = 
     [NSJSONSerialization dataWithJSONObject:yourDictionary 
                             options:0 error:&err];
 {% endhighlight %}
@@ -34,12 +44,7 @@ NSData *jsonData =
                                       error:&error];
 
 NSArray *myNSArray = [NSJSONSerialization JSONObjectWithData:myNSData options:NSJSONReadingAllowFragments error:&error];
-{% endhighlight %}
-
-## NSString <-- NSData --> NSDictioanry  
-
-## NSString <-- NSData --> NSArray  
-
+{% endhighlight %} 
 
 ## Getter  
 **Access custom class's object in NSDictionary**
