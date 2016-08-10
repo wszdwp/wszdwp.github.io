@@ -60,3 +60,7 @@ myNSArrayList = [myNSDictionary objectForKey:@"myNSArrayList"];
 MyClass *myClass = 
     [[MyClass alloc] initWithNSDictionary:[myNSArray objectAtIndex:i]];
 {% endhighlight %}
+
+
+Further Readings:    
+[https://blog.soff.es/archiving-objective-c-objects-with-nscoding](https://blog.soff.es/archiving-objective-c-objects-with-nscoding) 
