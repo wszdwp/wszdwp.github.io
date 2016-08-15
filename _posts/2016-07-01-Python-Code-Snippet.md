@@ -32,7 +32,11 @@ s.replace('old', 'new', 3)
 for letter in 'Python':  
    print 'Current Letter :', letter
 
+# remove one list in another
+l3 = [x for x in l1 if x not in l2]
 
+# remove one list in another(if element are hashable)  
+set(l1) - set(l2)
 
 
 ```
