@@ -24,16 +24,17 @@ grid will be a list of N elements. Each element of grid will itself be a list of
 The number of rows N will not exceed 20, and the amount of food each zombie requires will be a positive integer not exceeding 10. 
 Languages
 
->
+```
 Test cases  
 Inputs:  
     (int) food = 7   
     (int) grid = [[0, 2, 5], [1, 1, 3], [2, 1, 1]]  
 Output:  
     (int) 0 
->
+
 Inputs:  
     (int) food = 12  
     (int) grid = [[0, 2, 5], [1, 1, 3], [2, 1, 1]]   
 Output: 
     (int) 1 
+```
