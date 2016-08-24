@@ -14,7 +14,6 @@ tags: iOS
 {% highlight xml %}
     <key>UISupportedExternalAccessoryProtocols</key>
     <array>
-        <string>com.koamtac.kdc</string>
         <string>com.honeywell.scansled.protocol.decoder</string>
         <string>com.honeywell.scansled.protocol.msr</string>
         <string>com.honeywell.scansled.protocol.pm</string>
