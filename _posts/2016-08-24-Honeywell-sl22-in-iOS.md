@@ -6,7 +6,7 @@ tags: iOS
 
 
 ## **Configuration**
-1. Drag honeywell sdk into your project, you should be able see **libCaptuvoSDK.a** been added into your **general, linked frameworks and libraries**
+1. Drag honeywell sdk into your project, you should be able to see **libCaptuvoSDK.a** been added into your **general, linked frameworks and libraries**
 
 2. In general, linked frameworks and libraries, add ExternalAccessory.framework
 
