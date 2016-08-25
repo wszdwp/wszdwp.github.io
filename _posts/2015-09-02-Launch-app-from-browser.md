@@ -26,5 +26,5 @@ tags: Android iOS
 </intent-filter>
 {% endhighlight %}
 
--2. In your broswer, input **myApp://**      
+-2. In your broswer, input **myApp://**        
 My test failed in local, I guess it might be the broswer in your mobile device appends some thing on your request URL. It can work when you put a html page which contains **\<a href="myApp://"> Start your application\<\a>**

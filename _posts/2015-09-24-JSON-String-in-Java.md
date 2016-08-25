@@ -4,7 +4,7 @@ layout: post
 tags: Android
 ---
 
-##Object and JSONString
+## Object and JSONString  
 {% highlight java %}
 //Object to JSONString
 Gson gson = new Gson();

@@ -7,8 +7,7 @@ tags: iOS
 # How to detect pull down gesture?	
 
 {% highlight swift %} 
-
-	var pullUpDragging:Bool = false
+    var pullUpDragging:Bool = false
     var pullDownDragging:Bool = false
     var startOffset:CGFloat = 0
 
@@ -33,8 +32,6 @@ tags: iOS
             pullDownDragging = true
         }
     }
-    
-    
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if (startOffset + scrollView.frame.height >= scrollView.contentSize.height)

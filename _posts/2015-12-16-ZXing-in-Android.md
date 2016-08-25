@@ -9,23 +9,18 @@ tags: Android
 **1. Install ZXing lib in project.**
 
 {% highlight java %} 
-
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
 {% endhighlight %}
 
 **2. In activity create an IntentIntegrator.**
 {% highlight java %} 
-
 IntentIntegrator integrator = new IntentIntegrator(this);
 integrator.initiateScan();
-
 {% endhighlight %}
 
 **3. In onActivityResult, parse the result.**
 {% highlight Java %} 
-
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data){
 	IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
