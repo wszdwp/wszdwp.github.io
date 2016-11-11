@@ -37,4 +37,9 @@ whitelist:
   - jekyll-paginate
   - jekyll-redirect-from
 
+# Style
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
