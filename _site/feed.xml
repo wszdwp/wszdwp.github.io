@@ -5,9 +5,107 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Nov 2016 16:38:30 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Nov 2016 16:38:30 -0500</lastBuildDate>
+    <pubDate>Tue, 10 Jan 2017 10:12:53 -0500</pubDate>
+    <lastBuildDate>Tue, 10 Jan 2017 10:12:53 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Learn iOS From Questions</title>
+        <description>&lt;h1 id=&quot;uiviews&quot;&gt;UIViews&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;On a UITableViewCell constructor:&lt;br /&gt;
+```objective-c
+    &lt;ul&gt;
+      &lt;li&gt;(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+```&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What is the reuseIdentifier used for?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Difference between atomic and nonatomic synthesized properties?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;copy vs retain&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is method swizzling in Objective C and why would you use it?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What’s the difference between not-running, inactive, active, background and suspended execution states?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is a category and when is it used? 
+A category is a way of adding additional methods to a class without extending it. It is often used to add a collection of related methods. A common use case is to add additional methods to built in classes in the Cocoa frameworks. For example adding async download methods to the UIImage class.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Can you spot the bug in the following code and suggest how to fix it:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is the difference between viewDidLoad and viewDidAppear? Which should you use to load data from a remote server to display in the view?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What considerations do you need when writing a UITableViewController which shows images downloaded from a remote server?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is a protocol, how do you define your own and when is it used?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is KVC and KVO? Give an example of using KVC to set a value.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What are blocks and how are they used?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What mechanisms does iOS provide to support multi-threading?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-objc highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//1. NSThread creates a new low-level thread which can be started by calling the start method.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSThread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myThread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSThread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initWithTarget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;
+                                      &lt;span class=&quot;nf&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;@selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myThreadMainMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                                      &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myThread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//2. NSOperationQueue allows a pool of threads to be created and used to execute NSOperations in parallel. NSOperations can also be run on the main thread by asking NSOperationQueue for the mainQueue.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSOperationQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSOperationQueue&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addOperation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anOperation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addOperationWithBlock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;cm&quot;&gt;/* Do something. */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//3. GCD or Grand Central Dispatch is a modern feature of Objective-C that provides a rich set of methods and API&#39;s to use in order to support common multi-threading tasks. GCD provides a way to queue tasks for dispatch on either the main thread, a concurrent queue (tasks are run in parallel) or a serial queue (tasks are run in FIFO order).
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dispatch_queue_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dispatch_get_global_queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DISPATCH_QUEUE_PRIORITY_DEFAULT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dispatch_async&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Do some work here.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is the Responder Chain?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What’s the difference between using a delegate and notification?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;refs 
+&lt;a href=&quot;https://www.codementor.io/ios/tutorial/ios-interview-tips-questions-answers-objective-c&quot;&gt;20 iOS Developer Interview Questions&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 -0500</pubDate>
+        <link>/wszdwp.github.io/2017/01/10/Learn-iOS-From-Questions.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2017/01/10/Learn-iOS-From-Questions.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>Migration from Swift 2.X to Swift 3.0</title>
@@ -435,33 +533,6 @@ Output:
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0400</pubDate>
         <link>/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-4.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-4.html</guid>
-        
-        <category>Algorithm</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Algorithm questions in interview</title>
-        <description>&lt;h1 id=&quot;topics&quot;&gt;Topics&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Graph&lt;/li&gt;
-  &lt;li&gt;Linked List&lt;/li&gt;
-  &lt;li&gt;Dynamic Programming&lt;/li&gt;
-  &lt;li&gt;Sorting And Searching&lt;/li&gt;
-  &lt;li&gt;Tree / Binary Search Tree&lt;/li&gt;
-  &lt;li&gt;Number Theory&lt;/li&gt;
-  &lt;li&gt;BIT Manipulation&lt;/li&gt;
-  &lt;li&gt;String / Array&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Refs:&lt;br /&gt;
-&lt;a href=&quot;http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/&quot;&gt;top-10-algorithms-in-interview-questions&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 04 Aug 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/08/04/Algorithm-Practice-Notes.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/08/04/Algorithm-Practice-Notes.html</guid>
         
         <category>Algorithm</category>
         

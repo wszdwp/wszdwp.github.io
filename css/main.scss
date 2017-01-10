@@ -6,9 +6,9 @@
 
 
 // Our variables
-$base-font-family: sans-serif, Helvetica, Arial;
+$base-font-family: sans-serif, Helvetica, Arial, Open Sans, MundoSans, "Helvetica Neue";
 $custom-font-family: sans-serif, Miller;
-$base-font-size:   24px;
+$base-font-size:   18px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 $spacing-unit:     30px;
@@ -22,7 +22,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    70%;
 
 $on-palm:          600px;
 $on-laptop:        800px;
