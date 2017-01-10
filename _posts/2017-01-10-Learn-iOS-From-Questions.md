@@ -7,10 +7,10 @@ tags: iOS
 
 # UIViews
 
-1. On a UITableViewCell constructor:  
-```objective-c
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-```  
+1. On a UITableViewCell constructor:   
+``` 
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+```
 
 What is the reuseIdentifier used for? 
 
@@ -39,7 +39,7 @@ A category is a way of adding additional methods to a class without extending it
 
 13. What mechanisms does iOS provide to support multi-threading?
 
-```objc
+```objective-c
 //1. NSThread creates a new low-level thread which can be started by calling the start method.
 NSThread* myThread = [[NSThread alloc] initWithTarget:self
                                       selector:@selector(myThreadMainMethod:)
