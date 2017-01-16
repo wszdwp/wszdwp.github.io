@@ -5,9 +5,55 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Jan 2017 10:29:48 -0500</pubDate>
-    <lastBuildDate>Tue, 10 Jan 2017 10:29:48 -0500</lastBuildDate>
+    <pubDate>Sun, 15 Jan 2017 21:55:13 -0500</pubDate>
+    <lastBuildDate>Sun, 15 Jan 2017 21:55:13 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>WWDC video timeline notes</title>
+        <description>&lt;h1 id=&quot;wwdc-2011&quot;&gt;WWDC 2011&lt;/h1&gt;
+
+&lt;h2 id=&quot;blocks-and-grand-central-dispatch-in-practicehttpsdeveloperapplecomvideosplaywwdc2011308&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/&quot;&gt;Blocks and Grand Central Dispatch in Practice&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;05:00 &lt;strong&gt;Block&lt;/strong&gt;&lt;br /&gt;
+08:03 &lt;strong&gt;__block&lt;/strong&gt;&lt;br /&gt;
+10:30 &lt;strong&gt;Enumeration using block&lt;/strong&gt;&lt;br /&gt;
+11:15 &lt;strong&gt;Callbacks using block&lt;/strong&gt;&lt;br /&gt;
+11:47 &lt;strong&gt;Grand Central Dispatch&lt;/strong&gt;&lt;br /&gt;
+13:50 &lt;strong&gt;Queues&lt;/strong&gt;&lt;br /&gt;
+14:45 &lt;strong&gt;Throughput efficiency vs contention, Queues vs Locks&lt;/strong&gt;&lt;br /&gt;
+17:04 &lt;strong&gt;Dispatch Fundamentals(important)&lt;/strong&gt;&lt;br /&gt;
+17:28 &lt;strong&gt;dispatch_queue_t&lt;/strong&gt;&lt;br /&gt;
+18:22 &lt;strong&gt;dispatch_sync&lt;/strong&gt;&lt;br /&gt;
+20:37 &lt;strong&gt;dispatch_sync advanced patterns&lt;/strong&gt;&lt;br /&gt;
+21:19 &lt;strong&gt;nested dispatch_sync will deadlock&lt;/strong&gt;&lt;br /&gt;
+23:33 &lt;strong&gt;dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+25:13 &lt;strong&gt;hidden locks in dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+25:40 &lt;strong&gt;Striding with dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+28:38 &lt;strong&gt;dispatch_async&lt;/strong&gt;&lt;br /&gt;
+31:12 &lt;strong&gt;nested dispatch_async example&lt;/strong&gt;&lt;br /&gt;
+31:56 &lt;strong&gt;cleaner nested dispatch_aync example&lt;/strong&gt;&lt;br /&gt;
+33:27 &lt;strong&gt;Caveat in using dispatch_async&lt;/strong&gt;&lt;br /&gt;
+34:31 &lt;strong&gt;Memoery management&lt;/strong&gt;&lt;br /&gt;
+35:53 &lt;strong&gt;Inside block(important)&lt;/strong&gt;&lt;br /&gt;
+36:02 &lt;strong&gt;Block_copy() and Block_release()&lt;/strong&gt;&lt;br /&gt;
+43:54 &lt;strong&gt;Conclusi&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mastering-grand-central-dispatchhttpsdeveloperapplecomvideosplaywwdc2011210&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/210/&quot;&gt;Mastering Grand Central Dispatch&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;objective-c-advancements-in-depthhttpsdeveloperapplecomvideosplaywwdc2011322&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/322/&quot;&gt;Objective-C Advancements In-Depth&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;References:&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html&quot;&gt;Concurrency Programming Guide&lt;/a&gt;  &lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html&quot;&gt;OperationQueues&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jan 2017 00:00:00 -0500</pubDate>
+        <link>/wszdwp.github.io/2017/01/15/WWDC-Notes.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2017/01/15/WWDC-Notes.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>Learn iOS From Questions</title>
@@ -317,7 +363,7 @@ When the URLSession:task:didCompleteWithError: or connectionDidFinishLoading: me
 &lt;span class=&quot;n&quot;&gt;stocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;caseInsensitiveCompare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;STOCKING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSComparisonResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;OrderedSame&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//true&lt;/span&gt;
 
 
-&lt;span class=&quot;c1&quot;&gt;//Array (important)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Array (important)&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;shoppingList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Eggs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Milk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;//shoppingList[0] = &quot;Bread&quot;             // can not assign value to a array element, error&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;shoppingList2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Eggs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Milk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
@@ -325,8 +371,20 @@ When the URLSession:task:didCompleteWithError: or connectionDidFinishLoading: me
 &lt;span class=&quot;n&quot;&gt;shoppingList2_copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Bread&quot;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;shoppingList2&lt;/span&gt;                           &lt;span class=&quot;c1&quot;&gt;//[&quot;Eggs&quot;, &quot;Milk&quot;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;shoppingList2_copy&lt;/span&gt;                      &lt;span class=&quot;c1&quot;&gt;//[&quot;Bread&quot;, &quot;Milk&quot;]&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// Check API availability in iOS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;available&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iOS&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;@available&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iOS&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//Only work for &amp;gt;= iOS 9&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 </description>
         <pubDate>Thu, 25 Aug 2016 00:00:00 -0400</pubDate>
         <link>/wszdwp.github.io/2016/08/25/Swift-Code-Snippet.html</link>
@@ -472,63 +530,6 @@ Output:
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0400</pubDate>
         <link>/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-5.html</link>
         <guid isPermaLink="true">/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-5.html</guid>
-        
-        <category>Algorithm</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Google FooBar Algorithm Challenge 4</title>
-        <description>&lt;h1 id=&quot;when-it-rains-it-pours&quot;&gt;When it rains it pours&lt;/h1&gt;
-
-&lt;p&gt;It’s raining, it’s pouring. You and your agents are nearing the building where the captive rabbits are being held, but a sudden storm puts your escape plans at risk. The structural integrity of the rabbit hutches you’ve built to house the fugitive rabbits is at risk because they can buckle when wet. Before the rabbits can be rescued from Professor Boolean’s lab, you must compute how much standing water has accumulated on the rabbit hutches.&lt;/p&gt;
-
-&lt;p&gt;Specifically, suppose there is a line of hutches, stacked to various heights and water is poured from the top (and allowed to run off the sides). We’ll assume all the hutches are square, have side length 1, and for the purposes of this problem we’ll pretend that the hutch arrangement is two-dimensional.&lt;/p&gt;
-
-&lt;p&gt;For example, suppose the heights of the stacked hutches are [1,4,2,5,1,2,3](the hutches are shown below):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...X...  
-.X.X...  
-.X.X..X  
-.XXX.XX  
-XXXXXXX  
-1425123 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;When water is poured over the top at all places and allowed to runoff, it will remain trapped at the ‘O’ locations:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...X...  
-.XOX...  
-.XOXOOX  
-.XXXOXX  
-XXXXXXX  
-1425123 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The amount of water that has accumulated is the number of Os, which, in this instance, is 5.&lt;/p&gt;
-
-&lt;p&gt;Write a function called answer(heights) which, given the heights of the stacked hutches from left-to-right as a list, computes the total area of standing water accumulated when water is poured from the top and allowed to run off the sides.&lt;/p&gt;
-
-&lt;p&gt;The heights array will have at least 1 element and at most 9000 elements. Each element will have a value of at least 1, and at most 100000.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Test cases  
-Inputs:  
-    (int list) heights = [1, 4, 2, 5, 1, 2, 3]  
-Output:  
-    (int) 5  
-Inputs:  
-    (int list) heights = [1, 2, 3, 2, 1]  
-Output:  
-    (int) 0 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 24 Aug 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-4.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-4.html</guid>
         
         <category>Algorithm</category>
         

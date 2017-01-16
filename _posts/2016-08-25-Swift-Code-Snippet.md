@@ -32,7 +32,7 @@ STOCKING == stocking    //false
 stocking.caseInsensitiveCompare(STOCKING) == NSComparisonResult.OrderedSame //true
 
 
-//Array (important)
+// Array (important)
 let shoppingList = ["Eggs", "Milk"]
 //shoppingList[0] = "Bread"             // can not assign value to a array element, error
 var shoppingList2 = ["Eggs", "Milk"]
@@ -40,4 +40,16 @@ var shoppingList2_copy = shoppingList2
 shoppingList2_copy[0] = "Bread"
 shoppingList2                           //["Eggs", "Milk"]
 shoppingList2_copy                      //["Bread", "Milk"]
+
+
+// Check API availability in iOS
+if #available (iOS 8, *) {
+    
+}
+
+@available (iOS 9, *) 
+func myFunc{
+    //Only work for >= iOS 9
+}
 ```
+
