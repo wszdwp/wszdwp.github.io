@@ -16,7 +16,8 @@ permalink: /tech notes/
 5. [iOS device size](http://iosdesign.ivomynttinen.com/)
 6. [The Ultimate Guide To iPhone Resolutions](http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 7. [SQLite simple examples in iOS](http://7097095.blog.51cto.com/7087095/1229932)
-8. [SQLite example in iOS](http://hubpages.com/technology/IOS-5-SDK-Database-Insert-Update-Delete-with-SQLite-and-Objective-C-C-How-To)
+8. [SQLite example in iOS](http://hubpages.com/technology/IOS-5-SDK-Database-Insert-Update-Delete-with-SQLite-and-Objective-C-C-How-To)  
+9. [View Programming Guide for iOS](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/AnimatingViews/AnimatingViews.html#//apple_ref/doc/uid/TP40009503-CH6-SW9)  
 
 ## Java  
 1. [Format output](https://gist.github.com/wszdwp/9dc0599aeaa8048dfb95)

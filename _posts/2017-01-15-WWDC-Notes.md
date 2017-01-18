@@ -9,7 +9,7 @@ published: true
 # WWDC 2011
 
 ## [Blocks and Grand Central Dispatch in Practice](https://developer.apple.com/videos/play/wwdc2011/308/)  
-05:00 **Block**  
+[05:00](https://developer.apple.com/videos/play/wwdc2011/308/?time=300) **Block**  
 08:03 **__block**  
 10:30 **Enumeration using block**  
 11:15 **Callbacks using block**  
