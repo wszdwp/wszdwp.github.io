@@ -5,8 +5,8 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 16:01:51 -0500</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 16:01:51 -0500</lastBuildDate>
+    <pubDate>Sun, 22 Jan 2017 19:44:17 -0500</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 19:44:17 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -15,28 +15,28 @@
 
 &lt;h2 id=&quot;blocks-and-grand-central-dispatch-in-practicehttpsdeveloperapplecomvideosplaywwdc2011308&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/&quot;&gt;Blocks and Grand Central Dispatch in Practice&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=300&quot;&gt;05:00&lt;/a&gt; &lt;strong&gt;Block&lt;/strong&gt;&lt;br /&gt;
-08:03 &lt;strong&gt;__block&lt;/strong&gt;&lt;br /&gt;
-10:30 &lt;strong&gt;Enumeration using block&lt;/strong&gt;&lt;br /&gt;
-11:15 &lt;strong&gt;Callbacks using block&lt;/strong&gt;&lt;br /&gt;
-11:47 &lt;strong&gt;Grand Central Dispatch&lt;/strong&gt;&lt;br /&gt;
-13:50 &lt;strong&gt;Queues&lt;/strong&gt;&lt;br /&gt;
-14:45 &lt;strong&gt;Throughput efficiency vs contention, Queues vs Locks&lt;/strong&gt;&lt;br /&gt;
-17:04 &lt;strong&gt;Dispatch Fundamentals(important)&lt;/strong&gt;&lt;br /&gt;
-17:28 &lt;strong&gt;dispatch_queue_t&lt;/strong&gt;&lt;br /&gt;
-18:22 &lt;strong&gt;dispatch_sync&lt;/strong&gt;&lt;br /&gt;
-20:37 &lt;strong&gt;dispatch_sync advanced patterns&lt;/strong&gt;&lt;br /&gt;
-21:19 &lt;strong&gt;nested dispatch_sync will deadlock&lt;/strong&gt;&lt;br /&gt;
-23:33 &lt;strong&gt;dispatch_apply&lt;/strong&gt;&lt;br /&gt;
-25:13 &lt;strong&gt;hidden locks in dispatch_apply&lt;/strong&gt;&lt;br /&gt;
-25:40 &lt;strong&gt;Striding with dispatch_apply&lt;/strong&gt;&lt;br /&gt;
-28:38 &lt;strong&gt;dispatch_async&lt;/strong&gt;&lt;br /&gt;
-31:12 &lt;strong&gt;nested dispatch_async example&lt;/strong&gt;&lt;br /&gt;
-31:56 &lt;strong&gt;cleaner nested dispatch_aync example&lt;/strong&gt;&lt;br /&gt;
-33:27 &lt;strong&gt;Caveat in using dispatch_async&lt;/strong&gt;&lt;br /&gt;
-34:31 &lt;strong&gt;Memoery management&lt;/strong&gt;&lt;br /&gt;
-35:53 &lt;strong&gt;Inside block(important)&lt;/strong&gt;&lt;br /&gt;
-36:02 &lt;strong&gt;Block_copy() and Block_release()&lt;/strong&gt;&lt;br /&gt;
-43:54 &lt;strong&gt;Conclusi&lt;/strong&gt;&lt;/p&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=483&quot;&gt;08:03&lt;/a&gt; &lt;strong&gt;__block&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=630&quot;&gt;10:30&lt;/a&gt; &lt;strong&gt;Enumeration using block&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=675&quot;&gt;11:15&lt;/a&gt; &lt;strong&gt;Callbacks using block&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=707&quot;&gt;11:47&lt;/a&gt; &lt;strong&gt;Grand Central Dispatch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=830&quot;&gt;13:50&lt;/a&gt; &lt;strong&gt;Queues&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=885&quot;&gt;14:45&lt;/a&gt; &lt;strong&gt;Throughput efficiency vs contention, Queues vs Locks&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1024&quot;&gt;17:04&lt;/a&gt; &lt;strong&gt;Dispatch Fundamentals(important)&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1048&quot;&gt;17:28&lt;/a&gt; &lt;strong&gt;dispatch_queue_t&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1102&quot;&gt;18:22&lt;/a&gt; &lt;strong&gt;dispatch_sync&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1237&quot;&gt;20:37&lt;/a&gt; &lt;strong&gt;dispatch_sync advanced patterns&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1279&quot;&gt;21:19&lt;/a&gt; &lt;strong&gt;nested dispatch_sync will deadlock&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1413&quot;&gt;23:33&lt;/a&gt; &lt;strong&gt;dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1513&quot;&gt;25:13&lt;/a&gt; &lt;strong&gt;hidden locks in dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1540&quot;&gt;25:40&lt;/a&gt; &lt;strong&gt;Striding with dispatch_apply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1718&quot;&gt;28:38&lt;/a&gt; &lt;strong&gt;dispatch_async&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1872&quot;&gt;31:12&lt;/a&gt; &lt;strong&gt;nested dispatch_async example&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=1916&quot;&gt;31:56&lt;/a&gt; &lt;strong&gt;cleaner nested dispatch_aync example&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2007&quot;&gt;33:27&lt;/a&gt; &lt;strong&gt;Caveat in using dispatch_async&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2071&quot;&gt;34:31&lt;/a&gt; &lt;strong&gt;Memoery management&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2153&quot;&gt;35:53&lt;/a&gt; &lt;strong&gt;Inside block(important)&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2162&quot;&gt;36:02&lt;/a&gt; &lt;strong&gt;Block_copy() and Block_release()&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2634&quot;&gt;43:54&lt;/a&gt; &lt;strong&gt;Conclusi&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;mastering-grand-central-dispatchhttpsdeveloperapplecomvideosplaywwdc2011210&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/210/&quot;&gt;Mastering Grand Central Dispatch&lt;/a&gt;&lt;/h2&gt;
 
