@@ -31,7 +31,7 @@ published: true
 [34:31](https://developer.apple.com/videos/play/wwdc2011/308/?time=2071) **Memoery management**  
 [35:53](https://developer.apple.com/videos/play/wwdc2011/308/?time=2153) **Inside block(important)**  
 [36:02](https://developer.apple.com/videos/play/wwdc2011/308/?time=2162) **Block_copy() and Block_release()**  
-[43:54](https://developer.apple.com/videos/play/wwdc2011/308/?time=2634) **Conclusi**  
+[43:54](https://developer.apple.com/videos/play/wwdc2011/308/?time=2634) **Conclusion**  
 
 
 ## [Mastering Grand Central Dispatch](https://developer.apple.com/videos/play/wwdc2011/210/)  

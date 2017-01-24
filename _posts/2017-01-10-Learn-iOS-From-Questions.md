@@ -65,8 +65,46 @@ dispatch_async(myQueue, ^{
 15. What's the difference between using a delegate and notification?
 
 
+# Memory Management
+
+Two category of wrong memeory management:  
+1. Release some memory you are still using   
+2. Not release memory you are not using  
+
+reference count, when reference count is 0, deallocation   
+strong, retain, copy  +1  
+weak 0  
+release  -1
+
+constructor vs convenience constructor  
+{% highlight objective-c %}
+// constructor
+- (void)reset {
+    NSNumber *zero = [[NSNumber alloc] initWithInteger:0];
+    [self setCount:zero];
+    [zero release];
+}
+
+// convenience constructor
+- (void)reset {
+    NSNumber *zero = [NSNumber numberWithInteger:0];
+    [self setCount:zero];
+}
+
+{% endhighlight %}
+
+
+assign for primitive type  
+retain for reference type  
+
+nonatomic for non thread safe  
+atomic for thread safe  
+
+readwrite, readonly for I/O permission  
 
 
 
-refs 
+
+
+References   
 [20 iOS Developer Interview Questions](https://www.codementor.io/ios/tutorial/ios-interview-tips-questions-answers-objective-c)

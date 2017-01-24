@@ -5,8 +5,8 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jan 2017 19:44:17 -0500</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 19:44:17 -0500</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2017 09:24:41 -0500</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2017 09:24:41 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -36,7 +36,7 @@
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2071&quot;&gt;34:31&lt;/a&gt; &lt;strong&gt;Memoery management&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2153&quot;&gt;35:53&lt;/a&gt; &lt;strong&gt;Inside block(important)&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2162&quot;&gt;36:02&lt;/a&gt; &lt;strong&gt;Block_copy() and Block_release()&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2634&quot;&gt;43:54&lt;/a&gt; &lt;strong&gt;Conclusi&lt;/strong&gt;&lt;/p&gt;
+&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2634&quot;&gt;43:54&lt;/a&gt; &lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;mastering-grand-central-dispatchhttpsdeveloperapplecomvideosplaywwdc2011210&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/210/&quot;&gt;Mastering Grand Central Dispatch&lt;/a&gt;&lt;/h2&gt;
 
@@ -137,7 +137,41 @@ dispatch_async(myQueue, ^{
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;refs 
+&lt;h1 id=&quot;memory-management&quot;&gt;Memory Management&lt;/h1&gt;
+
+&lt;p&gt;Two category of wrong memeory management:&lt;br /&gt;
+1. Release some memory you are still using &lt;br /&gt;
+2. Not release memory you are not using&lt;/p&gt;
+
+&lt;p&gt;reference count, when reference count is 0, deallocation &lt;br /&gt;
+strong, retain, copy  +1&lt;br /&gt;
+weak 0&lt;br /&gt;
+release  -1&lt;/p&gt;
+
+&lt;p&gt;constructor vs convenience constructor&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objective-c&quot; data-lang=&quot;objective-c&quot;&gt;// constructor
+- (void)reset {
+    NSNumber *zero = [[NSNumber alloc] initWithInteger:0];
+    [self setCount:zero];
+    [zero release];
+}
+
+// convenience constructor
+- (void)reset {
+    NSNumber *zero = [NSNumber numberWithInteger:0];
+    [self setCount:zero];
+}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;assign for primitive type&lt;br /&gt;
+retain for reference type&lt;/p&gt;
+
+&lt;p&gt;nonatomic for non thread safe&lt;br /&gt;
+atomic for thread safe&lt;/p&gt;
+
+&lt;p&gt;readwrite, readonly for I/O permission&lt;/p&gt;
+
+&lt;p&gt;References &lt;br /&gt;
 &lt;a href=&quot;https://www.codementor.io/ios/tutorial/ios-interview-tips-questions-answers-objective-c&quot;&gt;20 iOS Developer Interview Questions&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jan 2017 00:00:00 -0500</pubDate>

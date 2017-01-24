@@ -4,6 +4,12 @@ title: Tech notes
 permalink: /tech notes/
 ---
 
+# Reading List  
+1. [Structure and Interpretation 
+of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html)  
+
+# Useful links  
+
 ## Android  
 1. [Two ways to listen/response input event in Android](https://www.zybuluo.com/codingpan/note/101066)
 2. [dp dip px sp in Android](http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html) 
