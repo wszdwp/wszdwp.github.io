@@ -41,9 +41,9 @@ published: true
 
 
 ## [Getting Started with Swift](https://developer.apple.com/videos/play/wwdc2016/404/)
-[41:00](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Struct vs Class**
-[47:01](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Protocol vs Extension**
-[48:06](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Enum**
+[41:00](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Struct vs Class**   
+[47:01](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Protocol vs Extension**   
+[48:06](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Enum**    
 
 ## [Protocol and Value Oriented Programming in UIKit Apps](https://developer.apple.com/videos/play/wwdc2016/419/)
 
