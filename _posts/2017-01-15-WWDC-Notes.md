@@ -40,6 +40,19 @@ published: true
 ## [Objective-C Advancements In-Depth](https://developer.apple.com/videos/play/wwdc2011/322/)
 
 
+## [Getting Started with Swift](https://developer.apple.com/videos/play/wwdc2016/404/)
+[41:00](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Struct vs Class**
+[47:01](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Protocol vs Extension**
+[48:06](https://developer.apple.com/videos/play/wwdc2016/404/?time=959) **Enum**
+
+## [Protocol and Value Oriented Programming in UIKit Apps](https://developer.apple.com/videos/play/wwdc2016/419/)
+
+
+## [Protocol-Oriented Programming in Swift](https://developer.apple.com/videos/play/wwdc2015/408/)
+
+
+
+
 References:  
 [Concurrency Programming Guide](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html)    
 [OperationQueues](https://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html)

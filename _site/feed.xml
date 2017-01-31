@@ -5,9 +5,26 @@
     <description></description>
     <link>/wszdwp.github.io/</link>
     <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jan 2017 09:24:41 -0500</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2017 09:24:41 -0500</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2017 15:02:20 -0500</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2017 15:02:20 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Swift Notes</title>
+        <description>&lt;h1 id=&quot;swift&quot;&gt;Swift&lt;/h1&gt;
+
+&lt;p&gt;! vs ?&lt;/p&gt;
+
+&lt;p&gt;NSArray vs [NSDictionary], generic types&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Jan 2017 00:00:00 -0500</pubDate>
+        <link>/wszdwp.github.io/2017/01/24/Swift-Notes.html</link>
+        <guid isPermaLink="true">/wszdwp.github.io/2017/01/24/Swift-Notes.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>WWDC video timeline notes</title>
@@ -521,51 +538,6 @@ When the URLSession:task:didCompleteWithError: or connectionDidFinishLoading: me
         <guid isPermaLink="true">/wszdwp.github.io/2016/08/24/Honeywell-sl22-in-iOS.html</guid>
         
         <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Google FooBar Algorithm Challenge 5</title>
-        <description>&lt;h1 id=&quot;save-beta-rabbit&quot;&gt;Save Beta Rabbit&lt;/h1&gt;
-
-&lt;p&gt;Oh no! The mad Professor Boolean has trapped Beta Rabbit in an NxN grid of rooms. In the center of each room (except for the top left room) is a hungry zombie. In order to be freed, and to avoid being eaten, Beta Rabbit must move through this grid and feed the zombies.&lt;/p&gt;
-
-&lt;p&gt;Beta Rabbit starts at the top left room of the grid. For each room in the grid, there is a door to the room above, below, left, and right. There is no door in cases where there is no room in that direction. However, the doors are locked in such a way that Beta Rabbit can only ever move to the room below or to the right.&lt;/p&gt;
-
-&lt;p&gt;Once Beta Rabbit enters a room, the zombie immediately starts crawling towards him, and he must feed the zombie until it is full to ward it off. Thankfully, Beta Rabbit took a class about zombies and knows how many units of food each zombie needs be full.&lt;/p&gt;
-
-&lt;p&gt;To be freed, Beta Rabbit needs to make his way to the bottom right room (which also has a hungry zombie) and have used most of the limited food he has. He decides to take the path through the grid such that he ends up with as little food as possible at the end.&lt;/p&gt;
-
-&lt;p&gt;Write a function answer(food, grid) that returns the number of units of food Beta Rabbit will have at the end, given that he takes a route using up as much food as possible without him being eaten, and ends at the bottom right room. If there does not exist a route in which Beta Rabbit will not be eaten, then return -1.&lt;/p&gt;
-
-&lt;p&gt;food is the amount of food Beta Rabbit starts with, and will be a positive integer no larger than 200.&lt;/p&gt;
-
-&lt;p&gt;grid will be a list of N elements. Each element of grid will itself be a list of N integers each, denoting a single row of N rooms. The first element of grid will be the list denoting the top row, the second element will be the list denoting second row from the top, and so on until the last element, which is the list denoting the bottom row. In the list denoting a single row, the first element will be the amount of food the zombie in the left-most room in that row needs, the second element will be the amount the zombie in the room to its immediate right needs and so on. The top left room will always contain the integer 0, to indicate that there is no zombie there.&lt;/p&gt;
-
-&lt;p&gt;The number of rows N will not exceed 20, and the amount of food each zombie requires will be a positive integer not exceeding 10. 
-Languages&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Test cases  
-Inputs:  
-    (int) food = 7   
-    (int) grid = [[0, 2, 5], [1, 1, 3], [2, 1, 1]]  
-Output:  
-    (int) 0 
-
-Inputs:  
-    (int) food = 12  
-    (int) grid = [[0, 2, 5], [1, 1, 3], [2, 1, 1]]   
-Output: 
-    (int) 1 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 24 Aug 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-5.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/08/24/Google-Foobar-Algorithm-Challenge-5.html</guid>
-        
-        <category>Algorithm</category>
         
         
       </item>
