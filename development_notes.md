@@ -50,6 +50,11 @@ of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-
 1. [RuanYF tutorial](https://github.com/ruanyf/jstutorial/tree/gh-pages/dom)
 2. [JavaScript tutorial by RYF](http://javascript.ruanyifeng.com/)
 3. [JavaScript and HTML DOM Reference](http://www.w3schools.com/jsref/default.asp)
+4. [Eloquent JavaScript](http://eloquentjavascript.net/)
+5. [JavaScript Desing Patterns by O'Reilly](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+6. [Understanding ECMAscript 6](https://leanpub.com/understandinges6/read)
+7. [Node Up and Running](http://chimera.labs.oreilly.com/books/1234000001808/index.html)
+8. [You Don’t Know JS: ES6 & Beyond](https://escher.gitbooks.io/you-don-t-know-js-es6-beyond/content/)
 
 ## Hack source
 1. [JQuery core](https://github.com/jquery/jquery/tree/1.4.2)
