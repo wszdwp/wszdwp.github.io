@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tech notes
-permalink: /tech notes/
+title: Dev res
+permalink: /dev res/
 ---
 
 # Reading List  
@@ -11,8 +11,9 @@ of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-
 # Useful links  
 
 ## Android  
-1. [Two ways to listen/response input event in Android](https://www.zybuluo.com/codingpan/note/101066)
-2. [dp dip px sp in Android](http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html) 
+1. [View your sqlite and network response in Chrome Dev tool](http://facebook.github.io/stetho/)
+2. [Two ways to listen/response input event in Android](https://www.zybuluo.com/codingpan/note/101066)
+3. [dp dip px sp in Android](http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html) 
 
 ## iOS  
 1. [Import objective-c in Swift Project](http://stackoverflow.com/questions/24002369/how-to-call-objective-c-code-from-swift/24005242#24005242)
@@ -30,10 +31,12 @@ of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-
 2. [jenkov's site](http://tutorials.jenkov.com/)
 3. [MyJavaUtility](https://gist.github.com/wszdwp/da66daa12745f3dba3d4)
 4. [Date and Time format cheatsheet](https://service.sumologic.com/help/Supported_Time_Stamp_Conventions.htm)
+5. [Java singleton pattern](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
 
 ## Web  
 1. [Tomcat installation tutorial](http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html)
 2. [A simple REST api guide](http://mark-kirby.co.uk/2013/creating-a-true-rest-api/)
+3. [A nice looking blog](https://hexo.io/)
 
 ## How to build up website      
 

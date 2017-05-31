@@ -11,7 +11,6 @@ published: true
 
 ## Caculation
 
-
 ## Conversion
 
 ### Formatted string -> Date object
@@ -40,9 +39,23 @@ Calendar calendar = Calendar.getInstance();
 calendar.setTime(date);
 ```
 
+## Comparison
+```java
+String s = "20170407.13:22:39.904-0400";
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd.HH:mm:ss.SSSZ");
+try {
+    Date date = simpleDateFormat.parse(s);
+    if (todayDate.after(historyDate)) {
+    }
+    if (todayDate.before(futureDate)) {
 
+    }
 
-## test header
+    System.out.println("date : "+simpleDateFormat.format(date));
+} catch (ParseException ex) {
+    System.out.println("Exception "+ex);
+}
+```
 
 
 ## Refs  

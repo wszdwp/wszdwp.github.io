@@ -6,6 +6,20 @@ tags: iOS
 
 SQL in iOS
 
+SQLite 
+
+1. open
+2. prepare
+3. step
+4. finalize
+5. close
+
+execute an SQL query, it must first be compiled into a byte-code program 
+
+```sqlite3_exec() = ' sqlite3_prepare_v2(), sqlite3_step(), and sqlite3_finalize(),'
+
+
+
 ```swift
 //Open
 if (sqlite3_open((self.databasePath as NSString).UTF8String, &mySqliteDB) == SQLITE_OK) {
