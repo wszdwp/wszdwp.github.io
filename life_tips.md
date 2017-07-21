@@ -2,7 +2,7 @@
 layout: page
 title: Life tips
 permalink: /life tips/
-published: true
+published: false
 ---
 
 
