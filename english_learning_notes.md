@@ -15,4 +15,6 @@ published: false
 |传单|hand out / pamflet|
 |出勤记录| attendance|
 |机票改签| re-book|
+|下次我会注意|I will keep an eye out for sb. or sth.|
+|下次记住注意某事|Keep sth. in mind|
 
