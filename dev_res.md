@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dev res
-permalink: /dev res/
+permalink: /dev_res/
 ---
 
 # Reading List  

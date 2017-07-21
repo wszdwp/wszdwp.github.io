@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Life tips
-permalink: /life tips/
+permalink: /life_tips/
 published: false
 ---
 

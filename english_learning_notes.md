@@ -1,7 +1,7 @@
 ---
 layout: page
 title: English learning notes
-permalink: /english learningnotes/
+permalink: /english_learningnotes/
 published: false
 ---
 
