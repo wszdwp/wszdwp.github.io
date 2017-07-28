@@ -8,7 +8,7 @@ tags: iOS
 # UIViews
 
 1. On a UITableViewCell constructor:   
-``` 
+```objective-c
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 ```
 

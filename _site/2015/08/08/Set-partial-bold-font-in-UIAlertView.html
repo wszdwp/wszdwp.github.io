@@ -10,13 +10,30 @@
   <title>Set partial bold font in UIAlertView</title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/syntax.css">  
-  <!--   <link rel="stylesheet" href="/css/custom.css"> -->  
-  <link rel="canonical" href="/wszdwp.github.io/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">
-  <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="/wszdwp.github.io/feed.xml">
 
-  <!-- Google Analytics-->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Syntax highlight css-->
+<!--   <link rel="stylesheet" href="/css/syntax.css" >  
+ -->  <link rel="stylesheet" href="/css/custom_syntax.css">  
+  <!--   <link rel="stylesheet" href="/css/custom.css"> -->  
+
+  <link rel="canonical" href="http://localhost:4000/2015/08/08/Set-partial-bold-font-in-UIAlertView.html">
+  <link rel="alternate" type="application/rss+xml" title="Codingpan's Blog" href="http://localhost:4000/feed.xml">
+
+  <!-- Remaining readingtime plugin-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/readremaining.jquery.js"></script>
+  <link rel="stylesheet" href="/css/rr_light.css">
+  <script type="text/javascript">
+        function showReadingTime() {
+            $('body').readRemaining();
+        }
+        window.onload = showReadingTime;
+        console.log("called");
+  </script>
+
+  <!-- Google analytics-->
   <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -136,10 +153,12 @@
     <span class="k">return</span> <span class="n">attrStr</span><span class="o">!</span> 
 <span class="p">}</span></code></pre></figure>
 
-<p>References    <br>
-1. <a href="http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color">UIAlertController custom font, size, color</a>     <br>
-2. <a href="http://stackoverflow.com/questions/14940514/how-to-use-nskeyvaluecoding-protocol-while-designing-data-models">How to use NSKeyValueCoding protocol while designing data models?</a>     <br>
-3. <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html">Key-Value Prgramming Guide from Apple</a></p>
+<p>References</p>
+<ol>
+  <li><a href="http://stackoverflow.com/questions/26460706/uialertcontroller-custom-font-size-color">UIAlertController custom font, size, color</a></li>
+  <li><a href="http://stackoverflow.com/questions/14940514/how-to-use-nskeyvaluecoding-protocol-while-designing-data-models">How to use NSKeyValueCoding protocol while designing data models?</a></li>
+  <li><a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html">Key-Value Prgramming Guide from Apple</a></li>
+</ol>
 
     <div id="disqus_thread"></div>
 <script type="text/javascript">

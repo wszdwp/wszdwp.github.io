@@ -31,6 +31,7 @@ gems:
   - jekyll-mentions
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-seo-tag
 whitelist:
   - jekyll-coffeescript
   - jekyll-gist

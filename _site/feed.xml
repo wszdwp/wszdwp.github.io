@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Codingpan&#39;s Blog</title>
+    <title>Codingpan's Blog</title>
     <description></description>
-    <link>/wszdwp.github.io/</link>
-    <atom:link href="/wszdwp.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jul 2017 17:50:52 -0400</pubDate>
-    <lastBuildDate>Fri, 21 Jul 2017 17:50:52 -0400</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 28 Jul 2017 15:57:56 -0400</pubDate>
+    <lastBuildDate>Fri, 28 Jul 2017 15:57:56 -0400</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>Tracking in Android</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;用户行为的统计&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;用户行为的统计&quot;&gt;用户行为的统计&lt;/h1&gt;
 &lt;p&gt;Google Analytics - Tracking&lt;br /&gt;
 GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;跟踪4个方面&lt;/h2&gt;
+&lt;h2 id=&quot;跟踪4个方面&quot;&gt;跟踪4个方面&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;App installations&lt;/li&gt;
   &lt;li&gt;Active users and demographics&lt;/li&gt;
@@ -23,7 +23,7 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
   &lt;li&gt;Crashes and exceptions&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;如何配置&lt;/h2&gt;
+&lt;h2 id=&quot;如何配置&quot;&gt;如何配置&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Update AndroidManifest.xml&lt;br /&gt;
@@ -38,14 +38,14 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 全局的tracking配置， ga_trackingId, ga_autoActivityTracking, ga_reportUncaughtExceptions&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Gradle build dependencies中， 需要加入&lt;code class=&quot;highlighter-rouge&quot;&gt;compile files(&#39;libs/libGoogleAnalyticsServices.jar&#39;)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Gradle build dependencies中， 需要加入&lt;code class=&quot;highlighter-rouge&quot;&gt;compile files('libs/libGoogleAnalyticsServices.jar')&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
         <pubDate>Mon, 05 Jun 2017 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2017/06/05/Tracking-in-Android.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/06/05/Tracking-in-Android.html</guid>
+        <link>http://localhost:4000/2017/06/05/Tracking-in-Android.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/05/Tracking-in-Android.html</guid>
         
         <category>Android</category>
         
@@ -130,8 +130,8 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 &lt;a href=&quot;https://stackoverflow.com/questions/21918722/how-do-i-use-nsoperationqueue-with-nsurlsession&quot;&gt;https://stackoverflow.com/questions/21918722/how-do-i-use-nsoperationqueue-with-nsurlsession&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 31 May 2017 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2017/05/31/Cancel-HTTP-Request-in-iOS.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/05/31/Cancel-HTTP-Request-in-iOS.html</guid>
+        <link>http://localhost:4000/2017/05/31/Cancel-HTTP-Request-in-iOS.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/31/Cancel-HTTP-Request-in-iOS.html</guid>
         
         <category>iOS</category>
         
@@ -155,8 +155,8 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-gradle&quot; data-lang=&quot;gradle&quot;&gt;&lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// Stetho core&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;com.facebook.stetho:stetho:1.5.0&#39;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;com.facebook.stetho:stetho-js-rhino:1.4.2&#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.facebook.stetho:stetho:1.5.0'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.facebook.stetho:stetho-js-rhino:1.4.2'&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ol&gt;
@@ -180,8 +180,8 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 22 May 2017 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2017/05/22/Debug-Tools-in-Android.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/05/22/Debug-Tools-in-Android.html</guid>
+        <link>http://localhost:4000/2017/05/22/Debug-Tools-in-Android.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/22/Debug-Tools-in-Android.html</guid>
         
         <category>Android</category>
         
@@ -220,8 +220,8 @@ GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 31 Mar 2017 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2017/03/31/Capture-Done-OnClick-in-Android.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/03/31/Capture-Done-OnClick-in-Android.html</guid>
+        <link>http://localhost:4000/2017/03/31/Capture-Done-OnClick-in-Android.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/31/Capture-Done-OnClick-in-Android.html</guid>
         
         <category>Android</category>
         
@@ -246,8 +246,8 @@ Learn more about Location Services and Privacy.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 08 Mar 2017 00:00:00 -0500</pubDate>
-        <link>/wszdwp.github.io/2017/03/08/Location-in-iOS.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/03/08/Location-in-iOS.html</guid>
+        <link>http://localhost:4000/2017/03/08/Location-in-iOS.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/08/Location-in-iOS.html</guid>
         
         <category>iOS</category>
         
@@ -258,7 +258,7 @@ Learn more about Location Services and Privacy.&lt;/p&gt;
         <title>WWDC video timeline notes</title>
         <description>&lt;h1 id=&quot;wwdc-2011&quot;&gt;WWDC 2011&lt;/h1&gt;
 
-&lt;h2 id=&quot;blocks-and-grand-central-dispatch-in-practicehttpsdeveloperapplecomvideosplaywwdc2011308&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/&quot;&gt;Blocks and Grand Central Dispatch in Practice&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;blocks-and-grand-central-dispatch-in-practice&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/&quot;&gt;Blocks and Grand Central Dispatch in Practice&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=300&quot;&gt;05:00&lt;/a&gt; &lt;strong&gt;Block&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=483&quot;&gt;08:03&lt;/a&gt; &lt;strong&gt;__block&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=630&quot;&gt;10:30&lt;/a&gt; &lt;strong&gt;Enumeration using block&lt;/strong&gt;&lt;br /&gt;
@@ -283,26 +283,26 @@ Learn more about Location Services and Privacy.&lt;/p&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2162&quot;&gt;36:02&lt;/a&gt; &lt;strong&gt;Block_copy() and Block_release()&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/308/?time=2634&quot;&gt;43:54&lt;/a&gt; &lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;mastering-grand-central-dispatchhttpsdeveloperapplecomvideosplaywwdc2011210&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/210/&quot;&gt;Mastering Grand Central Dispatch&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;mastering-grand-central-dispatch&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/210/&quot;&gt;Mastering Grand Central Dispatch&lt;/a&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;objective-c-advancements-in-depthhttpsdeveloperapplecomvideosplaywwdc2011322&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/322/&quot;&gt;Objective-C Advancements In-Depth&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;objective-c-advancements-in-depth&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2011/322/&quot;&gt;Objective-C Advancements In-Depth&lt;/a&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;getting-started-with-swifthttpsdeveloperapplecomvideosplaywwdc2016404&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/404/&quot;&gt;Getting Started with Swift&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;getting-started-with-swift&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/404/&quot;&gt;Getting Started with Swift&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/404/?time=959&quot;&gt;41:00&lt;/a&gt; &lt;strong&gt;Struct vs Class&lt;/strong&gt; &lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/404/?time=959&quot;&gt;47:01&lt;/a&gt; &lt;strong&gt;Protocol vs Extension&lt;/strong&gt; &lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/404/?time=959&quot;&gt;48:06&lt;/a&gt; &lt;strong&gt;Enum&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;protocol-and-value-oriented-programming-in-uikit-appshttpsdeveloperapplecomvideosplaywwdc2016419&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/419/&quot;&gt;Protocol and Value Oriented Programming in UIKit Apps&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;protocol-and-value-oriented-programming-in-uikit-apps&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2016/419/&quot;&gt;Protocol and Value Oriented Programming in UIKit Apps&lt;/a&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;protocol-oriented-programming-in-swifthttpsdeveloperapplecomvideosplaywwdc2015408&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2015/408/&quot;&gt;Protocol-Oriented Programming in Swift&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;protocol-oriented-programming-in-swift&quot;&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2015/408/&quot;&gt;Protocol-Oriented Programming in Swift&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;References:&lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html&quot;&gt;Concurrency Programming Guide&lt;/a&gt;  &lt;br /&gt;
 &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html&quot;&gt;OperationQueues&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Jan 2017 00:00:00 -0500</pubDate>
-        <link>/wszdwp.github.io/2017/01/15/WWDC-Notes.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/01/15/WWDC-Notes.html</guid>
+        <link>http://localhost:4000/2017/01/15/WWDC-Notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/15/WWDC-Notes.html</guid>
         
         <category>iOS</category>
         
@@ -314,10 +314,10 @@ Learn more about Location Services and Privacy.&lt;/p&gt;
         <description>&lt;h1 id=&quot;uiviews&quot;&gt;UIViews&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;On a UITableViewCell constructor: &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
--(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;On a UITableViewCell constructor:
+    &lt;pre&gt;&lt;code class=&quot;language-objective-c&quot;&gt;-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;What is the reuseIdentifier used for?&lt;/p&gt;
@@ -375,7 +375,7 @@ NSOperationQueue* myQueue = [[NSOperationQueue alloc] init];
  /* Do something. */
 }];
 
-//3. GCD or Grand Central Dispatch is a modern feature of Objective-C that provides a rich set of methods and API&#39;s to use in order to support common multi-threading tasks. GCD provides a way to queue tasks for dispatch on either the main thread, a concurrent queue (tasks are run in parallel) or a serial queue (tasks are run in FIFO order).
+//3. GCD or Grand Central Dispatch is a modern feature of Objective-C that provides a rich set of methods and API's to use in order to support common multi-threading tasks. GCD provides a way to queue tasks for dispatch on either the main thread, a concurrent queue (tasks are run in parallel) or a serial queue (tasks are run in FIFO order).
 dispatch_queue_t myQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 dispatch_async(myQueue, ^{
   printf(&quot;Do some work here.\n&quot;);
@@ -393,9 +393,11 @@ dispatch_async(myQueue, ^{
 
 &lt;h1 id=&quot;memory-management&quot;&gt;Memory Management&lt;/h1&gt;
 
-&lt;p&gt;Two category of wrong memeory management:&lt;br /&gt;
-1. Release some memory you are still using &lt;br /&gt;
-2. Not release memory you are not using&lt;/p&gt;
+&lt;p&gt;Two category of wrong memeory management:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Release some memory you are still using&lt;/li&gt;
+  &lt;li&gt;Not release memory you are not using&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;reference count, when reference count is 0, deallocation &lt;br /&gt;
 strong, retain, copy  +1&lt;br /&gt;
@@ -429,8 +431,8 @@ atomic for thread safe&lt;/p&gt;
 &lt;a href=&quot;https://www.codementor.io/ios/tutorial/ios-interview-tips-questions-answers-objective-c&quot;&gt;20 iOS Developer Interview Questions&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jan 2017 00:00:00 -0500</pubDate>
-        <link>/wszdwp.github.io/2017/01/10/Learn-iOS-From-Questions.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2017/01/10/Learn-iOS-From-Questions.html</guid>
+        <link>http://localhost:4000/2017/01/10/Learn-iOS-From-Questions.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/10/Learn-iOS-From-Questions.html</guid>
         
         <category>iOS</category>
         
@@ -458,8 +460,8 @@ atomic for thread safe&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 14 Oct 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</guid>
+        <link>http://localhost:4000/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</guid>
         
         <category>iOS</category>
         
@@ -488,8 +490,8 @@ atomic for thread safe&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 06 Oct 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/10/06/CollectionTypes-in-Python.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/10/06/CollectionTypes-in-Python.html</guid>
+        <link>http://localhost:4000/2016/10/06/CollectionTypes-in-Python.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/06/CollectionTypes-in-Python.html</guid>
         
         <category>Python</category>
         
@@ -543,8 +545,8 @@ atomic for thread safe&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 27 Sep 2016 00:00:00 -0400</pubDate>
-        <link>/wszdwp.github.io/2016/09/27/SQLite-in-iOS.html</link>
-        <guid isPermaLink="true">/wszdwp.github.io/2016/09/27/SQLite-in-iOS.html</guid>
+        <link>http://localhost:4000/2016/09/27/SQLite-in-iOS.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/27/SQLite-in-iOS.html</guid>
         
         <category>iOS</category>
         
