@@ -9,7 +9,8 @@ github_username:  wszdwp
 
 # Build settings
 # Conversion
-markdown:    kramdown
+markdown: kramdown
+highlighter: rouge
 
 # markdown: redcarpet
 # redcarpet:
