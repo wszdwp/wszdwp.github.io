@@ -21,7 +21,7 @@ GA旧的统计方式是用Google Analytics SDK for Android.
 开网络访问权限  
 
 2. Add EasyTracker methods (Activity level)  
-在 ```onStart()``` and ```onStop()`` 中添加send的方法，  
+在 ```onStart()``` and ```onStop()``` 中添加send的方法，  
 
 3. Create your analytics.xml file  
 全局的tracking配置， ga_trackingId, ga_autoActivityTracking, ga_reportUncaughtExceptions  
