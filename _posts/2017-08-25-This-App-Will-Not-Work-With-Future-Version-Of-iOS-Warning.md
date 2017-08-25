@@ -36,6 +36,6 @@ change architectures from ```$(ARCHS_STANDARD)``` to ```arm64```
 in your valid architectures settings(both project level and target level), you also need to add ```arm64``` if this is missing there.  
 
 refs  
-[https://support.apple.com/en-us/HT207449](https://support.apple.com/en-us/HT207449)
-[https://9to5mac.com/2017/01/31/ios-10-3-beta-32-bit-app-warning/](https://9to5mac.com/2017/01/31/ios-10-3-beta-32-bit-app-warning/)  
-[http://www.macworld.com/article/3163248/ios/the-future-of-ios-is-64-bit-only-apple-to-stop-support-of-32-bit-apps.html](http://www.macworld.com/article/3163248/ios/the-future-of-ios-is-64-bit-only-apple-to-stop-support-of-32-bit-apps.html)  
+[https://support.apple.com/en-us/HT207449](https://support.apple.com/en-us/HT207449)  
+[https://9to5mac.com/2017/01/31/ios-10-3-beta-32-bit-app-warning/](https://9to5mac.com/2017/01/31/ios-10-3-beta-32-bit-app-warning/)    
+[http://www.macworld.com/article/3163248/ios/the-future-of-ios-is-64-bit-only-apple-to-stop-support-of-32-bit-apps.html](http://www.macworld.com/article/3163248/ios/the-future-of-ios-is-64-bit-only-apple-to-stop-support-of-32-bit-apps.html)   
