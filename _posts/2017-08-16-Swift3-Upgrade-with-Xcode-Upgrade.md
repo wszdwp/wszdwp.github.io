@@ -7,7 +7,7 @@ tags: iOS
 
 # Swift  
 
-## Warnings
+## Erros and Warnings
 
 ```swift
 // from  
@@ -36,6 +36,17 @@ let attributedOptions : [String: AnyObject] = [
                 NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue as AnyObject
             ]
 
+// from  
+let errMsg:UnsafeMutablePointer<UnsafeMutablePointer<Int8>>? = nil
+sqlite3_exec(mySqliteDB, ("BEGIN EXCLUSIVE TRANSACTION" as NSString).utf8String, nil, nil, errMsg)
+
+// to  
+var errMsg:UnsafeMutablePointer<Int8>? = nil
+sqlite3_exec(mySqliteDB, "BEGIN EXCLUSIVE TRANSACTION", nil, nil, &errMsg)
+
+
+[super awakeFromNib]; // in func awakeFromNib(){ }
 
 ```
+
 

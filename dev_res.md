@@ -25,6 +25,10 @@ of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-
 7. [SQLite simple examples in iOS](http://7097095.blog.51cto.com/7087095/1229932)
 8. [SQLite example in iOS](http://hubpages.com/technology/IOS-5-SDK-Database-Insert-Update-Delete-with-SQLite-and-Objective-C-C-How-To)  
 9. [View Programming Guide for iOS](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/AnimatingViews/AnimatingViews.html#//apple_ref/doc/uid/TP40009503-CH6-SW9)  
+10. [iPod Model](https://support.apple.com/en-us/HT204217)  
+11. [iPhone Model](https://support.apple.com/en-ca/HT201296)  
+12. [iPad Model](https://support.apple.com/en-us/HT201471)  
+13. [iOS Device Support Matrix](https://static1.squarespace.com/static/51adfbd9e4b095d664d9b869/t/597ef5abd2b8570b18d77c52/1501492652294/Matrix_16by9-8k.pdf)
 
 ## Java  
 1. [Format output](https://gist.github.com/wszdwp/9dc0599aeaa8048dfb95)
