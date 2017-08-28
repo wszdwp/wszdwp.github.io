@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Url extracter</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="form-group">
+                    <label for="logcat">LogCat Text</label>
+                    <input type="text" class="form-control" id="logcat" hidden="true" onchange="parseLog(document.getElementById('logcat').value)" >
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12 form-group">
+              <label for="url">URL</label>
+              <input type="text" class="form-control" id="url">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="pull-left">
+                    <label id="status" for="response">Response</label>  
+                </div>
+                <div class="pull-right">
+                    <form id="myform">
+                        <label for="beautifyJSON">beautify JSON</label>  
+                        <input type="checkbox" id="jsonCheckbox"  onchange="beautifyJSON(this)" checked/>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+                <textarea id="textOut" rows="20" class="form-control" style="min-width: 100%" >
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function parseLog(log_text) {
+            log_text = log_text.substring(log_text.indexOf("http"));
+            log_text = log_text.split(' ').join('')
+            log_text = log_text.replace("[", "?");
+            log_text = log_text.split(',').join('&');
+            log_text = log_text.replace("]", "");
+            document.getElementById("url").value = String(log_text);
+            sendPOSTRequest(document.getElementById("url").value);
+            document.getElementById("status").value = "waiting for response";
+            // document.getElementById("textOut").value = String(log_text);
+        }
+
+
+        function sendPOSTRequest(request_url) {
+            $.ajax({
+                url: request_url,
+                type: 'post',
+                dataType: 'json',
+                data: '',
+                success: function (data) {
+                  var res = JSON.stringify(data);
+                  console.log(res);
+                  // document.getElementById("textOut").value = String(res);
+                  var obj = JSON.parse(res);
+                  var pretty = JSON.stringify(obj, undefined, 4);
+                  document.getElementById("status").value = "Response";
+                  document.getElementById("textOut").value = pretty;
+                },
+                error: function (jqXHR, exception) {
+                    var msg = '';
+                    if (jqXHR.status === 0) {
+                        msg = 'Not connect.\nVerify Network.';
+                    } else if (jqXHR.status == 404) {
+                        msg = 'Requested page not found. [404]';
+                    } else if (jqXHR.status == 500) {
+                        msg = 'Internal Server Error [500].';
+                    } else if (exception === 'parsererror') {
+                        msg = 'Requested JSON parse failed.';
+                    } else if (exception === 'timeout') {
+                        msg = 'Time out error.';
+                    } else if (exception === 'abort') {
+                        msg = 'Ajax request aborted.';
+                    } else {
+                        msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                    }
+                    document.getElementById("status").value = "Response";
+                    document.getElementById("textOut").value = msg;
+                }
+            });
+        }
+
+
+        function beautifyJSON(checkboxElem) {
+            var res = document.getElementById("textOut").value;
+            var obj = JSON.parse(res);
+            if (checkboxElem.checked) {
+                var pretty = JSON.stringify(obj, undefined, 4);
+                document.getElementById("textOut").value = pretty;
+            } else {
+                var raw = JSON.stringify(obj);
+                document.getElementById("textOut").value = raw;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -30,7 +30,7 @@ Refer to the docs to check your device model and compatibility
 Read the guide for converting to 64-bit Binary
 [Convert your app to 64-bit Binary](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Cocoa64BitGuide/ConvertingExistingApp/ConvertingExistingApp.html)
 
-## How to change your build settins in XCode     
+## How to change your build settings in XCode     
 In project build settings
 change architectures from ```$(ARCHS_STANDARD)``` to ```arm64```  
 in your valid architectures settings(both project level and target level), you also need to add ```arm64``` if this is missing there.  

@@ -88,3 +88,6 @@ of Computer Programs 2nd](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-
 # My Code gists
 1. [MD5 Hash in Java](https://gist.github.com/wszdwp/601f2bcbc79474deb702)
 2. [MD5 Hash in Swift](https://gist.github.com/wszdwp/58811f685ddcf97a79a3)
+
+# My Test Util  
+[Parse log cat url log to url ready for brower use](../url_extracter.html)
