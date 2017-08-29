@@ -1,11 +1,13 @@
 title: Codingpan's Blog
-email: codingpan2015@gmail.com
+email: wszdwp@gmail.com
 description: > # On the path to be a programmer.
-#this means to ignore newlines until "baseurl:"
+# this means to ignore newlines until "baseurl:"
 # url: "/wszdwp.github.io" # the base hostname & protocol for your site
 url: "/" # the base hostname & protocol for your site
 twitter_username: codingpan
 github_username:  wszdwp
+linkedin_username: pan-wang-王攀-45710258
+linkedin_name: Wáng Pān (王攀)
 
 # Build settings
 # Conversion
@@ -33,12 +35,16 @@ gems:
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-seo-tag
+
 whitelist:
   - jekyll-coffeescript
   - jekyll-gist
   - jekyll-mentions
   - jekyll-paginate
   - jekyll-redirect-from
+
+plugins:
+  - jekyll-seo-tag
 
 # Style
 sass:
