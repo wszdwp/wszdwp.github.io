@@ -5,9 +5,34 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Aug 2017 17:23:04 -0400</pubDate>
-    <lastBuildDate>Tue, 29 Aug 2017 17:23:04 -0400</lastBuildDate>
+    <pubDate>Wed, 06 Sep 2017 10:37:12 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Sep 2017 10:37:12 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>SQLite DB Upgrade in Android</title>
+        <description>&lt;h1 id=&quot;db-upgrade&quot;&gt;DB Upgrade&lt;/h1&gt;
+
+&lt;h2 id=&quot;add-a-new-table&quot;&gt;Add a new table&lt;/h2&gt;
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;onUpgrade&lt;/code&gt;, call &lt;code class=&quot;highlighter-rouge&quot;&gt;onCreate(db)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;add-1-text-1-integer-1text-new-columns-in-the-end-of-an-existed-table&quot;&gt;Add 1 TEXT, 1 INTEGER, 1TEXT new columns in the end of an existed table&lt;/h2&gt;
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;onUpgrade&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;ALTER TABLE tablename RENAME TO tablename_temp&lt;/li&gt;
+  &lt;li&gt;INSERT INTO tablename SELECT tablename_temp.*, ‘’, 0, ‘’ FROM tablename_temp&lt;/li&gt;
+  &lt;li&gt;DROP TABLE IF EXISTS tablename_temp&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 06 Sep 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/09/06/SQLite-DB-Upgrade-in-Android.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/06/SQLite-DB-Upgrade-in-Android.html</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
     
       <item>
         <title>This app will not work with future version of iOS warning</title>
@@ -59,7 +84,7 @@ in your valid architectures settings(both project level and target level), you a
         <title>Upgrade Xcode from 7.3.0 to 8.3.3, swift from 2.2 to 3.1</title>
         <description>&lt;h1 id=&quot;swift&quot;&gt;Swift&lt;/h1&gt;
 
-&lt;h2 id=&quot;erros-and-warnings&quot;&gt;Erros and Warnings&lt;/h2&gt;
+&lt;h2 id=&quot;errors-and-warnings&quot;&gt;Errors and Warnings&lt;/h2&gt;
 
 &lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// from  &lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;GlobalQueuePriority&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt;
@@ -100,6 +125,9 @@ in your valid architectures settings(both project level and target level), you a
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;h2 id=&quot;for-camera-use-in-ios-10&quot;&gt;For camera use in iOS 10&lt;/h2&gt;
+&lt;p&gt;add &lt;code class=&quot;highlighter-rouge&quot;&gt;Privacy - Camera Usage Description&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;plist&lt;/code&gt;, otherwise it would crash with missing &lt;strong&gt;NSCameraUsageDescription&lt;/strong&gt; error&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 16 Aug 2017 00:00:00 -0400</pubDate>
@@ -535,35 +563,6 @@ atomic for thread safe&lt;/p&gt;
         <pubDate>Tue, 10 Jan 2017 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/2017/01/10/Learn-iOS-From-Questions.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/10/Learn-iOS-From-Questions.html</guid>
-        
-        <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Migration from Swift 2.X to Swift 3.0</title>
-        <description>&lt;h1 id=&quot;swift-2x-to-swift-30&quot;&gt;Swift 2.X to Swift 3.0&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;id in Objective-C is not AnyObject but Any, casting using as&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boolValue&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;errMsg:UnsafeMutablePointer&amp;lt;UnsafeMutablePointer&lt;Int8&gt;?&amp;gt; in C API as char **, change to&lt;/Int8&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;errMsg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;UnsafeMutablePointer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Int8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 14 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/14/Migration-From-Swift-2.X-to-Swift-3.0.html</guid>
         
         <category>iOS</category>
         

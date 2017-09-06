@@ -7,7 +7,7 @@ url: "/" # the base hostname & protocol for your site
 twitter_username: codingpan
 github_username:  wszdwp
 linkedin_username: pan-wang-王攀-45710258
-linkedin_name: Wáng Pān (王攀)
+linkedin_name: Pan Wang(王攀 Wáng,Pān)
 
 # Build settings
 # Conversion
@@ -27,8 +27,8 @@ paginate: 12
 
 paginate_path: "/blog/page:num/"
 
-# Gems
-gems:
+# plugins
+plugins:
   - jekyll-coffeescript
   - jekyll-gist
   - jekyll-mentions
@@ -42,9 +42,6 @@ whitelist:
   - jekyll-mentions
   - jekyll-paginate
   - jekyll-redirect-from
-
-plugins:
-  - jekyll-seo-tag
 
 # Style
 sass:

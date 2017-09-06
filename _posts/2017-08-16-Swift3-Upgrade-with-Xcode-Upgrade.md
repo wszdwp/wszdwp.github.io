@@ -7,7 +7,7 @@ tags: iOS
 
 # Swift  
 
-## Erros and Warnings
+## Errors and Warnings
 
 ```swift
 // from  
@@ -48,5 +48,8 @@ sqlite3_exec(mySqliteDB, "BEGIN EXCLUSIVE TRANSACTION", nil, nil, &errMsg)
 [super awakeFromNib]; // in func awakeFromNib(){ }
 
 ```
+
+## For camera use in iOS 10
+add ```Privacy - Camera Usage Description``` in ```plist```, otherwise it would crash with missing **NSCameraUsageDescription** error
 
 
