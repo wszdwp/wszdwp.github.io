@@ -5,24 +5,38 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Sep 2017 10:37:12 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Sep 2017 10:37:12 -0400</lastBuildDate>
+    <pubDate>Thu, 07 Sep 2017 11:43:21 -0400</pubDate>
+    <lastBuildDate>Thu, 07 Sep 2017 11:43:21 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>SQLite DB Upgrade in Android</title>
-        <description>&lt;h1 id=&quot;db-upgrade&quot;&gt;DB Upgrade&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;sqlite-db-upgrade&quot;&gt;SQLite DB Upgrade&lt;/h1&gt;
 
 &lt;h2 id=&quot;add-a-new-table&quot;&gt;Add a new table&lt;/h2&gt;
 &lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;onUpgrade&lt;/code&gt;, call &lt;code class=&quot;highlighter-rouge&quot;&gt;onCreate(db)&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;add-1-text-1-integer-1text-new-columns-in-the-end-of-an-existed-table&quot;&gt;Add 1 TEXT, 1 INTEGER, 1TEXT new columns in the end of an existed table&lt;/h2&gt;
-&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;onUpgrade&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;ALTER TABLE tablename RENAME TO tablename_temp&lt;/li&gt;
-  &lt;li&gt;INSERT INTO tablename SELECT tablename_temp.*, ‘’, 0, ‘’ FROM tablename_temp&lt;/li&gt;
-  &lt;li&gt;DROP TABLE IF EXISTS tablename_temp&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&quot;add-new-columns&quot;&gt;Add new columns&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1 TEXT, 1 INTEGER, 1 TEXT&lt;/code&gt; new columns added in the end of an existed table&lt;br /&gt;
+In &lt;code class=&quot;highlighter-rouge&quot;&gt;onUpgrade&lt;/code&gt;, call &lt;code class=&quot;highlighter-rouge&quot;&gt;db.execSQL(SQL_STATEMENT)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;SQL_STATEMENT&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;RENAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename_temp&lt;/span&gt;  
+
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;  
+    &lt;span class=&quot;n&quot;&gt;col_rowid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INTEGER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTOINCREASEMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+    &lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+    &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+    &lt;span class=&quot;n&quot;&gt;col3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+    &lt;span class=&quot;k&quot;&gt;UNIQUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  
+
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt;   
+    &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename_temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;  
+    &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename_temp&lt;/span&gt; 
+
+&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename_temp&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Wed, 06 Sep 2017 00:00:00 -0400</pubDate>
