@@ -5,9 +5,255 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Dec 2017 16:38:58 -0500</pubDate>
-    <lastBuildDate>Tue, 05 Dec 2017 16:38:58 -0500</lastBuildDate>
+    <pubDate>Wed, 18 Jul 2018 13:24:04 -0400</pubDate>
+    <lastBuildDate>Wed, 18 Jul 2018 13:24:04 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>iOS Basis</title>
+        <description>&lt;h1 id=&quot;basic-points&quot;&gt;Basic points&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;MRC and ARC, what, how to use, why&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;autorelease pool&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;autorelease pool vs MRC vs ARC&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Multi-level autorelease pool, which level does the object release&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;block and block impleamentation, how does it work&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;deep coyp vs copy&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;strong, weak, retain, atomic&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;how does weak work&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what will the system do if no weak and atomic&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;how to guarantee message not lost when send/recv in IM system&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;IM system database table design&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;C++ reference vs pointer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTTP protocol status 30X stands for&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what is runloop and how does it work，runloop有几种状态&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;multitread and in iOS&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;category vs extension, how does iOS implement category&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;discuss message forward mechanism&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;event response chain and how to response event not included in view&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UI performance optimization in iOS&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;属性和成员变量的区别&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;projects-related-questions&quot;&gt;Projects related questions&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;界面卡顿的解决方案和思路
+    &lt;ul&gt;
+      &lt;li&gt;增量更新, 内存缓存， 本地缓存&lt;/li&gt;
+      &lt;li&gt;rich text 绘制，Context framework&lt;/li&gt;
+      &lt;li&gt;video clip, edit and recording, how to impl&lt;/li&gt;
+      &lt;li&gt;rstp, HLS, rtmp protocols, token protocols&lt;/li&gt;
+      &lt;li&gt;DLNA screen casting protocol, soap, how to detect and response when video box disconnected,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;video playing AVPlayer framework
+    &lt;ul&gt;
+      &lt;li&gt;how does AVPlayer monitor video buffer status?&lt;/li&gt;
+      &lt;li&gt;issues eg: sequences out of order when loopback or drag&lt;/li&gt;
+      &lt;li&gt;1st frame for some encode video slow&lt;/li&gt;
+      &lt;li&gt;KVO pattern is not flexible&lt;/li&gt;
+      &lt;li&gt;buffer progress cannot be controlled&lt;/li&gt;
+      &lt;li&gt;short video clip buffer to the end quickly&lt;/li&gt;
+      &lt;li&gt;question: in poor network, how to keep playing video after 1st frame played? increase buffer size? wait until n frames to play, 码率切换&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 17 Jul 2018 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2018/07/17/iOS-Basis.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/17/iOS-Basis.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Singleton Pattern in Java</title>
+        <description>&lt;h1 id=&quot;singleton-pattern-in-java&quot;&gt;Singleton Pattern in Java&lt;/h1&gt;
+
+&lt;p&gt;refs:
+&lt;a href=&quot;http://csharpindepth.com/Articles/General/Singleton.aspx&quot;&gt;Singleton Pattern in C#&lt;/a&gt;
+&lt;a href=&quot;https://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html&quot;&gt;The “Double-Checked Locking is Broken” Declaration&lt;/a&gt;
+&lt;a href=&quot;http://gee.cs.oswego.edu/dl/cpj/jmm.html&quot;&gt;Synchronization and the Java Memory Model&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 21 Feb 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2018/02/21/Singleton-Pattern-in-Java.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Singleton-Pattern-in-Java.html</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rotate screen in iOS</title>
+        <description>&lt;h1 id=&quot;rotate-screen-in-ios&quot;&gt;Rotate screen in iOS&lt;/h1&gt;
+&lt;p&gt;In general, screen rotation can be controlled in either app level or viewcontroller level.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;App level control level is greater than viewcontroller level.&lt;/li&gt;
+  &lt;li&gt;For app level, two ways can be set up rotations, one is in the .plist, the other is in AppDelegate.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;app-level&quot;&gt;App level&lt;/h2&gt;
+&lt;h3 id=&quot;plist&quot;&gt;plist&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;lt;key&amp;gt;UISupportedInterfaceOrientations&amp;lt;/key&amp;gt;
+    &amp;lt;array&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationLandscapeLeft&amp;lt;/string&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationLandscapeRight&amp;lt;/string&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationPortraitUpsideDown&amp;lt;/string&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationPortrait&amp;lt;/string&amp;gt;
+    &amp;lt;/array&amp;gt;
+    &amp;lt;key&amp;gt;UISupportedInterfaceOrientations~ipad&amp;lt;/key&amp;gt;
+    &amp;lt;array&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationLandscapeLeft&amp;lt;/string&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationLandscapeRight&amp;lt;/string&amp;gt;
+    &amp;lt;/array&amp;gt;
+    &amp;lt;key&amp;gt;UISupportedInterfaceOrientations~iphone&amp;lt;/key&amp;gt;
+    &amp;lt;array&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationPortrait&amp;lt;/string&amp;gt;
+        &amp;lt;string&amp;gt;UIInterfaceOrientationLandscapeRight&amp;lt;/string&amp;gt;
+    &amp;lt;/array&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;appdelegate&quot;&gt;AppDelegate&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Example: In iPhone device, we need only one viewcontrollers (DetailInfoViewController) can rotate to both portrait and landscape except upsidedown orientation. For the other viewcontrollers only allow one one orientation portrait. In iPad device, allow all rotation except for upside down.
+
+func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -&amp;gt; UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            guard let allVC = application.keyWindow?.rootViewController?.childViewControllers else {
+                return UIInterfaceOrientationMask.portrait
+            }
+            guard let topVC = allVC.last else {
+                return UIInterfaceOrientationMask.portrait
+            }
+            if topVC is DetailInfoViewController {  
+                return UIInterfaceOrientationMask.allButUpsideDown
+            } else {
+                return UIInterfaceOrientationMask.portrait
+            }
+        } else {
+            return UIInterfaceOrientationMask.allButUpsideDown
+        }
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;viewcontroller&quot;&gt;ViewController&lt;/h2&gt;
+
+&lt;h3 id=&quot;check-current-screen-orientation&quot;&gt;Check current screen orientation&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;WARNINGS: Issues of relying on &lt;code class=&quot;highlighter-rouge&quot;&gt;UIDevice.current.orientation.isPortrait&lt;/code&gt; to detect device orientation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When device is put on the table, &lt;code class=&quot;highlighter-rouge&quot;&gt;UIDevice.current.orientation.isPortrait&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;UIDevice.current.orientation.isLandscape&lt;/code&gt; both return &lt;strong&gt;false&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;UIDevice.current.orientation.isFlat&lt;/code&gt; is return &lt;strong&gt;true&lt;/strong&gt;. In this case, we better use &lt;code class=&quot;highlighter-rouge&quot;&gt;UIApplication.shared.statusBarOrientation&lt;/code&gt; to detect device orientation&lt;/p&gt;
+
+&lt;h3 id=&quot;force-to-rotate-the-screen&quot;&gt;Force to rotate the screen&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// force to rotate to portrait
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    // force to portrait
+    if (UIApplication.shared.statusBarOrientation == .landscapeLeft || UIApplication.shared.statusBarOrientation == .landscapeRight) {
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: &quot;orientation&quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;do-something-when-doing-rotation&quot;&gt;Do something when doing rotation&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { (_) in
+            if UIApplication.shared.statusBarOrientation == .landscapeLeft || UIApplication.shared.statusBarOrientation == .landscapeRight {
+                    print(&quot;do something when from Portrait to Landscape&quot;)
+                } else {
+                    print(&quot;do something whenfrom Landscape to Portrait&quot;)
+                }
+        }, completion: { (UIViewControllerTransitionCoordinatorContext) -&amp;gt; Void in
+            print(&quot;rotation completed&quot;)
+        })
+        
+        super.willTransition(to: newCollection, with: coordinator)
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 18 Jan 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2018/01/18/Rotate-Screen-in-iOS.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/18/Rotate-Screen-in-iOS.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Project Fi Network Provider Switch</title>
+        <description>&lt;h1 id=&quot;switch-between-network-providers-in-project-fi&quot;&gt;Switch between network providers in Project Fi&lt;/h1&gt;
+
+&lt;p&gt;Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#344636#*#*&lt;/code&gt; This will popup a message to display current provider&lt;br /&gt;
+Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#34777#*#*&lt;/code&gt; This will switch to the network to &lt;strong&gt;Sprint&lt;/strong&gt;&lt;br /&gt;
+Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#34866#*#*&lt;/code&gt; This will switch to the network to &lt;strong&gt;T-mobile&lt;/strong&gt;&lt;br /&gt;
+Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#34872#*#*&lt;/code&gt; This will switch to &lt;strong&gt;USCC (US Cellular)&lt;/strong&gt; &lt;br /&gt;
+Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#34963#*#*&lt;/code&gt; Network reset&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Jan 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2018/01/03/Switch-Network-Providers-in-ProjectFi.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/03/Switch-Network-Providers-in-ProjectFi.html</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
     
       <item>
         <title>Calendar Date in Android</title>
@@ -320,225 +566,6 @@ in your valid architectures settings(both project level and target level), you a
         <guid isPermaLink="true">http://localhost:4000/2017/08/16/Swift3-Upgrade-with-Xcode-Upgrade.html</guid>
         
         <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Tracking in Android</title>
-        <description>&lt;h1 id=&quot;用户行为的统计&quot;&gt;用户行为的统计&lt;/h1&gt;
-&lt;p&gt;Google Analytics - Tracking&lt;br /&gt;
-GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
-
-&lt;h2 id=&quot;跟踪4个方面&quot;&gt;跟踪4个方面&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;App installations&lt;/li&gt;
-  &lt;li&gt;Active users and demographics&lt;/li&gt;
-  &lt;li&gt;Screens and user engagement&lt;/li&gt;
-  &lt;li&gt;Crashes and exceptions&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;如何配置&quot;&gt;如何配置&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Update AndroidManifest.xml&lt;br /&gt;
-开网络访问权限&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add EasyTracker methods (Activity level)&lt;br /&gt;
-在 &lt;code class=&quot;highlighter-rouge&quot;&gt;onStart()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;onStop()&lt;/code&gt; 中添加send的方法，&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create your analytics.xml file&lt;br /&gt;
-全局的tracking配置， ga_trackingId, ga_autoActivityTracking, ga_reportUncaughtExceptions&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Gradle build dependencies中， 需要加入&lt;code class=&quot;highlighter-rouge&quot;&gt;compile files('libs/libGoogleAnalyticsServices.jar')&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Mon, 05 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/06/05/Tracking-in-Android.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/05/Tracking-in-Android.html</guid>
-        
-        <category>Android</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Cancel http request task in iOS</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Create &lt;code class=&quot;highlighter-rouge&quot;&gt;NSURLSession&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;NSURLSessionDataTask&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewController&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Init &lt;code class=&quot;highlighter-rouge&quot;&gt;NSURLSessionDataTask&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;dataTaskWithRequest()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Exsited &lt;code class=&quot;highlighter-rouge&quot;&gt;NSURLSessionDataTask&lt;/code&gt; can be &lt;code class=&quot;highlighter-rouge&quot;&gt;cancel()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Created &lt;code class=&quot;highlighter-rouge&quot;&gt;NSURLSessionDataTask&lt;/code&gt; can be start by &lt;code class=&quot;highlighter-rouge&quot;&gt;resume()&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;defaultSession&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLSession&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLSessionConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;defaultSessionConfiguration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLSessionDataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLSessionDataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLSession&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dataTaskWithRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completionHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cancel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;ps: in dataTaskWithRequest, completionHandller is run on background by default&lt;/p&gt;
-
-&lt;p&gt;In searchBar textDidChange,&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;searchBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;searchBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UISearchBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textDidChange&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;searchText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;searchText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;characters&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;MIN_QUERY_LEN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cancel request task&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cancel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;requestType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MyRequestType1&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;requestURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://myservice/myserviceType?&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;requestBody&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;param1=001&amp;amp;param2=002&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requestURL&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSMutableURLRequest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSMutableURLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cachePolicy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSURLRequestCachePolicy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;ReloadIgnoringLocalCacheData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;timeoutInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;60.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;HTTPMethod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;POST&quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;HTTPBody&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;requestBody&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dataUsingEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSUTF8StringEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            
-            &lt;span class=&quot;c1&quot;&gt;// This completion block is run on background by default, no need to dispatch it to background using GCD. &lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultSession&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dataTaskWithRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completionHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;httpResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as?&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSHTTPURLResponse&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;statusCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                        &lt;span class=&quot;c1&quot;&gt;// Dispatch to main queue if need dealing with response data in main queue&lt;/span&gt;
-                        &lt;span class=&quot;nf&quot;&gt;dispatch_async&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dispatch_get_main_queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                            &lt;span class=&quot;c1&quot;&gt;//TODO: deal with response data&lt;/span&gt;
-                        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-            &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;refs:&lt;br /&gt;
-&lt;a href=&quot;https://developer.apple.com/reference/foundation/nsurlsession?language=objc&quot;&gt;https://developer.apple.com/reference/foundation/nsurlsession?language=objc&lt;/a&gt;
-&lt;a href=&quot;https://developer.apple.com/reference/foundation/nsurlsessiontask&quot;&gt;https://developer.apple.com/reference/foundation/nsurlsessiontask&lt;/a&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/31345250/how-to-cancel-on-going-http-request-in-swift&quot;&gt;https://stackoverflow.com/questions/31345250/how-to-cancel-on-going-http-request-in-swift&lt;/a&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/31746229/does-nsurlsession-for-http-data-task-nsurlsessiondatatask-runs-in-background-t&quot;&gt;https://stackoverflow.com/questions/31746229/does-nsurlsession-for-http-data-task-nsurlsessiondatatask-runs-in-background-t&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/19099448/send-post-request-using-nsurlsession&quot;&gt;https://stackoverflow.com/questions/19099448/send-post-request-using-nsurlsession&lt;/a&gt;&lt;a href=&quot;https://www.raywenderlich.com/110458/nsurlsession-tutorial-getting-started&quot;&gt;https://www.raywenderlich.com/110458/nsurlsession-tutorial-getting-started&lt;/a&gt; 
-&lt;a href=&quot;https://stackoverflow.com/questions/21918722/how-do-i-use-nsoperationqueue-with-nsurlsession&quot;&gt;https://stackoverflow.com/questions/21918722/how-do-i-use-nsoperationqueue-with-nsurlsession&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 31 May 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/05/31/Cancel-HTTP-Request-in-iOS.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/31/Cancel-HTTP-Request-in-iOS.html</guid>
-        
-        <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Debug tools in Android</title>
-        <description>&lt;h1 id=&quot;android&quot;&gt;Android&lt;/h1&gt;
-
-&lt;h2 id=&quot;view-sqlite-of-android-app-in-chrome-dev-tools&quot;&gt;View SQLite of Android App in Chrome Dev Tools&lt;/h2&gt;
-
-&lt;p&gt;Stetho - A debug bridge for Android applications from Facebook&lt;br /&gt;
-&lt;a href=&quot;http://facebook.github.io/stetho/&quot;&gt;http://facebook.github.io/stetho/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Prerequisites: Android studio with android device connectted.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In build.gradle&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-gradle&quot; data-lang=&quot;gradle&quot;&gt;&lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Stetho core&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.facebook.stetho:stetho:1.5.0'&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.facebook.stetho:stetho-js-rhino:1.4.2'&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In Application&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
-        &lt;span class=&quot;c1&quot;&gt;// Init Stetho &lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;Stetho&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;initializeWithDefaults&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In your Chrome, type &lt;code class=&quot;highlighter-rouge&quot;&gt;chrome://inspect/&lt;/code&gt;, select your connected device to debug&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In Chrome Developer Tools, select Resources on top toolbar and select Web SQL on left tool pane for checking data in your SQLite. You can type in and run sql query in right command area(not the bottom console area).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Mon, 22 May 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/05/22/Debug-Tools-in-Android.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/22/Debug-Tools-in-Android.html</guid>
-        
-        <category>Android</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Capture done button onclick event in android</title>
-        <description>&lt;h1 id=&quot;capture-done-button-onclick-event-in-android&quot;&gt;Capture done button onclick event in android&lt;/h1&gt;
-
-&lt;h2 id=&quot;jellybean-and-higher&quot;&gt;JellyBean and higher&lt;/h2&gt;
-&lt;p&gt;OnEditorActionListener is needed to listen for ‘enter’ or ‘next’ and you cannot use OnKeyListener.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;editText.setOnEditorActionListener(new OnEditorActionListener() {
-    @Override
-    public boolean onEditorAction(TextView view, int actionId, KeyEvent event) {
-        int result = actionId &amp;amp; EditorInfo.IME_MASK_ACTION;
-        switch(result) {
-        case EditorInfo.IME_ACTION_DONE:
-            // done stuff
-            return true;
-            break;
-        case EditorInfo.IME_ACTION_NEXT:
-            // next stuff
-            return true;
-            break;
-        }
-        return false;
-    }
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Refs:&lt;br /&gt;
-&lt;a href=&quot;https://developer.android.com/reference/android/view/KeyEvent.html&quot;&gt;Key Event&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 31 Mar 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/03/31/Capture-Done-OnClick-in-Android.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/03/31/Capture-Done-OnClick-in-Android.html</guid>
-        
-        <category>Android</category>
         
         
       </item>

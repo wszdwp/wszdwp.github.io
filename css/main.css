@@ -258,7 +258,11 @@ pre>code {
 }
 .footer-heading {
     font-size: 18px;
-    margin-bottom: 15px
+    margin-bottom: 5px
+}
+.footer-sub-heading {
+    font-size: 12px;
+    margin-bottom: 5px
 }
 .contact-list,
 .social-media-list {
