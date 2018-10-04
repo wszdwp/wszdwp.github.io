@@ -1,7 +1,7 @@
 ---
 title: Photo Orientation in iOS and Android 
 layout: post
-tags: Android ios
+tags: Android iOS
 published: false
 ---
 

@@ -11,7 +11,7 @@ published: true
 ```
 // Interface Builder
 1. top space to superview >= 68    // priority = 750
-2. check Use Safe Area Layout Guides
+2. check Use Safe Area Layout Guides to enable it
 3. add Align Top to Safe Area == 5 // priority = 250
 ```
 
@@ -26,8 +26,8 @@ if #available(iOS 11.0, *) {
 
 # Some gist for layout
 ## Add boarder and round corner in IB  
-// Add User Defined Runtime Attributes
 ```
+// Add User Defined Runtime Attributes
 layer.cornerRadius = 5
 layer.borderWidth = 0.5
 ```
