@@ -5,8 +5,6 @@ tags: iOS
 published: true
 ---
 
-# Issues fixed
-
 ## Fix view blocked on the top issue in iphone X  
 ```
 // Interface Builder

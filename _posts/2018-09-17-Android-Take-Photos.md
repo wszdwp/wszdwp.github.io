@@ -2,6 +2,7 @@
 title: Take photo save and upload  
 layout: post
 tags: Android 
+published: false
 ---
 
 # Take or select photo save and upload    

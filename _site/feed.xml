@@ -5,9 +5,53 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jul 2018 13:24:04 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Jul 2018 13:24:04 -0400</lastBuildDate>
+    <pubDate>Thu, 04 Oct 2018 11:44:00 -0400</pubDate>
+    <lastBuildDate>Thu, 04 Oct 2018 11:44:00 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Fix Layout After Safe Area Layout Guides Enabled in Existed project</title>
+        <description>&lt;h2 id=&quot;fix-view-blocked-on-the-top-issue-in-iphone-x&quot;&gt;Fix view blocked on the top issue in iphone X&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Interface Builder
+1. top space to superview &amp;gt;= 68    // priority = 750
+2. check Use Safe Area Layout Guides to enable it
+3. add Align Top to Safe Area == 5 // priority = 250
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;fix-extra-inset-on-top-of-tableview&quot;&gt;Fix extra inset on top of tableview&lt;/h2&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#available(iOS 11.0, *)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;myTableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contentInsetAdjustmentBehavior&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;never&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;some-gist-for-layout&quot;&gt;Some gist for layout&lt;/h1&gt;
+&lt;h2 id=&quot;add-boarder-and-round-corner-in-ib&quot;&gt;Add boarder and round corner in IB&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Add User Defined Runtime Attributes
+layer.cornerRadius = 5
+layer.borderWidth = 0.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;add-background-image&quot;&gt;Add background image&lt;/h2&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;imgView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;UIImageView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIImageView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;named&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;background.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;imgView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frame&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIScreen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;insertSubview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imgView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2018/10/04/Fix-Layout-After-Safe-Area-Layout-Guides-Enabled-in-Existed-Project.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/04/Fix-Layout-After-Safe-Area-Layout-Guides-Enabled-in-Existed-Project.html</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>iOS Basis</title>
@@ -282,29 +326,6 @@ Dial &lt;code class=&quot;highlighter-rouge&quot;&gt;*#*#34963#*#*&lt;/code&gt; 
         <pubDate>Tue, 05 Dec 2017 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/2017/12/05/Calendar-Date-in-Android.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/12/05/Calendar-Date-in-Android.html</guid>
-        
-        <category>Android</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Cache or file JSON on Internal Storage in Android</title>
-        <description>&lt;h1 id=&quot;cache-or-file-json-on-internal-storage-in-android&quot;&gt;Cache or file JSON on internal storage in Android&lt;/h1&gt;
-
-&lt;h2 id=&quot;file&quot;&gt;File&lt;/h2&gt;
-
-&lt;p&gt;refs&lt;br /&gt;
-https://stackoverflow.com/questions/17150597/file-createtempfile-vs-new-file
-https://stackoverflow.com/questions/42014398/how-to-read-a-temporary-data-in-android
-https://developer.android.com/guide/topics/data/data-storage.html#filesInternal
-https://stackoverflow.com/questions/14376807/how-to-read-write-string-from-a-file-in-android
-https://stackoverflow.com/questions/17488534/create-a-file-from-a-bytearrayoutputstream
-https://stackoverflow.com/questions/42014398/how-to-read-a-temporary-data-in-android&lt;/p&gt;
-</description>
-        <pubDate>Tue, 28 Nov 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/11/28/Cache-JSON-on-Internal-Storage-in-Android.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/28/Cache-JSON-on-Internal-Storage-in-Android.html</guid>
         
         <category>Android</category>
         
