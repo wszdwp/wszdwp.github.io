@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Miller';
-    src: url("https://github.com/wszdwp/wszdwp.github.io/tree/master/css/MillerDisplayRoman.otf")
+    src: url("/css/MillerDisplayRoman.otf")
 }
 .Miller {
     font-family: 'Miller'
