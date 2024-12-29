@@ -1,13 +1,10 @@
 title: Codingpan's Blog
-email: wszdwp@gmail.com
+email: codingpan@codingpan.com
 description: > # On the path to be a programmer.
 # this means to ignore newlines until "baseurl:"
 # url: "/wszdwp.github.io" # the base hostname & protocol for your site
 url: "/" # the base hostname & protocol for your site
-twitter_username: codingpan
 github_username:  wszdwp
-linkedin_username: pan-wang-王攀-45710258
-linkedin_name: Pan Wang(王攀 Wáng,Pān)
 
 # Build settings
 # Conversion
