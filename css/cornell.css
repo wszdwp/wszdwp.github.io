@@ -1,0 +1,21 @@
+.cornell-container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .cornell-cues {
+    width: 35%;
+    padding-right: 5px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .cornell-notes {
+    width: 65%;
+    padding-left: 10px;
+  }
+  
+  .cornell-summary {
+    margin: 5px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }  

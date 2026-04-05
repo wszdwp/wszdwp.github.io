@@ -5,9 +5,47 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Feb 2025 14:14:57 -0800</pubDate>
-    <lastBuildDate>Wed, 05 Feb 2025 14:14:57 -0800</lastBuildDate>
+    <pubDate>Thu, 24 Apr 2025 22:15:21 -0700</pubDate>
+    <lastBuildDate>Thu, 24 Apr 2025 22:15:21 -0700</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Model Context Protocol</title>
+        <description>&lt;!-- CUES_START --&gt;
+&lt;h1 id=&quot;cues&quot;&gt;Cues&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What is Model Context Protocol?&lt;/li&gt;
+  &lt;li&gt;Why do we need MCP?&lt;/li&gt;
+  &lt;li&gt;How to use MCP?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- CUES_END --&gt;
+
+&lt;!-- NOTES_START --&gt;
+&lt;h1 id=&quot;notes&quot;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;The Model context protocol (aka MCP) is a way to provide tools and context to the LLM. From the MCP docs:&lt;/p&gt;
+
+&lt;p&gt;The Agents SDK has support for MCP. This enables you to use a wide range of MCP servers to provide tools to your Agents.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://openai.github.io/openai-agents-python/mcp/&quot;&gt;MCP from OpenAI Agents SDK&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- NOTES_END --&gt;
+
+&lt;!-- SUMMARY_START --&gt;
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;!-- SUMMARY_END --&gt;
+</description>
+        <pubDate>Sun, 20 Apr 2025 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2025/04/20/Note.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2025/04/20/Note.html</guid>
+        
+        <category>Notes</category>
+        
+        
+      </item>
     
       <item>
         <title>Fix Layout After Safe Area Layout Guides Enabled in Existed project</title>
@@ -467,49 +505,6 @@ in your valid architectures settings(both project level and target level), you a
         <guid isPermaLink="true">http://localhost:4000/2017/08/16/Swift3-Upgrade-with-Xcode-Upgrade.html</guid>
         
         <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Tracking in Android</title>
-        <description>&lt;h1 id=&quot;用户行为的统计&quot;&gt;用户行为的统计&lt;/h1&gt;
-&lt;p&gt;Google Analytics - Tracking&lt;br /&gt;
-GA旧的统计方式是用Google Analytics SDK for Android.&lt;/p&gt;
-
-&lt;h2 id=&quot;跟踪4个方面&quot;&gt;跟踪4个方面&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;App installations&lt;/li&gt;
-  &lt;li&gt;Active users and demographics&lt;/li&gt;
-  &lt;li&gt;Screens and user engagement&lt;/li&gt;
-  &lt;li&gt;Crashes and exceptions&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;如何配置&quot;&gt;如何配置&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Update AndroidManifest.xml&lt;br /&gt;
-开网络访问权限&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add EasyTracker methods (Activity level)&lt;br /&gt;
-在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onStart()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onStop()&lt;/code&gt; 中添加send的方法，&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create your analytics.xml file&lt;br /&gt;
-全局的tracking配置， ga_trackingId, ga_autoActivityTracking, ga_reportUncaughtExceptions&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Gradle build dependencies中， 需要加入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compile files(&apos;libs/libGoogleAnalyticsServices.jar&apos;)&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Mon, 05 Jun 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2017/06/05/Tracking-in-Android.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/05/Tracking-in-Android.html</guid>
-        
-        <category>Android</category>
         
         
       </item>
