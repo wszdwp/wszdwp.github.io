@@ -35,10 +35,12 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.1)
     google-protobuf (3.25.1-aarch64-linux)
     google-protobuf (3.25.1-arm64-darwin)
+    google-protobuf (3.25.1-x64-mingw-ucrt)
     google-protobuf (3.25.1-x86-linux)
     google-protobuf (3.25.1-x86_64-darwin)
     google-protobuf (3.25.1-x86_64-linux)
@@ -106,6 +108,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.0-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.0-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.16.0-x86-linux)
       racc (~> 1.4)
     nokogiri (1.16.0-x86_64-darwin)
@@ -140,6 +144,8 @@ GEM
       google-protobuf (~> 3.25)
     sass-embedded (1.69.6-arm64-darwin)
       google-protobuf (~> 3.25)
+    sass-embedded (1.69.6-x64-mingw-ucrt)
+      google-protobuf (~> 3.25)
     sass-embedded (1.69.6-x86-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.69.6-x86-linux-gnu)
@@ -173,6 +179,7 @@ PLATFORMS
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin
+  x64-mingw-ucrt
   x86-linux
   x86-linux-android
   x86-linux-gnu
