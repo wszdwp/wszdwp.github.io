@@ -1,0 +1,36 @@
+{% assign brief = include.data %}
+
+{% if brief.summary_left or brief.summary_right %}
+<h2>今日摘要</h2>
+<div class="summary-grid">
+  <div class="left">
+    {% for item in brief.summary_left %}
+      <p><strong>{{ item.label }}：</strong>{{ item.text }}</p>
+    {% endfor %}
+  </div>
+  <div class="right">
+    {% for item in brief.summary_right %}
+      <p><strong>{{ item.label }}：</strong>{{ item.text }}</p>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% for item in brief.items %}
+<div class="brief-section">
+  <div class="brief-title">
+    <h3>{{ item.title }}</h3>
+  </div>
+  <div class="brief-columns">
+    <div class="left">
+      <p class="meta">来源：{{ item.source }}</p>
+      {% if item.tags %}<p>标签：{{ item.tags }}</p>{% endif %}
+      <p>原文：{{ item.summary }}</p>
+      <p>链接：<a href="{{ item.link }}" target="_blank">{{ item.link }}</a></p>
+    </div>
+    <div class="right">
+      <div class="opinion-line"><span class="opinion-label">观点：</span><span class="opinion-text">{{ item.opinion }}</span></div>
+    </div>
+  </div>
+</div>
+{% endfor %}

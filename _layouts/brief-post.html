@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<div class="post brief-post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.tags %}{% for tag in page.tags %} • <a href='{{ base }}/tags#{{ tag }}-ref'>{{ tag }}</a>{% endfor %}{% endif %}</p>
+  </header>
+
+  <style>
+    .brief-post .brief-section { margin: 28px 0 42px; }
+    .brief-post .brief-title { width: 100%; margin-bottom: 14px; }
+    .brief-post .brief-title h3 { margin: 0; }
+    .brief-post .brief-columns, .brief-post .summary-grid { display: flex; gap: 24px; }
+    .brief-post .brief-columns .left,
+    .brief-post .brief-columns .right,
+    .brief-post .summary-grid .left,
+    .brief-post .summary-grid .right { width: 50%; }
+    .brief-post .brief-columns p,
+    .brief-post .summary-grid p { margin: 0 0 12px; }
+    .brief-post .meta { color: #666; font-size: 0.95em; }
+    .brief-post .opinion-line { display: flex; align-items: flex-start; }
+    .brief-post .opinion-label { width: 48px; min-width: 48px; font-weight: 700; }
+    .brief-post .opinion-text { flex: 1; text-align: left; }
+    .brief-post .brief-nav { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e5e5; }
+    .brief-post .brief-nav-links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+    .brief-post .brief-nav-link, .brief-post .brief-jump-link { text-decoration: none; }
+    .brief-post .brief-nav-archive { color: #666; font-size: 0.95em; line-height: 1.8; }
+    @media screen and (max-width: 900px) {
+      .brief-post .brief-columns,
+      .brief-post .summary-grid { display: block; }
+      .brief-post .brief-columns .left,
+      .brief-post .brief-columns .right,
+      .brief-post .summary-grid .left,
+      .brief-post .summary-grid .right { width: 100%; }
+      .brief-post .brief-columns .right,
+      .brief-post .summary-grid .right { margin-top: 12px; }
+    }
+  </style>
+
+  <article class="post-content">
+    {{ content }}
+
+    {% assign current_collection = site.posts | where_exp: 'post', 'post.tags contains "AI-Daily"' | sort: 'date' %}
+    {% assign prev_post = nil %}
+    {% assign next_post = nil %}
+    {% for post in current_collection %}
+      {% if post.url == page.url %}
+        {% assign prev_index = forloop.index0 | minus: 1 %}
+        {% assign next_index = forloop.index0 | plus: 1 %}
+        {% assign prev_post = current_collection[prev_index] %}
+        {% assign next_post = current_collection[next_index] %}
+      {% endif %}
+    {% endfor %}
+
+    <nav class="brief-nav">
+      <div class="brief-nav-links">
+        {% if prev_post %}<a class="brief-nav-link" href="{{ prev_post.url | relative_url }}">← 上一期：{{ prev_post.title }}</a>{% endif %}
+        <a class="brief-nav-link" href="{{ '/' | relative_url }}">返回首页</a>
+        {% if next_post %}<a class="brief-nav-link" href="{{ next_post.url | relative_url }}">下一期：{{ next_post.title }} →</a>{% endif %}
+      </div>
+      <div class="brief-nav-archive">
+        <strong>快速跳转：</strong>
+        {% for post in current_collection reversed limit: 12 %}
+          <a class="brief-jump-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% unless forloop.last %} · {% endunless %}
+        {% endfor %}
+      </div>
+    </nav>
+
+    {% include disqus.html %}
+  </article>
+</div>
