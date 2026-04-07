@@ -1,8 +1,8 @@
 ---
-title: 第34期 AI News Daily
+title: 第34期 AI News Daily｜From model to agent
 date: 2026-04-03
 layout: brief-post
-tags: AI-Daily Buildable Tools
+tags: AI-Daily Buildable Tools Simon-Willison
 published: true
 brief_data:
   summary_left:
@@ -32,7 +32,7 @@ brief_data:
       opinion: "OpenAI Engineering 页面当前展示了一系列与 agent 相关的工程文章，其中最新的一篇是 ‘From model to agent: Equipping the Responses API with a computer environment’。从标题和上下文看，重点是把 Responses API 从单纯的模型调用接口，推进到更贴近 agent 的运行环境，让模型能够在更完整的 computer environment 中工作。这个方向和 agent runtime、tool use、computer use 的趋势高度一致。"
     - title: "Inside our approach to the Model Spec"
       source: "OpenAI Engineering"
-      tags: "#News #Application"
+      tags: "#Analysis #Application"
       summary: "OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。"
       link: "https://openai.com/index/our-approach-to-the-model-spec"
       opinion: "OpenAI 的 RSS 描述指出，Model Spec 是一个公开的模型行为框架，目标是在安全、用户自由和问责之间取得平衡。对 agent 来说，这不是抽象政策问题，而是直接关系到代理系统在工具调用、任务执行、风险升级和边界控制上的行为约束。"
@@ -50,19 +50,19 @@ brief_data:
       opinion: "Anthropic 近期连续多篇文章都在谈 harness、tool use 和长任务开发流程。这篇文章把焦点放在 long-running application development，说明在真实开发环境里，agent 需要处理持续运行、状态保留、上下文管理、权限边界和恢复机制，不能只看单轮 prompt 表现。"
     - title: "scan-for-secrets 0.1"
       source: "Simon Willison"
-      tags: "#Buildable #Tools"
+      tags: "#Buildable #Tools #Simon-Willison"
       summary: "Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。"
       link: "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything"
       opinion: "Simon Willison 介绍了一个新的 Python 工具 scan-for-secrets，用来扫描日志目录中是否意外泄露了 API keys 等敏感信息。他明确提到自己在发布 Claude Code 会话日志时会担心 secrets 暴露，因此构建了这套工具。这个问题非常真实：agent/coding workflow 会生成大量日志和上下文记录，安全清理是必需环节。"
     - title: "research-llm-apis 2026-04-04"
       source: "Simon Willison"
-      tags: "#Buildable #Tools"
+      tags: "#Buildable #Tools #Simon-Willison"
       summary: "Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。"
       link: "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything"
       opinion: "Simon 说他正在重构自己的 LLM Python library / CLI abstraction layer，因为不同厂商 API 在过去一年里长出了越来越多新特性，尤其是 server-side tool execution。这意味着多模型统一封装会越来越难，而 agent 平台如果想跨 OpenAI、Anthropic、Gemini、Mistral 做一致体验，就必须认真面对抽象层设计问题。"
     - title: "2025 LLM Year in Review"
       source: "Andrej Karpathy"
-      tags: "#News #Model"
+      tags: "#Analysis #Model #Andrej-Karpathy"
       summary: "Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。"
       link: "https://karpathy.bearblog.dev/year-in-review-2025/"
       opinion: "Karpathy 在这篇年度回顾里把 2025 年 LLM 进展归纳为若干重要范式变化，其中 RLVR 成为新的核心阶段。他强调，模型能力提升越来越不只是预训练规模问题，而是和 reasoning traces、test-time compute、reward-driven optimization 等新因素紧密相关。"

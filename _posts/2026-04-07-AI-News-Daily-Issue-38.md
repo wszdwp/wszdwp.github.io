@@ -1,6 +1,6 @@
 ---
-title: 第32期 AI News Daily｜From model to agent
-date: 2026-04-01
+title: 第38期 AI News Daily｜From model to agent
+date: 2026-04-07
 layout: brief-post
 tags: AI-Daily Buildable Tools Simon-Willison
 published: true

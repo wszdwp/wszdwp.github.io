@@ -3,14 +3,14 @@
   <channel>
     <title>Codingpan&apos;s Blog</title>
     <description></description>
-    <link>http://0.0.0.0:4000/</link>
-    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Apr 2026 07:00:33 +0000</pubDate>
-    <lastBuildDate>Mon, 06 Apr 2026 07:00:33 +0000</lastBuildDate>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 07 Apr 2026 18:28:24 +0000</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2026 18:28:24 +0000</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>第36期 AI News Daily</title>
+        <title>第38期 AI News Daily｜From model to agent</title>
         <description>
 &lt;h2&gt;今日摘要&lt;/h2&gt;
 &lt;div class=&quot;summary-grid&quot;&gt;
@@ -62,7 +62,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
       &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -113,7 +113,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -130,7 +130,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -147,7 +147,188 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
+      &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Karpathy 在这篇年度回顾里把 2025 年 LLM 进展归纳为若干重要范式变化，其中 RLVR 成为新的核心阶段。他强调，模型能力提升越来越不只是预训练规模问题，而是和 reasoning traces、test-time compute、reward-driven optimization 等新因素紧密相关。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：量子位&lt;/p&gt;
+      &lt;p&gt;标签：#News #Infra&lt;/p&gt;
+      &lt;p&gt;原文：量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg&quot; target=&quot;_blank&quot;&gt;https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;目前抓取环境对微信公众号正文抽取有限，但从标题和来源已经能明确看出主题：市场上开始出现专门为 Agent 场景设计的硬件方案，并且以成本、部署形态、专用性为卖点。这说明 Agent 生态开始进入硬件与基础设施层竞争，而不再只是软件工作流。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+        <link>//2026/04/07/AI-News-Daily-Issue-38.html</link>
+        <guid isPermaLink="true">//2026/04/07/AI-News-Daily-Issue-38.html</guid>
+        
+        <category>AI-Daily</category>
+        
+        <category>Buildable</category>
+        
+        <category>Tools</category>
+        
+        <category>Simon-Willison</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>第36期 AI News Daily｜From model to agent</title>
+        <description>
+&lt;h2&gt;今日摘要&lt;/h2&gt;
+&lt;div class=&quot;summary-grid&quot;&gt;
+  &lt;div class=&quot;left&quot;&gt;
+    
+      &lt;p&gt;&lt;strong&gt;OpenAI Engineering：&lt;/strong&gt;OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更完整的 agent runtime 演进。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;OpenAI Engineering：&lt;/strong&gt;OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;Anthropic Engineering：&lt;/strong&gt;Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度和复现性是个关键提醒。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;Anthropic Engineering：&lt;/strong&gt;Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问题。&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    
+      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
+    
+      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;From model to agent: Equipping the Responses API with a computer environment&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;原文：OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更完整的 agent runtime 演进。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/equip-responses-api-computer-environment/&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/equip-responses-api-computer-environment/&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;OpenAI Engineering 页面当前展示了一系列与 agent 相关的工程文章，其中最新的一篇是 ‘From model to agent: Equipping the Responses API with a computer environment’。从标题和上下文看，重点是把 Responses API 从单纯的模型调用接口，推进到更贴近 agent 的运行环境，让模型能够在更完整的 computer environment 中工作。这个方向和 agent runtime、tool use、computer use 的趋势高度一致。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;Inside our approach to the Model Spec&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
+      &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;OpenAI 的 RSS 描述指出，Model Spec 是一个公开的模型行为框架，目标是在安全、用户自由和问责之间取得平衡。对 agent 来说，这不是抽象政策问题，而是直接关系到代理系统在工具调用、任务执行、风险升级和边界控制上的行为约束。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;Quantifying infrastructure noise in agentic coding evals&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：Anthropic Engineering&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Research&lt;/p&gt;
+      &lt;p&gt;原文：Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度和复现性是个关键提醒。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://www.anthropic.com/engineering/infrastructure-noise&quot; target=&quot;_blank&quot;&gt;https://www.anthropic.com/engineering/infrastructure-noise&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Anthropic Engineering 页面把这篇文章作为 Featured 内容，核心观点是：agentic coding 的评测结果，不仅受模型本身影响，也会被基础设施配置噪声显著扰动。换句话说，如果 runtime、网络、环境、工具链不一致，benchmark 排名差异未必代表模型真实能力差异。这对 agent eval 体系非常重要。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;Harness design for long-running application development&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：Anthropic Engineering&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;原文：Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问题。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://www.anthropic.com/engineering/harness-design-long-running-apps&quot; target=&quot;_blank&quot;&gt;https://www.anthropic.com/engineering/harness-design-long-running-apps&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Anthropic 近期连续多篇文章都在谈 harness、tool use 和长任务开发流程。这篇文章把焦点放在 long-running application development，说明在真实开发环境里，agent 需要处理持续运行、状态保留、上下文管理、权限边界和恢复机制，不能只看单轮 prompt 表现。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;scan-for-secrets 0.1&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
+      &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Simon Willison 介绍了一个新的 Python 工具 scan-for-secrets，用来扫描日志目录中是否意外泄露了 API keys 等敏感信息。他明确提到自己在发布 Claude Code 会话日志时会担心 secrets 暴露，因此构建了这套工具。这个问题非常真实：agent/coding workflow 会生成大量日志和上下文记录，安全清理是必需环节。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;research-llm-apis 2026-04-04&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
+      &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
+      &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;
+      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Simon 说他正在重构自己的 LLM Python library / CLI abstraction layer，因为不同厂商 API 在过去一年里长出了越来越多新特性，尤其是 server-side tool execution。这意味着多模型统一封装会越来越难，而 agent 平台如果想跨 OpenAI、Anthropic、Gemini、Mistral 做一致体验，就必须认真面对抽象层设计问题。&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;brief-section&quot;&gt;
+  &lt;div class=&quot;brief-title&quot;&gt;
+    &lt;h3&gt;2025 LLM Year in Review&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;brief-columns&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+      &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
       &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -176,8 +357,8 @@
 
 </description>
         <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/04/05/AI-News-Daily-Issue-36.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/04/05/AI-News-Daily-Issue-36.html</guid>
+        <link>//2026/04/05/AI-News-Daily-Issue-36.html</link>
+        <guid isPermaLink="true">//2026/04/05/AI-News-Daily-Issue-36.html</guid>
         
         <category>AI-Daily</category>
         
@@ -185,11 +366,13 @@
         
         <category>Tools</category>
         
+        <category>Simon-Willison</category>
+        
         
       </item>
     
       <item>
-        <title>第35期 AI News Daily</title>
+        <title>第35期 AI News Daily｜From model to agent</title>
         <description>
 &lt;h2&gt;今日摘要&lt;/h2&gt;
 &lt;div class=&quot;summary-grid&quot;&gt;
@@ -241,7 +424,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
       &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -292,7 +475,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -309,7 +492,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -326,7 +509,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
       &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -355,8 +538,8 @@
 
 </description>
         <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/04/04/AI-News-Daily-Issue-35.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/04/04/AI-News-Daily-Issue-35.html</guid>
+        <link>//2026/04/04/AI-News-Daily-Issue-35.html</link>
+        <guid isPermaLink="true">//2026/04/04/AI-News-Daily-Issue-35.html</guid>
         
         <category>AI-Daily</category>
         
@@ -364,11 +547,13 @@
         
         <category>Tools</category>
         
+        <category>Simon-Willison</category>
+        
         
       </item>
     
       <item>
-        <title>第34期 AI News Daily</title>
+        <title>第34期 AI News Daily｜From model to agent</title>
         <description>
 &lt;h2&gt;今日摘要&lt;/h2&gt;
 &lt;div class=&quot;summary-grid&quot;&gt;
@@ -420,7 +605,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
       &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -471,7 +656,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -488,7 +673,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -505,7 +690,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
       &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -534,8 +719,8 @@
 
 </description>
         <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/04/03/AI-News-Daily-Issue-34.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/04/03/AI-News-Daily-Issue-34.html</guid>
+        <link>//2026/04/03/AI-News-Daily-Issue-34.html</link>
+        <guid isPermaLink="true">//2026/04/03/AI-News-Daily-Issue-34.html</guid>
         
         <category>AI-Daily</category>
         
@@ -543,11 +728,13 @@
         
         <category>Tools</category>
         
+        <category>Simon-Willison</category>
+        
         
       </item>
     
       <item>
-        <title>第33期 AI News Daily</title>
+        <title>第33期 AI News Daily｜From model to agent</title>
         <description>
 &lt;h2&gt;今日摘要&lt;/h2&gt;
 &lt;div class=&quot;summary-grid&quot;&gt;
@@ -599,7 +786,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
       &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -650,7 +837,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -667,7 +854,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -684,7 +871,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
       &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -713,8 +900,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/04/02/AI-News-Daily-Issue-33.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/04/02/AI-News-Daily-Issue-33.html</guid>
+        <link>//2026/04/02/AI-News-Daily-Issue-33.html</link>
+        <guid isPermaLink="true">//2026/04/02/AI-News-Daily-Issue-33.html</guid>
         
         <category>AI-Daily</category>
         
@@ -722,11 +909,13 @@
         
         <category>Tools</category>
         
+        <category>Simon-Willison</category>
+        
         
       </item>
     
       <item>
-        <title>第32期 AI News Daily</title>
+        <title>第32期 AI News Daily｜From model to agent</title>
         <description>
 &lt;h2&gt;今日摘要&lt;/h2&gt;
 &lt;div class=&quot;summary-grid&quot;&gt;
@@ -778,7 +967,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Application&lt;/p&gt;
       &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -829,7 +1018,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -846,7 +1035,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
+      &lt;p&gt;标签：#Buildable #Tools #Simon-Willison&lt;/p&gt;
       &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -863,7 +1052,7 @@
   &lt;div class=&quot;brief-columns&quot;&gt;
     &lt;div class=&quot;left&quot;&gt;
       &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
+      &lt;p&gt;标签：#Analysis #Model #Andrej-Karpathy&lt;/p&gt;
       &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
       &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
@@ -892,14 +1081,16 @@
 
 </description>
         <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/04/01/AI-News-Daily-Issue-32.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/04/01/AI-News-Daily-Issue-32.html</guid>
+        <link>//2026/04/01/AI-News-Daily-Issue-32.html</link>
+        <guid isPermaLink="true">//2026/04/01/AI-News-Daily-Issue-32.html</guid>
         
         <category>AI-Daily</category>
         
         <category>Buildable</category>
         
         <category>Tools</category>
+        
+        <category>Simon-Willison</category>
         
         
       </item>
@@ -1071,8 +1262,8 @@
 
 </description>
         <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/03/31/AI-News-Daily-Issue-31.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/03/31/AI-News-Daily-Issue-31.html</guid>
+        <link>//2026/03/31/AI-News-Daily-Issue-31.html</link>
+        <guid isPermaLink="true">//2026/03/31/AI-News-Daily-Issue-31.html</guid>
         
         <category>AI-Daily</category>
         
@@ -1250,8 +1441,8 @@
 
 </description>
         <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/03/30/AI-News-Daily-Issue-30.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/03/30/AI-News-Daily-Issue-30.html</guid>
+        <link>//2026/03/30/AI-News-Daily-Issue-30.html</link>
+        <guid isPermaLink="true">//2026/03/30/AI-News-Daily-Issue-30.html</guid>
         
         <category>AI-Daily</category>
         
@@ -1429,8 +1620,8 @@
 
 </description>
         <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/03/29/AI-News-Daily-Issue-29.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/03/29/AI-News-Daily-Issue-29.html</guid>
+        <link>//2026/03/29/AI-News-Daily-Issue-29.html</link>
+        <guid isPermaLink="true">//2026/03/29/AI-News-Daily-Issue-29.html</guid>
         
         <category>AI-Daily</category>
         
@@ -1608,187 +1799,8 @@
 
 </description>
         <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/03/28/AI-News-Daily-Issue-28.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/03/28/AI-News-Daily-Issue-28.html</guid>
-        
-        <category>AI-Daily</category>
-        
-        <category>Buildable</category>
-        
-        <category>Tools</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>第27期 AI News Daily</title>
-        <description>
-&lt;h2&gt;今日摘要&lt;/h2&gt;
-&lt;div class=&quot;summary-grid&quot;&gt;
-  &lt;div class=&quot;left&quot;&gt;
-    
-      &lt;p&gt;&lt;strong&gt;OpenAI Engineering：&lt;/strong&gt;OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更完整的 agent runtime 演进。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;OpenAI Engineering：&lt;/strong&gt;OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;Anthropic Engineering：&lt;/strong&gt;Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度和复现性是个关键提醒。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;Anthropic Engineering：&lt;/strong&gt;Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问题。&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class=&quot;right&quot;&gt;
-    
-      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
-    
-      &lt;p&gt;&lt;strong&gt;观点摘要：&lt;/strong&gt;量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;From model to agent: Equipping the Responses API with a computer environment&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
-      &lt;p&gt;原文：OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更完整的 agent runtime 演进。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/equip-responses-api-computer-environment/&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/equip-responses-api-computer-environment/&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;OpenAI Engineering 页面当前展示了一系列与 agent 相关的工程文章，其中最新的一篇是 ‘From model to agent: Equipping the Responses API with a computer environment’。从标题和上下文看，重点是把 Responses API 从单纯的模型调用接口，推进到更贴近 agent 的运行环境，让模型能够在更完整的 computer environment 中工作。这个方向和 agent runtime、tool use、computer use 的趋势高度一致。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;Inside our approach to the Model Spec&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：OpenAI Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#News #Application&lt;/p&gt;
-      &lt;p&gt;原文：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://openai.com/index/our-approach-to-the-model-spec&quot; target=&quot;_blank&quot;&gt;https://openai.com/index/our-approach-to-the-model-spec&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;OpenAI 的 RSS 描述指出，Model Spec 是一个公开的模型行为框架，目标是在安全、用户自由和问责之间取得平衡。对 agent 来说，这不是抽象政策问题，而是直接关系到代理系统在工具调用、任务执行、风险升级和边界控制上的行为约束。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;Quantifying infrastructure noise in agentic coding evals&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：Anthropic Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Research&lt;/p&gt;
-      &lt;p&gt;原文：Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度和复现性是个关键提醒。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://www.anthropic.com/engineering/infrastructure-noise&quot; target=&quot;_blank&quot;&gt;https://www.anthropic.com/engineering/infrastructure-noise&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Anthropic Engineering 页面把这篇文章作为 Featured 内容，核心观点是：agentic coding 的评测结果，不仅受模型本身影响，也会被基础设施配置噪声显著扰动。换句话说，如果 runtime、网络、环境、工具链不一致，benchmark 排名差异未必代表模型真实能力差异。这对 agent eval 体系非常重要。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;Harness design for long-running application development&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：Anthropic Engineering&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
-      &lt;p&gt;原文：Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问题。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://www.anthropic.com/engineering/harness-design-long-running-apps&quot; target=&quot;_blank&quot;&gt;https://www.anthropic.com/engineering/harness-design-long-running-apps&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Anthropic 近期连续多篇文章都在谈 harness、tool use 和长任务开发流程。这篇文章把焦点放在 long-running application development，说明在真实开发环境里，agent 需要处理持续运行、状态保留、上下文管理、权限边界和恢复机制，不能只看单轮 prompt 表现。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;scan-for-secrets 0.1&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
-      &lt;p&gt;原文：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Simon Willison 介绍了一个新的 Python 工具 scan-for-secrets，用来扫描日志目录中是否意外泄露了 API keys 等敏感信息。他明确提到自己在发布 Claude Code 会话日志时会担心 secrets 暴露，因此构建了这套工具。这个问题非常真实：agent/coding workflow 会生成大量日志和上下文记录，安全清理是必需环节。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;research-llm-apis 2026-04-04&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：Simon Willison&lt;/p&gt;
-      &lt;p&gt;标签：#Buildable #Tools&lt;/p&gt;
-      &lt;p&gt;原文：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&quot; target=&quot;_blank&quot;&gt;https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Simon 说他正在重构自己的 LLM Python library / CLI abstraction layer，因为不同厂商 API 在过去一年里长出了越来越多新特性，尤其是 server-side tool execution。这意味着多模型统一封装会越来越难，而 agent 平台如果想跨 OpenAI、Anthropic、Gemini、Mistral 做一致体验，就必须认真面对抽象层设计问题。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;2025 LLM Year in Review&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：Andrej Karpathy&lt;/p&gt;
-      &lt;p&gt;标签：#News #Model&lt;/p&gt;
-      &lt;p&gt;原文：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot; target=&quot;_blank&quot;&gt;https://karpathy.bearblog.dev/year-in-review-2025/&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;Karpathy 在这篇年度回顾里把 2025 年 LLM 进展归纳为若干重要范式变化，其中 RLVR 成为新的核心阶段。他强调，模型能力提升越来越不只是预训练规模问题，而是和 reasoning traces、test-time compute、reward-driven optimization 等新因素紧密相关。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;brief-section&quot;&gt;
-  &lt;div class=&quot;brief-title&quot;&gt;
-    &lt;h3&gt;为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;brief-columns&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;
-      &lt;p class=&quot;meta&quot;&gt;来源：量子位&lt;/p&gt;
-      &lt;p&gt;标签：#News #Infra&lt;/p&gt;
-      &lt;p&gt;原文：量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。&lt;/p&gt;
-      &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg&quot; target=&quot;_blank&quot;&gt;https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;
-      &lt;div class=&quot;opinion-line&quot;&gt;&lt;span class=&quot;opinion-label&quot;&gt;观点：&lt;/span&gt;&lt;span class=&quot;opinion-text&quot;&gt;目前抓取环境对微信公众号正文抽取有限，但从标题和来源已经能明确看出主题：市场上开始出现专门为 Agent 场景设计的硬件方案，并且以成本、部署形态、专用性为卖点。这说明 Agent 生态开始进入硬件与基础设施层竞争，而不再只是软件工作流。&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/2026/03/27/AI-News-Daily-Issue-27.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2026/03/27/AI-News-Daily-Issue-27.html</guid>
+        <link>//2026/03/28/AI-News-Daily-Issue-28.html</link>
+        <guid isPermaLink="true">//2026/03/28/AI-News-Daily-Issue-28.html</guid>
         
         <category>AI-Daily</category>
         
