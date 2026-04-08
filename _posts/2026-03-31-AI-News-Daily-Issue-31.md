@@ -1,5 +1,5 @@
 ---
-title: 第31期 AI News Daily｜第26期 AI News Daily
+title: 第31期 AI News Daily｜From model to agent
 date: 2026-03-31
 layout: brief-post
 tags: AI-Daily Lilian-Weng Jeremy-Howard

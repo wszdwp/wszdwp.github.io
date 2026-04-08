@@ -1,5 +1,5 @@
 ---
-title: 第35期 AI News Daily｜第27期 AI News Daily
+title: 第35期 AI News Daily｜scan-for-secrets 0.1
 date: 2026-04-04
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

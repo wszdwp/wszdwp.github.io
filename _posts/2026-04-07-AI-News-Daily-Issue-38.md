@@ -1,5 +1,5 @@
 ---
-title: 第38期 AI News Daily｜第27期 AI News Daily
+title: 第38期 AI News Daily｜2025 LLM Year in Review
 date: 2026-04-07
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

@@ -1,5 +1,5 @@
 ---
-title: 第34期 AI News Daily｜第26期 AI News Daily
+title: 第34期 AI News Daily｜Inside our approach to the Mod...
 date: 2026-04-03
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

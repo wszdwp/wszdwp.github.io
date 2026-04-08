@@ -1,5 +1,5 @@
 ---
-title: 第32期 AI News Daily｜第26期 AI News Daily
+title: 第32期 AI News Daily｜2025 LLM Year in Review
 date: 2026-04-01
 layout: brief-post
 tags: AI-Daily Jerry-Liu Harrison-Chase

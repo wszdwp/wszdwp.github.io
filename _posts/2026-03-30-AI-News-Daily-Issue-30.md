@@ -1,5 +1,5 @@
 ---
-title: 第30期 AI News Daily｜第21期 AI News Daily
+title: 第30期 AI News Daily｜research-llm-apis 2026-04-04
 date: 2026-03-30
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

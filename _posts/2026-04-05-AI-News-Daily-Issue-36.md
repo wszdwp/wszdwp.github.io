@@ -1,5 +1,5 @@
 ---
-title: 第36期 AI News Daily｜第27期 AI News Daily
+title: 第36期 AI News Daily｜Quantifying infrastructure noi...
 date: 2026-04-05
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

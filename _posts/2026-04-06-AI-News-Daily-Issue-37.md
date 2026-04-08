@@ -1,5 +1,5 @@
 ---
-title: 第37期 AI News Daily｜第26期 AI News Daily
+title: 第37期 AI News Daily｜为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件...
 date: 2026-04-06
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

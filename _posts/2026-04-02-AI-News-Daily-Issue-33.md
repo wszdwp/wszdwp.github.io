@@ -1,5 +1,5 @@
 ---
-title: 第33期 AI News Daily｜第26期 AI News Daily
+title: 第33期 AI News Daily｜Harness design for long-runnin...
 date: 2026-04-02
 layout: brief-post
 tags: AI-Daily Swyx Simon-Willison
