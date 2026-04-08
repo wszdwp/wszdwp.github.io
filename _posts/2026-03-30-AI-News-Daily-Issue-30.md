@@ -1,8 +1,8 @@
 ---
-title: 第30期 AI News Daily｜[AINews] The Last 4 Jobs in Te...
+title: 第30期 AI News Daily｜AI for American-Produced Cemen...
 date: 2026-03-30
 layout: brief-post
-tags: AI-Daily Jerry-Liu Swyx
+tags: AI-Daily Simon-Willison Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

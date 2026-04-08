@@ -1,8 +1,8 @@
 ---
-title: 第26期 AI News Daily｜AI for American-Produced Cemen...
+title: 第26期 AI News Daily｜How Kensho built a multi-agent...
 date: 2026-03-26
 layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+tags: AI-Daily Swyx Simon-Willison
 published: true
 brief_data:
   summary_left:

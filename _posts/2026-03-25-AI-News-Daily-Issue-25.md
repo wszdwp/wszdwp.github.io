@@ -1,5 +1,5 @@
 ---
-title: 第25期 AI News Daily｜STADLER reshapes knowledge wor...
+title: 第25期 AI News Daily｜Agent Evaluation Readiness Che...
 date: 2026-03-25
 layout: brief-post
 tags: AI-Daily Harrison-Chase Simon-Willison

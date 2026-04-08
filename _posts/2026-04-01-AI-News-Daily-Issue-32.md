@@ -1,8 +1,8 @@
 ---
-title: 第32期 AI News Daily｜KernelEvolve
+title: 第32期 AI News Daily｜Simulate realistic users to ev...
 date: 2026-04-01
 layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+tags: AI-Daily Jeremy-Howard Jerry-Liu
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: 第37期 AI News Daily｜scan-for-secrets 0.3
 date: 2026-04-06
 layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+tags: AI-Daily Swyx Simon-Willison
 published: true
 brief_data:
   summary_left:

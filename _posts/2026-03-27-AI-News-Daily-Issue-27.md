@@ -1,5 +1,5 @@
 ---
-title: 第27期 AI News Daily｜Latest open artifacts (#20)
+title: 第27期 AI News Daily｜Liberate your OpenClaw
 date: 2026-03-27
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

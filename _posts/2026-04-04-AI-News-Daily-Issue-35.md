@@ -2,7 +2,7 @@
 title: 第35期 AI News Daily｜research-llm-apis 2026-04-04
 date: 2026-04-04
 layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+tags: AI-Daily Lilian-Weng Simon-Willison
 published: true
 brief_data:
   summary_left:

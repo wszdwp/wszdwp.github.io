@@ -1,8 +1,8 @@
 ---
-title: 第33期 AI News Daily｜Welcome Gemma 4
+title: 第33期 AI News Daily｜[AINews] Good Friday
 date: 2026-04-02
 layout: brief-post
-tags: AI-Daily Lilian-Weng Simon-Willison
+tags: AI-Daily Simon-Willison Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

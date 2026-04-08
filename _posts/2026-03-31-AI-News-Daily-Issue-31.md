@@ -1,5 +1,5 @@
 ---
-title: 第31期 AI News Daily｜Holo3
+title: 第31期 AI News Daily｜Granite 4.0 3B Vision
 date: 2026-03-31
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

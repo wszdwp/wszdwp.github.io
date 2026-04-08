@@ -1,5 +1,5 @@
 ---
-title: 第34期 AI News Daily｜Open Models have crossed a thr...
+title: 第34期 AI News Daily｜[AINews] Gemma 4
 date: 2026-04-03
 layout: brief-post
 tags: AI-Daily Simon-Willison Andrej-Karpathy

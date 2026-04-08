@@ -1,8 +1,8 @@
 ---
-title: 第29期 AI News Daily｜Accelerating the next phase of...
+title: 第29期 AI News Daily｜[AINews] The Last 4 Jobs in Te...
 date: 2026-03-29
 layout: brief-post
-tags: AI-Daily Jeremy-Howard Simon-Willison
+tags: AI-Daily Simon-Willison Andrej-Karpathy
 published: true
 brief_data:
   summary_left:
