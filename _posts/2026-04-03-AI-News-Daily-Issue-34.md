@@ -1,8 +1,8 @@
 ---
-title: 第34期 AI News Daily｜From model to agent
+title: 第34期 AI News Daily｜第26期 AI News Daily
 date: 2026-04-03
 layout: brief-post
-tags: AI-Daily Buildable Tools Simon-Willison
+tags: AI-Daily Simon-Willison Andrej-Karpathy
 published: true
 brief_data:
   summary_left:
