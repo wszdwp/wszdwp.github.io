@@ -1,96 +1,93 @@
 ---
-title: 第5期 AI News Daily
+title: 第5期 AI News Daily｜Simulate realistic users to ev...
 date: 2026-03-05
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily Simon-Willison Andrej-Karpathy
 published: true
+brief_data:
+  summary_left:
+    - label: "AWS Machine Learning Blog"
+      text: "In this post, we explore how ActorSimulator in Strands Evaluations SDK addresses the challenge with structured user simulation that integrates into your evaluation pipeline."
+    - label: "AWS Machine Learning Blog"
+      text: "This post describes how TGS achieved near-linear scaling for distributed training and expanded context windows for their Vision Transformer-based SFM using Amazon SageMaker HyperPod. This joint solution cut training time from 6 months to just 5 days while enabling analysis of seismic volumes larger than previously possible."
+    - label: "OpenAI Blog"
+      text: "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community."
+    - label: "OpenAI Blog"
+      text: "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption."
+    - label: "Latent Space"
+      text: "a quiet day"
+  summary_right:
+    - label: "观点摘要"
+      text: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+    - label: "观点摘要"
+      text: "a quiet day."
+    - label: "观点摘要"
+      text: "I built a self-healing deployment pipeline for our GTM Agent. After every deploy, it detects regressions, triages whether the change caused them, and kicks off an agent to open a PR with a fix, with no manual intervention needed until review time."
+    - label: "观点摘要"
+      text: "The legend needs no intro... if you pardon our pun"
+    - label: "观点摘要"
+      text: "Hint: it's not benchmark scores."
+  items:
+    - title: "Simulate realistic users to evaluate multi-turn AI agents in Strands Evals"
+      source: "AWS Machine Learning Blog"
+      tags: "#Buildable #Tools"
+      summary: "In this post, we explore how ActorSimulator in Strands Evaluations SDK addresses the challenge with structured user simulation that integrates into your evaluation pipeline."
+      link: "https://aws.amazon.com/blogs/machine-learning/simulate-realistic-users-to-evaluate-multi-turn-ai-agents-in-strands-evals/"
+      opinion: "In this post, we explore how ActorSimulator in Strands Evaluations SDK addresses the challenge with structured user simulation that integrates into your evaluation pipeline."
+    - title: "Scaling seismic foundation models on AWS: Distributed training with Amazon SageMaker HyperPod and expanding context windows"
+      source: "AWS Machine Learning Blog"
+      tags: "#Analysis #Model"
+      summary: "This post describes how TGS achieved near-linear scaling for distributed training and expanded context windows for their Vision Transformer-based SFM using Amazon SageMaker HyperPod. This joint solution cut training time from 6 months to just 5 days while enabling analysis of seismic volumes larger than previously possible."
+      link: "https://aws.amazon.com/blogs/machine-learning/scaling-seismic-foundation-models-on-aws-distributed-training-with-amazon-sagemaker-hyperpod-and-expanding-context-windows/"
+      opinion: "This post describes how TGS achieved near-linear scaling for distributed training and expanded context windows for their Vision Transformer-based SFM using Amazon SageMaker HyperPod. This joint solution cut training time from 6 months to just 5 days while enabling analysis of seismic volumes larger than previously possible."
+    - title: "OpenAI acquires TBPN"
+      source: "OpenAI Blog"
+      tags: "#Buildable #Agent"
+      summary: "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community."
+      link: "https://openai.com/index/openai-acquires-tbpn"
+      opinion: "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community."
+    - title: "Codex now offers more flexible pricing for teams"
+      source: "OpenAI Blog"
+      tags: "#News #Agent"
+      summary: "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption."
+      link: "https://openai.com/index/codex-flexible-pricing-for-teams"
+      opinion: "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption."
+    - title: "[AINews] A quiet April Fools"
+      source: "Latent Space"
+      tags: "#Release #Agent"
+      summary: "a quiet day"
+      link: "https://www.latent.space/p/ainews-a-quiet-april-fools"
+      opinion: "a quiet day"
+    - title: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+      source: "Hugging Face Blog"
+      tags: "#News #Agent"
+      summary: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+      link: "https://huggingface.co/blog/gemma4"
+      opinion: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+    - title: "[AINews] Good Friday"
+      source: "Latent Space"
+      tags: "#Release #Agent"
+      summary: "a quiet day."
+      link: "https://www.latent.space/p/ainews-good-friday"
+      opinion: "a quiet day."
+    - title: "How My Agents Self-Heal in Production"
+      source: "LangChain Blog"
+      tags: "#Analysis #Application"
+      summary: "I built a self-healing deployment pipeline for our GTM Agent. After every deploy, it detects regressions, triages whether the change caused them, and kicks off an agent to open a PR with a fix, with no manual intervention needed until review time."
+      link: "https://blog.langchain.com/production-agents-self-heal/"
+      opinion: "I built a self-healing deployment pipeline for our GTM Agent. After every deploy, it detects regressions, triages whether the change caused them, and kicks off an agent to open a PR with a fix, with no manual intervention needed until review time."
+    - title: "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why \"This Time Is Different\""
+      source: "Latent Space"
+      tags: "#Analysis #Agent"
+      summary: "The legend needs no intro... if you pardon our pun"
+      link: "https://www.latent.space/p/pmarca"
+      opinion: "The legend needs no intro... if you pardon our pun"
+    - title: "Gemma 4 and what makes an open model succeed"
+      source: "Interconnects AI"
+      tags: "#News #Research"
+      summary: "Hint: it's not benchmark scores."
+      link: "https://www.interconnects.ai/p/gemma-4-and-what-makes-an-open-model"
+      opinion: "Hint: it's not benchmark scores."
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}
