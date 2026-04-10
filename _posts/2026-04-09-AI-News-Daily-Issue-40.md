@@ -2,7 +2,7 @@
 title: 第40期 AI News Daily｜openai/openai-cookbook
 date: 2026-04-09
 layout: brief-post
-tags: AI-Daily Andrej-Karpathy Simon-Willison
+tags: AI-Daily Jeremy-Howard Jerry-Liu
 published: true
 brief_data:
   summary_left:

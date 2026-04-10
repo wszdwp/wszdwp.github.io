@@ -2,7 +2,7 @@
 title: 第41期 AI News Daily｜karpathy/rustbpe
 date: 2026-04-10
 layout: brief-post
-tags: AI-Daily Andrej-Karpathy Simon-Willison
+tags: AI-Daily Harrison-Chase Swyx
 published: true
 brief_data:
   summary_left:
