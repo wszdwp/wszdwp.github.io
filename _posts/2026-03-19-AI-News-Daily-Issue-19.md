@@ -33,7 +33,7 @@ brief_data:
       tags: "#Release #Tools"
       summary: "arXiv:2604.05081v1 Announce Type: new Abstract: We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities: high-dimensional medical imaging (CT/MRI volumes and histopathology whole slide images), anatomical localization via bounding boxes, multi-timepoint chest X-ray analysis, and improved medical document understanding (lab reports, electronic health records). We detail the innovations required to enable these modalities within a single architecture, including new training data, long-context 3D volume slicing, and whole-slide pathology sampling. Compared to MedGemma 1 4B, MedGemma 1.5 4B demonstrates significant gains in these new areas, improving 3D MRI condition classification accuracy by 11% and 3D CT condition classification by 3% (absolute improvements). In whole slide pathology imaging, MedGemma 1.5 4B achieves a 47% macro F1 gain. Additionally, it improves anatomical localization with a 35% increase in Intersection over Union on chest X-rays and achieves a 4% macro accuracy for longitudinal (multi-timepoint) chest x-ray analysis. Beyond its improved multimodal performance over MedGemma 1, MedGemma 1.5 improves on text-based clinical knowledge and reasoning, improving by 5% on MedQA accuracy and 22% on EHRQA accuracy. It also achieves an average of 18% macro F1 on 4 different lab report information extraction datasets (EHR Datasets 2, 3, 4, and Mendeley Clinical Laboratory Test Reports). Taken together, MedGemma 1.5 serves as a robust, open resource for the community, designed as an improved foundation on which developers can create the next generation of medical AI systems. Resources and tutorials for building upon MedGemma 1.5 can be found at https://goo.gle/MedGemma."
       link: "https://arxiv.org/abs/2604.05081"
-      opinion: "原文重点：We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. 读后观点：这篇论文真正值得关注的是它给出的技术假设、实验设计和可验证结论：MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities: high-dimensional medical ima…"
+      opinion: "原文重点：We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. 读后观点：这篇论文真正值得关注的是它给出的技术假设、实验设计和可验证结论：MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities： high-dimensional medical ima…"
     - title: "Uncertainty-Guided Latent Diagnostic Trajectory Learning for Sequential Clinical Diagnosis"
       source: "arXiv cs.AI"
       tags: "#Release #Tools"
@@ -49,7 +49,7 @@ brief_data:
     - title: "The Illusion of Latent Generalization: Bi-directionality and the Reversal Curse"
       source: "arXiv cs.CL"
       tags: "#Release #Research"
-      summary: "arXiv:2604.04943v1 Announce Type: new Abstract: The reversal curse describes a failure of autoregressive language models to retrieve a fact in reverse order (e.g., training on ``$A > B
+      summary: "arXiv:2604.04943v1 Announce Type: new Abstract: The reversal curse describes a failure of autoregressive language models to retrieve a fact in reverse order, revealing limits in bi-directional fact generalization."
     - title: "Inclusion-of-Thoughts: Mitigating Preference Instability via Purifying the Decision Space"
       source: "arXiv cs.CL"
       tags: "#Release #Research"
