@@ -25,6 +25,17 @@
     <div class="left">
       <p class="meta">来源：{{ item.source }}</p>
       {% if item.tags %}<p>标签：{{ item.tags }}</p>{% endif %}
+      {% if item.author_tags %}
+        {% assign author_tags = item.author_tags | split: ' ' %}
+        <p>作者：
+          {% for tag in author_tags %}
+            {% assign clean_tag = tag | remove: '#' | strip %}
+            {% if clean_tag != '' %}
+              <a href="{{ '/authors/' | relative_url }}{{ clean_tag | slugify }}/">#{{ clean_tag }}</a>{% unless forloop.last %} {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
       <p>原文：{{ item.summary }}</p>
       <p>链接：<a href="{{ item.link }}" target="_blank">{{ item.link }}</a></p>
     </div>
