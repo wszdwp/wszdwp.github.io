@@ -87,4 +87,4 @@ permalink: /authors/andrej-karpathy/
 - 日报： [第12期 AI News Daily｜anthropics/skills](/2026/03/12/2026-03-12-AI-News-Daily-Issue-12.html)
 - 原文： [链接](https://github.com/karpathy/autoresearch)
 - 摘要： AI agents running research on single-GPU nanochat training automatically
-- 观点： nanochat 真正有意思的地方，不是“100 美元做 ChatGPT”，而是把低成本实验压到了普通开发者能亲手验证的范围。
+- 观点： autoresearch 的重点不是把“AI 做研究”再说一遍，而是它在试探单卡环境下，自动实验闭环到底能推进到什么程度。
