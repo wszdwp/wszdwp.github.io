@@ -50,6 +50,8 @@ brief_data:
       source: "arXiv cs.CL"
       tags: "#Release #Research"
       summary: "arXiv:2604.04943v1 Announce Type: new Abstract: The reversal curse describes a failure of autoregressive language models to retrieve a fact in reverse order, revealing limits in bi-directional fact generalization."
+      link: "https://arxiv.org/abs/2604.04943"
+      opinion: "原文重点：The reversal curse描述了自回归语言模型在反向检索事实上表现出的系统性缺陷。 读后观点：这篇论文值得关注的地方，在于它把双向泛化失败具体化成可分析的问题，而不只是把现象归结为训练数据不足。"
     - title: "Inclusion-of-Thoughts: Mitigating Preference Instability via Purifying the Decision Space"
       source: "arXiv cs.CL"
       tags: "#Release #Research"
