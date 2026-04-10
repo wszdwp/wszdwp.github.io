@@ -31,7 +31,12 @@
           {% for tag in author_tags %}
             {% assign clean_tag = tag | remove: '#' | strip %}
             {% if clean_tag != '' %}
-              <a href="{{ '/authors/' | relative_url }}{{ clean_tag | slugify }}/">#{{ clean_tag }}</a>{% unless forloop.last %} {% endunless %}
+              {% if clean_tag == 'Andrej-Karpathy' or clean_tag == 'Simon-Willison' %}
+                <a href="{{ '/authors/' | relative_url }}{{ clean_tag | slugify }}/">#{{ clean_tag }}</a>
+              {% else %}
+                <span>#{{ clean_tag }}</span>
+              {% endif %}
+              {% unless forloop.last %} {% endunless %}
             {% endif %}
           {% endfor %}
         </p>
