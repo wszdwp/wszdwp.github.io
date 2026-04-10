@@ -15,7 +15,7 @@ permalink: /authors/simon-willison/
 - 日报： [第39期 AI News Daily｜Reinforcement fine-tuning on A...](/2026/04/08/2026-04-08-AI-News-Daily-Issue-39.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/8/giles-turnbull/#atom-everything)
 - 摘要： I have a feeling that everyone likes using AI tools to try doing someone else’s profession . They’re much less keen when someone else uses it for their profession. — Giles Turnbull , AI and the human voice Tags: ai-ethic…
-- 观点： 这类引用短，但价值很高：它准确点出了 AI 工具讨论里最常见的角色错位和职业焦虑。
+- 观点： 这类引用短，但价值很高：它准确点出了 AI 工具讨论里最常见的角色错位和职业焦虑；这类判断最容易在内容创作、专业服务和知识工作产品里引发共鸣。
 
 ## Meta's new model is Muse Spark, and meta.ai chat has some interesting tools
 
@@ -60,7 +60,7 @@ permalink: /authors/simon-willison/
 - 日报： [第37期 AI News Daily｜scan-for-secrets 0.3](/2026/04/06/2026-04-06-AI-News-Daily-Issue-37.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything)
 - 摘要： Release: datasette-ports 0.2 No longer requires Datasette - running uvx datasette-ports now works as well. Installing it as a Datasette plugin continues to provide the datasette ports command. Tags: datasette
-- 观点： 这条更值得看它纠正了什么认知、揭示了什么工程现实，而不是把它当作普通新闻摘要。
+- 观点： 这条不只是一个小工具更新，它说明开发者开始更重视“如何管理一堆本地 agent / data 工具实例”这类新摩擦；它最先会在个人工作台和多实例调试场景里体现价值。
 
 ## Google AI Edge Gallery
 
@@ -96,7 +96,7 @@ permalink: /authors/simon-willison/
 - 日报： [第36期 AI News Daily｜Quoting Chengpeng Mou](/2026/04/05/2026-04-05-AI-News-Daily-Issue-36.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything)
 - 摘要： From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insurance ~600K weekly messages [classified as healthcare] from people living in “hospital deserts” (30 min drive to nearest hospital) 7 out…
-- 观点： 这条数据的意义不在“ChatGPT 很多人用”，而在于它开始显露出替代部分基础公共服务触点的现实需求。
+- 观点： 这条数据的意义不在“ChatGPT 很多人用”，而在于它开始显露出替代部分基础公共服务触点的现实需求；最先会改变的是医疗咨询、保险解释和非工作时段的信息补位场景。
 
 ## Eight years of wanting, three months of building with AI
 
@@ -114,7 +114,7 @@ permalink: /authors/simon-willison/
 - 日报： [第10期 AI News Daily｜SQLite WAL Mode Across Docker...](/2026/03/10/2026-03-10-AI-News-Daily-Issue-10.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/7/sqlite-wal-docker-containers/#atom-everything)
 - 摘要： Research: SQLite WAL Mode Across Docker Containers Sharing a Volume Inspired by this conversation on Hacker News about whether two SQLite processes in separate Docker containers that share the same volume might run into…
-- 观点： 这篇看似小，但很 Simon Willison：它把一个工程团队真实会遇到的边角问题验证清楚，减少了很多不必要的猜测。
+- 观点： 这篇看似小，但很 Simon Willison：它把一个工程团队真实会遇到的边角问题验证清楚，减少了很多不必要的猜测；这类内容最先在 infra 团队、容器化开发和本地数据工具链里产生价值。
 
 ## datasette-ports 0.1
 
@@ -123,7 +123,7 @@ permalink: /authors/simon-willison/
 - 日报： [第8期 AI News Daily｜Manage AI costs with Amazon Be...](/2026/03/08/2026-03-08-AI-News-Daily-Issue-8.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything)
 - 摘要： Release: datasette-ports 0.1 Another example of README-driven development, this time solving a problem that might be unique to me. I often find myself running a bunch of different Datasette instances with different datab…
-- 观点： 这条更值得看它纠正了什么认知、揭示了什么工程现实，而不是把它当作普通新闻摘要。
+- 观点： 这条不只是一个小工具更新，它说明开发者开始更重视“如何管理一堆本地 agent / data 工具实例”这类新摩擦；它最先会在个人工作台和多实例调试场景里体现价值。
 
 ## Cleanup Claude Code Paste
 
@@ -132,4 +132,4 @@ permalink: /authors/simon-willison/
 - 日报： [第8期 AI News Daily｜Manage AI costs with Amazon Be...](/2026/03/08/2026-03-08-AI-News-Daily-Issue-8.html)
 - 原文： [链接](https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything)
 - 摘要： Tool: Cleanup Claude Code Paste Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up. Tags: tools , c…
-- 观点： 这条更值得看它纠正了什么认知、揭示了什么工程现实，而不是把它当作普通新闻摘要。
+- 观点： 这类工具看起来很小，但价值在于它服务的是已经高频使用 agent terminal 的人；真正会先受益的是重度 Claude Code 用户和 prompt/workflow 反复整理的人。
