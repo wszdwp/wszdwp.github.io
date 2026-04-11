@@ -4,9 +4,11 @@ title: Simon-Willison｜AI News Daily 作者页
 permalink: /authors/simon-willison/
 ---
 
-> 这页汇总 Simon Willison 在 AI Daily 中出现过的文章和对应观点。整体看，他覆盖的重点不只是模型新闻，而是 agent 工具链、API 抽象、实际工程痛点和前沿模型发布策略。适合用来回看“本周有哪些真正影响 AI 工程师判断的文章”。
+> 这页汇总 Simon Willison 在 AI Daily 中出现过的文章和对应观点，重点偏工程实践、API 抽象、agent 工具链和真实开发痛点。
 
-共整理 **14** 条与 **Simon-Willison** 相关的 AI Daily 条目。
+<div style="margin: 16px 0 28px; padding: 14px 16px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa; color: #555;">
+  <strong>统计：</strong> 当前整理了 <strong>14</strong> 条与 <strong>Simon-Willison</strong> 相关的 AI Daily 条目。
+</div>
 
 ## Quoting Giles Turnbull
 

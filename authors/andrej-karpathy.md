@@ -4,9 +4,11 @@ title: Andrej-Karpathy｜AI News Daily 作者页
 permalink: /authors/andrej-karpathy/
 ---
 
-> 这页汇总 Andrej Karpathy 相关条目和对应观点。整体上更偏向 LLM 训练、开发者工具、极简 repo 和范式总结，适合快速回看“哪些内容更接近 AI 工程底层能力与训练方法变化”。
+> 这页汇总 Andrej Karpathy 相关条目和对应观点，重点偏 LLM 训练、开发者工具、极简 repo 和方法论总结。
 
-共整理 **9** 条与 **Andrej-Karpathy** 相关的 AI Daily 条目。
+<div style="margin: 16px 0 28px; padding: 14px 16px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa; color: #555;">
+  <strong>统计：</strong> 当前整理了 <strong>9</strong> 条与 <strong>Andrej-Karpathy</strong> 相关的 AI Daily 条目。
+</div>
 
 ## karpathy/rustbpe
 
