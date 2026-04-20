@@ -1,103 +1,96 @@
 ---
-title: 第2期 AI News Daily｜Introducing the OpenAI Safety...
+title: 第2期 AI News Daily
 date: 2026-03-02
-layout: brief-post
-tags: AI-Daily Lilian-Weng Jeremy-Howard
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Hugging Face Blog"
-      text: "State of Open Source on Hugging Face: Spring 2026"
-    - label: "Meta Engineering"
-      text: "Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to,…"
-    - label: "Interconnects AI"
-      text: "On evaluating and understanding the frontier of agents, and why I still turn to Claude."
-    - label: "Hugging Face Blog"
-      text: "Build a Domain-Specific Embedding Model in Under a Day"
-    - label: "Interconnects AI"
-      text: "The case for why self-improvement is real but it doesn't lead to fast takeoff."
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：A New Framework for Evaluating Voice Agents (EVA)"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks,…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Discover how Kensho, S&P Global’s AI innovation engine, leveraged LangGraph to crea…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：TLDR: The best agent evals directly measure an agent behavior we care about."
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Learn how STADLER uses ChatGPT to transform knowledge work, saving time and acceler…"
-  items:
-    - title: "State of Open Source on Hugging Face: Spring 2026"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "State of Open Source on Hugging Face: Spring 2026"
-      link: "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
-      opinion: "原文重点：State of Open Source on Hugging Face: Spring 2026 读后观点：读后看，这件事的价值在于：State of Open Source on Hugging Face: Spring 2026"
-    - title: "Friend Bubbles: Enhancing Social Discovery on Facebook Reels"
-      source: "Meta Engineering"
-      tags: "#News #Application"
-      author_tags: ""
-      summary: "Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to, helping you discover new content and making it easier to connect over shared interests. This article explains the technical architecture behind friend bubbles, including how machine learning estimates relationship strength and ranks content your friends have interacted with to create more [...] Read More... The post Friend Bubbles: Enhancing Social Discovery on Facebook Reels appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/"
-      opinion: "原文重点：Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to,… 读后观点：读后看，这件事的价值在于：Friend bubbles in Facebook Reels highlight Reels your friends have l…"
-    - title: "GPT 5.4 is a big step for Codex"
-      source: "Interconnects AI"
-      tags: "#News #Workflow"
-      author_tags: ""
-      summary: "On evaluating and understanding the frontier of agents, and why I still turn to Claude."
-      link: "https://www.interconnects.ai/p/gpt-54-is-a-big-step-for-codex"
-      opinion: "原文重点：On evaluating and understanding the frontier of agents, and why I still turn to Claude. 读后观点：读后看，这件事的价值在于：On evaluating and understanding the frontier of agents, and why I sti…"
-    - title: "Build a Domain-Specific Embedding Model in Under a Day"
-      source: "Hugging Face Blog"
-      tags: "#Analysis #Model"
-      author_tags: ""
-      summary: "Build a Domain-Specific Embedding Model in Under a Day"
-      link: "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
-      opinion: "原文重点：Build a Domain-Specific Embedding Model in Under a Day 读后观点：读后看，这件事的价值在于：Build a Domain-Specific Embedding Model in Under a Day"
-    - title: "Lossy self-improvement"
-      source: "Interconnects AI"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "The case for why self-improvement is real but it doesn't lead to fast takeoff."
-      link: "https://www.interconnects.ai/p/lossy-self-improvement"
-      opinion: "原文重点：The case for why self-improvement is real but it doesn't lead to fast takeoff. 读后观点：读后看，这件事的价值在于：The case for why self-improvement is real but it doesn't lead to fast takeoff."
-    - title: "A New Framework for Evaluating Voice Agents (EVA)"
-      source: "Hugging Face Blog"
-      tags: "#Buildable #Workflow"
-      author_tags: ""
-      summary: "A New Framework for Evaluating Voice Agents (EVA)"
-      link: "https://huggingface.co/blog/ServiceNow-AI/eva"
-      opinion: "原文重点：A New Framework for Evaluating Voice Agents (EVA) 读后观点：读后看，这件事的价值在于：A New Framework for Evaluating Voice Agents (EVA)"
-    - title: "Introducing the OpenAI Safety Bug Bounty program"
-      source: "OpenAI Blog"
-      tags: "#Release #Workflow"
-      author_tags: ""
-      summary: "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration."
-      link: "https://openai.com/index/safety-bug-bounty"
-      opinion: "原文重点：OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, inclu… 读后观点：读后看，这件事的价值在于：OpenAI launches a Safety Bug Bounty program to identify AI abuse an…"
-    - title: "How Kensho built a multi-agent framework with LangGraph to solve trusted financial data retrieval"
-      source: "LangChain Blog"
-      tags: "#Buildable #Workflow"
-      author_tags: ""
-      summary: "Discover how Kensho, S&P Global’s AI innovation engine, leveraged LangGraph to create its Grounding framework–a unified agentic access layer solving fragmented financial data retrieval at enterprise scale."
-      link: "https://blog.langchain.com/customers-kensho/"
-      opinion: "原文重点：Discover how Kensho, S&P Global’s AI innovation engine, leveraged LangGraph to create it… 读后观点：读后看，这件事的价值在于：Discover how Kensho, S&P Global’s AI innovation engine, leveraged L…"
-    - title: "How we build evals for Deep Agents"
-      source: "LangChain Blog"
-      tags: "#Buildable #Workflow"
-      author_tags: ""
-      summary: "&#x1F4A1; TLDR: The best agent evals directly measure an agent behavior we care about. Here&apos;s how we source data, create metrics, and run well-scoped, targeted experiments over time to make agents more accurate and reliable. Evals shape agent behavior We&#x2019;ve been curating evaluations to measure and"
-      link: "https://blog.langchain.com/how-we-build-evals-for-deep-agents/"
-      opinion: "原文重点：TLDR: The best agent evals directly measure an agent behavior we care about. Here&apos;s… 读后观点：读后看，这件事的价值在于：TLDR: The best agent evals directly measure an agent behavior we ca…"
-    - title: "STADLER reshapes knowledge work at a 230-year-old company"
-      source: "OpenAI Blog"
-      tags: "#News #Application"
-      author_tags: ""
-      summary: "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees."
-      link: "https://openai.com/index/stadler"
-      opinion: "原文重点：Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating… 读后观点：读后看，这件事的价值在于：Learn how STADLER uses ChatGPT to transform knowledge work, saving…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

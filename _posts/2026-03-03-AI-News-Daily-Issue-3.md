@@ -1,103 +1,96 @@
 ---
-title: 第3期 AI News Daily｜Liberate your OpenClaw
+title: 第3期 AI News Daily
 date: 2026-03-03
-layout: brief-post
-tags: AI-Daily Jerry-Liu Harrison-Chase
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "LangChain Blog"
-      text: "A practical checklist for agent evaluation: error analysis, dataset construction, grader…"
-    - label: "Hugging Face Blog"
-      text: "Liberate your OpenClaw"
-    - label: "OpenAI Blog"
-      text: "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
-    - label: "Meta Engineering"
-      text: "Meta is continuing its long-term roadmap to help the construction industry leverage AI t…"
-    - label: "Interconnects AI"
-      text: "New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others"
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Build production AI agents on MongoDB Atlas — with vector search, persistent memory…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Meta continues to lead the industry in utilizing groundbreaking AI Recommendation S…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Training mRNA Language Models Across 25 Species for $165"
-  items:
-    - title: "Agent Evaluation Readiness Checklist"
-      source: "LangChain Blog"
-      tags: "#Analysis #Application"
-      author_tags: ""
-      summary: "A practical checklist for agent evaluation: error analysis, dataset construction, grader design, offline & online evals, and production readiness."
-      link: "https://blog.langchain.com/agent-evaluation-readiness-checklist/"
-      opinion: "原文重点：A practical checklist for agent evaluation: error analysis, dataset construction, grader… 读后观点：读后看，这件事的价值在于：A practical checklist for agent evaluation: error analysis, dataset…"
-    - title: "Liberate your OpenClaw"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Liberate your OpenClaw"
-      link: "https://huggingface.co/blog/liberate-your-openclaw"
-      opinion: "原文重点：Liberate your OpenClaw 读后观点：读后看，这件事的价值在于：Liberate your OpenClaw"
-    - title: "Helping disaster response teams turn AI into action across Asia"
-      source: "OpenAI Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
-      link: "https://openai.com/index/helping-disaster-response-teams-asia"
-      opinion: "原文重点：AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation 读后观点：读后看，这件事的价值在于：AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
-    - title: "AI for American-Produced Cement and Concrete"
-      source: "Meta Engineering"
-      tags: "#News #Application"
-      author_tags: ""
-      summary: "Meta is continuing its long-term roadmap to help the construction industry leverage AI to produce high-quality and more sustainable concrete mixes, as well as those exclusively produced in the United States. Concurrent with the 2026 American Concrete Institute (ACI) Spring Convention, Meta is releasing a new AI model for designing concrete mixes – Bayesian Optimization [...] Read More... The post AI for American-Produced Cement and Concrete appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/"
-      opinion: "原文重点：Meta is continuing its long-term roadmap to help the construction industry leverage AI t… 读后观点：读后看，这件事的价值在于：Meta is continuing its long-term roadmap to help the construction i…"
-    - title: "Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others"
-      source: "Interconnects AI"
-      tags: "#News #Model"
-      author_tags: ""
-      summary: "New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others"
-      link: "https://www.interconnects.ai/p/latest-open-artifacts-20-new-orgs"
-      opinion: "原文重点：New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others 读后观点：读后看，这件事的价值在于：New types of models!"
-    - title: "Announcing the LangChain + MongoDB Partnership: The AI Agent Stack That Runs On The Database You Already Trust"
-      source: "LangChain Blog"
-      tags: "#Buildable #Application"
-      author_tags: ""
-      summary: "Build production AI agents on MongoDB Atlas — with vector search, persistent memory, natural-language querying, and end-to-end observability built in."
-      link: "https://blog.langchain.com/announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust/"
-      opinion: "原文重点：Build production AI agents on MongoDB Atlas — with vector search, persistent memory, nat… 读后观点：读后看，这件事的价值在于：Build production AI agents on MongoDB Atlas — with vector search, p…"
-    - title: "Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads"
-      source: "Meta Engineering"
-      tags: "#Buildable #Application"
-      author_tags: ""
-      summary: "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &#38; complexity to further a deeper understanding of people’s interests and intent. This increase [...] Read More... The post Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/"
-      opinion: "原文重点：Meta continues to lead the industry in utilizing groundbreaking AI Recommendation System… 读后观点：读后看，这件事的价值在于：Meta continues to lead the industry in utilizing groundbreaking AI…"
-    - title: "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
-      link: "https://huggingface.co/blog/ibm-granite/granite-4-vision"
-      opinion: "原文重点：Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents 读后观点：读后看，这件事的价值在于：Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documen…"
-    - title: "Accelerating the next phase of AI"
-      source: "OpenAI Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI."
-      link: "https://openai.com/index/accelerating-the-next-phase-ai"
-      opinion: "原文重点：OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next… 读后观点：读后看，这件事的价值在于：OpenAI raises $122 billion in new funding to expand frontier AI glo…"
-    - title: "Training mRNA Language Models Across 25 Species for $165"
-      source: "Hugging Face Blog"
-      tags: "#Analysis #Model"
-      author_tags: ""
-      summary: "Training mRNA Language Models Across 25 Species for $165"
-      link: "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species"
-      opinion: "原文重点：Training mRNA Language Models Across 25 Species for $165 读后观点：读后看，这件事的价值在于：Training mRNA Language Models Across 25 Species for $165"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

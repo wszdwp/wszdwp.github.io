@@ -1,103 +1,96 @@
 ---
-title: 第6期 AI News Daily｜Gemma 4 and what makes an open...
+title: 第6期 AI News Daily
 date: 2026-03-06
-layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Interconnects AI"
-      text: "Hint: it's not benchmark scores."
-    - label: "Latent Space"
-      text: "A welcome update from Google!"
-    - label: "Simon Willison"
-      text: "Eight years of wanting, three months of building with AI Lalit Maganti provides one of m…"
-    - label: "Simon Willison"
-      text: "From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insuranc…"
-    - label: "LangChain Blog"
-      text: "Most discussions of continual learning in AI focus on one thing: updating model weights.…"
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：OpenAI Engineering 页面当前展示了一系列与 agent 相关的工程文章，其中最新的一篇是 ‘From model to agent: Equippi…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：OpenAI 的 RSS 描述指出，Model Spec 是一个公开的模型行为框架，目标是在安全、用户自由和问责之间取得平衡。对 agent 来说，这不是抽象政策问题…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Anthropic Engineering 页面把这篇文章作为 Featured 内容，核心观点是：agentic coding 的评测结果，不仅受模型本身影响，也会…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Anthropic 近期连续多篇文章都在谈 harness、tool use 和长任务开发流程。这篇文章把焦点放在 long-running application…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Simon Willison 介绍了一个新的 Python 工具 scan-for-secrets，用来扫描日志目录中是否意外泄露了 API keys 等敏感信息。他…"
-  items:
-    - title: "Gemma 4 and what makes an open model succeed"
-      source: "Interconnects AI"
-      tags: "#News #Research"
-      author_tags: ""
-      summary: "Hint: it's not benchmark scores."
-      link: "https://www.interconnects.ai/p/gemma-4-and-what-makes-an-open-model"
-      opinion: "原文重点：Hint: it's not benchmark scores. 读后观点：读后看，这件事的价值在于：Hint: it's not benchmark scores."
-    - title: "[AINews] Gemma 4: The best small Multimodal Open Models, dramatically better than Gemma 3 in every way"
-      source: "Latent Space"
-      tags: "#Release #Model"
-      author_tags: ""
-      summary: "A welcome update from Google!"
-      link: "https://www.latent.space/p/ainews-gemma-4-the-best-small-multimodal"
-      opinion: "原文重点：A welcome update from Google! 读后观点：读后看，这件事的价值在于：A welcome update from Google!"
-    - title: "Eight years of wanting, three months of building with AI"
-      source: "Simon Willison"
-      tags: "#Release #Tools #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "Eight years of wanting, three months of building with AI Lalit Maganti provides one of my favorite pieces of long-form writing on agentic engineering I've seen in ages. They spent eight years thinking about and then three months building syntaqlite , which they describe as \" high-fidelity devtools that SQLite deserves \". The goal was to provide fast, robust and comprehensive linting and verifying tools for SQLite, suitable for use in language servers and other development tools - a parser, formatter, and verifier for SQLite queries. I've found myself wanting this kind of thing in the past myself, hence my (far less production-ready) sqlite-ast project from a few months ago. Lalit had been procrastinating on this project for years, because of the inevitable tedium of needing to work through 400+ grammar rules to help build a parser. That's exactly the kind of tedious work that coding agents excel at! Claude Code helped get over that initial hump and build the first prototype: AI basically let me put aside all my doubts on technical calls, my uncertainty of building the right thing and my reluctance to get started by giving me very concrete problems to work on. Instead of “I need to understand how SQLite’s parsing works”, it was “I need to get AI to suggest an approach for me so I can tear it up and build something better\". I work so much better with concrete prototypes to play with and code to look at than endlessly thinking about designs in my head, and AI lets me get to that point at a pace I could not have dreamed about before. Once I took the first step, every step after that was so much easier. That first vibe-coded prototype worked great as a proof of concept, but they eventually made the decision to throw it away and start again from scratch. AI worked great for the low level details but did not produce a coherent high-level architecture: I found that AI made me procrastinate on key design decisions. Because refactoring was cheap, I could always say “I’ll deal with this later.” And because AI could refactor at the same industrial scale it generated code, the cost of deferring felt low. But it wasn’t: deferring decisions corroded my ability to think clearly because the codebase stayed confusing in the meantime. The second attempt took a lot longer and involved a great deal more human-in-the-loop decision making, but the result is a robust library that can stand the test of time. It's worth setting aside some time to read this whole thing - it's full of non-obvious downsides to working heavily with AI, as well as a detailed explanation of how they overcame those hurdles. The key idea I took away from this concerns AI's weakness in terms of design and architecture: When I was working on something where I didn’t even know what I wanted, AI was somewhere between unhelpful and harmful. The architecture of the project was the clearest case: I spent weeks in the early days following AI down dead ends, exploring designs that felt productive in the moment but collapsed under scrutiny. In hindsight, I have to wonder if it would have been faster just thinking it through without AI in the loop at all. But expertise alone isn’t enough. Even when I understood a problem deeply, AI still struggled if the task had no objectively checkable answer. Implementation has a right answer, at least at a local level: the code compiles, the tests pass, the output matches what you asked for. Design doesn’t. We’re still arguing about OOP decades after it first took off. Via Hacker News Tags: sqlite , ai , generative-ai , llms , ai-assisted-programming , vibe-coding , agentic-engineering"
-      link: "https://simonwillison.net/2026/Apr/5/building-with-ai/#atom-everything"
-      opinion: "原文重点：Eight years of wanting, three months of building with AI Lalit Maganti provides one of m… 读后观点：读后看，这件事的价值在于：Eight years of wanting, three months of building with AI Lalit Maga…"
-    - title: "Quoting Chengpeng Mou"
-      source: "Simon Willison"
-      tags: "#News #Tools #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insurance ~600K weekly messages [classified as healthcare] from people living in “hospital deserts” (30 min drive to nearest hospital) 7 out of 10 msgs happen outside clinic hours &mdash; Chengpeng Mou , Head of Business Finance, OpenAI Tags: ai-ethics , generative-ai , openai , chatgpt , ai , llms"
-      link: "https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything"
-      opinion: "原文重点：From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insuranc… 读后观点：读后看，这件事的价值在于：From anonymized U.S."
-    - title: "Continual learning for AI agents"
-      source: "LangChain Blog"
-      tags: "#Buildable #Application"
-      author_tags: ""
-      summary: "Most discussions of continual learning in AI focus on one thing: updating model weights. But for AI agents, learning can happen at three distinct layers: the model, the harness, and the context. Understanding the difference changes how you think about building systems that improve over time. The three main layers"
-      link: "https://blog.langchain.com/continual-learning-for-ai-agents/"
-      opinion: "原文重点：Most discussions of continual learning in AI focus on one thing: updating model weights.… 读后观点：读后看，这件事的价值在于：Most discussions of continual learning in AI focus on one thing: up…"
-    - title: "From model to agent: Equipping the Responses API with a computer environment"
-      source: "OpenAI Engineering"
-      tags: "#Buildable #Tools"
-      author_tags: ""
-      summary: "OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更完整的 agent runtime 演进。"
-      link: "https://openai.com/index/equip-responses-api-computer-environment/"
-      opinion: "原文重点：OpenAI engineering 列表显示，Responses API 已开始围绕 agent 场景增加 computer environment，这意味着模型调用正在往更… 读后观点：读后看，这件事的价值在于：OpenAI Engineering 页面当前展示了一系列与 agent 相关的工程文章，其中最新的一篇是 ‘From model t…"
-    - title: "Inside our approach to the Model Spec"
-      source: "OpenAI Engineering"
-      tags: "#Analysis #Application"
-      author_tags: ""
-      summary: "OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。"
-      link: "https://openai.com/index/our-approach-to-the-model-spec"
-      opinion: "原文重点：OpenAI 在 RSS 中解释了 Model Spec 的定位：它是模型行为的公开框架，用来平衡安全、用户自由与问责，这类规范会直接影响 agent 行为边界。 读后观点：读后看，这件事的价值在于：OpenAI 的 RSS 描述指出，Model Spec 是一个公开的模型行为框架，目标是在安全、用户自由和问责之间取得平衡。对 agent 来说，这…"
-    - title: "Quantifying infrastructure noise in agentic coding evals"
-      source: "Anthropic Engineering"
-      tags: "#Buildable #Research"
-      author_tags: ""
-      summary: "Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度和复现性是个关键提醒。"
-      link: "https://www.anthropic.com/engineering/infrastructure-noise"
-      opinion: "原文重点：Anthropic 指出，基础设施配置噪声会显著影响 agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval 的可信度… 读后观点：读后看，这件事的价值在于：Anthropic Engineering 页面把这篇文章作为 Featured 内容，核心观点是：agentic coding 的评…"
-    - title: "Harness design for long-running application development"
-      source: "Anthropic Engineering"
-      tags: "#Buildable #Tools"
-      author_tags: ""
-      summary: "Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问题。"
-      link: "https://www.anthropic.com/engineering/harness-design-long-running-apps"
-      opinion: "原文重点：Anthropic 持续在强调 harness 设计，这篇聚焦长时间运行的应用开发场景，说明 agent 产品化不只是模型能力问题，更是 runtime、上下文和安全边界设计问… 读后观点：读后看，这件事的价值在于：Anthropic 近期连续多篇文章都在谈 harness、tool use 和长任务开发流程。这篇文章把焦点放在 long-runn…"
-    - title: "scan-for-secrets 0.1"
-      source: "Simon Willison"
-      tags: "#Buildable #Tools #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避免 API key 等敏感信息泄露。这非常贴近 agent 工程真实痛点。"
-      link: "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything"
-      opinion: "原文重点：Simon Willison 发布了 scan-for-secrets 工具，目标是扫描 Claude Code 等 agent/coding workflow 产出的日志，避… 读后观点：读后看，这件事的价值在于：Simon Willison 介绍了一个新的 Python 工具 scan-for-secrets，用来扫描日志目录中是否意外泄露了…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

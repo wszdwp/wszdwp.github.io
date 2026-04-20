@@ -1,103 +1,96 @@
 ---
-title: 第9期 AI News Daily｜System Card
+title: 第9期 AI News Daily
 date: 2026-03-09
-layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Simon Willison"
-      text: "GLM-5.1: Towards Long-Horizon Tasks Chinese AI lab Z.ai's latest model is a giant 754B p…"
-    - label: "Hacker News Frontpage"
-      text: "Bitcoin and quantum computing"
-    - label: "Simon Willison"
-      text: "Anthropic didn't release their latest model, Claude Mythos ( system card PDF ), today. T…"
-    - label: "Hacker News Frontpage"
-      text: "Show HN: An interactive map of Tolkien's Middle-earth"
-    - label: "Hacker News Frontpage"
-      text: "S3 Files"
-  summary_right:
-    - label: "观点摘要"
-      text: "如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - label: "观点摘要"
-      text: "如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：We shed light on OpenAI's first Dark Factory for the first time."
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：TL;DR: We've released new minor versions of deepagents & deepagentsjs , featuring a…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：This post walks through building an automated podcast generator that creates engagi…"
-  items:
-    - title: "GLM-5.1: Towards Long-Horizon Tasks"
-      source: "Simon Willison"
-      tags: "#Release #Application #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "GLM-5.1: Towards Long-Horizon Tasks Chinese AI lab Z.ai's latest model is a giant 754B parameter 1.51TB (on Hugging Face ) MIT-licensed monster - the same size as their previous GLM-5 release, and sharing the same paper . It's available via OpenRouter so I asked it to draw me a pelican: llm install llm-openrouter llm -m openrouter/z-ai/glm-5.1 'Generate an SVG of a pelican on a bicycle' And something new happened... unprompted, the model decided to give me an HTML page that included both the SVG and a separate set of CSS animations! The SVG was excellent, and might be my new favorite from an open weights model: But the animation broke it : That's the pelican, floating up in the top left corner. I usually don't do follow-up prompts for the pelican test, but in this case I made an exception: llm -c 'the animation is a bit broken, the pelican ends up positioned off the screen at the top right' GLM 5.1 replied: The issue is that CSS transform animations on SVG elements override the SVG transform attribute used for positioning, causing the pelican to lose its placement and fly off to the top-right. The fix is to separate positioning (SVG attribute) from animation (inner group) and use &lt;animateTransform&gt; for SVG rotations since it handles coordinate systems correctly. And spat out fresh HTML which fixed the problem! I particularly like the animation of the beak, which is described in the SVG comments like so: &lt;!-- Pouch (lower beak) with wobble --&gt; &lt; g &gt; &lt; path d = \" M42,-58 Q43,-50 48,-42 Q55,-35 62,-38 Q70,-42 75,-60 L42,-58 Z \" fill = \" url(#pouchGrad) \" stroke = \" #b06008 \" stroke-width = \" 1 \" opacity = \" 0.9 \" /&gt; &lt; path d = \" M48,-50 Q55,-46 60,-52 \" fill = \" none \" stroke = \" #c06a08 \" stroke-width = \" 0.8 \" opacity = \" 0.6 \" /&gt; &lt; animateTransform attributeName = \" transform \" type = \" scale \" values = \" 1,1; 1.03,0.97; 1,1 \" dur = \" 0.75s \" repeatCount = \" indefinite \" additive = \" sum \" /&gt; &lt;/ g &gt; Update : On Bluesky @charles.capps.me suggested a \"NORTH VIRGINIA OPOSSUM ON AN E-SCOOTER\" and... The HTML+SVG comments on that one include /* Earring sparkle */, &lt;!-- Opossum fur gradient --&gt;, &lt;!-- Distant treeline silhouette - Virginia pines --&gt;, &lt;!-- Front paw on handlebar --&gt; - here's the transcript and the HTML result . Tags: css , svg , ai , generative-ai , llms , pelican-riding-a-bicycle , llm-release , ai-in-china , glm"
-      link: "https://simonwillison.net/2026/Apr/7/glm-51/#atom-everything"
-      opinion: "原文重点：GLM-5.1: Towards Long-Horizon Tasks Chinese AI lab Z.ai's latest model is a giant 754B p… 读后观点：读后看，这件事的价值在于：GLM-5.1: Towards Long-Horizon Tasks Chinese AI lab Z.ai's latest mo…"
-    - title: "Bitcoin and quantum computing"
-      source: "Hacker News Frontpage"
-      tags: "#Release #Research"
-      author_tags: ""
-      summary: "Article URL: https://nehanarula.org/2026/04/03/bitcoin-and-quantum-computing.html Comments URL: https://news.ycombinator.com/item?id=47681274 Points: 132 # Comments: 93"
-      link: "https://nehanarula.org/2026/04/03/bitcoin-and-quantum-computing.html"
-      opinion: "原文重点：Bitcoin and quantum computing 读后观点：如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - title: "Anthropic's Project Glasswing - restricting Claude Mythos to security researchers - sounds necessary to me"
-      source: "Simon Willison"
-      tags: "#Release #Application #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "Anthropic didn't release their latest model, Claude Mythos ( system card PDF ), today. They have instead made it available to a very restricted set of preview partners under their newly announced Project Glasswing . The model is a general purpose model, similar to Claude Opus 4.6, but Anthropic claim that its cyber-security research abilities are strong enough that they need to give the software industry as a whole time to prepare. Mythos Preview has already found thousands of high-severity vulnerabilities, including some in every major operating system and web browser . Given the rate of AI progress, it will not be long before such capabilities proliferate, potentially beyond actors who are committed to deploying them safely. [...] Project Glasswing partners will receive access to Claude Mythos Preview to find and fix vulnerabilities or weaknesses in their foundational systems—systems that represent a very large portion of the world’s shared cyberattack surface. We anticipate this work will focus on tasks like local vulnerability detection, black box testing of binaries, securing endpoints, and penetration testing of systems. There's a great deal more technical detail in Assessing Claude Mythos Preview’s cybersecurity capabilities on the Anthropic Red Team blog: In one case, Mythos Preview wrote a web browser exploit that chained together four vulnerabilities, writing a complex JIT heap spray that escaped both renderer and OS sandboxes. It autonomously obtained local privilege escalation exploits on Linux and other operating systems by exploiting subtle race conditions and KASLR-bypasses. And it autonomously wrote a remote code execution exploit on FreeBSD's NFS server that granted full root access to unauthenticated users by splitting a 20-gadget ROP chain over multiple packets. Plus this comparison with Claude 4.6 Opus: Our internal evaluations showed that Opus 4.6 generally had a near-0% success rate at autonomous exploit development. But Mythos Preview is in a different league. For example, Opus 4.6 turned the vulnerabilities it had found in Mozilla’s Firefox 147 JavaScript engine—all patched in Firefox 148—into JavaScript shell exploits only two times out of several hundred attempts. We re-ran this experiment as a benchmark for Mythos Preview, which developed working exploits 181 times, and achieved register control on 29 more. Saying \"our model is too dangerous to release\" is a great way to build buzz around a new model, but in this case I expect their caution is warranted. Just a few days ( last Friday ) ago I started a new ai-security-research tag on this blog to acknowledge an uptick in credible security professionals pulling the alarm on how good modern LLMs have got at vulnerability research. Greg Kroah-Hartman of the Linux kernel: Months ago, we were getting what we called 'AI slop,' AI-generated security reports that were obviously wrong or low quality. It was kind of funny. It didn't really worry us. Something happened a month ago, and the world switched. Now we have real reports. All open source projects have real reports that are made with AI, but they're good, and they're real. Daniel Stenberg of curl : The challenge with AI in open source security has transitioned from an AI slop tsunami into more of a ... plain security report tsunami. Less slop but lots of reports. Many of them really good. I'm spending hours per day on this now. It's intense. And Thomas Ptacek published Vulnerability Research Is Cooked , a post inspired by his podcast conversation with Anthropic's Nicholas Carlini. Anthropic have a 5 minute talking heads video describing the Glasswing project. Nicholas Carlini appears as one of those talking heads, where he said (highlights mine): It has the ability to chain together vulnerabilities. So what this means is you find two vulnerabilities, either of which doesn't really get you very much independently. But this model is able to create exploits out of three, four, or sometimes five vulnerabilities that in sequence give you some kind of very sophisticated end outcome. [...] I've found more bugs in the last couple of weeks than I found in the rest of my life combined . We've used the model to scan a bunch of open source code, and the thing that we went for first was operating systems, because this is the code that underlies the entire internet infrastructure. For OpenBSD, we found a bug that's been present for 27 years, where I can send a couple of pieces of data to any OpenBSD server and crash it . On Linux, we found a number of vulnerabilities where as a user with no permissions, I can elevate myself to the administrator by just running some binary on my machine. For each of these bugs, we told the maintainers who actually run the software about them, and they went and fixed them and have deployed the patches patches so that anyone who runs the software is no longer vulnerable to these attacks. I found this on the OpenBSD 7.8 errata page : 025: RELIABILITY FIX: March 25, 2026 All architectures TCP packets with invalid SACK options could crash the kernel. A source code patch exists which remedies this problem. I tracked that change down in the GitHub mirror of the OpenBSD CVS repo (apparently they still use CVS!) and found it using git blame : Sure enough, the surrounding code is from 27 years ago. I'm not sure which Linux vulnerability Nicholas was describing, but it may have been this NFS one recently covered by Michael Lynch . There's enough smoke here that I believe there's a fire. It's not surprising to find vulnerabilities in decades-old software, especially given that they're mostly written in C, but what's new is that coding agents run by the latest frontier LLMs are proving tirelessly capable at digging up these issues. I actually thought to myself on Friday that this sounded like an industry-wide reckoning in the making, and that it might warrant a huge investment of time and money to get ahead of the inevitable barrage of vulnerabilities. Project Glasswing incorporates \"$100M in usage credits ... as well as $4M in direct donations to open-source security organizations\". Partners include AWS, Apple, Microsoft, Google, and the Linux Foundation. It would be great to see OpenAI involved as well - GPT-5.4 already has a strong reputation for finding security vulnerabilities and they have stronger models on the near horizon. The bad news for those of us who are not trusted partners is this: We do not plan to make Claude Mythos Preview generally available, but our eventual goal is to enable our users to safely deploy Mythos-class models at scale—for cybersecurity purposes, but also for the myriad other benefits that such highly capable models will bring. To do so, we need to make progress in developing cybersecurity (and other) safeguards that detect and block the model’s most dangerous outputs. We plan to launch new safeguards with an upcoming Claude Opus model, allowing us to improve and refine them with a model that does not pose the same level of risk as Mythos Preview. I can live with that. I think the security risks really are credible here, and having extra time for trusted teams to get ahead of them is a reasonable trade-off. Tags: security , thomas-ptacek , ai , generative-ai , llms , anthropic , nicholas-carlini , ai-ethics , llm-release , ai-security-research"
-      link: "https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything"
-      opinion: "原文重点：Anthropic didn't release their latest model, Claude Mythos ( system card PDF ), today. T… 读后观点：读后看，这件事的价值在于：Anthropic didn't release their latest model, Claude Mythos ( system…"
-    - title: "Show HN: An interactive map of Tolkien's Middle-earth"
-      source: "Hacker News Frontpage"
-      tags: "#Release #Research"
-      author_tags: ""
-      summary: "An interactive map of Tolkien’s Middle-earth, with events from across the legendarium plotted as markers. I have been commuting a fair bit between the East and West coast, and thanks to American Airlines' free onboard WiFi, I was able to vibe-code a full interactive map of Middle-earth right from my economy seat at the back of the bus. It's rather amazing how much an LLM knows about Tolkien's work, and it was fun to delve into many of the nooks and crannies of Tolkien's lore. Some features: - Plot on the map the journey of the main characters in both The Hobbit and The Lord of the Rings. - Follow a list of events in the chronological Timeline - Zoom in on the high-def map and explore many of the off-the-main-plotline places - Use the 'measure distances' feature to see how far apart things are. I also had a lot of fun learning about tiling to allow for efficient zooming. If you are anything like me, this should provide a fun companion to reading the books or watching the movies (note that on this site, I followed the book narrative, and did not include Peter Jackson's many departures) If you get the chance to check it out, I would love more feedback, and if there is demand, I might do the same for Game of Thrones. Comments URL: https://news.ycombinator.com/item?id=47681112 Points: 163 # Comments: 32"
-      link: "https://middle-earth-interactive-map.web.app/"
-      opinion: "原文重点：Show HN: An interactive map of Tolkien's Middle-earth 读后观点：如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - title: "S3 Files"
-      source: "Hacker News Frontpage"
-      tags: "#Release #Research"
-      author_tags: ""
-      summary: "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s... Comments URL: https://news.ycombinator.com/item?id=47680404 Points: 267 # Comments: 77"
-      link: "https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html"
-      opinion: "原文重点：S3 Files 读后观点：如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - title: "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon"
-      source: "Hacker News Frontpage"
-      tags: "#Release #Application"
-      author_tags: ""
-      summary: "About six months ago, I started working on a project to fine-tune Whisper locally on my M2 Ultra Mac Studio with a limited compute budget. I got into it. The problem I had at the time was I had 15,000 hours of audio data in Google Cloud Storage, and there was no way I could fit all the audio onto my local machine, so I built a system to stream data from my GCS to my machine during training. Gemma 3n came out, so I added that. Kinda went nuts, tbh. Then I put it on the shelf. When Gemma 4 came out a few days ago, I dusted it off, cleaned it up, broke out the Gemma part from the Whisper fine-tuning and added support for Gemma 4. I'm presenting it for you here today to play with, fork and improve upon. One thing I have learned so far: It's very easy to OOM when you fine-tune on longer sequences! My local Mac Studio has 64GB RAM, so I run out of memory constantly. Anywho, given how much interest there is in Gemma 4, and frankly, the fact that you can't really do audio fine-tuning with MLX, that's really the reason this exists (in addition to my personal interest). I would have preferred to use MLX and not have had to make this, but here we are. Welcome to my little side quest. And so I made this. I hope you have as much fun using it as I had fun making it. -Matt Comments URL: https://news.ycombinator.com/item?id=47680309 Points: 158 # Comments: 22"
-      link: "https://github.com/mattmireles/gemma-tuner-multimodal"
-      opinion: "原文重点：Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon 读后观点：如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - title: "System Card: Claude Mythos Preview [pdf]"
-      source: "Hacker News Frontpage"
-      tags: "#Release #Research"
-      author_tags: ""
-      summary: "Related: Project Glasswing: Securing critical software for the AI era - https://news.ycombinator.com/item?id=47679121 Assessing Claude Mythos Preview's cybersecurity capabilities - https://news.ycombinator.com/item?id=47679155 Comments URL: https://news.ycombinator.com/item?id=47679258 Points: 637 # Comments: 450"
-      link: "https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf"
-      opinion: "原文重点：System Card: Claude Mythos Preview [pdf] 读后观点：如果要写进日报，最好回到原始链接核对正文，不要直接把社区抓取碎片当成观点。"
-    - title: "Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony"
-      source: "Latent Space"
-      tags: "#Analysis #Workflow"
-      author_tags: ""
-      summary: "We shed light on OpenAI's first Dark Factory for the first time."
-      link: "https://www.latent.space/p/harness-eng"
-      opinion: "原文重点：We shed light on OpenAI's first Dark Factory for the first time. 读后观点：读后看，这件事的价值在于：We shed light on OpenAI's first Dark Factory for the first time."
-    - title: "Deep Agents v0.5"
-      source: "LangChain Blog"
-      tags: "#Release #Workflow"
-      author_tags: ""
-      summary: "&#x1F4A1; TL;DR: We&#x2019;ve released new minor versions of deepagents & deepagentsjs , featuring async (non-blocking) subagents, expanded multi-modal filesystem support, and more. See the changelog for details. Async subagents Deep Agents can now delegate work to remote agents that run in the background. As opposed to the existing"
-      link: "https://blog.langchain.com/deep-agents-v0-5/"
-      opinion: "原文重点：TL;DR: We've released new minor versions of deepagents & deepagentsjs , featuring async… 读后观点：读后看，这件事的价值在于：TL;DR: We've released new minor versions of deepagents & deepagentsj…"
-    - title: "Building real-time conversational podcasts with Amazon Nova 2 Sonic"
-      source: "AWS Machine Learning Blog"
-      tags: "#Hands-On #Infra"
-      author_tags: ""
-      summary: "This post walks through building an automated podcast generator that creates engaging conversations between two AI hosts on any topic, demonstrating the streaming capabilities of Nova Sonic, stage-aware content filtering, and real-time audio generation."
-      link: "https://aws.amazon.com/blogs/machine-learning/building-real-time-conversational-podcasts-with-amazon-nova-2-sonic/"
-      opinion: "原文重点：This post walks through building an automated podcast generator that creates engaging co… 读后观点：读后看，这件事的价值在于：This post walks through building an automated podcast generator tha…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

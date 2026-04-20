@@ -1,103 +1,96 @@
 ---
-title: 第4期 AI News Daily｜[AINews] The Last 4 Jobs in Te...
+title: 第4期 AI News Daily
 date: 2026-03-04
-layout: brief-post
-tags: AI-Daily Swyx Simon-Willison
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Latent Space"
-      text: "a quiet day lets us examine an interesting mental model"
-    - label: "Hugging Face Blog"
-      text: "TRL v1.0: Post-Training Library Built to Move with the Field"
-    - label: "LangChain Blog"
-      text: "It feels like spring has sprung here, and so has a new NVIDIA integration, ticket sales…"
-    - label: "Hugging Face Blog"
-      text: "Holo3: Breaking the Computer Use Frontier"
-    - label: "Hugging Face Blog"
-      text: "Falcon Perception"
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：The accidental \"open sourcing\" of Claude Code brings a ton of insights."
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automa…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Any Custom Frontend with Gradio&apos;s Backend"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：This is the second post in the Ranking Engineer Agent blog series exploring the aut…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：We cap out our World Models coverage with one of the most exciting new approaches -…"
-  items:
-    - title: "[AINews] The Last 4 Jobs in Tech"
-      source: "Latent Space"
-      tags: "#Release #Model"
-      author_tags: ""
-      summary: "a quiet day lets us examine an interesting mental model"
-      link: "https://www.latent.space/p/ainews-the-last-4-jobs-in-tech"
-      opinion: "原文重点：a quiet day lets us examine an interesting mental model 读后观点：读后看，这件事的价值在于：a quiet day lets us examine an interesting mental model"
-    - title: "TRL v1.0: Post-Training Library Built to Move with the Field"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "TRL v1.0: Post-Training Library Built to Move with the Field"
-      link: "https://huggingface.co/blog/trl-v1"
-      opinion: "原文重点：TRL v1.0: Post-Training Library Built to Move with the Field 读后观点：读后看，这件事的价值在于：TRL v1.0: Post-Training Library Built to Move with the Field"
-    - title: "March 2026: LangChain Newsletter"
-      source: "LangChain Blog"
-      tags: "#Release #Workflow"
-      author_tags: ""
-      summary: "It feels like spring has sprung here, and so has a new NVIDIA integration, ticket sales for Interrupt 2026, and announcing LangSmith Fleet (formerly Agent Builder)."
-      link: "https://blog.langchain.com/march-2026-langchain-newsletter/"
-      opinion: "原文重点：It feels like spring has sprung here, and so has a new NVIDIA integration, ticket sales… 读后观点：读后看，这件事的价值在于：It feels like spring has sprung here, and so has a new NVIDIA integr…"
-    - title: "Holo3: Breaking the Computer Use Frontier"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Holo3: Breaking the Computer Use Frontier"
-      link: "https://huggingface.co/blog/Hcompany/holo3"
-      opinion: "原文重点：Holo3: Breaking the Computer Use Frontier 读后观点：读后看，这件事的价值在于：Holo3: Breaking the Computer Use Frontier"
-    - title: "Falcon Perception"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Falcon Perception"
-      link: "https://huggingface.co/blog/tiiuae/falcon-perception"
-      opinion: "原文重点：Falcon Perception 读后观点：读后看，这条内容更像是在提示一个具体方向或机会，值得结合实际应用场景判断。"
-    - title: "[AINews] The Claude Code Source Leak"
-      source: "Latent Space"
-      tags: "#Release #Agent"
-      author_tags: ""
-      summary: "The accidental \"open sourcing\" of Claude Code brings a ton of insights."
-      link: "https://www.latent.space/p/ainews-the-claude-code-source-leak"
-      opinion: "原文重点：The accidental \"open sourcing\" of Claude Code brings a ton of insights. 读后观点：读后看，这件事的价值在于：The accidental \"open sourcing\" of Claude Code brings a ton of insights."
-    - title: "Gradient Labs gives every bank customer an AI account manager"
-      source: "OpenAI Blog"
-      tags: "#Buildable #Workflow"
-      author_tags: ""
-      summary: "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability."
-      link: "https://openai.com/index/gradient-labs"
-      opinion: "原文重点：Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate ba… 读后观点：读后看，这件事的价值在于：Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI ag…"
-    - title: "Any Custom Frontend with Gradio&apos;s Backend"
-      source: "Hugging Face Blog"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Any Custom Frontend with Gradio&apos;s Backend"
-      link: "https://huggingface.co/blog/introducing-gradio-server"
-      opinion: "原文重点：Any Custom Frontend with Gradio&apos;s Backend 读后观点：读后看，这件事的价值在于：Any Custom Frontend with Gradio&apos;s Backend"
-    - title: "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure"
-      source: "Meta Engineering"
-      tags: "#Hands-On #Application"
-      author_tags: ""
-      summary: "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranking model experiments. This post covers how to optimize the low-level infrastructure that makes those models run [...] Read More... The post KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/"
-      opinion: "原文重点：This is the second post in the Ranking Engineer Agent blog series exploring the autonomo… 读后观点：读后看，这件事的价值在于：This is the second post in the Ranking Engineer Agent blog series e…"
-    - title: "Moonlake: Causal World Models should be Multimodal, Interactive, and Efficient — with Chris Manning and Fan-yun Sun"
-      source: "Latent Space"
-      tags: "#News #Application"
-      author_tags: ""
-      summary: "We cap out our World Models coverage with one of the most exciting new approaches - long running, multiplayer, interactive world models built with agents bootstrapped from game engines!"
-      link: "https://www.latent.space/p/moonlake"
-      opinion: "原文重点：We cap out our World Models coverage with one of the most exciting new approaches - long… 读后观点：读后看，这件事的价值在于：We cap out our World Models coverage with one of the most exciting…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

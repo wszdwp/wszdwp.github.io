@@ -1,103 +1,96 @@
 ---
-title: 第1期 AI News Daily｜FFmpeg at Meta
+title: 第1期 AI News Daily
 date: 2026-03-01
-layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Meta Engineering"
-      text: "FFmpeg is truly a multi-tool for media processing. As an industry-standard tool it suppo…"
-    - label: "Interconnects AI"
-      text: "Welcome to the year of the horse!"
-    - label: "Interconnects AI"
-      text: "The latest Olmo model and discussions at the frontier of open-source post training tools…"
-    - label: "Interconnects AI"
-      text: "Subtle precedents on the future of open models set by the unfolding Anthropic v. Departm…"
-    - label: "Interconnects AI"
-      text: "Reacting to Anthropic's post on \"distillation attacks.\""
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：We’re sharing the technical details behind how Advanced Browsing Protection (ABP) i…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Even seemingly simple engineering tasks — like updating an API — can become monumen…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：The open-closed gap, distillation, innovation timescales, how open models win, spec…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Markets, capabilities, cope, and bewilderment in the industrialization of language…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Meta’s Ranking Engineer Agent (REA) autonomously executes key steps across the end-…"
-  items:
-    - title: "FFmpeg at Meta: Media Processing at Scale"
-      source: "Meta Engineering"
-      tags: "#Buildable #Tools"
-      author_tags: ""
-      summary: "FFmpeg is truly a multi-tool for media processing. As an industry-standard tool it supports a wide variety of audio and video codecs and container formats. It can also orchestrate complex chains of filters for media editing and manipulation. For the people who use our apps, FFmpeg plays an important role in enabling new video experiences [...] Read More... The post FFmpeg at Meta: Media Processing at Scale appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/02/video-engineering/ffmpeg-at-meta-media-processing-at-scale/"
-      opinion: "原文重点：FFmpeg is truly a multi-tool for media processing. As an industry-standard tool it suppo… 读后观点：读后看，这件事的价值在于：FFmpeg is truly a multi-tool for media processing."
-    - title: "Latest open artifacts (#19): Qwen 3.5, GLM 5, MiniMax 2.5 — Chinese labs' latest push of the frontier"
-      source: "Interconnects AI"
-      tags: "#News #Agent"
-      author_tags: ""
-      summary: "Welcome to the year of the horse!"
-      link: "https://www.interconnects.ai/p/latest-open-artifacts-19-qwen-35"
-      opinion: "原文重点：Welcome to the year of the horse! 读后观点：读后看，这件事的价值在于：Welcome to the year of the horse!"
-    - title: "Olmo Hybrid and future LLM architectures"
-      source: "Interconnects AI"
-      tags: "#Buildable #Tools"
-      author_tags: ""
-      summary: "The latest Olmo model and discussions at the frontier of open-source post training tools."
-      link: "https://www.interconnects.ai/p/olmo-hybrid-and-future-llm-architectures"
-      opinion: "原文重点：The latest Olmo model and discussions at the frontier of open-source post training tools… 读后观点：读后看，这件事的价值在于：The latest Olmo model and discussions at the frontier of open-sourc…"
-    - title: "Dean Ball on open models and government control"
-      source: "Interconnects AI"
-      tags: "#News #Model"
-      author_tags: ""
-      summary: "Subtle precedents on the future of open models set by the unfolding Anthropic v. Department of War case."
-      link: "https://www.interconnects.ai/p/how-anthropic-vs-dow-impacts-open"
-      opinion: "原文重点：Subtle precedents on the future of open models set by the unfolding Anthropic v. Departm… 读后观点：读后看，这件事的价值在于：Subtle precedents on the future of open models set by the unfolding…"
-    - title: "How much does distillation really matter for Chinese LLMs?"
-      source: "Interconnects AI"
-      tags: "#News #Model"
-      author_tags: ""
-      summary: "Reacting to Anthropic's post on \"distillation attacks.\""
-      link: "https://www.interconnects.ai/p/how-much-does-distillation-really"
-      opinion: "原文重点：Reacting to Anthropic's post on \"distillation attacks.\" 读后观点：读后看，这件事的价值在于：Reacting to Anthropic's post on \"distillation attacks.\""
-    - title: "How Advanced Browsing Protection Works in Messenger"
-      source: "Meta Engineering"
-      tags: "#News #Tools"
-      author_tags: ""
-      summary: "We’re sharing the technical details behind how Advanced Browsing Protection (ABP) in Messenger protects the privacy of the links clicked on within chats while still warning people about malicious links. We hope that this post has helped to illuminate some of the engineering challenges and infrastructure components involved for providing this feature for our users. [...] Read More... The post How Advanced Browsing Protection Works in Messenger appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/09/security/how-advanced-browsing-protection-works-in-messenger/"
-      opinion: "原文重点：We’re sharing the technical details behind how Advanced Browsing Protection (ABP) in Mes… 读后观点：读后看，这件事的价值在于：We’re sharing the technical details behind how Advanced Browsing Pr…"
-    - title: "Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps"
-      source: "Meta Engineering"
-      tags: "#Hands-On #Application"
-      author_tags: ""
-      summary: "Even seemingly simple engineering tasks — like updating an API — can become monumental undertakings when you&#8217;re dealing with millions of lines of code and thousands of engineers, especially if the changes are security-related. Nowhere is this more apparent than in mobile security, where a single class of vulnerability can be replicated across hundreds of [...] Read More... The post Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/"
-      opinion: "原文重点：Even seemingly simple engineering tasks — like updating an API — can become monumental u… 读后观点：读后看，这件事的价值在于：Even seemingly simple engineering tasks — like updating an API — ca…"
-    - title: "Open models in perpetual catch-up"
-      source: "Interconnects AI"
-      tags: "#Analysis #Model"
-      author_tags: ""
-      summary: "The open-closed gap, distillation, innovation timescales, how open models win, specialized models, what&#8217;s missing, etc."
-      link: "https://www.interconnects.ai/p/open-models-in-perpetual-catch-up"
-      opinion: "原文重点：The open-closed gap, distillation, innovation timescales, how open models win, specializ… 读后观点：读后看，这件事的价值在于：The open-closed gap, distillation, innovation timescales, how open…"
-    - title: "What comes next with open models"
-      source: "Interconnects AI"
-      tags: "#News #Model"
-      author_tags: ""
-      summary: "Markets, capabilities, cope, and bewilderment in the industrialization of language models."
-      link: "https://www.interconnects.ai/p/the-next-phase-of-open-models"
-      opinion: "原文重点：Markets, capabilities, cope, and bewilderment in the industrialization of language model… 读后观点：读后看，这件事的价值在于：Markets, capabilities, cope, and bewilderment in the industrializat…"
-    - title: "Ranking Engineer Agent (REA): The Autonomous AI Agent Accelerating Meta’s Ads Ranking Innovation"
-      source: "Meta Engineering"
-      tags: "#Release #Application"
-      author_tags: ""
-      summary: "Meta’s Ranking Engineer Agent (REA) autonomously executes key steps across the end-to-end machine learning (ML) lifecycle for ads ranking models. This post covers REA’s ML experimentation capabilities: autonomously generating hypotheses, launching training jobs, debugging failures, and iterating on results. Future posts will cover additional REA capabilities. REA reduces the need for manual intervention. It manages [...] Read More... The post Ranking Engineer Agent (REA): The Autonomous AI Agent Accelerating Meta’s Ads Ranking Innovation appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/"
-      opinion: "原文重点：Meta’s Ranking Engineer Agent (REA) autonomously executes key steps across the end-to-en… 读后观点：读后看，这件事的价值在于：Meta’s Ranking Engineer Agent (REA) autonomously executes key steps…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>

@@ -1,103 +1,96 @@
 ---
-title: 第7期 AI News Daily｜为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件...
+title: 第7期 AI News Daily
 date: 2026-03-07
-layout: brief-post
-tags: AI-Daily Simon-Willison Andrej-Karpathy
+layout: post
+tags: AI Agent Daily
 published: true
-brief_data:
-  summary_left:
-    - label: "Simon Willison"
-      text: "Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计…"
-    - label: "Andrej Karpathy"
-      text: "Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要…"
-    - label: "量子位"
-      text: "量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。"
-    - label: "xAI News"
-      text: "xAI 官方新闻源已纳入关注，但当前抓取环境被 Cloudflare 拦截，后续需要切换到可读镜像、RSS 中间层或其他公开替代源。"
-    - label: "AWS Machine Learning Blog"
-      text: "In this post, we walk through building a custom HR onboarding agent with Quick. We show…"
-  summary_right:
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruct for tool calli…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：In this post, we show how to implement a generative AI agentic assistant that uses…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：This blog post demonstrates how Windward helps enhance and accelerate alert investi…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：AI coding assistants are powerful but only as good as their understanding of your c…"
-    - label: "观点摘要"
-      text: "读后看，这件事的价值在于：Amazon Bedrock AgentCore Gateway provides a centralized layer for managing how AI a…"
-  items:
-    - title: "research-llm-apis 2026-04-04"
-      source: "Simon Willison"
-      tags: "#Buildable #Tools #Simon-Willison"
-      author_tags: "#Simon-Willison"
-      summary: "Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计很有参考价值。"
-      link: "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything"
-      opinion: "原文重点：Simon 在研究不同大模型厂商 API 的抽象层设计，特别提到 server-side tool execution 让原有统一抽象变得不够。这对多模型 agent 平台设计… 读后观点：读后看，这件事的价值在于：Simon 说他正在重构自己的 LLM Python library / CLI abstraction layer，因为不同厂商 A…"
-    - title: "2025 LLM Year in Review"
-      source: "Andrej Karpathy"
-      tags: "#Analysis #Model #Andrej-Karpathy"
-      author_tags: "#Andrej-Karpathy"
-      summary: "Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要性。"
-      link: "https://karpathy.bearblog.dev/year-in-review-2025/"
-      opinion: "原文重点：Karpathy 总结 2025 年 LLM 进展，重点提到 RLVR 成为新的关键训练阶段，以及 reasoning / test-time compute 对能力提升的重要… 读后观点：读后看，这件事的价值在于：Karpathy 在这篇年度回顾里把 2025 年 LLM 进展归纳为若干重要范式变化，其中 RLVR 成为新的核心阶段。他强调，模型…"
-    - title: "为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜"
-      source: "量子位"
-      tags: "#News #Infra"
-      author_tags: ""
-      summary: "量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。"
-      link: "https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg"
-      opinion: "原文重点：量子位这篇文章提供了一个很明确的信号：Agent 正在从软件能力外溢到专用硬件形态，说明 AI 应用基础设施层会越来越重要。 读后观点：读后看，这件事的价值在于：目前抓取环境对微信公众号正文抽取有限，但从标题和来源已经能明确看出主题：市场上开始出现专门为 Agent 场景设计的硬件方案，并且以成本、部署形态、专用性为卖点。这说…"
-    - title: "xAI official site currently blocked by Cloudflare in this environment"
-      source: "xAI News"
-      tags: "#Release #Agent"
-      author_tags: ""
-      summary: "xAI 官方新闻源已纳入关注，但当前抓取环境被 Cloudflare 拦截，后续需要切换到可读镜像、RSS 中间层或其他公开替代源。"
-      link: "https://x.ai/news"
-      opinion: "原文重点：xAI 官方新闻源已纳入关注，但当前抓取环境被 Cloudflare 拦截，后续需要切换到可读镜像、RSS 中间层或其他公开替代源。 读后观点：读后看，这件事的价值在于：xAI 官方站点已经列入关注列表，但当前环境访问 x.ai/news 会被 Cloudflare 阻挡。这意味着 source 层面已经纳入了 xAI，但还需要找到替…"
-    - title: "Build AI-powered employee onboarding agents with Amazon Quick"
-      source: "AWS Machine Learning Blog"
-      tags: "#Hands-On #Infra"
-      author_tags: ""
-      summary: "In this post, we walk through building a custom HR onboarding agent with Quick. We show how to configure an agent that understands your organization’s processes, connects to your HR systems, and automates common tasks, such as answering new-hire questions and tracking document completion."
-      link: "https://aws.amazon.com/blogs/machine-learning/build-ai-powered-employee-onboarding-agents-with-amazon-quick/"
-      opinion: "原文重点：In this post, we walk through building a custom HR onboarding agent with Quick. We show… 读后观点：读后看，这件事的价值在于：In this post, we walk through building a custom HR onboarding agent…"
-    - title: "Accelerate agentic tool calling with serverless model customization in Amazon SageMaker AI"
-      source: "AWS Machine Learning Blog"
-      tags: "#Buildable #Tools"
-      author_tags: ""
-      summary: "In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruct for tool calling using RLVR. We cover dataset preparation across three distinct agent behaviors, reward function design with tiered scoring, training configuration and results interpretation, evaluation on held-out data with unseen tools, and deployment."
-      link: "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-tool-calling-with-serverless-model-customization-in-amazon-sagemaker-ai/"
-      opinion: "原文重点：In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruct for tool calling us… 读后观点：读后看，这件事的价值在于：In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruc…"
-    - title: "Building Intelligent Search with Amazon Bedrock and Amazon OpenSearch for hybrid RAG solutions"
-      source: "AWS Machine Learning Blog"
-      tags: "#Hands-On #Infra"
-      author_tags: ""
-      summary: "In this post, we show how to implement a generative AI agentic assistant that uses both semantic and text-based search using Amazon Bedrock, Amazon Bedrock AgentCore, Strands Agents and Amazon OpenSearch."
-      link: "https://aws.amazon.com/blogs/machine-learning/building-intelligent-search-with-amazon-bedrock-and-amazon-opensearch-for-hybrid-rag-solutions/"
-      opinion: "原文重点：In this post, we show how to implement a generative AI agentic assistant that uses both… 读后观点：读后看，这件事的价值在于：In this post, we show how to implement a generative AI agentic assis…"
-    - title: "From isolated alerts to contextual intelligence: Agentic maritime anomaly analysis with generative AI"
-      source: "AWS Machine Learning Blog"
-      tags: "#Hands-On #Infra"
-      author_tags: ""
-      summary: "This blog post demonstrates how Windward helps enhance and accelerate alert investigation processes by combining geospatial intelligence with generative AI, enabling analysts to focus on decision-making rather than data collection."
-      link: "https://aws.amazon.com/blogs/machine-learning/from-isolated-alerts-to-contextual-intelligence-agentic-maritime-anomaly-analysis-with-generative-ai/"
-      opinion: "原文重点：This blog post demonstrates how Windward helps enhance and accelerate alert investigatio… 读后观点：读后看，这件事的价值在于：This blog post demonstrates how Windward helps enhance and accelera…"
-    - title: "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines"
-      source: "Meta Engineering"
-      tags: "#Buildable #Application"
-      author_tags: ""
-      summary: "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough. We fixed this by building [...] Read More... The post How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines appeared first on Engineering at Meta ."
-      link: "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/"
-      opinion: "原文重点：AI coding assistants are powerful but only as good as their understanding of your codeba… 读后观点：读后看，这件事的价值在于：AI coding assistants are powerful but only as good as their underst…"
-    - title: "Connecting MCP servers to Amazon Bedrock AgentCore Gateway using Authorization Code flow"
-      source: "AWS Machine Learning Blog"
-      tags: "#Hands-On #Tools"
-      author_tags: ""
-      summary: "Amazon Bedrock AgentCore Gateway provides a centralized layer for managing how AI agents connect to tools and MCP servers across your organization. In this post, we walk through how to configure AgentCore Gateway to connect to an OAuth-protected MCP server using the Authorization Code flow."
-      link: "https://aws.amazon.com/blogs/machine-learning/connecting-mcp-servers-to-amazon-bedrock-agentcore-gateway-using-authorization-code-flow/"
-      opinion: "原文重点：Amazon Bedrock AgentCore Gateway provides a centralized layer for managing how AI agents… 读后观点：读后看，这件事的价值在于：Amazon Bedrock AgentCore Gateway provides a centralized layer for m…"
 ---
 
-{% include render-brief.html data=page.brief_data %}
+<style>
+.brief-item {
+  margin: 28px 0 42px;
+}
+.brief-item .brief-title {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.brief-item .brief-title h3 {
+  margin: 0;
+}
+.brief-columns {
+  display: flex;
+  gap: 24px;
+}
+.brief-columns .left,
+.brief-columns .right {
+  width: 50%;
+}
+.brief-columns .left p,
+.brief-columns .right p {
+  margin: 0 0 12px;
+}
+.brief-columns .meta {
+  color: #666;
+  font-size: 0.95em;
+}
+.brief-columns .right {
+  text-align: left;
+}
+.summary-grid {
+  display: flex;
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+.summary-grid .left,
+.summary-grid .right {
+  width: 50%;
+}
+.summary-grid p {
+  margin: 0 0 12px;
+}
+.summary-grid .right {
+  text-align: left;
+}
+.summary-grid .right p {
+  text-align: left;
+  text-indent: 0;
+}
+.opinion-line {
+  display: flex;
+  align-items: flex-start;
+}
+.opinion-label {
+  width: 48px;
+  min-width: 48px;
+  font-weight: 700;
+}
+.opinion-text {
+  flex: 1;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .brief-columns,
+  .summary-grid {
+    display: block;
+  }
+  .brief-columns .left,
+  .brief-columns .right,
+  .summary-grid .left,
+  .summary-grid .right {
+    width: 100%;
+  }
+  .brief-columns .right,
+  .summary-grid .right {
+    margin-top: 12px;
+  }
+}
+</style>
+
+## 今日摘要
+
+<div class="summary-grid">
+  <div class="left">
+  </div>
+  <div class="right">
+  </div>
+</div>
