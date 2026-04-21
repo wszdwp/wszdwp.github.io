@@ -1,33 +1,47 @@
 ---
-title: "第44期 | openai/symphony"
+title: "第44期 | huggingface/candle"
 date: 2026-04-13
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:
+    - label: "X Andrej Karpathy"
+      text: "Someone recently suggested to me that the reason OpenClaw moment was so big is because it's the first time a large group of non-te…"
+    - label: "X Andrej Karpathy"
+      text: "Judging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and tier of u…"
     - label: "GitHub karpathy"
       text: "Karpathy 新发布的最小 ChatGPT 复现项目，训练到推理的完整栈只有几千行可读代码，目标是把“百美元跑一个 ChatGPT”压到个人可动手的范围。"
     - label: "GitHub huggingface"
       text: "Hugging Face 的 Rust 推理栈，主打更轻更可控的部署路径，适合需要绕开 Python 依赖、做嵌入式或边缘部署的团队。"
     - label: "GitHub karpathy"
       text: "Karpathy 早期的教学级 GPT 实现，代码短到可以一口气读完，长期用作理解 Transformer 训练与推理最短路径的入口。"
-    - label: "GitHub langchain-ai"
-      text: "LangChain 团队的有状态智能体运行时，强调分支、重试、可观测性，已经成为事实上的生产级 agent 编排层之一。"
-    - label: "GitHub anthropics"
-      text: "Anthropic 公开其内部工程师 take-home 面试题，可作为理解他们工程品味和评估标准的一手材料。"
   summary_right:
+    - label: "总结 + 观点"
+      text: "LangChain 团队的有状态智能体运行时，强调分支、重试、可观测性，已经成为事实上的生产级…｜中文观点：LangGraph 的地位持续加固，对需要真正跑在生产的多步 agent 来说，它比通用…"
+    - label: "总结 + 观点"
+      text: "Anthropic 公开其内部工程师 take-home 面试题，可作为理解他们工程品味和评估标…｜中文观点：这条的信号不是题目本身，而是 Anthropic 把招聘标准开放出来，对想了解他们工程文化…"
     - label: "总结 + 观点"
       text: "OpenAI 新开源的多 agent 编排框架，重点不是写代码的 coding agent，而是…｜中文观点：Symphony 的定位更像工作流基础设施：真正的价值在于它把“多 agent 协作”的实…"
     - label: "总结 + 观点"
       text: "OpenAI 官方示例库更新，通常折射出他们希望开发者优先采用的新模式（tool use、str…｜中文观点：cookbook 的更新值得单独跟踪：它折射出 OpenAI 想让开发者默认走哪些新 AP…"
     - label: "总结 + 观点"
       text: "Karpathy 用 Rust 重写的 BPE tokenizer 训练器，把 tiktoken…｜中文观点：rustbpe 补上了 tokenizer 训练这块的“黑盒”：它让 tokenizer…"
-    - label: "总结 + 观点"
-      text: "OpenAI 官方 Python SDK 更新，通常先于公告暴露出新接口细节、参数变化或默认路径…｜中文观点：官方 SDK 的 commit 经常是 API 方向的早期指示灯，对做集成和多模型平台的团…"
-    - label: "总结 + 观点"
-      text: "LangChain 的可观测性与评估平台 SDK，重点在 agent 跑起来之后的 trace、…｜中文观点：LangSmith 的演进方向是 agent 可观测性栈：真正的下一个难点是“agent…"
   items:
+    - title: "R to @karpathy: Someone recently suggested to me that the reason OpenClaw moment was so big is because it's the first time a large group of non-technical people (who otherwise only knew AI as synonymous with ChatGPT as a website) experienced the latest agentic models."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Someone recently suggested to me that the reason OpenClaw moment was so big is because it's the first time a large group of non-technical people (who otherwise only knew AI as synonymous with ChatGPT as a website) experienced the latest agentic models."
+      link: "https://twitter.com/karpathy/status/2042341482531864741"
+      opinion: "围绕 R to @karpathy: Someone recently suggested to me that the re...，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
+    - title: "Judging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and tier of use. I think a lot of people tried the free tier of ChatGPT somewhere last year and allowed it to inform their views on AI a little too much. This is a group of reactions laughing at various quirks of the models, hallucinations, etc. Yes I also saw the viral videos of OpenAI's Advanced Voice mode fumbling simple queries like \"should I drive or walk to the carwash\". The thing is that these free and old/deprecated models don't reflect the capability in the latest round of state of the art agentic models of this year, especially OpenAI Codex and Claude Code. But that brings me to the second issue. Even if people paid $200/month to use the state of the art models, a lot of the capabilities are relatively \"peaky\" in highly technical areas. Typical queries around search, writing, advice, etc. are *not* the domain that has made the most noticeable and dramatic strides in capability. Partly, this is due to the technical details of reinforcement learning and its use of verifiable rewards. But partly, it's also because these use cases are not sufficiently prioritized by the companies in their hillclimbing because they don't lead to as much value. The goldmines are elsewhere, and the focus comes along. So that brings me to the second group of people, who *both* 1) pay for and use the state of the art frontier agentic models (OpenAI Codex Claude Code) and 2) do so professionally in technical domains like programming, math and research. This group of people is subject to the highest amount of \"AI Psychosis\" because the recent improvements in these domains as of this year have been nothing short of staggering. When you hand a computer terminal to one of these models, you can now watch them melt programming problems that you'd normally expect to take days/weeks of work. It's this second group of people that assigns a much greater gravity to the capabilities, their slope, and various cyber-related repercussions. TLDR the people in these two groups are speaking past each other. It really is simultaneously the case that OpenAI's free and I think slightly orphaned \"Advanced Voice Mode\" will fumble the dumbest questions in your Instagram's reels and *at the same time*, OpenAI's highest-tier and paid Codex model will go off for 1 hour to coherently restructure an entire code base, or find and exploit vulnerabilities in computer systems. This part really works and has made dramatic strides because 2 properties: 1) these domains offer explicit reward functions that are verifiable meaning they are easily amenable to reinforcement learning training (e.g. unit tests passed yes or no, in contrast to writing, which is much harder to explicitly judge), but also 2) they are a lot more valuable in b2b settings, meaning that the biggest fraction of the team is focused on improving them. So here we are."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Judging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and tier of use. I think a lot of people tried the free tier of ChatGPT somewhere last year and allowed it to inform their views on AI a little too much. This is a group of reactions laughing at various quirks of the models, hallucinations, etc. Yes I also saw the viral videos of OpenAI's Advanced Voice mode fumbling simple queries like \"should I drive or walk to the carwash\". The thing is that these free and old/deprecated models don't reflect the capability in the latest round of state of the art agentic models of this year, especially OpenAI Codex and Claude Code. But that brings me to the second issue. Even if people paid $200/month to use the state of the art models, a lot of the capabilities are relatively \"peaky\" in highly technical areas. Typical queries around search, writing, advice, etc. are *not* the domain that has made the most noticeable and dramatic strides in capability. Partly, this is due to the technical details of reinforcement learning and its use of verifiable rewards. But partly, it's also because these use cases are not sufficiently prioritized by the companies in their hillclimbing because they don't lead to as much value. The goldmines are elsewhere, and the focus comes along. So that brings me to the second group of people, who *both* 1) pay for and use the state of the art frontier agentic models (OpenAI Codex Claude Code) and 2) do so professionally in technical domains like programming, math and research. This group of people is subject to the highest amount of \"AI Psychosis\" because the recent improvements in these domains as of this year have been nothing short of staggering. When you hand a computer terminal to one of these models, you can now watch them melt programming problems that you'd normally expect to take days/weeks of work. It's this second group of people that assigns a much greater gravity to the capabilities, their slope, and various cyber-related repercussions. TLDR the people in these two groups are speaking past each other. It really is simultaneously the case that OpenAI's free and I think slightly orphaned \"Advanced Voice Mode\" will fumble the dumbest questions in your Instagram's reels and *at the same time*, OpenAI's highest-tier and paid Codex model will go off for 1 hour to coherently restructure an entire code base, or find and exploit vulnerabilities in computer systems. This part really works and has made dramatic strides because 2 properties: 1) these domains offer explicit reward functions that are verifiable meaning they are easily amenable to reinforcement learning training (e.g. unit tests passed yes or no, in contrast to writing, which is much harder to explicitly judge), but also 2) they are a lot more valuable in b2b settings, meaning that the biggest fraction of the team is focused on improving them. So here we are. staysaasy (@staysaasy) The degree to which you are awed by AI is perfectly correlated with how much you use AI to code. https://nitter.net/staysaasy/status/2042063369432183238#m"
+      link: "https://twitter.com/karpathy/status/2042334451611693415"
+      opinion: "从 Judging by my tl there is a growing gap in understanding of... 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
     - title: "karpathy/nanochat"
       source: "GitHub karpathy"
       tags: "#github_orgs #extended"
@@ -84,20 +98,6 @@ brief_data:
       summary: "Karpathy 用 Rust 重写的 BPE tokenizer 训练器，把 tiktoken 里不透明的训练流程变成可学习、可实验的代码。"
       link: "https://github.com/karpathy/rustbpe"
       opinion: "rustbpe 补上了 tokenizer 训练这块的“黑盒”：它让 tokenizer 变体实验、教学与复现都更直观，研究者最先受益。"
-    - title: "openai/openai-python"
-      source: "GitHub openai"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "OpenAI 官方 Python SDK 更新，通常先于公告暴露出新接口细节、参数变化或默认路径调整。"
-      link: "https://github.com/openai/openai-python"
-      opinion: "官方 SDK 的 commit 经常是 API 方向的早期指示灯，对做集成和多模型平台的团队比市场通稿更有参考价值。"
-    - title: "langchain-ai/langsmith-sdk"
-      source: "GitHub langchain-ai"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "LangChain 的可观测性与评估平台 SDK，重点在 agent 跑起来之后的 trace、evaluation 和回归测试。"
-      link: "https://github.com/langchain-ai/langsmith-sdk"
-      opinion: "LangSmith 的演进方向是 agent 可观测性栈：真正的下一个难点是“agent 跑起来之后怎么看清楚”，而不是怎么把它跑起来。"
 ---
 
 {% include render-brief.html data=page.brief_data %}

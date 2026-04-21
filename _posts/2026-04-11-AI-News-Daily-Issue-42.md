@@ -1,6 +1,6 @@
 ---
-title: "第40期 | Judging by my tl there is a growing gap in understanding..."
-date: 2026-04-09
+title: "第42期 | langchain-ai/langgraph"
+date: 2026-04-11
 layout: brief-post
 tags: AI-daily Agent Andrej-Karpathy
 published: true

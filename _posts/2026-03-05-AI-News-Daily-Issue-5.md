@@ -2,7 +2,7 @@
 title: "第5期 | New supply chain attack this time for npm axios, the mos..."
 date: 2026-03-05
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第4期 | STADLER reshapes knowledge work at a 230-year-old compan..."
 date: 2026-03-04
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Application Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

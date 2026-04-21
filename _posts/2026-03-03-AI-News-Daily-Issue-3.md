@@ -2,7 +2,7 @@
 title: "第3期 | One common issue with personalization in all LLMs is how..."
 date: 2026-03-03
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Workflow Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

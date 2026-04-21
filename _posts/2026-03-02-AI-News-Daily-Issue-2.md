@@ -2,7 +2,7 @@
 title: "第2期 | Had to go see Project Hail Mary right away (it's based o..."
 date: 2026-03-02
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

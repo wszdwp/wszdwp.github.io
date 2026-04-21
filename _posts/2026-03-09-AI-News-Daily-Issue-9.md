@@ -2,7 +2,7 @@
 title: "第9期 | Building Intelligent Search with Amazon Bedrock and Amaz..."
 date: 2026-03-09
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Infra Simon-Willison
 published: true
 brief_data:
   summary_left:

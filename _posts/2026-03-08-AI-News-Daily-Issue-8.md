@@ -2,7 +2,7 @@
 title: "第8期 | research-llm-apis 2026-04-04"
 date: 2026-03-08
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Tools Simon-Willison
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第7期 | Welcome Gemma 4: Frontier multimodal intelligence on dev..."
 date: 2026-03-07
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Tools Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

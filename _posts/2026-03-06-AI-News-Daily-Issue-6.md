@@ -2,7 +2,7 @@
 title: "第6期 | LLM Knowledge Bases Something I'm finding very useful re..."
 date: 2026-03-06
 layout: brief-post
-tags: AI-Daily
+tags: AI-daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:
