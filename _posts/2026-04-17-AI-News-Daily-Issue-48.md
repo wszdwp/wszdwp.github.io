@@ -1,5 +1,5 @@
 ---
-title: "第48期 | openai/skills"
+title: "第48期 | anthropics/skills"
 date: 2026-04-17
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy
@@ -133,41 +133,6 @@ brief_data:
       summary: "Public repository for Agent Skills"
       link: "https://github.com/anthropics/skills"
       opinion: "anthropics/skills 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
-    - title: "openai/skills"
-      source: "GitHub openai"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "Skills Catalog for Codex"
-      link: "https://github.com/openai/skills"
-      opinion: "openai/skills 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
-    - title: "karpathy/KarpathyTalk"
-      source: "GitHub karpathy"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "A positive developer community for builders and agents."
-      link: "https://github.com/karpathy/KarpathyTalk"
-      opinion: "karpathy/KarpathyTalk 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
-    - title: "anthropics/claude-cookbooks"
-      source: "GitHub anthropics"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
-      link: "https://github.com/anthropics/claude-cookbooks"
-      opinion: "anthropics/claude-cookbooks 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
-    - title: "openai/evals"
-      source: "GitHub openai"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks."
-      link: "https://github.com/openai/evals"
-      opinion: "比起表面参数，openai/evals 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
-    - title: "anthropics/claude-plugins-official"
-      source: "GitHub anthropics"
-      tags: "#github_orgs #extended"
-      author_tags: ""
-      summary: "Official, Anthropic-managed directory of high quality Claude Code Plugins."
-      link: "https://github.com/anthropics/claude-plugins-official"
-      opinion: "anthropics/claude-plugins-official 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
 ---
 
 {% include render-brief.html data=page.brief_data %}
