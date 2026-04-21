@@ -1,5 +1,5 @@
 ---
-title: "第29期 | Wow, this tweet went very viral! I wanted share a possib..."
+title: "第29期 | STADLER reshapes knowledge work at a 230-year-old compan..."
 date: 2026-03-29
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

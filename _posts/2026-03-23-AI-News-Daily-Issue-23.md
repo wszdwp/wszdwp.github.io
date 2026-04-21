@@ -1,5 +1,5 @@
 ---
-title: "第23期 | One common issue with personalization in all LLMs is how..."
+title: "第23期 | Introducing the OpenAI Safety Bug Bounty program"
 date: 2026-03-23
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

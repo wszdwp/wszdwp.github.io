@@ -1,5 +1,5 @@
 ---
-title: "第46期 | anthropics/claude-cookbooks"
+title: "第46期 | OpenAI Full Fan Mode Contest: Terms Conditions"
 date: 2026-04-15
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

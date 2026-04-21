@@ -1,5 +1,5 @@
 ---
-title: "第30期 | Software horror: litellm PyPI supply chain attack. Simpl..."
+title: "第30期 | Industrial policy for the Intelligence Age"
 date: 2026-03-30
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

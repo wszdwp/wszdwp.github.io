@@ -1,5 +1,5 @@
 ---
-title: "第50期 | openai/symphony"
+title: "第50期 | openai/openai-python"
 date: 2026-04-19
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

@@ -1,5 +1,5 @@
 ---
-title: "第49期 | karpathy/KarpathyTalk"
+title: "第49期 | karpathy/rustbpe"
 date: 2026-04-18
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

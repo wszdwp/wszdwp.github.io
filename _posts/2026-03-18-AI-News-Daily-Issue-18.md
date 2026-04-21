@@ -1,5 +1,5 @@
 ---
-title: "第18期 | Something I've been thinking about - I am bullish on peo..."
+title: "第18期 | Software horror: litellm PyPI supply chain attack. Simpl..."
 date: 2026-03-18
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

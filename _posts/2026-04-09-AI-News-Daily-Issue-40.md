@@ -1,5 +1,5 @@
 ---
-title: "第40期 | karpathy/autoresearch"
+title: "第40期 | karpathy/nanochat"
 date: 2026-04-09
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

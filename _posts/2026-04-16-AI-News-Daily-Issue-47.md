@@ -1,5 +1,5 @@
 ---
-title: "第47期 | karpathy/rustbpe"
+title: "第47期 | karpathy/minGPT"
 date: 2026-04-16
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

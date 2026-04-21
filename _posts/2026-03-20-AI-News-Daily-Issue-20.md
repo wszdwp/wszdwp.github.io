@@ -1,5 +1,5 @@
 ---
-title: "第20期 | STADLER reshapes knowledge work at a 230-year-old compan..."
+title: "第20期 | New supply chain attack this time for npm axios, the mos..."
 date: 2026-03-20
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

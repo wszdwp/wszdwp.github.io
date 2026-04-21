@@ -1,5 +1,5 @@
 ---
-title: "第34期 | anthropics/claude-plugins-official"
+title: "第34期 | openai/skills"
 date: 2026-04-03
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

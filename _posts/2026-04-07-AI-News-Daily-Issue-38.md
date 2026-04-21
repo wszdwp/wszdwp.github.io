@@ -1,5 +1,5 @@
 ---
-title: "第38期 | Introducing the Child Safety Blueprint"
+title: "第38期 | anthropics/claude-plugins-official"
 date: 2026-04-07
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

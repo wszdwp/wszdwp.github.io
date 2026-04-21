@@ -1,5 +1,5 @@
 ---
-title: "第32期 | Farzapedia, personal wikipedia of Farza, good example fo..."
+title: "第32期 | karpathy/autoresearch"
 date: 2026-04-01
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

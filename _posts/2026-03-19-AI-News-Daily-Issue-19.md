@@ -1,5 +1,5 @@
 ---
-title: "第19期 | Announcing the OpenAI Safety Fellowship"
+title: "第19期 | The signature is alluding to NVIDIA GTC 2015, where Jens..."
 date: 2026-03-19
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

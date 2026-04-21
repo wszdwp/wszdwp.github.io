@@ -1,5 +1,5 @@
 ---
-title: "第48期 | anthropics/prompt-eng-interactive-tutorial"
+title: "第48期 | openai/skills"
 date: 2026-04-17
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

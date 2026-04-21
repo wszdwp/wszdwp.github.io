@@ -1,5 +1,5 @@
 ---
-title: "第33期 | LLM Knowledge Bases Something I'm finding very useful re..."
+title: "第33期 | Accelerating the next phase of AI"
 date: 2026-04-02
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

@@ -1,5 +1,5 @@
 ---
-title: "第25期 | Codex now offers more flexible pricing for teams"
+title: "第25期 | (I cycle through all LLMs over time and all of them seem..."
 date: 2026-03-25
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

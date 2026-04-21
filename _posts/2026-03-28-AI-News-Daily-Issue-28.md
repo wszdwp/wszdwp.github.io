@@ -1,5 +1,5 @@
 ---
-title: "第28期 | Gradient Labs gives every bank customer an AI account ma..."
+title: "第28期 | LLM Knowledge Bases Something I'm finding very useful re..."
 date: 2026-03-28
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

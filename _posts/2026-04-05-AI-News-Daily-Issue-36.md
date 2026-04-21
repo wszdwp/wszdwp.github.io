@@ -1,5 +1,5 @@
 ---
-title: "第36期 | karpathy/nanoGPT"
+title: "第36期 | anthropics/claude-cookbooks"
 date: 2026-04-05
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

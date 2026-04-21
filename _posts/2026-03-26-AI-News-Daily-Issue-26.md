@@ -1,5 +1,5 @@
 ---
-title: "第26期 | When I built menugen ~1 year ago, I observed that the ha..."
+title: "第26期 | Something I've been thinking about - I am bullish on peo..."
 date: 2026-03-26
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

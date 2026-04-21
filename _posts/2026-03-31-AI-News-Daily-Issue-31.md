@@ -1,5 +1,5 @@
 ---
-title: "第31期 | Something I've been thinking about - I am bullish on peo..."
+title: "第31期 | Wow, this tweet went very viral! I wanted share a possib..."
 date: 2026-03-31
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

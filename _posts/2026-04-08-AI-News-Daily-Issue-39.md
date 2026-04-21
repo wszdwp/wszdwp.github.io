@@ -1,5 +1,5 @@
 ---
-title: "第39期 | karpathy/LLM101n"
+title: "第39期 | openai/codex"
 date: 2026-04-08
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

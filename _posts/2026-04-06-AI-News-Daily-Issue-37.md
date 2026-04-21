@@ -1,5 +1,5 @@
 ---
-title: "第37期 | karpathy/KarpathyTalk"
+title: "第37期 | Farzapedia, personal wikipedia of Farza, good example fo..."
 date: 2026-04-06
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

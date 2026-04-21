@@ -1,5 +1,5 @@
 ---
-title: "第35期 | Announcing the OpenAI Safety Fellowship"
+title: "第35期 | openai/evals"
 date: 2026-04-04
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

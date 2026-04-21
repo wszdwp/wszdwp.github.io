@@ -1,5 +1,5 @@
 ---
-title: "第51期 | karpathy/nanochat"
+title: "第51期 | openai/symphony"
 date: 2026-04-20
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

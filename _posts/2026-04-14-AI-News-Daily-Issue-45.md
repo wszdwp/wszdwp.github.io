@@ -1,5 +1,5 @@
 ---
-title: "第45期 | anthropics/skills"
+title: "第45期 | anthropics/prompt-eng-interactive-tutorial"
 date: 2026-04-14
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy

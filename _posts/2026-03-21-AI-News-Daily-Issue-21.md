@@ -1,5 +1,5 @@
 ---
-title: "第21期 | Thank you Sarah, my pleasure to come on the pod! And hap..."
+title: "第21期 | - Drafted a blog post - Used an LLM to meticulously impr..."
 date: 2026-03-21
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

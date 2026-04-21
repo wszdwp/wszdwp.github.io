@@ -1,5 +1,5 @@
 ---
-title: "第27期 | OpenAI acquires TBPN"
+title: "第27期 | Announcing the OpenAI Safety Fellowship"
 date: 2026-03-27
 layout: brief-post
 tags: AI-Daily Tools Andrej-Karpathy

@@ -1,5 +1,5 @@
 ---
-title: "第41期 | openai/openai-python"
+title: "第41期 | anthropics/skills"
 date: 2026-04-10
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy
