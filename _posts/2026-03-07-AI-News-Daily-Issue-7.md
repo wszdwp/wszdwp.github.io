@@ -1,96 +1,103 @@
 ---
-title: 第7期 AI News Daily
+title: "第7期 | Welcome Gemma 4: Frontier multimodal intelligence on dev..."
 date: 2026-03-07
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "Hugging Face Blog"
+      text: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+    - label: "Latent Space"
+      text: "a quiet day."
+    - label: "LangChain Blog"
+      text: "I built a self-healing deployment pipeline for our GTM Agent. After every deploy, it detects regressions, triages whether the chan…"
+    - label: "Latent Space"
+      text: "The legend needs no intro... if you pardon our pun"
+    - label: "Interconnects AI"
+      text: "Hint: it's not benchmark scores."
+  summary_right:
+    - label: "总结 + 观点"
+      text: "A welcome update from Google!｜中文观点：对 [AINews] Gemma 4: The best small Multimodal…"
+    - label: "总结 + 观点"
+      text: "Farzapedia, personal wikipedia of Farza, good ex…｜中文观点：比起表面参数，Farzapedia, personal wikipedia of Farz…"
+    - label: "总结 + 观点"
+      text: "Something I've been thinking about - I am bullis…｜中文观点：Something I've been thinking about - I am bul…"
+    - label: "总结 + 观点"
+      text: "Wow, this tweet went very viral! I wanted share…｜中文观点：比起表面参数，Wow, this tweet went very viral! I wan…"
+    - label: "总结 + 观点"
+      text: "Eight years of wanting, three months of building…｜中文观点：对 Eight years of wanting, three months of bui…"
+  items:
+    - title: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Welcome Gemma 4: Frontier multimodal intelligence on device"
+      link: "https://huggingface.co/blog/gemma4"
+      opinion: "对 Welcome Gemma 4: Frontier multimodal intelligence on device 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "[AINews] Good Friday"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "a quiet day."
+      link: "https://www.latent.space/p/ainews-good-friday"
+      opinion: "[AINews] Good Friday 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "How My Agents Self-Heal in Production"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "I built a self-healing deployment pipeline for our GTM Agent. After every deploy, it detects regressions, triages whether the change caused them, and kicks off an agent to open a PR with a fix, with no manual intervention needed until review time."
+      link: "https://blog.langchain.com/production-agents-self-heal/"
+      opinion: "对 How My Agents Self-Heal in Production，更该看它能不能改善多步骤协作、记忆管理和稳定交付，而不是只看 demo 效果。"
+    - title: "Marc Andreessen introspects on The Death of the Browser, Pi OpenClaw, and Why \"This Time Is Different\""
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "The legend needs no intro... if you pardon our pun"
+      link: "https://www.latent.space/p/pmarca"
+      opinion: "Marc Andreessen introspects on The Death of the Browser, Pi... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Gemma 4 and what makes an open model succeed"
+      source: "Interconnects AI"
+      tags: "#hidden_high_value #hidden_high_value"
+      author_tags: ""
+      summary: "Hint: it's not benchmark scores."
+      link: "https://www.interconnects.ai/p/gemma-4-and-what-makes-an-open-model"
+      opinion: "比起表面参数，Gemma 4 and what makes an open model succeed 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "[AINews] Gemma 4: The best small Multimodal Open Models, dramatically better than Gemma 3 in every way"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "A welcome update from Google!"
+      link: "https://www.latent.space/p/ainews-gemma-4-the-best-small-multimodal"
+      opinion: "对 [AINews] Gemma 4: The best small Multimodal Open Models, dra... 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "Farzapedia, personal wikipedia of Farza, good example following my Wiki LLM tweet. I really like this approach to personalization in a number of ways, compared to \"status quo\" of an AI that allegedly gets better the more you use it or something: 1. Explicit. The memory artifact is explicit and navigable (the wiki), you can see exactly what the AI does and does not know and you can inspect and manage this artifact, even if you don't do the direct text writing (the LLM does). The knowledge of you is not implicit and unknown, it's explicit and viewable. 2. Yours. Your data is yours, on your local computer, it's not in some particular AI provider's system without the ability to extract it. You're in control of your information. 3. File over app. The memory here is a simple collection of files in universal formats (images, markdown). This means the data is interoperable: you can use a very large collection of tools/CLIs or whatever you want over this information because it's just files. The agents can apply the entire Unix toolkit over them. They can natively read and understand them. Any kind of data can be imported into files as input, and any kind of interface can be used to view them as the output. E.g. you can use Obsidian to view them or vibe code something of your own. Search \"File over app\" for an article on this philosophy. 4. BYOAI. You can use whatever AI you want to \"plug into\" this information - Claude, Codex, OpenCode, whatever. You can even think about taking an open source AI and finetuning it on your wiki - in principle, this AI could \"know\" you in its weights, not just attend over your data. So this approach to personalization puts *you* in full control. The data is yours. In Universal formats. Explicit and inspectable. Use whatever AI you want over it, keep the AI companies on their toes! Certainly this is not the simplest way to get an AI to know you - it does require you to manage file directories and so on, but agents also make it quite simple and they can help you a lot. I imagine a number of products might come out to make this all easier, but imo \"agent proficiency\" is a CORE SKILL of the 21st century. These are extremely powerful tools - they speak English and they do all the computer stuff for you. Try this opportunity to play with one."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Farzapedia, personal wikipedia of Farza, good example following my Wiki LLM tweet. I really like this approach to personalization in a number of ways, compared to \"status quo\" of an AI that allegedly gets better the more you use it or something: 1. Explicit. The memory artifact is explicit and navigable (the wiki), you can see exactly what the AI does and does not know and you can inspect and manage this artifact, even if you don't do the direct text writing (the LLM does). The knowledge of you is not implicit and unknown, it's explicit and viewable. 2. Yours. Your data is yours, on your local computer, it's not in some particular AI provider's system without the ability to extract it. You're in control of your information. 3. File over app. The memory here is a simple collection of files in universal formats (images, markdown). This means the data is interoperable: you can use a very large collection of tools/CLIs or whatever you want over this information because it's just files. The agents can apply the entire Unix toolkit over them. They can natively read and understand them. Any kind of data can be imported into files as input, and any kind of interface can be used to view them as the output. E.g. you can use Obsidian to view them or vibe code something of your own. Search \"File over app\" for an article on this philosophy. 4. BYOAI. You can use whatever AI you want to \"plug into\" this information - Claude, Codex, OpenCode, whatever. You can even think about taking an open source AI and finetuning it on your wiki - in principle, this AI could \"know\" you in its weights, not just attend over your data. So this approach to personalization puts *you* in full control. The data is yours. In Universal formats. Explicit and inspectable. Use whatever AI you want over it, keep the AI companies on their toes! Certainly this is not the simplest way to get an AI to know you - it does require you to manage file directories and so on, but agents also make it quite simple and they can help you a lot. I imagine a number of products might come out to make this all easier, but imo \"agent proficiency\" is a CORE SKILL of the 21st century. These are extremely powerful tools - they speak English and they do all the computer stuff for you. Try this opportunity to play with one. Farza (@FarzaTV) This is Farzapedia. I had an LLM take 2,500 entries from my diary, Apple Notes, and some iMessage convos to create a personal Wikipedia for me. It made 400 detailed articles for my friends, my startups, research areas, and even my favorite animes and their impact on me complete with backlinks. But, this Wiki was not built for me! I built it for my agent! The structure of the wiki files and how it's all backlinked is very easily crawlable by any agent makes it a truly useful knowledge base. I can spin up Claude Code on the wiki and starting at index.md (a catalog of all my articles) the agent does a really good job at drilling into the specific pages on my wiki it needs context on when I have a query. For example, when trying to cook up a new landing page I may ask: \"I'm trying to design this landing page for a new idea I have. Please look into the images and films that inspired me recently and give me ideas for new copy and aesthetics\". In my diary I kept track of everything from: learnings, people, inspo, interesting links, images. So the agent reads my wiki and pulls up my \"Philosophy\" articles from notes on a Studio Ghibli documentary, \"Competitor\" articles with YC companies whose landing pages I screenshotted, and pics of 1970s Beatles merch I saved years ago. And it delivers a great answer. I built a similar system to this a year ago with RAG but it was ass. A knowledge base that lets an agent find what it needs via a file system it actually understands just works better. The most magical thing now is as I add new things to my wiki (articles, images of inspo, meeting notes) the system will likely update 2-3 different articles where it feels that context belongs, or, just creates a new article. It's like this super genius librarian for your brain that's always filing stuff for your perfectly and also let's you easily query the knowledge for tasks useful to you (ex. design, product, writing, etc) and it never gets tired. I might spend next week productizing this, if that's of interest to you DM me tell me your usecase! Video https://nitter.net/FarzaTV/status/2040563939797504467#m"
+      link: "https://twitter.com/karpathy/status/2040572272944324650"
+      opinion: "比起表面参数，Farzapedia, personal wikipedia of Farza, good example follow... 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Something I've been thinking about - I am bullish on people (empowered by AI) increasing the visibility, legibility and accountability of their governments. Historically, it is the governments that act to make society legible (e.g. \"Seeing like a state\" is the common reference), but with AI, society can dramatically improve its ability to do this in reverse. Government accountability has not been constrained by access (the various branches of government publish an enormous amount of data), it has been constrained by intelligence - the ability to process a lot of raw data, combine it with domain expertise and derive insights. As an example, the 4000-page omnibus bill is \"transparent\" in principle and in a legal sense, but certainly not in a practical sense for most people. There's a lot more like it: laws, spending bills, federal budgets, freedom of information act responses, lobbying disclosures... Only a few highly trained professionals (investigative journalists) could historically process this information. This bottleneck might dissolve - not only are the professionals further empowered, but a lot more people can participate. Some examples to be precise: Detailed accounting of spending and budgets, diff tracking of legislation, individual voting trends w.r.t. stated positions or speeches, lobbying and influence (e.g. graph of lobbyist - firm - client - legislator - committee - vote - regulation), procurement and contracting, regulatory capture warning lights, judicial and legal patterns, campaign finance... Local governments might be even more interesting because the governed population is smaller so there is less national coverage: city council meetings, decisions around zoning, policing, schools, utilities... Certainly, the same tools can easily cut the other way and it's worth being very mindful of that, but I lean optimistic overall that added participation, transparency and accountability will improve democratic, free societies. (the quoted tweet is half-ish related, but inspired me to post some recent thoughts)"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Something I've been thinking about - I am bullish on people (empowered by AI) increasing the visibility, legibility and accountability of their governments. Historically, it is the governments that act to make society legible (e.g. \"Seeing like a state\" is the common reference), but with AI, society can dramatically improve its ability to do this in reverse. Government accountability has not been constrained by access (the various branches of government publish an enormous amount of data), it has been constrained by intelligence - the ability to process a lot of raw data, combine it with domain expertise and derive insights. As an example, the 4000-page omnibus bill is \"transparent\" in principle and in a legal sense, but certainly not in a practical sense for most people. There's a lot more like it: laws, spending bills, federal budgets, freedom of information act responses, lobbying disclosures... Only a few highly trained professionals (investigative journalists) could historically process this information. This bottleneck might dissolve - not only are the professionals further empowered, but a lot more people can participate. Some examples to be precise: Detailed accounting of spending and budgets, diff tracking of legislation, individual voting trends w.r.t. stated positions or speeches, lobbying and influence (e.g. graph of lobbyist - firm - client - legislator - committee - vote - regulation), procurement and contracting, regulatory capture warning lights, judicial and legal patterns, campaign finance... Local governments might be even more interesting because the governed population is smaller so there is less national coverage: city council meetings, decisions around zoning, policing, schools, utilities... Certainly, the same tools can easily cut the other way and it's worth being very mindful of that, but I lean optimistic overall that added participation, transparency and accountability will improve democratic, free societies. (the quoted tweet is half-ish related, but inspired me to post some recent thoughts) Harry Rushworth (@Hrushworth) The British Government is a complicated beast. Dozens of departments, hundreds of public bodies, more corporations than one can count... Such is its complexity that there isn't an org chart for it. Well, there wasn't... Introducing ⚙️Machinery of Government⚙️ https://nitter.net/Hrushworth/status/2040406616806179001#m"
+      link: "https://twitter.com/karpathy/status/2040549459193704852"
+      opinion: "Something I've been thinking about - I am bullish on people... 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Wow, this tweet went very viral! I wanted share a possibly slightly improved version of the tweet in an \"idea file\". The idea of the idea file is that in this era of LLM agents, there is less of a point/need of sharing the specific code/app, you just share the idea, then the other person's agent customizes builds it for your specific needs. So here's the idea in a gist format: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f You can give this to your agent and it can build you your own LLM wiki and guide you on how to use it etc. It's intentionally kept a little bit abstract/vague because there are so many directions to take this in. And ofc, people can adjust the idea or contribute their own in the Discussion which is cool."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Wow, this tweet went very viral! I wanted share a possibly slightly improved version of the tweet in an \"idea file\". The idea of the idea file is that in this era of LLM agents, there is less of a point/need of sharing the specific code/app, you just share the idea, then the other person's agent customizes builds it for your specific needs. So here's the idea in a gist format: gist.github.com/karpathy/442… You can give this to your agent and it can build you your own LLM wiki and guide you on how to use it etc. It's intentionally kept a little bit abstract/vague because there are so many directions to take this in. And ofc, people can adjust the idea or contribute their own in the Discussion which is cool. Andrej Karpathy (@karpathy) LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So: Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally \"compile\" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them. IDE: I use Obsidian as the IDE \"frontend\" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides). Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale. Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up \"filing\" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always \"add up\" in the knowledge base. Linting: I've run some LLM \"health checks\" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into. Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries. Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation finetuning to have your LLM \"know\" the data in its weights instead of just context windows. TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts. https://nitter.net/karpathy/status/2039805659525644595#m"
+      link: "https://twitter.com/karpathy/status/2040470801506541998"
+      opinion: "比起表面参数，Wow, this tweet went very viral! I wanted share a possibly s... 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Eight years of wanting, three months of building with AI"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Eight years of wanting, three months of building with AI Lalit Maganti provides one of my favorite pieces of long-form writing on agentic engineering I've seen in ages. They spent eight years thinking about and then three months building syntaqlite which they describe as high-fidelity devtools that SQLite deserves The goal was to provide fast, robust and comprehensive linting and verifying tools for SQLite, suitable for use in language servers and other development tools - a parser, formatter, and verifier for SQLite queries. I've found myself wanting this kind of thing in the past myself, hence my (far less production-ready) sqlite-ast project from a few months ago. Lalit had been procrastinating on this project for years, because of the inevitable tedium of needing to work through 400+ grammar rules to help build a parser. That's exactly the kind of tedious work that coding agents excel at! Claude Code helped get over that initial hump and build the first prototype: AI basically let me put aside all my doubts on technical calls, my uncertainty of building the right thing and my reluctance to get started by giving me very concrete problems to work on. Instead of “I need to understand how SQLite’s parsing works”, it was “I need to get AI to suggest an approach for me so I can tear it up and build something better\". I work so much better with concrete prototypes to play with and code to look at than endlessly thinking about designs in my head, and AI lets me get to that point at a pace I could not have dreamed about before. Once I took the first step, every step after that was so much easier. That first vibe-coded prototype worked great as a proof of concept, but they eventually made the decision to throw it away and start again from scratch. AI worked great for the low level details but did not produce a coherent high-level architecture: I found that AI made me procrastinate on key design decisions. Because refactoring was cheap, I could always say “I’ll deal with this later.” And because AI could refactor at the same industrial scale it generated code, the cost of deferring felt low. But it wasn’t: deferring decisions corroded my ability to think clearly because the codebase stayed confusing in the meantime. The second attempt took a lot longer and involved a great deal more human-in-the-loop decision making, but the result is a robust library that can stand the test of time. It's worth setting aside some time to read this whole thing - it's full of non-obvious downsides to working heavily with AI, as well as a detailed explanation of how they overcame those hurdles. The key idea I took away from this concerns AI's weakness in terms of design and architecture: When I was working on something where I didn’t even know what I wanted, AI was somewhere between unhelpful and harmful. The architecture of the project was the clearest case: I spent weeks in the early days following AI down dead ends, exploring designs that felt productive in the moment but collapsed under scrutiny. In hindsight, I have to wonder if it would have been faster just thinking it through without AI in the loop at all. But expertise alone isn’t enough. Even when I understood a problem deeply, AI still struggled if the task had no objectively checkable answer. Implementation has a right answer, at least at a local level: the code compiles, the tests pass, the output matches what you asked for. Design doesn’t. We’re still arguing about OOP decades after it first took off. Via Hacker News Tags: sqlite ai generative-ai llms ai-assisted-programming vibe-coding agentic-engineering"
+      link: "https://simonwillison.net/2026/Apr/5/building-with-ai/#atom-everything"
+      opinion: "对 Eight years of wanting, three months of building with AI 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

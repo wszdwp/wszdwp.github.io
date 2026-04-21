@@ -1,96 +1,103 @@
 ---
-title: 第5期 AI News Daily
+title: "第5期 | New supply chain attack this time for npm axios, the mos..."
 date: 2026-03-05
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "OpenAI Blog"
+      text: "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing dema…"
+    - label: "Hugging Face Blog"
+      text: "Training mRNA Language Models Across 25 Species for $165"
+    - label: "X Andrej Karpathy"
+      text: "New supply chain attack this time for npm axios, the most popular HTTP client library with 300M weekly downloads. Scanning my syst…"
+    - label: "Latent Space"
+      text: "a quiet day lets us examine an interesting mental model"
+    - label: "Hugging Face Blog"
+      text: "TRL v1.0: Post-Training Library Built to Move with the Field"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "It feels like spring has sprung here, and so has…｜中文观点：如果 March 2026: LangChain Newsletter 能减少集成成本、维…"
+    - label: "总结 + 观点"
+      text: "Holo3: Breaking the Computer Use Frontier｜中文观点：Holo3: Breaking the Computer Use Frontier 更值得…"
+    - label: "总结 + 观点"
+      text: "Falcon Perception｜中文观点：Falcon Perception 更值得从实际采用价值来判断，而不是只看它有没有制造新的…"
+    - label: "总结 + 观点"
+      text: "The accidental \"open sourcing\" of Claude Code br…｜中文观点：从 [AINews] The Claude Code Source Leak 看，后续更应…"
+    - label: "总结 + 观点"
+      text: "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and…｜中文观点：对 Gradient Labs gives every bank customer an…"
+  items:
+    - title: "Accelerating the next phase of AI"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI."
+      link: "https://openai.com/index/accelerating-the-next-phase-ai"
+      opinion: "围绕 Accelerating the next phase of AI，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
+    - title: "Training mRNA Language Models Across 25 Species for $165"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Training mRNA Language Models Across 25 Species for $165"
+      link: "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species"
+      opinion: "Training mRNA Language Models Across 25 Species for $165 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "New supply chain attack this time for npm axios, the most popular HTTP client library with 300M weekly downloads. Scanning my system I found a use imported from googleworkspace/cli from a few days ago when I was experimenting with gmail/gcal cli. The installed version (luckily) resolved to an unaffected 1.13.5, but the project dependency is not pinned, meaning that if I did this earlier today the code would have resolved to latest and I'd be pwned. It's possible to personally defend against these to some extent with local settings e.g. release-age constraints, or containers or etc, but I think ultimately the defaults of package management projects (pip, npm etc) have to change so that a single infection (usually luckily fairly temporary in nature due to security scanning) does not spread through users at random and at scale via unpinned dependencies. More comprehensive article: https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "New supply chain attack this time for npm axios, the most popular HTTP client library with 300M weekly downloads. Scanning my system I found a use imported from googleworkspace/cli from a few days ago when I was experimenting with gmail/gcal cli. The installed version (luckily) resolved to an unaffected 1.13.5, but the project dependency is not pinned, meaning that if I did this earlier today the code would have resolved to latest and I'd be pwned. It's possible to personally defend against these to some extent with local settings e.g. release-age constraints, or containers or etc, but I think ultimately the defaults of package management projects (pip, npm etc) have to change so that a single infection (usually luckily fairly temporary in nature due to security scanning) does not spread through users at random and at scale via unpinned dependencies. More comprehensive article: stepsecurity.io/blog/axios-c… Feross (@feross) CRITICAL: Active supply chain attack on axios -- one of npm's most depended-on packages. The latest axios@1.14.1 now pulls in plain-crypto-js@4.2.1, a package that did not exist before today. This is a live compromise. This is textbook supply chain installer malware. axios has 100M+ weekly downloads. Every npm install pulling the latest version is potentially compromised right now. Socket AI analysis confirms this is malware. plain-crypto-js is an obfuscated dropper/loader that: Deobfuscates embedded payloads and operational strings at runtime Dynamically loads fs, os, and execSync to evade static analysis Executes decoded shell commands Stages and copies payload files into OS temp and Windows ProgramData directories Deletes and renames artifacts post-execution to destroy forensic evidence If you use axios, pin your version immediately and audit your lockfiles. Do not upgrade. https://nitter.net/feross/status/2038807290422370479#m"
+      link: "https://twitter.com/karpathy/status/2038849654423798197"
+      opinion: "从 New supply chain attack this time for npm axios, the most po... 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "[AINews] The Last 4 Jobs in Tech"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "a quiet day lets us examine an interesting mental model"
+      link: "https://www.latent.space/p/ainews-the-last-4-jobs-in-tech"
+      opinion: "[AINews] The Last 4 Jobs in Tech 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "TRL v1.0: Post-Training Library Built to Move with the Field"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "TRL v1.0: Post-Training Library Built to Move with the Field"
+      link: "https://huggingface.co/blog/trl-v1"
+      opinion: "对 TRL v1.0: Post-Training Library Built to Move with the Field 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "March 2026: LangChain Newsletter"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "It feels like spring has sprung here, and so has a new NVIDIA integration, ticket sales for Interrupt 2026, and announcing LangSmith Fleet (formerly Agent Builder)."
+      link: "https://blog.langchain.com/march-2026-langchain-newsletter/"
+      opinion: "如果 March 2026: LangChain Newsletter 能减少集成成本、维护负担和迁移阻力，它才有进入生产栈的价值。"
+    - title: "Holo3: Breaking the Computer Use Frontier"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Holo3: Breaking the Computer Use Frontier"
+      link: "https://huggingface.co/blog/Hcompany/holo3"
+      opinion: "Holo3: Breaking the Computer Use Frontier 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Falcon Perception"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Falcon Perception"
+      link: "https://huggingface.co/blog/tiiuae/falcon-perception"
+      opinion: "Falcon Perception 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "[AINews] The Claude Code Source Leak"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "The accidental \"open sourcing\" of Claude Code brings a ton of insights."
+      link: "https://www.latent.space/p/ainews-the-claude-code-source-leak"
+      opinion: "从 [AINews] The Claude Code Source Leak 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "Gradient Labs gives every bank customer an AI account manager"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability."
+      link: "https://openai.com/index/gradient-labs"
+      opinion: "对 Gradient Labs gives every bank customer an AI account manage...，更该看它能不能改善多步骤协作、记忆管理和稳定交付，而不是只看 demo 效果。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

@@ -1,96 +1,103 @@
 ---
-title: 第2期 AI News Daily
+title: "第2期 | Had to go see Project Hail Mary right away (it's based o..."
 date: 2026-03-02
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "Hugging Face Blog"
+      text: "State of Open Source on Hugging Face: Spring 2026"
+    - label: "Meta Engineering"
+      text: "Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to, helping you discover new content and makin…"
+    - label: "X Andrej Karpathy"
+      text: "Ugh X breaks time links, it’s at 26:17"
+    - label: "X Andrej Karpathy"
+      text: "(link to blast from the past) piped.video/xQhb3C2hQoE?si=x3qQ…"
+    - label: "X Andrej Karpathy"
+      text: "The signature is alluding to NVIDIA GTC 2015, where Jensen excitedly told an audience of, at the time, mostly gamers and scientifi…"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "Thank you Jensen and NVIDIA! She’s a real beauty…｜中文观点：从 Thank you Jensen and NVIDIA! She’s a real b…"
+    - label: "总结 + 观点"
+      text: "On evaluating and understanding the frontier of…｜中文观点：GPT 5.4 is a big step for Codex 更值得从实际采用价值来判断…"
+    - label: "总结 + 观点"
+      text: "Build a Domain-Specific Embedding Model in Under…｜中文观点：比起表面参数，Build a Domain-Specific Embedding Mode…"
+    - label: "总结 + 观点"
+      text: "Andy Weir showing some of the spreadsheets under…｜中文观点：比起表面参数，R to @karpathy: Andy Weir showing some…"
+    - label: "总结 + 观点"
+      text: "Had to go see Project Hail Mary right away (it's…｜中文观点：对 Had to go see Project Hail Mary right away…"
+  items:
+    - title: "State of Open Source on Hugging Face: Spring 2026"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "State of Open Source on Hugging Face: Spring 2026"
+      link: "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
+      opinion: "State of Open Source on Hugging Face: Spring 2026 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Friend Bubbles: Enhancing Social Discovery on Facebook Reels"
+      source: "Meta Engineering"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "Friend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to, helping you discover new content and making it easier to connect over shared interests. This article explains the technical architecture behind friend bubbles, including how machine learning estimates relationship strength and ranks content your friends have interacted with to create more Read More... The post Friend Bubbles: Enhancing Social Discovery on Facebook Reels appeared first on Engineering at Meta"
+      link: "https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/"
+      opinion: "Friend Bubbles: Enhancing Social Discovery on Facebook Reels 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "R to @karpathy: Ugh X breaks time links, it’s at 26:17"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Ugh X breaks time links, it’s at 26:17"
+      link: "https://twitter.com/karpathy/status/2034329390377762848"
+      opinion: "R to @karpathy: Ugh X breaks time links, it’s at 26:17 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "R to @karpathy: (link to blast from the past) https://youtu.be/xQhb3C2hQoE?si=x3qQMjG-dktoNNv_&t=1577"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "(link to blast from the past) piped.video/xQhb3C2hQoE?si=x3qQ…"
+      link: "https://twitter.com/karpathy/status/2034325950310355072"
+      opinion: "R to @karpathy: (link to blast from the past) https://youtu.... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "R to @karpathy: The signature is alluding to NVIDIA GTC 2015, where Jensen excitedly told an audience of, at the time, mostly gamers and scientific computing professionals that Deep Learning is The Next Big Thing, citing among other examples my PhD thesis (one of the first image captioning systems that coupled image recognition ConvNet to an autoregressive RNN language model, trained end to end). This was back when most people were still unaware and somewhat skeptical but of course - Jensen was 1000% correct, highly prescient and locked in very early."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "The signature is alluding to NVIDIA GTC 2015, where Jensen excitedly told an audience of, at the time, mostly gamers and scientific computing professionals that Deep Learning is The Next Big Thing, citing among other examples my PhD thesis (one of the first image captioning systems that coupled image recognition ConvNet to an autoregressive RNN language model, trained end to end). This was back when most people were still unaware and somewhat skeptical but of course - Jensen was 1000% correct, highly prescient and locked in very early."
+      link: "https://twitter.com/karpathy/status/2034325423358955981"
+      opinion: "R to @karpathy: The signature is alluding to NVIDIA GTC 2015... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Thank you Jensen and NVIDIA! She’s a real beauty! I was told I’d be getting a secret gift, with a hint that it requires 20 amps. (So I knew it had to be good). She’ll make for a beautiful, spacious home for my Dobby the House Elf claw, among lots of other tinkering, thank you!!"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Thank you Jensen and NVIDIA! She’s a real beauty! I was told I’d be getting a secret gift, with a hint that it requires 20 amps. (So I knew it had to be good). She’ll make for a beautiful, spacious home for my Dobby the House Elf claw, among lots of other tinkering, thank you!! NVIDIA AI Developer (@NVIDIAAIDev) Andrej Karpathy’s lab has received the first DGX Station GB300 -- a Dell Pro Max with GB300. We can't wait to see what you’ll create @karpathy blogs.nvidia.com/blog/gtc-20… @DellTech https://nitter.net/NVIDIAAIDev/status/2034291235041554871#m"
+      link: "https://twitter.com/karpathy/status/2034321875506196585"
+      opinion: "从 Thank you Jensen and NVIDIA! She’s a real beauty! I was told... 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "GPT 5.4 is a big step for Codex"
+      source: "Interconnects AI"
+      tags: "#hidden_high_value #hidden_high_value"
+      author_tags: ""
+      summary: "On evaluating and understanding the frontier of agents, and why I still turn to Claude."
+      link: "https://www.interconnects.ai/p/gpt-54-is-a-big-step-for-codex"
+      opinion: "GPT 5.4 is a big step for Codex 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Build a Domain-Specific Embedding Model in Under a Day"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Build a Domain-Specific Embedding Model in Under a Day"
+      link: "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
+      opinion: "比起表面参数，Build a Domain-Specific Embedding Model in Under a Day 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "R to @karpathy: Andy Weir showing some of the spreadsheets underlying the calculations in the book https://www.youtube.com/watch?v=lYHCTEnYOr4 i mean, it's not quality scifi if it doesn't come with a supplementary whitepaper"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Andy Weir showing some of the spreadsheets underlying the calculations in the book piped.video/watch?v=lYHCTEnY… i mean, it's not quality scifi if it doesn't come with a supplementary whitepaper"
+      link: "https://twitter.com/karpathy/status/2034873049753997619"
+      opinion: "比起表面参数，R to @karpathy: Andy Weir showing some of the spreadsheets u... 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Had to go see Project Hail Mary right away (it's based on the book of Andy Weir, of also The Martian fame). Both very pleased and relieved to say that 1) the movie sticks very close to the book in both content and tone and 2) is really well executed. The book is one of my favorites when it comes to alien portrayals because a lot of thought was clearly given to the scientific details of an alternate biochemistry, evolutionary history, sensorium, psychology, language, tech tree, etc. It's different enough that it is highly creative and plausible, but also similar enough that you get a compelling story and one of the best bromances in fiction. Not to mention the other (single-cellular) aliens. I can count fictional portrayals of aliens of this depth on one hand. A lot of these aspects are briefly featured - if you read the book you'll spot them but if you haven't, the movie can't spend the time to do them justice. I'll say that the movie inches a little too much into the superhero movie tropes with the pacing, the quips, the Bathos and such for my taste, and we get a little bit less the grand of Interstellar and a little bit less of the science of The Martian, but I think it's ok considering the tone of the original content. And it does really well where it counts - on Rocky and the bromance. Thank you to the film crew for the gem!"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Had to go see Project Hail Mary right away (it's based on the book of Andy Weir, of also The Martian fame). Both very pleased and relieved to say that 1) the movie sticks very close to the book in both content and tone and 2) is really well executed. The book is one of my favorites when it comes to alien portrayals because a lot of thought was clearly given to the scientific details of an alternate biochemistry, evolutionary history, sensorium, psychology, language, tech tree, etc. It's different enough that it is highly creative and plausible, but also similar enough that you get a compelling story and one of the best bromances in fiction. Not to mention the other (single-cellular) aliens. I can count fictional portrayals of aliens of this depth on one hand. A lot of these aspects are briefly featured - if you read the book you'll spot them but if you haven't, the movie can't spend the time to do them justice. I'll say that the movie inches a little too much into the superhero movie tropes with the pacing, the quips, the Bathos and such for my taste, and we get a little bit less the grand of Interstellar and a little bit less of the science of The Martian, but I think it's ok considering the tone of the original content. And it does really well where it counts - on Rocky and the bromance. Thank you to the film crew for the gem!"
+      link: "https://twitter.com/karpathy/status/2034865693544604001"
+      opinion: "对 Had to go see Project Hail Mary right away (it's based on th... 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

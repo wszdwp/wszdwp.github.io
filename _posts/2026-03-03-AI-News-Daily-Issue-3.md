@@ -1,96 +1,103 @@
 ---
-title: 第3期 AI News Daily
+title: "第3期 | One common issue with personalization in all LLMs is how..."
 date: 2026-03-03
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "X Andrej Karpathy"
+      text: "Thank you Sarah, my pleasure to come on the pod! And happy to do some more Q&A in the replies. sarah guo (@saranormous) Caught up…"
+    - label: "Interconnects AI"
+      text: "The case for why self-improvement is real but it doesn't lead to fast takeoff."
+    - label: "X Andrej Karpathy"
+      text: "Software horror: litellm PyPI supply chain attack. Simple `pip install litellm` was enough to exfiltrate SSH keys, AWS/GCP/Azure c…"
+    - label: "Hugging Face Blog"
+      text: "A New Framework for Evaluating Voice Agents (EVA)"
+    - label: "X Andrej Karpathy"
+      text: "(I cycle through all LLMs over time and all of them seem to do this so it's not any particular implementation but something deeper…"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "One common issue with personalization in all LLM…｜中文观点：One common issue with personalization in all…"
+    - label: "总结 + 观点"
+      text: "OpenAI launches a Safety Bug Bounty program to i…｜中文观点：从 Introducing the OpenAI Safety Bug Bounty pr…"
+    - label: "总结 + 观点"
+      text: "Discover how Kensho, S&P Global’s AI innovation…｜中文观点：How Kensho built a multi-agent framework with…"
+    - label: "总结 + 观点"
+      text: "When I built menugen ~1 year ago, I observed tha…｜中文观点：从 When I built menugen ~1 year ago, I observe…"
+    - label: "总结 + 观点"
+      text: "TLDR: The best agent evals directly measure an a…｜中文观点：比起表面参数，How we build evals for Deep Agents 更需要…"
+  items:
+    - title: "Thank you Sarah, my pleasure to come on the pod! And happy to do some more Q&A in the replies."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Thank you Sarah, my pleasure to come on the pod! And happy to do some more Q&A in the replies. sarah guo (@saranormous) Caught up with @karpathy for a new @NoPriorsPod on the phase shift in engineering, AI psychosis, claws, AutoResearch, the opportunity for a SETI-at-Home like movement in AI, the model landscape, and second order effects 02:55 - What Capability Limits Remain? 06:15 - What Mastery of Coding Agents Looks Like 11:16 - Second Order Effects of Coding Agents 15:51 - Why AutoResearch 22:45 - Relevant Skills in the AI Era 28:25 - Model Speciation 32:30 - Collaboration Surfaces for Humans and AI 37:28 - Analysis of Jobs Market Data 48:25 - Open vs. Closed Source Models 53:51 - Autonomous Robotics and Atoms 1:00:59 - MicroGPT and Agentic Education 1:05:40 - End Thoughts Video https://nitter.net/saranormous/status/2035080458304987603#m"
+      link: "https://twitter.com/karpathy/status/2035158351357911527"
+      opinion: "Thank you Sarah, my pleasure to come on the pod! And happy t... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Lossy self-improvement"
+      source: "Interconnects AI"
+      tags: "#hidden_high_value #hidden_high_value"
+      author_tags: ""
+      summary: "The case for why self-improvement is real but it doesn't lead to fast takeoff."
+      link: "https://www.interconnects.ai/p/lossy-self-improvement"
+      opinion: "Lossy self-improvement 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Software horror: litellm PyPI supply chain attack. Simple `pip install litellm` was enough to exfiltrate SSH keys, AWS/GCP/Azure creds, Kubernetes configs, git credentials, env vars (all your API keys), shell history, crypto wallets, SSL private keys, CI/CD secrets, database passwords. LiteLLM itself has 97 million downloads per month which is already terrible, but much worse, the contagion spreads to any project that depends on litellm. For example, if you did `pip install dspy` (which depended on litellm>=1.64.0), you'd also be pwnd. Same for any other large project that depended on litellm. Afaict the poisoned version was up for only less than ~1 hour. The attack had a bug which led to its discovery - Callum McMahon was using an MCP plugin inside Cursor that pulled in litellm as a transitive dependency. When litellm 1.82.8 installed, their machine ran out of RAM and crashed. So if the attacker didn't vibe code this attack it could have been undetected for many days or weeks. Supply chain attacks like this are basically the scariest thing imaginable in modern software. Every time you install any depedency you could be pulling in a poisoned package anywhere deep inside its entire depedency tree. This is especially risky with large projects that might have lots and lots of dependencies. The credentials that do get stolen in each attack can then be used to take over more accounts and compromise more packages. Classical software engineering would have you believe that dependencies are good (we're building pyramids from bricks), but imo this has to be re-evaluated, and it's why I've been so growingly averse to them, preferring to use LLMs to \"yoink\" functionality when it's simple enough and possible."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Software horror: litellm PyPI supply chain attack. Simple `pip install litellm` was enough to exfiltrate SSH keys, AWS/GCP/Azure creds, Kubernetes configs, git credentials, env vars (all your API keys), shell history, crypto wallets, SSL private keys, CI/CD secrets, database passwords. LiteLLM itself has 97 million downloads per month which is already terrible, but much worse, the contagion spreads to any project that depends on litellm. For example, if you did `pip install dspy` (which depended on litellm>=1.64.0), you'd also be pwnd. Same for any other large project that depended on litellm. Afaict the poisoned version was up for only less than ~1 hour. The attack had a bug which led to its discovery - Callum McMahon was using an MCP plugin inside Cursor that pulled in litellm as a transitive dependency. When litellm 1.82.8 installed, their machine ran out of RAM and crashed. So if the attacker didn't vibe code this attack it could have been undetected for many days or weeks. Supply chain attacks like this are basically the scariest thing imaginable in modern software. Every time you install any depedency you could be pulling in a poisoned package anywhere deep inside its entire depedency tree. This is especially risky with large projects that might have lots and lots of dependencies. The credentials that do get stolen in each attack can then be used to take over more accounts and compromise more packages. Classical software engineering would have you believe that dependencies are good (we're building pyramids from bricks), but imo this has to be re-evaluated, and it's why I've been so growingly averse to them, preferring to use LLMs to \"yoink\" functionality when it's simple enough and possible. Daniel Hnyk (@hnykda) LiteLLM HAS BEEN COMPROMISED, DO NOT UPDATE. We just discovered that LiteLLM pypi release 1.82.8. It has been compromised, it contains litellm_init.pth with base64 encoded instructions to send all the credentials it can find to remote server self-replicate. link below https://nitter.net/hnykda/status/2036414330267193815#m"
+      link: "https://twitter.com/karpathy/status/2036487306585268612"
+      opinion: "从 Software horror: litellm PyPI supply chain attack. Simple `p... 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "A New Framework for Evaluating Voice Agents (EVA)"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "A New Framework for Evaluating Voice Agents (EVA)"
+      link: "https://huggingface.co/blog/ServiceNow-AI/eva"
+      opinion: "对 A New Framework for Evaluating Voice Agents (EVA) 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "R to @karpathy: (I cycle through all LLMs over time and all of them seem to do this so it's not any particular implementation but something deeper, e.g. maybe during training, a lot of the information in the context window is relevant to the task, so the LLMs develop a bias to use what is given, then at test time overfit to anything that happens to RAG its way there via a memory feature"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "(I cycle through all LLMs over time and all of them seem to do this so it's not any particular implementation but something deeper, e.g. maybe during training, a lot of the information in the context window is relevant to the task, so the LLMs develop a bias to use what is given, then at test time overfit to anything that happens to RAG its way there via a memory feature"
+      link: "https://twitter.com/karpathy/status/2036841069636370467"
+      opinion: "R to @karpathy: (I cycle through all LLMs over time and all... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "One common issue with personalization in all LLMs is how distracting memory seems to be for the models. A single question from 2 months ago about some topic can keep coming up as some kind of a deep interest of mine with undue mentions in perpetuity. Some kind of trying too hard."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "One common issue with personalization in all LLMs is how distracting memory seems to be for the models. A single question from 2 months ago about some topic can keep coming up as some kind of a deep interest of mine with undue mentions in perpetuity. Some kind of trying too hard."
+      link: "https://twitter.com/karpathy/status/2036836816654147718"
+      opinion: "One common issue with personalization in all LLMs is how dis... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Introducing the OpenAI Safety Bug Bounty program"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration."
+      link: "https://openai.com/index/safety-bug-bounty"
+      opinion: "从 Introducing the OpenAI Safety Bug Bounty program 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "How Kensho built a multi-agent framework with LangGraph to solve trusted financial data retrieval"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Discover how Kensho, S&P Global’s AI innovation engine, leveraged LangGraph to create its Grounding framework–a unified agentic access layer solving fragmented financial data retrieval at enterprise scale."
+      link: "https://blog.langchain.com/customers-kensho/"
+      opinion: "How Kensho built a multi-agent framework with LangGraph to s... 的价值在于它是否能真正降低智能体落地门槛，而不是再提供一层概念包装。"
+    - title: "When I built menugen ~1 year ago, I observed that the hardest part by far was not the code itself, it was the plethora of services you have to assemble like IKEA furniture to make it real, the DevOps: services, payments, auth, database, security, domain names, etc... I am really looking forward to a day where I could simply tell my agent: \"build menugen\" (referencing the post) and it would just work. The whole thing up to the deployed web page. The agent would have to browse a number of services, read the docs, get all the api keys, make everything work, debug it in dev, and deploy to prod. This is the actually hard part, not the code itself. Or rather, the better way to think about it is that the entire DevOps lifecycle has to become code, in addition to the necessary sensors/actuators of the CLIs/APIs with agent-native ergonomics. And there should be no need to visit web pages, click buttons, or anything like that for the human. It's easy to state, it's now just barely technically possible and expected to work maybe, but it definitely requires from-scratch re-design, work and thought. Very exciting direction!"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "When I built menugen ~1 year ago, I observed that the hardest part by far was not the code itself, it was the plethora of services you have to assemble like IKEA furniture to make it real, the DevOps: services, payments, auth, database, security, domain names, etc... I am really looking forward to a day where I could simply tell my agent: \"build menugen\" (referencing the post) and it would just work. The whole thing up to the deployed web page. The agent would have to browse a number of services, read the docs, get all the api keys, make everything work, debug it in dev, and deploy to prod. This is the actually hard part, not the code itself. Or rather, the better way to think about it is that the entire DevOps lifecycle has to become code, in addition to the necessary sensors/actuators of the CLIs/APIs with agent-native ergonomics. And there should be no need to visit web pages, click buttons, or anything like that for the human. It's easy to state, it's now just barely technically possible and expected to work maybe, but it definitely requires from-scratch re-design, work and thought. Very exciting direction! Patrick Collison (@patrickc) When @karpathy built MenuGen karpathy.bearblog.dev/vibe-c… he said: \"Vibe coding menugen was exhilarating and fun escapade as a local demo, but a bit of a painful slog as a deployed, real app. Building a modern app is a bit like assembling IKEA future. There are all these services, docs, API keys, configurations, dev/prod deployments, team and security features, rate limits, pricing tiers.\" We've all run into this issue when building with agents: you have to scurry off to establish accounts, clicking things in the browser as though it's the antediluvian days of 2023, in order to unblock its superintelligent progress. So we decided to build Stripe Projects to help agents instantly provision services from the CLI. For example, simply run: stripe projects add posthog/analytics And it'll create a PostHog account, get an API key, and (as needed) set up billing. Projects is launching today as a developer preview. You can register for access (we'll make it available to everyone soon) at projects.dev We're also rolling out support for many new providers over the coming weeks. (Get in touch if you'd like to make your service available.) projects.dev https://nitter.net/patrickc/status/2037190688950161709#m"
+      link: "https://twitter.com/karpathy/status/2037200624450936940"
+      opinion: "从 When I built menugen ~1 year ago, I observed that the hardes... 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "How we build evals for Deep Agents"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "TLDR: The best agent evals directly measure an agent behavior we care about. Here&apos;s how we source data, create metrics, and run well-scoped, targeted experiments over time to make agents more accurate and reliable. Evals shape agent behavior We've been curating evaluations to measure and"
+      link: "https://blog.langchain.com/how-we-build-evals-for-deep-agents/"
+      opinion: "比起表面参数，How we build evals for Deep Agents 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

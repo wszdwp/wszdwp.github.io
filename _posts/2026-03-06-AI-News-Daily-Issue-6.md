@@ -1,96 +1,103 @@
 ---
-title: 第6期 AI News Daily
+title: "第6期 | LLM Knowledge Bases Something I'm finding very useful re..."
 date: 2026-03-06
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "Hugging Face Blog"
+      text: "Any Custom Frontend with Gradio&apos;s Backend"
+    - label: "X Andrej Karpathy"
+      text: "LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of…"
+    - label: "Meta Engineering"
+      text: "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta's Ads…"
+    - label: "Latent Space"
+      text: "We cap out our World Models coverage with one of the most exciting new approaches - long running, multiplayer, interactive world m…"
+    - label: "LangChain Blog"
+      text: "TL;DR: Open models like GLM-5 and MiniMax M2.7 now match closed frontier models on core agent tasks -- file operations, tool use,…"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "In this post, we explore how ActorSimulator in S…｜中文观点：对 Simulate realistic users to evaluate multi-…"
+    - label: "总结 + 观点"
+      text: "This post describes how TGS achieved near-linear…｜中文观点：对 Scaling seismic foundation models on AWS: D…"
+    - label: "总结 + 观点"
+      text: "OpenAI acquires TBPN to accelerate global conver…｜中文观点：OpenAI acquires TBPN 更值得从实际采用价值来判断，而不是只看它有没有制…"
+    - label: "总结 + 观点"
+      text: "Codex now includes pay-as-you-go pricing for Cha…｜中文观点：围绕 Codex now offers more flexible pricing for…"
+    - label: "总结 + 观点"
+      text: "a quiet day｜中文观点：[AINews] A quiet April Fools 更值得从实际采用价值来判断，而不…"
+  items:
+    - title: "Any Custom Frontend with Gradio&apos;s Backend"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Any Custom Frontend with Gradio&apos;s Backend"
+      link: "https://huggingface.co/blog/introducing-gradio-server"
+      opinion: "Any Custom Frontend with Gradio&apos;s Backend 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So: Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally \"compile\" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them. IDE: I use Obsidian as the IDE \"frontend\" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides). Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale. Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up \"filing\" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always \"add up\" in the knowledge base. Linting: I've run some LLM \"health checks\" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into. Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries. Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation finetuning to have your LLM \"know\" the data in its weights instead of just context windows. TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So: Data ingest: I index source documents (articles, papers, repos, datasets, images, etc.) into a raw/ directory, then I use an LLM to incrementally \"compile\" a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all. To convert web articles into .md files I like to use the Obsidian Web Clipper extension, and then I also use a hotkey to download all the related images to local so that my LLM can easily reference them. IDE: I use Obsidian as the IDE \"frontend\" where I can view the raw data, the the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly. I've played with a few Obsidian plugins to render and view data in other ways (e.g. Marp for slides). Q&A: Where things get interesting is that once your wiki is big enough (e.g. mine on some recent research is ~100 articles and ~400K words), you can ask your LLM agent all kinds of complex questions against the wiki, and it will go off, research the answers, etc. I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining index files and brief summaries of all the documents and it reads all the important related data fairly easily at this ~small scale. Output: Instead of getting answers in text/terminal, I like to have it render markdown files for me, or slide shows (Marp format), or matplotlib images, all of which I then view again in Obsidian. You can imagine many other visual output formats depending on the query. Often, I end up \"filing\" the outputs back into the wiki to enhance it for further queries. So my own explorations and queries always \"add up\" in the knowledge base. Linting: I've run some LLM \"health checks\" over the wiki to e.g. find inconsistent data, impute missing data (with web searchers), find interesting connections for new article candidates, etc., to incrementally clean up the wiki and enhance its overall data integrity. The LLMs are quite good at suggesting further questions to ask and look into. Extra tools: I find myself developing additional tools to process the data, e.g. I vibe coded a small and naive search engine over the wiki, which I both use directly (in a web ui), but more often I want to hand it off to an LLM via CLI as a tool for larger queries. Further explorations: As the repo grows, the natural desire is to also think about synthetic data generation finetuning to have your LLM \"know\" the data in its weights instead of just context windows. TLDR: raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian. You rarely ever write or edit the wiki manually, it's the domain of the LLM. I think there is room here for an incredible new product instead of a hacky collection of scripts."
+      link: "https://twitter.com/karpathy/status/2039805659525644595"
+      opinion: "比起表面参数，LLM Knowledge Bases Something I'm finding very useful recent... 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure"
+      source: "Meta Engineering"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta's Ads Ranking innovation. The previous post introduced Ranking Engineer Agent's ML exploration capability, which autonomously designs, executes, and analyzes ranking model experiments. This post covers how to optimize the low-level infrastructure that makes those models run Read More... The post KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure appeared first on Engineering at Meta"
+      link: "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/"
+      opinion: "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Moonlake: Causal World Models should be Multimodal, Interactive, and Efficient with Chris Manning and Fan-yun Sun"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "We cap out our World Models coverage with one of the most exciting new approaches - long running, multiplayer, interactive world models built with agents bootstrapped from game engines!"
+      link: "https://www.latent.space/p/moonlake"
+      opinion: "围绕 Moonlake: Causal World Models should be Multimodal, Interact...，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
+    - title: "Open Models have crossed a threshold"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "TL;DR: Open models like GLM-5 and MiniMax M2.7 now match closed frontier models on core agent tasks -- file operations, tool use, and instruction following -- at a fraction of the cost and latency. Here&apos;s what our evals show and how to start using them"
+      link: "https://blog.langchain.com/open-models-have-crossed-a-threshold/"
+      opinion: "Open Models have crossed a threshold 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Simulate realistic users to evaluate multi-turn AI agents in Strands Evals"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "In this post, we explore how ActorSimulator in Strands Evaluations SDK addresses the challenge with structured user simulation that integrates into your evaluation pipeline."
+      link: "https://aws.amazon.com/blogs/machine-learning/simulate-realistic-users-to-evaluate-multi-turn-ai-agents-in-strands-evals/"
+      opinion: "对 Simulate realistic users to evaluate multi-turn AI agents in...，更该看它能不能改善多步骤协作、记忆管理和稳定交付，而不是只看 demo 效果。"
+    - title: "Scaling seismic foundation models on AWS: Distributed training with Amazon SageMaker HyperPod and expanding context windows"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "This post describes how TGS achieved near-linear scaling for distributed training and expanded context windows for their Vision Transformer-based SFM using Amazon SageMaker HyperPod. This joint solution cut training time from 6 months to just 5 days while enabling analysis of seismic volumes larger than previously possible."
+      link: "https://aws.amazon.com/blogs/machine-learning/scaling-seismic-foundation-models-on-aws-distributed-training-with-amazon-sagemaker-hyperpod-and-expanding-context-windows/"
+      opinion: "对 Scaling seismic foundation models on AWS: Distributed traini... 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "OpenAI acquires TBPN"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community."
+      link: "https://openai.com/index/openai-acquires-tbpn"
+      opinion: "OpenAI acquires TBPN 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Codex now offers more flexible pricing for teams"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption."
+      link: "https://openai.com/index/codex-flexible-pricing-for-teams"
+      opinion: "围绕 Codex now offers more flexible pricing for teams，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
+    - title: "[AINews] A quiet April Fools"
+      source: "Latent Space"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "a quiet day"
+      link: "https://www.latent.space/p/ainews-a-quiet-april-fools"
+      opinion: "[AINews] A quiet April Fools 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

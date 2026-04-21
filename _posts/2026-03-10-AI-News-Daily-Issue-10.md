@@ -1,96 +1,103 @@
 ---
-title: 第10期 AI News Daily
+title: "第10期 | datasette-ports 0.2"
 date: 2026-03-10
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "Simon Willison"
+      text: "Release: datasette-ports 0.2 No longer requires Datasette - running uvx datasette-ports now works as well. Installing it as a Data…"
+    - label: "Simon Willison"
+      text: "Release: scan-for-secrets 0.3 New -r/--redact option which shows the list of matches, asks for confirmation and then replaces ever…"
+    - label: "Simon Willison"
+      text: "Tool: Cleanup Claude Code Paste Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come…"
+    - label: "OpenAI Blog"
+      text: "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, a…"
+    - label: "Simon Willison"
+      text: "Release: datasette-ports 0.1 Another example of README-driven development, this time solving a problem that might be unique to me.…"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "Article URL: https://github.com/linebender/xilem…｜中文观点：对 Xilem – An experimental Rust native UI fram…"
+    - label: "总结 + 观点"
+      text: "With Amazon Bedrock Projects, you can attribute…｜中文观点：Manage AI costs with Amazon Bedrock Projects…"
+    - label: "总结 + 观点"
+      text: "https://www.reuters.com/world/iran-war-live-tehr…｜中文观点：US and Iran agree to provisional ceasefire 更值…"
+    - label: "总结 + 观点"
+      text: "GLM-5.1: Towards Long-Horizon Tasks Chinese AI l…｜中文观点：比起表面参数，GLM-5.1: Towards Long-Horizon Tasks 更需…"
+    - label: "总结 + 观点"
+      text: "Article URL: https://nehanarula.org/2026/04/03/b…｜中文观点：Bitcoin and quantum computing 更值得从实际采用价值来判断，而…"
+  items:
+    - title: "datasette-ports 0.2"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Release: datasette-ports 0.2 No longer requires Datasette - running uvx datasette-ports now works as well. Installing it as a Datasette plugin continues to provide the datasette ports command. Tags: datasette"
+      link: "https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything"
+      opinion: "datasette-ports 0.2 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "scan-for-secrets 0.3"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Release: scan-for-secrets 0.3 New -r/--redact option which shows the list of matches, asks for confirmation and then replaces every match with REDACTED taking escaping rules into account. New Python function redact_file(file_path: str Path, secrets: list[str], replacement: str \"REDACTED\") - int Tags: projects"
+      link: "https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything"
+      opinion: "从 scan-for-secrets 0.3 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "Cleanup Claude Code Paste"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Tool: Cleanup Claude Code Paste Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up. Tags: tools claude-code"
+      link: "https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything"
+      opinion: "Cleanup Claude Code Paste 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Industrial policy for the Intelligence Age"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves."
+      link: "https://openai.com/index/industrial-policy-for-the-intelligence-age"
+      opinion: "Industrial policy for the Intelligence Age 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "datasette-ports 0.1"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Release: datasette-ports 0.1 Another example of README-driven development, this time solving a problem that might be unique to me. I often find myself running a bunch of different Datasette instances with different databases and different in-development plugins, spreads across dozens of different terminal windows - enough that I frequently lose them! Now I can run this: datasette install datasette-ports datasette ports And get a list of every running instance that looks something like this: http://127.0.0.1:8333/ - v1.0a26 Databases: data Plugins: datasette-enrichments, datasette-enrichments-llm, datasette-llm, datasette-secrets http://127.0.0.1:8001/ - v1.0a26 Databases: creatures Plugins: datasette-extract, datasette-llm, datasette-secrets http://127.0.0.1:8900/ - v0.65.2 Databases: logs Tags: datasette"
+      link: "https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything"
+      opinion: "从 datasette-ports 0.1 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "Xilem An experimental Rust native UI framework"
+      source: "Hacker News Frontpage"
+      tags: "#research_community #core"
+      author_tags: ""
+      summary: "Article URL: https://github.com/linebender/xilem Comments URL: https://news.ycombinator.com/item?id=47682719 Points: 63 Comments: 18"
+      link: "https://github.com/linebender/xilem"
+      opinion: "对 Xilem – An experimental Rust native UI framework 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "Manage AI costs with Amazon Bedrock Projects"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "With Amazon Bedrock Projects, you can attribute inference costs to specific workloads and analyze them in AWS Cost Explorer and AWS Data Exports. In this post, you will learn how to set up Projects end-to-end, from designing a tagging strategy to analyzing costs."
+      link: "https://aws.amazon.com/blogs/machine-learning/manage-ai-costs-with-amazon-bedrock-projects/"
+      opinion: "Manage AI costs with Amazon Bedrock Projects 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "US and Iran agree to provisional ceasefire"
+      source: "Hacker News Frontpage"
+      tags: "#research_community #core"
+      author_tags: ""
+      summary: "https://www.reuters.com/world/iran-war-live-tehran-rejects-c... Comments URL: https://news.ycombinator.com/item?id=47682276 Points: 396 Comments: 1067"
+      link: "https://www.theguardian.com/us-news/2026/apr/07/trump-iran-war-ceasefire"
+      opinion: "US and Iran agree to provisional ceasefire 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "GLM-5.1: Towards Long-Horizon Tasks"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "GLM-5.1: Towards Long-Horizon Tasks Chinese AI lab Z.ai's latest model is a giant 754B parameter 1.51TB (on Hugging Face MIT-licensed monster - the same size as their previous GLM-5 release, and sharing the same paper It's available via OpenRouter so I asked it to draw me a pelican: llm install llm-openrouter llm -m openrouter/z-ai/glm-5.1 'Generate an SVG of a pelican on a bicycle' And something new happened... unprompted, the model decided to give me an HTML page that included both the SVG and a separate set of CSS animations! The SVG was excellent, and might be my new favorite from an open weights model: But the animation broke it That's the pelican, floating up in the top left corner. I usually don't do follow-up prompts for the pelican test, but in this case I made an exception: llm -c 'the animation is a bit broken, the pelican ends up positioned off the screen at the top right' GLM 5.1 replied: The issue is that CSS transform animations on SVG elements override the SVG transform attribute used for positioning, causing the pelican to lose its placement and fly off to the top-right. The fix is to separate positioning (SVG attribute) from animation (inner group) and use <animateTransform> for SVG rotations since it handles coordinate systems correctly. And spat out fresh HTML which fixed the problem! I particularly like the animation of the beak, which is described in the SVG comments like so: -- Pouch (lower beak) with wobble -- g path d M42,-58 Q43,-50 48,-42 Q55,-35 62,-38 Q70,-42 75,-60 L42,-58 Z fill url(#pouchGrad) stroke #b06008 stroke-width 1 opacity 0.9 path d M48,-50 Q55,-46 60,-52 fill none stroke #c06a08 stroke-width 0.8 opacity 0.6 animateTransform attributeName transform type scale values 1,1; 1.03,0.97; 1,1 dur 0.75s repeatCount indefinite additive sum g Update On Bluesky @charles.capps.me suggested a \"NORTH VIRGINIA OPOSSUM ON AN E-SCOOTER\" and... The HTML+SVG comments on that one include Earring sparkle -- Opossum fur gradient -- -- Distant treeline silhouette - Virginia pines -- -- Front paw on handlebar -- - here's the transcript and the HTML result Tags: css svg ai generative-ai llms pelican-riding-a-bicycle llm-release ai-in-china glm"
+      link: "https://simonwillison.net/2026/Apr/7/glm-51/#atom-everything"
+      opinion: "比起表面参数，GLM-5.1: Towards Long-Horizon Tasks 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Bitcoin and quantum computing"
+      source: "Hacker News Frontpage"
+      tags: "#research_community #core"
+      author_tags: ""
+      summary: "Article URL: https://nehanarula.org/2026/04/03/bitcoin-and-quantum-computing.html Comments URL: https://news.ycombinator.com/item?id=47681274 Points: 132 Comments: 93"
+      link: "https://nehanarula.org/2026/04/03/bitcoin-and-quantum-computing.html"
+      opinion: "Bitcoin and quantum computing 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

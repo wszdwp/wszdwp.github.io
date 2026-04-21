@@ -1,96 +1,103 @@
 ---
-title: 第4期 AI News Daily
+title: "第4期 | STADLER reshapes knowledge work at a 230-year-old compan..."
 date: 2026-03-04
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "OpenAI Blog"
+      text: "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees."
+    - label: "LangChain Blog"
+      text: "A practical checklist for agent evaluation: error analysis, dataset construction, grader design, offline online evals, and product…"
+    - label: "Hugging Face Blog"
+      text: "Liberate your OpenClaw"
+    - label: "X Andrej Karpathy"
+      text: "- Drafted a blog post - Used an LLM to meticulously improve the argument over 4 hours. - Wow, feeling great, it’s so convincing! -…"
+    - label: "OpenAI Blog"
+      text: "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "Meta is continuing its long-term roadmap to help…｜中文观点：AI for American-Produced Cement and Concrete…"
+    - label: "总结 + 观点"
+      text: "New orgs! New types of models! With Nemotron Sup…｜中文观点：Latest open artifacts (#20): New orgs! New ty…"
+    - label: "总结 + 观点"
+      text: "Build production AI agents on MongoDB Atlas with…｜中文观点：更值得关注的是 Announcing the LangChain + MongoDB Pa…"
+    - label: "总结 + 观点"
+      text: "Meta continues to lead the industry in utilizing…｜中文观点：Meta Adaptive Ranking Model: Bending the Infe…"
+    - label: "总结 + 观点"
+      text: "Granite 4.0 3B Vision: Compact Multimodal Intell…｜中文观点：围绕 Granite 4.0 3B Vision: Compact Multimodal…"
+  items:
+    - title: "STADLER reshapes knowledge work at a 230-year-old company"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees."
+      link: "https://openai.com/index/stadler"
+      opinion: "围绕 STADLER reshapes knowledge work at a 230-year-old company，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
+    - title: "Agent Evaluation Readiness Checklist"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "A practical checklist for agent evaluation: error analysis, dataset construction, grader design, offline online evals, and production readiness."
+      link: "https://blog.langchain.com/agent-evaluation-readiness-checklist/"
+      opinion: "比起表面参数，Agent Evaluation Readiness Checklist 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Liberate your OpenClaw"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Liberate your OpenClaw"
+      link: "https://huggingface.co/blog/liberate-your-openclaw"
+      opinion: "Liberate your OpenClaw 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "- Drafted a blog post - Used an LLM to meticulously improve the argument over 4 hours. - Wow, feeling great, it’s so convincing! - Fun idea let’s ask it to argue the opposite. - LLM demolishes the entire argument and convinces me that the opposite is in fact true. - lol The LLMs may elicit an opinion when asked but are extremely competent in arguing almost any direction. This is actually super useful as a tool for forming your own opinions, just make sure to ask different directions and be careful with the sycophancy."
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "- Drafted a blog post - Used an LLM to meticulously improve the argument over 4 hours. - Wow, feeling great, it’s so convincing! - Fun idea let’s ask it to argue the opposite. - LLM demolishes the entire argument and convinces me that the opposite is in fact true. - lol The LLMs may elicit an opinion when asked but are extremely competent in arguing almost any direction. This is actually super useful as a tool for forming your own opinions, just make sure to ask different directions and be careful with the sycophancy."
+      link: "https://twitter.com/karpathy/status/2037921699824607591"
+      opinion: "- Drafted a blog post - Used an LLM to meticulously improve... 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Helping disaster response teams turn AI into action across Asia"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
+      link: "https://openai.com/index/helping-disaster-response-teams-asia"
+      opinion: "Helping disaster response teams turn AI into action across A... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "AI for American-Produced Cement and Concrete"
+      source: "Meta Engineering"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "Meta is continuing its long-term roadmap to help the construction industry leverage AI to produce high-quality and more sustainable concrete mixes, as well as those exclusively produced in the United States. Concurrent with the 2026 American Concrete Institute (ACI) Spring Convention, Meta is releasing a new AI model for designing concrete mixes Bayesian Optimization Read More... The post AI for American-Produced Cement and Concrete appeared first on Engineering at Meta"
+      link: "https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/"
+      opinion: "AI for American-Produced Cement and Concrete 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, others"
+      source: "Interconnects AI"
+      tags: "#hidden_high_value #hidden_high_value"
+      author_tags: ""
+      summary: "New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, others"
+      link: "https://www.interconnects.ai/p/latest-open-artifacts-20-new-orgs"
+      opinion: "Latest open artifacts (#20): New orgs! New types of models!... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Announcing the LangChain MongoDB Partnership: The AI Agent Stack That Runs On The Database You Already Trust"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Build production AI agents on MongoDB Atlas with vector search, persistent memory, natural-language querying, and end-to-end observability built in."
+      link: "https://blog.langchain.com/announcing-the-langchain-mongodb-partnership-the-ai-agent-stack-that-runs-on-the-database-you-already-trust/"
+      opinion: "更值得关注的是 Announcing the LangChain + MongoDB Partnership: The AI Agent... 是否真正改变产品落地、工程效率、分发格局或平台控制力，而不只是制造声量。"
+    - title: "Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads"
+      source: "Meta Engineering"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &#38; complexity to further a deeper understanding of people’s interests and intent. This increase Read More... The post Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads appeared first on Engineering at Meta"
+      link: "https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/"
+      opinion: "Meta Adaptive Ranking Model: Bending the Inference Scaling C... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
+      source: "Hugging Face Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
+      link: "https://huggingface.co/blog/ibm-granite/granite-4-vision"
+      opinion: "围绕 Granite 4.0 3B Vision: Compact Multimodal Intelligence for E...，真正重要的是它会不会影响团队的模型选型、性能边界和产品体验。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

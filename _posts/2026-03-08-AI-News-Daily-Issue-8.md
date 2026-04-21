@@ -1,96 +1,103 @@
 ---
-title: 第8期 AI News Daily
+title: "第8期 | research-llm-apis 2026-04-04"
 date: 2026-03-08
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: "Simon Willison"
+      text: "From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insurance ~600K weekly messages [classified as hea…"
+    - label: "LangChain Blog"
+      text: "Most discussions of continual learning in AI focus on one thing: updating model weights. But for AI agents, learning can happen at…"
+    - label: "X Andrej Karpathy"
+      text: "Surprised with how good the comments on github gists are. A lot more helpful, insightful, constructive, a lot less AI... Is it the…"
+    - label: "OpenAI Engineering"
+      text: "OpenAI engineering 列表显示，Responses API agent computer environment，这意味着模型调用正在往更完整的 agent runtime"
+    - label: "OpenAI Engineering"
+      text: "OpenAI RSS Model Spec agent"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "Anthropic agentic coding benchmark，波动甚至可能超过榜单模型之…｜中文观点：比起表面参数，Quantifying infrastructure noise in ag…"
+    - label: "总结 + 观点"
+      text: "Anthropic harness agent runtime、上下文和安全边界设计问题。｜中文观点：从 Harness design for long-running application…"
+    - label: "总结 + 观点"
+      text: "Simon Willison scan-for-secrets Claude Code agen…｜中文观点：从 scan-for-secrets 0.1 看，后续更应关注安全事故是否改变企业采购、接…"
+    - label: "总结 + 观点"
+      text: "Simon API server-side tool execution agent｜中文观点：对 research-llm-apis 2026-04-04 来说，更值得判断的是它会不会…"
+    - label: "总结 + 观点"
+      text: "Karpathy 2025 LLM RLVR reasoning test-time compu…｜中文观点：比起表面参数，2025 LLM Year in Review 更需要观察它是否在推理质量、…"
+  items:
+    - title: "Quoting Chengpeng Mou"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "From anonymized U.S. ChatGPT data, we are seeing: ~2M weekly messages on health insurance ~600K weekly messages [classified as healthcare] from people living in “hospital deserts” (30 min drive to nearest hospital) 7 out of 10 msgs happen outside clinic hours -- Chengpeng Mou Head of Business Finance, OpenAI Tags: ai-ethics generative-ai openai chatgpt ai llms"
+      link: "https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything"
+      opinion: "Quoting Chengpeng Mou 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Continual learning for AI agents"
+      source: "LangChain Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Most discussions of continual learning in AI focus on one thing: updating model weights. But for AI agents, learning can happen at three distinct layers: the model, the harness, and the context. Understanding the difference changes how you think about building systems that improve over time. The three main layers"
+      link: "https://blog.langchain.com/continual-learning-for-ai-agents/"
+      opinion: "Continual learning for AI agents 的价值在于它是否能真正降低智能体落地门槛，而不是再提供一层概念包装。"
+    - title: "R to @karpathy: Surprised with how good the comments on github gists are. A lot more helpful, insightful, constructive, a lot less AI... Is it the user community? The markdown format? The (lack of) incentives? Suddenly feeling like I should gist more. @github consider competing with X"
+      source: "X Andrej Karpathy"
+      tags: "#x_profiles #extended"
+      author_tags: ""
+      summary: "Surprised with how good the comments on github gists are. A lot more helpful, insightful, constructive, a lot less AI... Is it the user community? The markdown format? The (lack of) incentives? Suddenly feeling like I should gist more. @github consider competing with X"
+      link: "https://twitter.com/karpathy/status/2040806346556428585"
+      opinion: "R to @karpathy: Surprised with how good the comments on gith... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "From model to agent: Equipping the Responses API with a computer environment"
+      source: "OpenAI Engineering"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "OpenAI engineering 列表显示，Responses API agent computer environment，这意味着模型调用正在往更完整的 agent runtime"
+      link: "https://openai.com/index/equip-responses-api-computer-environment/"
+      opinion: "From model to agent: Equipping the Responses API with a comp... 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Inside our approach to the Model Spec"
+      source: "OpenAI Engineering"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "OpenAI RSS Model Spec agent"
+      link: "https://openai.com/index/our-approach-to-the-model-spec"
+      opinion: "从 Inside our approach to the Model Spec 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "Quantifying infrastructure noise in agentic coding evals"
+      source: "Anthropic Engineering"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "Anthropic agentic coding benchmark，波动甚至可能超过榜单模型之间的差距。这对 agent eval"
+      link: "https://www.anthropic.com/engineering/infrastructure-noise"
+      opinion: "比起表面参数，Quantifying infrastructure noise in agentic coding evals 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Harness design for long-running application development"
+      source: "Anthropic Engineering"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "Anthropic harness agent runtime、上下文和安全边界设计问题。"
+      link: "https://www.anthropic.com/engineering/harness-design-long-running-apps"
+      opinion: "从 Harness design for long-running application development 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "scan-for-secrets 0.1"
+      source: "Simon Willison"
+      tags: "#uncategorized #core"
+      author_tags: ""
+      summary: "Simon Willison scan-for-secrets Claude Code agent/coding workflow API key agent"
+      link: "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything"
+      opinion: "从 scan-for-secrets 0.1 看，后续更应关注安全事故是否改变企业采购、接入和上线前的合规门槛。"
+    - title: "research-llm-apis 2026-04-04"
+      source: "Simon Willison"
+      tags: "#uncategorized #core"
+      author_tags: ""
+      summary: "Simon API server-side tool execution agent"
+      link: "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything"
+      opinion: "对 research-llm-apis 2026-04-04 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
+    - title: "2025 LLM Year in Review"
+      source: "Andrej Karpathy"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "Karpathy 2025 LLM RLVR reasoning test-time compute"
+      link: "https://karpathy.bearblog.dev/year-in-review-2025/"
+      opinion: "比起表面参数，2025 LLM Year in Review 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}

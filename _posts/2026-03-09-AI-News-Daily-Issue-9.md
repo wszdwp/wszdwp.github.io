@@ -1,96 +1,103 @@
 ---
-title: 第9期 AI News Daily
+title: "第9期 | Building Intelligent Search with Amazon Bedrock and Amaz..."
 date: 2026-03-09
-layout: post
-tags: AI Agent Daily
+layout: brief-post
+tags: AI-Daily
 published: true
+brief_data:
+  summary_left:
+    - label: ""
+      text: "量子位这篇文章提供了一个很明确的信号：Agent AI"
+    - label: "xAI News"
+      text: "xAI Cloudflare 拦截，后续需要切换到可读镜像、RSS"
+    - label: "AWS Machine Learning Blog"
+      text: "In this post, we walk through building a custom HR onboarding agent with Quick. We show how to configure an agent that understands…"
+    - label: "AWS Machine Learning Blog"
+      text: "In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruct for tool calling using RLVR. We cover dataset preparation acr…"
+    - label: "AWS Machine Learning Blog"
+      text: "In this post, we show how to implement a generative AI agentic assistant that uses both semantic and text-based search using Amazo…"
+  summary_right:
+    - label: "总结 + 观点"
+      text: "This blog post demonstrates how Windward helps e…｜中文观点：From isolated alerts to contextual intelligen…"
+    - label: "总结 + 观点"
+      text: "AI coding assistants are powerful but only as go…｜中文观点：对 How Meta Used AI to Map Tribal Knowledge in…"
+    - label: "总结 + 观点"
+      text: "Amazon Bedrock AgentCore Gateway provides a cent…｜中文观点：Connecting MCP servers to Amazon Bedrock Agen…"
+    - label: "总结 + 观点"
+      text: "A pilot program to support independent safety an…｜中文观点：Announcing the OpenAI Safety Fellowship 更值得从实…"
+    - label: "总结 + 观点"
+      text: "Google AI Edge Gallery Terrible name, really gre…｜中文观点：对 Google AI Edge Gallery 来说，更值得判断的是它会不会进入团队默认…"
+  items:
+    - title: "为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜"
+      source: ""
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "量子位这篇文章提供了一个很明确的信号：Agent AI"
+      link: "https://mp.weixin.qq.com/s/vc-FU3C0Z7oBj563B1yIrg"
+      opinion: "对 为了不跟龙虾抢电脑用，有人开始造Agent专属的“三无”硬件，比Mac Mini+存储便宜，更该看它能不能改善多步骤协作、记忆管理和稳定交付，而不是只看 demo 效果。"
+    - title: "xAI official site currently blocked by Cloudflare in this environment"
+      source: "xAI News"
+      tags: "#uncategorized #extended"
+      author_tags: ""
+      summary: "xAI Cloudflare 拦截，后续需要切换到可读镜像、RSS"
+      link: "https://x.ai/news"
+      opinion: "更值得关注的是 xAI official site currently blocked by Cloudflare in this en... 是否真正改变产品落地、工程效率、分发格局或平台控制力，而不只是制造声量。"
+    - title: "Build AI-powered employee onboarding agents with Amazon Quick"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "In this post, we walk through building a custom HR onboarding agent with Quick. We show how to configure an agent that understands your organization’s processes, connects to your HR systems, and automates common tasks, such as answering new-hire questions and tracking document completion."
+      link: "https://aws.amazon.com/blogs/machine-learning/build-ai-powered-employee-onboarding-agents-with-amazon-quick/"
+      opinion: "Build AI-powered employee onboarding agents with Amazon Quic... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Accelerate agentic tool calling with serverless model customization in Amazon SageMaker AI"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "In this post, we walk through how we fine-tuned Qwen 2.5 7B Instruct for tool calling using RLVR. We cover dataset preparation across three distinct agent behaviors, reward function design with tiered scoring, training configuration and results interpretation, evaluation on held-out data with unseen tools, and deployment."
+      link: "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-tool-calling-with-serverless-model-customization-in-amazon-sagemaker-ai/"
+      opinion: "比起表面参数，Accelerate agentic tool calling with serverless model custom... 更需要观察它是否在推理质量、检索效果或可用性上带来真实改进。"
+    - title: "Building Intelligent Search with Amazon Bedrock and Amazon OpenSearch for hybrid RAG solutions"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "In this post, we show how to implement a generative AI agentic assistant that uses both semantic and text-based search using Amazon Bedrock, Amazon Bedrock AgentCore, Strands Agents and Amazon OpenSearch."
+      link: "https://aws.amazon.com/blogs/machine-learning/building-intelligent-search-with-amazon-bedrock-and-amazon-opensearch-for-hybrid-rag-solutions/"
+      opinion: "Building Intelligent Search with Amazon Bedrock and Amazon O... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "From isolated alerts to contextual intelligence: Agentic maritime anomaly analysis with generative AI"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "This blog post demonstrates how Windward helps enhance and accelerate alert investigation processes by combining geospatial intelligence with generative AI, enabling analysts to focus on decision-making rather than data collection."
+      link: "https://aws.amazon.com/blogs/machine-learning/from-isolated-alerts-to-contextual-intelligence-agentic-maritime-anomaly-analysis-with-generative-ai/"
+      opinion: "From isolated alerts to contextual intelligence: Agentic mar... 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines"
+      source: "Meta Engineering"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta's large-scale data processing pipelines spanning four repositories, three languages, and over 4,100 files we quickly found that they weren't making useful edits quickly enough. We fixed this by building Read More... The post How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines appeared first on Engineering at Meta"
+      link: "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/"
+      opinion: "对 How Meta Used AI to Map Tribal Knowledge in Large-Scale Data...，更该看它能不能改善多步骤协作、记忆管理和稳定交付，而不是只看 demo 效果。"
+    - title: "Connecting MCP servers to Amazon Bedrock AgentCore Gateway using Authorization Code flow"
+      source: "AWS Machine Learning Blog"
+      tags: "#engineering_ai_infra_blogs #extended"
+      author_tags: ""
+      summary: "Amazon Bedrock AgentCore Gateway provides a centralized layer for managing how AI agents connect to tools and MCP servers across your organization. In this post, we walk through how to configure AgentCore Gateway to connect to an OAuth-protected MCP server using the Authorization Code flow."
+      link: "https://aws.amazon.com/blogs/machine-learning/connecting-mcp-servers-to-amazon-bedrock-agentcore-gateway-using-authorization-code-flow/"
+      opinion: "Connecting MCP servers to Amazon Bedrock AgentCore Gateway u... 的核心不在新鲜感，而在它是否能提升工程效率、部署稳定性或开发者工作流。"
+    - title: "Announcing the OpenAI Safety Fellowship"
+      source: "OpenAI Blog"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "A pilot program to support independent safety and alignment research and develop the next generation of talent"
+      link: "https://openai.com/index/introducing-openai-safety-fellowship"
+      opinion: "Announcing the OpenAI Safety Fellowship 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
+    - title: "Google AI Edge Gallery"
+      source: "Simon Willison"
+      tags: "#ai_engineering_blogs #core"
+      author_tags: ""
+      summary: "Google AI Edge Gallery Terrible name, really great app: this is Google's official app for running their Gemma 4 models (the E2B and E4B sizes, plus some members of the Gemma 3 family) directly on your iPhone. It works really well. The E2B model is a 2.54GB download and is both fast and genuinely useful. The app also provides \"ask questions about images\" and audio transcription (up to 30s) with the two small Gemma 4 models, and has an interesting \"skills\" demo which demonstrates tool calling against eight different interactive widgets, each implemented as an HTML page (though sadly the source code is not visible): interactive-map, kitchen-adventure, calculate-hash, text-spinner, mood-tracker, mnemonic-password, query-wikipedia, and qr-code. (That demo did freeze the app when I tried to add a follow-up prompt though.) This is the first time I've seen a local model vendor release an official app for trying out their models on in iPhone. Sadly it's missing permanent logs - conversations with this app are ephemeral. Via Hacker News Tags: google iphone ai generative-ai local-llms llms gemini llm-tool-use"
+      link: "https://simonwillison.net/2026/Apr/6/google-ai-edge-gallery/#atom-everything"
+      opinion: "对 Google AI Edge Gallery 来说，更值得判断的是它会不会进入团队默认工具链，而不是短期讨论热度。"
 ---
 
-<style>
-.brief-item {
-  margin: 28px 0 42px;
-}
-.brief-item .brief-title {
-  width: 100%;
-  margin-bottom: 14px;
-}
-.brief-item .brief-title h3 {
-  margin: 0;
-}
-.brief-columns {
-  display: flex;
-  gap: 24px;
-}
-.brief-columns .left,
-.brief-columns .right {
-  width: 50%;
-}
-.brief-columns .left p,
-.brief-columns .right p {
-  margin: 0 0 12px;
-}
-.brief-columns .meta {
-  color: #666;
-  font-size: 0.95em;
-}
-.brief-columns .right {
-  text-align: left;
-}
-.summary-grid {
-  display: flex;
-  gap: 24px;
-  margin: 20px 0 30px;
-}
-.summary-grid .left,
-.summary-grid .right {
-  width: 50%;
-}
-.summary-grid p {
-  margin: 0 0 12px;
-}
-.summary-grid .right {
-  text-align: left;
-}
-.summary-grid .right p {
-  text-align: left;
-  text-indent: 0;
-}
-.opinion-line {
-  display: flex;
-  align-items: flex-start;
-}
-.opinion-label {
-  width: 48px;
-  min-width: 48px;
-  font-weight: 700;
-}
-.opinion-text {
-  flex: 1;
-  text-align: left;
-}
-@media screen and (max-width: 900px) {
-  .brief-columns,
-  .summary-grid {
-    display: block;
-  }
-  .brief-columns .left,
-  .brief-columns .right,
-  .summary-grid .left,
-  .summary-grid .right {
-    width: 100%;
-  }
-  .brief-columns .right,
-  .summary-grid .right {
-    margin-top: 12px;
-  }
-}
-</style>
-
-## 今日摘要
-
-<div class="summary-grid">
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-</div>
+{% include render-brief.html data=page.brief_data %}
