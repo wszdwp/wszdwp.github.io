@@ -14,7 +14,23 @@ Subscribe in any podcast app:
 
 <p><a href="/podcast.xml"><code>https://codingpan.com/podcast.xml</code></a></p>
 
-Apple Podcasts / Overcast / Pocket Casts all accept this URL directly. Episodes auto-download when a new one lands, so you get offline playback on the commute for free.
+### Apple Podcasts / Overcast / Pocket Casts / AntennaPod
+
+Paste the feed URL above into *Add podcast by URL*. Episodes auto-download when a new one lands, so you get offline playback on the commute for free.
+
+### YouTube Music (Android + web)
+
+YouTube Music surfaces podcasts from YouTube channels that are enrolled as podcasts and point at an RSS feed.
+
+One-time setup:
+
+1. Open [YouTube Studio](https://studio.youtube.com) on your channel
+2. Left nav → **Content** → **Podcasts** tab → **Create a podcast**
+3. Choose **Import an existing podcast** (if the UI offers that option) and paste `https://codingpan.com/podcast.xml`. If it only offers manual setup, enter the channel metadata from the RSS (title *AI News Daily 播客*, description, cover art), then under *RSS feed* paste the URL
+4. YouTube verifies ownership (either via a one-time code in the feed's `<itunes:new-feed-url>` field, or via Search Console on `codingpan.com`)
+5. Once enrolled, YouTube crawls the feed every ~24h. New episodes appear automatically in YouTube Music under your channel's podcast
+
+Once approved, the same RSS feed drives Apple Podcasts *and* YouTube Music — no per-platform publishing step needed.
 
 ## Per-day picker (full-article audio)
 
