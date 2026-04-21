@@ -154,7 +154,7 @@ brief_data:
       summary: "Article URL: https://discourse.llvm.org/t/rfc-jsir-a-high-level-ir-for-javascript/90456 Comments URL: https://news.ycombinator.com/item?id=47683376 Points: 39 Comments: 9"
       link: "https://discourse.llvm.org/t/rfc-jsir-a-high-level-ir-for-javascript/90456"
       opinion: "JSIR: A High-Level IR for JavaScript 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
-    - title: "[AINews] Anthropic $30B ARR, Project GlassWing and Claude Mythos Preview first model too dangerous to release since GPT-2"
+    - title: "Anthropic $30B ARR, Project GlassWing and Claude Mythos Preview first model too dangerous to release since GPT-2"
       source: "Latent Space"
       tags: "#ai_engineering_blogs #core"
       author_tags: ""

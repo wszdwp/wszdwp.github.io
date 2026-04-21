@@ -161,7 +161,7 @@ brief_data:
       summary: "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves."
       link: "https://openai.com/index/industrial-policy-for-the-intelligence-age"
       opinion: "Industrial policy for the Intelligence Age 更值得从实际采用价值来判断，而不是只看它有没有制造新的讨论热度。"
-    - title: "R to @karpathy: Someone recently suggested to me that the reason OpenClaw moment was so big is because it's the first time a large group of non-technical people (who otherwise only knew AI as synonymous with ChatGPT as a website) experienced the latest agentic models."
+    - title: "Someone recently suggested to me that the reason OpenClaw moment was so big is because it's the first time a large group of non-technical pe..."
       source: "X Andrej Karpathy"
       tags: "#x_profiles #extended"
       author_tags: ""

@@ -98,7 +98,7 @@ brief_data:
       summary: "Beyond Facts 提出分布式阅读理解 benchmark，评估 LLM 对观点分布、不确定性的理解。"
       link: "https://arxiv.org/abs/2604.06201"
       opinion: "benchmark 的价值在引导注意力。这条把“不是每个问题都有单一答案”正式纳入评测，对 alignment 工作很有意义。"
-    - title: "Cross-Lingual Transfer and Parameter-Efficient Adaptation in the Turkic Language Family: A Theoretical Framework for Low-Resource Language Models"
+    - title: "Cross-Lingual Transfer and Parameter-Efficient Adaptation in the Turkic Language Family: A Theoretical Framework for Low-Resource Language M..."
       source: "arXiv cs.CL"
       tags: "#research_community #extended"
       author_tags: ""
