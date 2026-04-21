@@ -15,7 +15,7 @@
       <itunes:name>Pan Wang</itunes:name>
       <itunes:email>hello@codingpan.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://codingpan.com/assets/audio/cover.jpg"/>
+    <itunes:image href="https://codingpan.com/assets/audio/cover.png"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
     <itunes:category text="News"/>
@@ -25,7 +25,7 @@
       <link>https://codingpan.com/2026/04/20/AI-News-Daily-Issue-51.html</link>
       <pubDate>Mon, 20 Apr 2026 07:00:00 GMT</pubDate>
       <guid isPermaLink="false">codingpan-podcast-2026-04-20-issue-51</guid>
-      <enclosure url="https://codingpan.com/assets/audio/2026-04-20-AI-News-Daily-Issue-51.mp3" length="5023505" type="audio/mpeg"/>
+      <enclosure url="https://codingpan.com/assets/audio/2026-04-20-AI-News-Daily-Issue-51.mp3" length="6979370" type="audio/mpeg"/>
       <itunes:duration>10:28</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
