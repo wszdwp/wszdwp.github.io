@@ -2,7 +2,7 @@
 title: "第19期 | As We May Think"
 date: 2026-03-19
 layout: brief-post
-tags: AI-daily Research Application
+tags: AI-Daily Research Application
 published: true
 brief_data:
   summary_left:

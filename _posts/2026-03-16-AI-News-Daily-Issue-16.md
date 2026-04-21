@@ -2,7 +2,7 @@
 title: "第16期 | karpathy/LLM101n"
 date: 2026-03-16
 layout: brief-post
-tags: AI-daily Research Andrej-Karpathy
+tags: AI-Daily Research Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

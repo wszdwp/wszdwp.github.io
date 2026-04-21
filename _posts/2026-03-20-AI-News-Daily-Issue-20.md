@@ -2,7 +2,7 @@
 title: "第20期 | Uncertainty-Guided Latent Diagnostic Trajectory Learning..."
 date: 2026-03-20
 layout: brief-post
-tags: AI-daily Application Research
+tags: AI-Daily Application Research
 published: true
 brief_data:
   summary_left:

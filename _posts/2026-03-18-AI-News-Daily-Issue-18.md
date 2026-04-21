@@ -2,7 +2,7 @@
 title: "第18期 | Economic Civil War: States Push Laws to Shield Oil Compa..."
 date: 2026-03-18
 layout: brief-post
-tags: AI-daily Research Tools
+tags: AI-Daily Research Tools
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第28期 | Probabilistic Language Tries: A Unified Framework for Co..."
 date: 2026-03-28
 layout: brief-post
-tags: AI-daily Research Application
+tags: AI-Daily Research Application
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第34期 | Hugging Face Blog source registered"
 date: 2026-04-03
 layout: brief-post
-tags: AI-daily Agent Lilian-Weng
+tags: AI-Daily Agent Lilian-Weng
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第1期 | How much does distillation really matter for Chinese LLM..."
 date: 2026-03-01
 layout: brief-post
-tags: AI-daily Model Tools
+tags: AI-Daily Model Tools
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第30期 | Extrinsic Hallucinations in LLMs"
 date: 2026-03-30
 layout: brief-post
-tags: AI-daily Model Lilian-Weng
+tags: AI-Daily Model Lilian-Weng
 published: true
 brief_data:
   summary_left:

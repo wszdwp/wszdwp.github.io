@@ -2,7 +2,7 @@
 title: "第35期 | Farzapedia, personal wikipedia of Farza, good example fo..."
 date: 2026-04-04
 layout: brief-post
-tags: AI-daily Tools Andrej-Karpathy
+tags: AI-Daily Tools Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

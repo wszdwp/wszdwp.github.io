@@ -2,7 +2,7 @@
 title: "第24期 | Guinndex. AI-agent called 3k Irish pubs to map the price..."
 date: 2026-03-24
 layout: brief-post
-tags: AI-daily Research Agent
+tags: AI-Daily Research Agent
 published: true
 brief_data:
   summary_left:

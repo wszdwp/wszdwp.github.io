@@ -2,7 +2,7 @@
 title: "第14期 | openai/skills"
 date: 2026-03-14
 layout: brief-post
-tags: AI-daily Workflow Andrej-Karpathy
+tags: AI-Daily Workflow Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

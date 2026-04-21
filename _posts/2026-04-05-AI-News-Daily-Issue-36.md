@@ -2,7 +2,7 @@
 title: "第36期 | From model to agent: Equipping the Responses API with a..."
 date: 2026-04-05
 layout: brief-post
-tags: AI-daily Tools Simon-Willison
+tags: AI-Daily Tools Simon-Willison
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第26期 | How Pizza Tycoon simulated traffic on a 25 MHz CPU"
 date: 2026-03-26
 layout: brief-post
-tags: AI-daily Research Tools
+tags: AI-Daily Research Tools
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第11期 | Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon"
 date: 2026-03-11
 layout: brief-post
-tags: AI-daily Research Simon-Willison
+tags: AI-Daily Research Simon-Willison
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第22期 | Anthropic $30B ARR, Project GlassWing and Claude Mythos..."
 date: 2026-03-22
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

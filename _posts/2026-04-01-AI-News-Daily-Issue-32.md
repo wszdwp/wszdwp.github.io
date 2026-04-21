@@ -2,7 +2,7 @@
 title: "第32期 | arXiv cs.AI source registered"
 date: 2026-04-01
 layout: brief-post
-tags: AI-daily Agent Swyx
+tags: AI-Daily Agent Swyx
 published: true
 brief_data:
   summary_left:

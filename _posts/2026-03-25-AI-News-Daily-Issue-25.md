@@ -2,7 +2,7 @@
 title: "第25期 | Show HN: I built a Cargo-like build tool for C/C++"
 date: 2026-03-25
 layout: brief-post
-tags: AI-daily Application Tools
+tags: AI-Daily Application Tools
 published: true
 brief_data:
   summary_left:

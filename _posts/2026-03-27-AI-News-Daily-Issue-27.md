@@ -2,7 +2,7 @@
 title: "第27期 | SymptomWise: A Deterministic Reasoning Layer for Reliabl..."
 date: 2026-03-27
 layout: brief-post
-tags: AI-daily Application Tools
+tags: AI-Daily Application Tools
 published: true
 brief_data:
   summary_left:

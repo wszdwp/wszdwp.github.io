@@ -2,7 +2,7 @@
 title: "第23期 | anthropics/original_performance_takehome"
 date: 2026-03-23
 layout: brief-post
-tags: AI-daily Workflow Andrej-Karpathy
+tags: AI-Daily Workflow Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第43期 | Our response to the Axios developer tool c"
 date: 2026-04-12
 layout: brief-post
-tags: AI-Daily
+tags: AI-Daily Tools Simon-Willison
 published: true
 brief_data:
   summary_left:

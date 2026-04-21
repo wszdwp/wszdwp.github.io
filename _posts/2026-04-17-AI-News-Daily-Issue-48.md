@@ -2,7 +2,7 @@
 title: "第48期 | openai/symphony"
 date: 2026-04-17
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

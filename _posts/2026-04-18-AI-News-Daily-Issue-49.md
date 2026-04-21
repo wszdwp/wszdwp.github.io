@@ -2,7 +2,7 @@
 title: "第49期 | karpathy/rustbpe"
 date: 2026-04-18
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

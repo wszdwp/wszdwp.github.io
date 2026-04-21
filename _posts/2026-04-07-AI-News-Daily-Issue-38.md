@@ -2,7 +2,7 @@
 title: "第38期 | GLM-5.1: Towards Long-Horizon Tasks"
 date: 2026-04-07
 layout: brief-post
-tags: AI-daily Research Simon-Willison
+tags: AI-Daily Research Simon-Willison
 published: true
 brief_data:
   summary_left:

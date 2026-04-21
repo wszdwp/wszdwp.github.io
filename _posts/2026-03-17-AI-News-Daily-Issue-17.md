@@ -2,7 +2,7 @@
 title: "第17期 | Graphics Programming Weekly 435"
 date: 2026-03-17
 layout: brief-post
-tags: AI-daily Research Andrej-Karpathy
+tags: AI-Daily Research Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第12期 | NativeTernary: A Self-Delimiting Binary Encoding with Un..."
 date: 2026-03-12
 layout: brief-post
-tags: AI-daily Application Tools
+tags: AI-Daily Application Tools
 published: true
 brief_data:
   summary_left:

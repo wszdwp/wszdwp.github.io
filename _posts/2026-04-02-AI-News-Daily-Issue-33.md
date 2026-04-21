@@ -2,7 +2,7 @@
 title: "第33期 | GitHub Trending Python source registered"
 date: 2026-04-02
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

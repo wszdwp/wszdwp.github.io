@@ -2,7 +2,7 @@
 title: "第10期 | datasette-ports 0.2"
 date: 2026-03-10
 layout: brief-post
-tags: AI-daily Research Simon-Willison
+tags: AI-Daily Research Simon-Willison
 published: true
 brief_data:
   summary_left:

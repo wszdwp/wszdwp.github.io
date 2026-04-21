@@ -2,7 +2,7 @@
 title: "第21期 | This Treatment Works, Right? Evaluating LLM Sensitivity..."
 date: 2026-03-21
 layout: brief-post
-tags: AI-daily Application Research
+tags: AI-Daily Application Research
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第31期 | X Jerry Liu source registered"
 date: 2026-03-31
 layout: brief-post
-tags: AI-daily Agent Jeremy-Howard
+tags: AI-Daily Agent Jeremy-Howard
 published: true
 brief_data:
   summary_left:

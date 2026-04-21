@@ -2,7 +2,7 @@
 title: "第29期 | Multimodal Embedding Reranker Models with Sentence Trans..."
 date: 2026-03-29
 layout: brief-post
-tags: AI-daily Research Application
+tags: AI-Daily Research Application
 published: true
 brief_data:
   summary_left:

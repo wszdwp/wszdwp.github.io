@@ -2,7 +2,7 @@
 title: "第37期 | scan-for-secrets 0.3"
 date: 2026-04-06
 layout: brief-post
-tags: AI-daily Infra Simon-Willison
+tags: AI-Daily Infra Simon-Willison
 published: true
 brief_data:
   summary_left:

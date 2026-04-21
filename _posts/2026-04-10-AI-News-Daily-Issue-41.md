@@ -2,7 +2,7 @@
 title: "第41期 | karpathy/minGPT"
 date: 2026-04-10
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第13期 | Meta's new model is Muse Spark, and meta.ai chat has som..."
 date: 2026-03-13
 layout: brief-post
-tags: AI-daily Tools Simon-Willison
+tags: AI-Daily Tools Simon-Willison
 published: true
 brief_data:
   summary_left:

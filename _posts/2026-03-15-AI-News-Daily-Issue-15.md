@@ -2,7 +2,7 @@
 title: "第15期 | langchain-ai/langchain"
 date: 2026-03-15
 layout: brief-post
-tags: AI-daily Workflow Agent
+tags: AI-Daily Workflow Agent
 published: true
 brief_data:
   summary_left:

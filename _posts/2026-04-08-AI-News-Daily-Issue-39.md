@@ -2,7 +2,7 @@
 title: "第39期 | Better Harness: A Recipe for Harness Hill-Climbing with..."
 date: 2026-04-08
 layout: brief-post
-tags: AI-daily Tools Simon-Willison
+tags: AI-Daily Tools Simon-Willison
 published: true
 brief_data:
   summary_left:

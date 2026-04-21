@@ -2,7 +2,7 @@
 title: "第42期 | Your harness, your memory"
 date: 2026-04-11
 layout: brief-post
-tags: AI-Daily
+tags: AI-Daily Workflow Harrison-Chase
 published: true
 brief_data:
   summary_left:

@@ -2,7 +2,7 @@
 title: "第46期 | Someone recently suggested to me that the reason OpenCla..."
 date: 2026-04-15
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

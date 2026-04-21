@@ -2,7 +2,7 @@
 title: "第50期 | anthropics/original_performance_takehome"
 date: 2026-04-19
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:

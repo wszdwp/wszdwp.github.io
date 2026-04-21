@@ -2,7 +2,7 @@
 title: "第51期 | Judging by my tl there is a growing gap in understanding..."
 date: 2026-04-20
 layout: brief-post
-tags: AI-daily Agent Andrej-Karpathy
+tags: AI-Daily Agent Andrej-Karpathy
 published: true
 brief_data:
   summary_left:
