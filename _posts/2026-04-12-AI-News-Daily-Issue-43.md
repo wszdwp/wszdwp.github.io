@@ -1,6 +1,6 @@
 ---
-title: "第49期 | karpathy/KarpathyTalk"
-date: 2026-04-18
+title: "第43期 | anthropics/claude-agent-sdk-demos"
+date: 2026-04-12
 layout: brief-post
 tags: AI-Daily Agent Andrej-Karpathy
 published: true
