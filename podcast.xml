@@ -6,26 +6,26 @@
   <channel>
     <title>AI News Daily 播客</title>
     <description><![CDATA[Chinese-language narration of the AI News Daily brief: curated signal from OpenAI, Anthropic, Karpathy, Simon Willison and the wider AI engineering community. One episode per day, ~10–40 minutes.]]></description>
-    <link>https://codingpan.com</link>
+    <link>https://www.codingpan.com</link>
     <language>zh-CN</language>
-    <atom:link href="https://codingpan.com/podcast.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.codingpan.com/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Pan Wang</itunes:author>
     <itunes:summary><![CDATA[Chinese-language narration of the AI News Daily brief: curated signal from OpenAI, Anthropic, Karpathy, Simon Willison and the wider AI engineering community. One episode per day, ~10–40 minutes.]]></itunes:summary>
     <itunes:owner>
       <itunes:name>Pan Wang</itunes:name>
       <itunes:email>hello@codingpan.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://codingpan.com/assets/audio/cover.png"/>
+    <itunes:image href="https://www.codingpan.com/assets/audio/cover.png"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
     <itunes:category text="News"/>
     <item>
       <title>第51期｜OpenAI Full Fan Mode Contest: Terms Conditions</title>
       <description><![CDATA[AI News Daily 2026-04-20 · 15 条。本期中文播客由 agentfeeds 自动生成。]]></description>
-      <link>https://codingpan.com/2026/04/20/AI-News-Daily-Issue-51.html</link>
+      <link>https://www.codingpan.com/2026/04/20/AI-News-Daily-Issue-51.html</link>
       <pubDate>Mon, 20 Apr 2026 07:00:00 GMT</pubDate>
       <guid isPermaLink="false">codingpan-podcast-2026-04-20-issue-51</guid>
-      <enclosure url="https://codingpan.com/assets/audio/2026-04-20-AI-News-Daily-Issue-51.mp3" length="6979370" type="audio/mpeg"/>
+      <enclosure url="https://www.codingpan.com/assets/audio/2026-04-20-AI-News-Daily-Issue-51.mp3" length="6979370" type="audio/mpeg"/>
       <itunes:duration>10:28</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
