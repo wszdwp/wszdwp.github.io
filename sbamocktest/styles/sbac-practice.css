@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background: #f6f8fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 980px;
+  margin: 32px auto;
+  background: #fff;
+  padding: 28px 32px 40px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+}
+
+h1,
+h2,
+h3 {
+  color: #0f172a;
+}
+
+.intro {
+  background: #eef6ff;
+  border: 1px solid #cfe4ff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.passage {
+  background: #fafafc;
+  border-left: 5px solid #94a3b8;
+  padding: 16px 18px;
+  margin: 18px 0 24px;
+  border-radius: 8px;
+}
+
+.question {
+  margin: 20px 0;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.question.correct {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.question.incorrect {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.btnbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(4px);
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #475569;
+  color: white;
+}
+
+.tertiary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.scorebox {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.sample-answer {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px dashed #94a3b8;
+  border-radius: 8px;
+}
+
+.answer-key {
+  margin-top: 24px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+.small {
+  color: #475569;
+  font-size: 14px;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 28px 0;
+}
