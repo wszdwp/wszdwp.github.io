@@ -1,58 +1,51 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  margin: 0;
-  background: #f6f8fb;
-  color: #1f2937;
 }
 
 .container {
-  max-width: 980px;
-  margin: 32px auto;
-  background: #fff;
-  padding: 28px 32px 40px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  border-radius: 14px;
+  max-width: 100%;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
 }
 
-h1,
-h2,
-h3 {
-  color: #0f172a;
+#pageTitle {
+  margin-bottom: 15px;
 }
 
 .intro {
-  background: #eef6ff;
-  border: 1px solid #cfe4ff;
+  background: rgba(42, 122, 226, 0.06);
+  border: 1px solid #e8e8e8;
   padding: 14px 16px;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-bottom: 24px;
 }
 
 .passage {
-  background: #fafafc;
-  border-left: 5px solid #94a3b8;
+  background: rgba(255, 255, 255, 0.35);
+  border-left: 4px solid #d8d2c2;
   padding: 16px 18px;
   margin: 18px 0 24px;
-  border-radius: 8px;
 }
 
 .question {
   margin: 20px 0;
   padding: 14px 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #fff;
+  border: 1px solid #e8e8e8;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
 }
 
 .question.correct {
-  border-color: #16a34a;
-  background: #f0fdf4;
+  border-color: #7aa67a;
+  background: rgba(122, 166, 122, 0.12);
 }
 
 .question.incorrect {
-  border-color: #dc2626;
-  background: #fef2f2;
+  border-color: #c27b7b;
+  background: rgba(194, 123, 123, 0.12);
 }
 
 .options label {
@@ -71,14 +64,10 @@ h3 {
 }
 
 .btnbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(4px);
-  border: 1px solid #e5e7eb;
+  background: transparent;
+  border: 1px solid #e8e8e8;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -87,26 +76,28 @@ h3 {
 }
 
 button {
-  padding: 10px 14px;
-  border: none;
-  border-radius: 9px;
+  padding: 8px 14px;
+  border-radius: 3px;
   cursor: pointer;
   font-size: 14px;
+  border: 1px solid #d6d6d6;
+  font-family: inherit;
 }
 
 .primary {
-  background: #2563eb;
+  background: #2a7ae2;
   color: white;
+  border-color: #2a7ae2;
 }
 
 .secondary {
-  background: #475569;
-  color: white;
+  background: #f3f0e6;
+  color: #111;
 }
 
 .tertiary {
-  background: #e2e8f0;
-  color: #0f172a;
+  background: #faf8f1;
+  color: #111;
 }
 
 .scorebox {
@@ -117,38 +108,38 @@ button {
 textarea {
   width: 100%;
   min-height: 120px;
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   box-sizing: border-box;
-  background: #fff;
+  background: #fffefb;
 }
 
 .sample-answer {
   margin-top: 10px;
   padding: 10px 12px;
-  background: #f8fafc;
-  border: 1px dashed #94a3b8;
-  border-radius: 8px;
+  background: #f7f3e8;
+  border: 1px dashed #c9bea2;
+  border-radius: 3px;
 }
 
 .answer-key {
   margin-top: 24px;
   padding: 18px;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
+  background: #f7f3e8;
+  border: 1px solid #e0d8c6;
+  border-radius: 3px;
 }
 
 .small {
-  color: #475569;
+  color: #666;
   font-size: 14px;
 }
 
 .divider {
   height: 1px;
-  background: #e5e7eb;
+  background: #e8e8e8;
   margin: 28px 0;
 }
