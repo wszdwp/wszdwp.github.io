@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample SBA Practice Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #1f4e79;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .directions {
+      background: #eaf2fb;
+      border-left: 5px solid #1f4e79;
+      padding: 16px;
+      margin-bottom: 24px;
+      border-radius: 6px;
+    }
+
+    .passage {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .question {
+      margin: 28px 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .question-number {
+      font-weight: bold;
+      color: #1f4e79;
+    }
+
+    .choices label {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      background: #f3f5f8;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .choices label:hover {
+      background: #e6eef7;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      box-sizing: border-box;
+    }
+
+    .answer-key {
+      margin-top: 36px;
+      padding: 20px;
+      background: #fff8e5;
+      border: 1px solid #f0d98c;
+      border-radius: 8px;
+    }
+
+    .button-row {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      background: #1f4e79;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #163a59;
+    }
+
+    .score-box {
+      margin-top: 20px;
+      padding: 16px;
+      background: #eaf7ea;
+      border-left: 5px solid #2e7d32;
+      display: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sample SBA Practice Test</h1>
+    <p>English Language Arts &amp; Math Practice</p>
+  </header>
+
+  <main>
+    <section class="directions">
+      <h2>Directions</h2>
+      <p>Read each question carefully. Choose the best answer for multiple-choice questions. For written-response questions, type your answer in the box provided.</p>
+    </section>
+
+    <section>
+      <h2>Part 1: Reading</h2>
+
+      <div class="passage">
+        <h3>Passage: A Garden on the Roof</h3>
+        <p>When Maya first saw the empty rooftop of her apartment building, she imagined more than gray concrete and metal vents. She imagined tomatoes climbing wooden stakes, bees moving from flower to flower, and neighbors gathering in the evening to water the plants.</p>
+        <p>At first, only three people came to help. They carried bags of soil up five flights of stairs and planted seeds in old buckets. Some residents laughed and said the project would never work. But by midsummer, green leaves covered the roof, and the first red tomato appeared near the doorway.</p>
+        <p>Soon, people who had never spoken to each other began meeting on the roof. Children learned the names of herbs. Older neighbors shared recipes. The garden did not just grow food; it grew a small community above the city streets.</p>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">1.</span> What is the main idea of the passage?</p>
+        <div class="choices">
+          <label><input type="radio" name="q1" value="A"> A. Maya wanted to move away from the city.</label>
+          <label><input type="radio" name="q1" value="B"> B. A rooftop garden helped bring neighbors together.</label>
+          <label><input type="radio" name="q1" value="C"> C. Tomatoes are difficult to grow on rooftops.</label>
+          <label><input type="radio" name="q1" value="D"> D. Children should learn more about herbs.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">2.</span> Which sentence best supports the idea that the garden created community?</p>
+        <div class="choices">
+          <label><input type="radio" name="q2" value="A"> A. "She imagined tomatoes climbing wooden stakes."</label>
+          <label><input type="radio" name="q2" value="B"> B. "They carried bags of soil up five flights of stairs."</label>
+          <label><input type="radio" name="q2" value="C"> C. "Some residents laughed and said the project would never work."</label>
+          <label><input type="radio" name="q2" value="D"> D. "People who had never spoken to each other began meeting on the roof."</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">3.</span> What does the phrase "it grew a small community" mean?</p>
+        <div class="choices">
+          <label><input type="radio" name="q3" value="A"> A. The garden became larger than expected.</label>
+          <label><input type="radio" name="q3" value="B"> B. The plants grew very quickly.</label>
+          <label><input type="radio" name="q3" value="C"> C. The garden helped people build relationships.</label>
+          <label><input type="radio" name="q3" value="D"> D. More apartments were built on the roof.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">4.</span> Written Response: Explain how Maya's idea changed the apartment building. Use evidence from the passage.</p>
+        <textarea placeholder="Type your response here..."></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h2>Part 2: Language and Writing</h2>
+
+      <div class="question">
+        <p><span class="question-number">5.</span> Choose the sentence that uses commas correctly.</p>
+        <div class="choices">
+          <label><input type="radio" name="q5" value="A"> A. After school Maya watered, the tomatoes.</label>
+          <label><input type="radio" name="q5" value="B"> B. After school, Maya watered the tomatoes.</label>
+          <label><input type="radio" name="q5" value="C"> C. After, school Maya watered the tomatoes.</label>
+          <label><input type="radio" name="q5" value="D"> D. After school Maya, watered the tomatoes.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">6.</span> Which word best replaces "empty" in the sentence: "Maya first saw the empty rooftop"?</p>
+        <div class="choices">
+          <label><input type="radio" name="q6" value="A"> A. crowded</label>
+          <label><input type="radio" name="q6" value="B"> B. vacant</label>
+          <label><input type="radio" name="q6" value="C"> C. noisy</label>
+          <label><input type="radio" name="q6" value="D"> D. colorful</label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Part 3: Math</h2>
+
+      <div class="question">
+        <p><span class="question-number">7.</span> Maya planted 6 buckets of tomatoes. Each bucket had 4 plants. How many tomato plants did she plant?</p>
+        <div class="choices">
+          <label><input type="radio" name="q7" value="A"> A. 10</label>
+          <label><input type="radio" name="q7" value="B"> B. 18</label>
+          <label><input type="radio" name="q7" value="C"> C. 24</label>
+          <label><input type="radio" name="q7" value="D"> D. 30</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">8.</span> The garden club bought 3 bags of soil for $8 each and 2 watering cans for $6 each. What was the total cost?</p>
+        <div class="choices">
+          <label><input type="radio" name="q8" value="A"> A. $20</label>
+          <label><input type="radio" name="q8" value="B"> B. $30</label>
+          <label><input type="radio" name="q8" value="C"> C. $36</label>
+          <label><input type="radio" name="q8" value="D"> D. $42</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">9.</span> A rectangular garden box is 5 feet long and 3 feet wide. What is its area?</p>
+        <div class="choices">
+          <label><input type="radio" name="q9" value="A"> A. 8 square feet</label>
+          <label><input type="radio" name="q9" value="B"> B. 15 square feet</label>
+          <label><input type="radio" name="q9" value="C"> C. 16 square feet</label>
+          <label><input type="radio" name="q9" value="D"> D. 30 square feet</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><span class="question-number">10.</span> Explain how to solve Question 8. Show your work.</p>
+        <textarea placeholder="Type your response here..."></textarea>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <button onclick="checkAnswers()">Check Multiple-Choice Score</button>
+      <button onclick="window.print()">Print Test</button>
+    </div>
+
+    <div id="scoreBox" class="score-box"></div>
+
+    <section class="answer-key">
+      <h2>Answer Key</h2>
+      <p><strong>1.</strong> B</p>
+      <p><strong>2.</strong> D</p>
+      <p><strong>3.</strong> C</p>
+      <p><strong>4.</strong> Sample response: Maya's idea changed the building by helping neighbors connect. At first, only a few people helped, but later people who had never spoken began meeting on the roof. Children learned about herbs, and older neighbors shared recipes.</p>
+      <p><strong>5.</strong> B</p>
+      <p><strong>6.</strong> B</p>
+      <p><strong>7.</strong> C</p>
+      <p><strong>8.</strong> C</p>
+      <p><strong>9.</strong> B</p>
+      <p><strong>10.</strong> Sample response: 3 bags of soil cost 3 × 8 = 24 dollars. 2 watering cans cost 2 × 6 = 12 dollars. 24 + 12 = 36 dollars total.</p>
+    </section>
+  </main>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: 'B',
+        q2: 'D',
+        q3: 'C',
+        q5: 'B',
+        q6: 'B',
+        q7: 'C',
+        q8: 'C',
+        q9: 'B'
+      };
+
+      let score = 0;
+      let total = Object.keys(answers).length;
+
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
+
+      const scoreBox = document.getElementById('scoreBox');
+      scoreBox.style.display = 'block';
+      scoreBox.textContent = `You scored ${score} out of ${total} on the multiple-choice questions.`;
+    }
+  </script>
+</body>
+</html>

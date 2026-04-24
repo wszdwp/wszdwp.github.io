@@ -1,0 +1,145 @@
+body {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#pageTitle {
+  margin-bottom: 15px;
+}
+
+.intro {
+  background: rgba(42, 122, 226, 0.06);
+  border: 1px solid #e8e8e8;
+  padding: 14px 16px;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.passage {
+  background: rgba(255, 255, 255, 0.35);
+  border-left: 4px solid #d8d2c2;
+  padding: 16px 18px;
+  margin: 18px 0 24px;
+}
+
+.question {
+  margin: 20px 0;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e8;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+}
+
+.question.correct {
+  border-color: #7aa67a;
+  background: rgba(122, 166, 122, 0.12);
+}
+
+.question.incorrect {
+  border-color: #c27b7b;
+  background: rgba(194, 123, 123, 0.12);
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.btnbar {
+  background: transparent;
+  border: 1px solid #e8e8e8;
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #d6d6d6;
+  font-family: inherit;
+}
+
+.primary {
+  background: #2a7ae2;
+  color: white;
+  border-color: #2a7ae2;
+}
+
+.secondary {
+  background: #f3f0e6;
+  color: #111;
+}
+
+.tertiary {
+  background: #faf8f1;
+  color: #111;
+}
+
+.scorebox {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #fffefb;
+}
+
+.sample-answer {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f7f3e8;
+  border: 1px dashed #c9bea2;
+  border-radius: 3px;
+}
+
+.answer-key {
+  margin-top: 24px;
+  padding: 18px;
+  background: #f7f3e8;
+  border: 1px solid #e0d8c6;
+  border-radius: 3px;
+}
+
+.small {
+  color: #666;
+  font-size: 14px;
+}
+
+.divider {
+  height: 1px;
+  background: #e8e8e8;
+  margin: 28px 0;
+}

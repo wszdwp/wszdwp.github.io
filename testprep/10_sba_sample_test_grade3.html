@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 3 SBA Math Practice - 10 Sample Tests</title>
+<style>
+  :root{--blue:#1f4e79;--light:#eef6ff;--green:#1b7f4a;--gold:#fff7df;--gray:#f4f6f8;--red:#b23b3b}
+  body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f7fb;color:#222;line-height:1.55}
+  header{background:linear-gradient(135deg,#1f4e79,#2b6fa3);color:white;padding:28px 18px;text-align:center}
+  header h1{margin:0;font-size:30px} header p{margin:8px 0 0;font-size:16px}
+  main{max-width:1080px;margin:24px auto;padding:0 16px 40px}
+  .note{background:var(--light);border-left:5px solid var(--blue);padding:15px 18px;border-radius:10px;margin-bottom:18px}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+  .tab{border:1px solid #b8cee2;background:white;color:var(--blue);padding:9px 12px;border-radius:999px;cursor:pointer;font-weight:700}
+  .tab.active{background:var(--blue);color:white}
+  .test{display:none;background:white;padding:24px;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin-bottom:24px}
+  .test.active{display:block}.test h2{color:var(--blue);margin-top:0}.meta{font-size:14px;color:#555;margin-bottom:16px}
+  .q{border-top:1px solid #ddd;padding:18px 0}.q:first-of-type{border-top:none}.q-title{font-weight:700;margin-bottom:10px}.domain{font-size:12px;background:#e8eef5;color:#335;display:inline-block;padding:2px 8px;border-radius:999px;margin-left:6px}
+  label.choice{display:block;margin:8px 0;padding:10px 12px;background:var(--gray);border-radius:8px;cursor:pointer;border:1px solid transparent}
+  label.choice:hover{border-color:#aac3d8;background:#edf5fc} input[type="text"], textarea{width:100%;box-sizing:border-box;padding:10px;border:1px solid #bbb;border-radius:8px;font-size:15px} textarea{min-height:86px}
+  .work{margin-top:8px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{background:var(--blue);color:white;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:700}.btn.secondary{background:#596b7a}.btn:hover{filter:brightness(.92)}
+  .score{display:none;margin-top:16px;padding:14px 16px;background:#eaf8ef;border-left:5px solid var(--green);border-radius:8px;font-weight:700}.explain{display:none;margin-top:14px;background:var(--gold);border:1px solid #ecd68b;border-radius:10px;padding:14px}.correct{outline:2px solid #2e8b57}.incorrect{outline:2px solid var(--red)}
+  .footer-note{font-size:13px;color:#555;text-align:center;margin-top:24px}@media print{.tabs,.buttons,.score{display:none!important}.test{display:block!important;box-shadow:none;page-break-after:always}body{background:white}main{max-width:none}}
+</style>
+</head>
+<body>
+<header><h1>Grade 3 SBA Math Practice</h1><p>10 original sample mini-tests inspired by Washington Smarter Balanced math practice</p></header>
+<main>
+<section class="note"><strong>Directions:</strong> Choose the best answer for multiple-choice questions. For short-answer questions, type your answer. For explanation questions, show your thinking. These are original practice questions, not official OSPI or Smarter Balanced test items.</section>
+<div class="tabs" id="tabs"></div>
+<div id="tests"></div>
+<p class="footer-note">Tip: Use “Print” to create a paper version. Written explanations are for parent/teacher review and are not auto-scored.</p>
+</main>
+<script>
+const tests = [
+{title:'Test 1: Multiplication, Place Value, and Time', qs:[
+{t:'Maya has 4 bags. Each bag has 6 marbles. How many marbles does Maya have?', c:['10','18','24','30'], a:'24', d:'Operations & Algebraic Thinking', e:'4 groups of 6 means 4 × 6 = 24.'},
+{t:'Which number has 7 hundreds, 3 tens, and 5 ones?', c:['375','537','735','753'], a:'735', d:'Number & Operations in Base Ten', e:'7 hundreds = 700, 3 tens = 30, 5 ones = 5, so 735.'},
+{t:'Round 468 to the nearest ten.', c:['460','470','500','400'], a:'470', d:'Number & Operations in Base Ten', e:'The ones digit is 8, so round 468 up to 470.'},
+{t:'A movie starts at 2:15 and ends at 3:00. How long is the movie?', c:['30 minutes','45 minutes','60 minutes','75 minutes'], a:'45 minutes', d:'Measurement & Data', e:'From 2:15 to 3:00 is 45 minutes.'},
+{t:'Which fraction shows one out of four equal parts?', c:['1/2','1/3','1/4','4/1'], a:'1/4', d:'Number & Operations—Fractions', e:'One equal part out of four total parts is 1/4.'},
+{t:'A rectangle has 3 rows of squares with 5 squares in each row. What is the area?', c:['8 square units','15 square units','16 square units','30 square units'], a:'15 square units', d:'Measurement & Data', e:'Area = rows × squares in each row = 3 × 5 = 15.'},
+{t:'What number makes this equation true? 56 ÷ 7 = ___', c:['6','7','8','9'], a:'8', d:'Operations & Algebraic Thinking', e:'7 × 8 = 56, so 56 ÷ 7 = 8.'},
+{t:'Which shape has exactly 4 equal sides and 4 right angles?', c:['triangle','circle','square','pentagon'], a:'square', d:'Geometry', e:'A square has four equal sides and four right angles.'},
+{t:'Short answer: Add 356 + 128.', short:'484', d:'Number & Operations in Base Ten', e:'356 + 128 = 484.'},
+{t:'Explain: Sam says 3 × 8 is the same as 8 × 3. Is he correct? Explain why.', write:true, d:'Operations & Algebraic Thinking', e:'Yes. Both products equal 24. Changing the order of the factors does not change the product.'}
+]},
+{title:'Test 2: Division, Fractions, and Data', qs:[
+{t:'There are 32 stickers shared equally among 4 students. How many stickers does each student get?', c:['6','7','8','9'], a:'8', d:'Operations & Algebraic Thinking', e:'32 ÷ 4 = 8.'},
+{t:'Which number is 100 more than 642?', c:['542','652','742','1642'], a:'742', d:'Number & Operations in Base Ten', e:'Adding 100 increases the hundreds digit by 1: 642 + 100 = 742.'},
+{t:'Round 249 to the nearest hundred.', c:['200','240','250','300'], a:'200', d:'Number & Operations in Base Ten', e:'249 is less than 250, so it rounds to 200.'},
+{t:'Which fraction is equivalent to 2/4?', c:['1/2','1/3','3/4','4/2'], a:'1/2', d:'Number & Operations—Fractions', e:'2 out of 4 equal parts is the same amount as 1 out of 2 equal parts.'},
+{t:'A bar graph shows 9 votes for apples, 6 for bananas, and 3 for oranges. How many more votes did apples get than oranges?', c:['3','6','9','12'], a:'6', d:'Measurement & Data', e:'9 − 3 = 6.'},
+{t:'A garden is 4 feet long and 6 feet wide. What is its perimeter?', c:['10 feet','20 feet','24 feet','26 feet'], a:'20 feet', d:'Measurement & Data', e:'Perimeter = 4 + 6 + 4 + 6 = 20 feet.'},
+{t:'Which equation matches “5 groups of 7”?', c:['5 + 7','7 − 5','5 × 7','7 ÷ 5'], a:'5 × 7', d:'Operations & Algebraic Thinking', e:'Groups of means multiplication.'},
+{t:'Which quadrilateral has opposite sides that are equal and 4 right angles?', c:['rectangle','triangle','hexagon','circle'], a:'rectangle', d:'Geometry', e:'A rectangle has four sides and four right angles.'},
+{t:'Short answer: Subtract 702 − 258.', short:'444', d:'Number & Operations in Base Ten', e:'702 − 258 = 444.'},
+{t:'Explain: How can you find 36 ÷ 6 using multiplication?', write:true, d:'Operations & Algebraic Thinking', e:'Think: 6 times what number equals 36? Since 6 × 6 = 36, 36 ÷ 6 = 6.'}
+]},
+{title:'Test 3: Word Problems and Measurement', qs:[
+{t:'A class has 5 tables. There are 4 students at each table. How many students are there?', c:['9','16','20','25'], a:'20', d:'Operations & Algebraic Thinking', e:'5 × 4 = 20.'},
+{t:'What is the value of the 8 in 8,321?', c:['8','80','800','8,000'], a:'8,000', d:'Number & Operations in Base Ten', e:'The 8 is in the thousands place.'},
+{t:'Which number is closest to 600?', c:['549','581','649','701'], a:'581', d:'Number & Operations in Base Ten', e:'581 is 19 away from 600, closer than the others.'},
+{t:'Lena drinks 2 liters of water. Which amount is equal to 2 liters?', c:['20 milliliters','200 milliliters','2,000 milliliters','20,000 milliliters'], a:'2,000 milliliters', d:'Measurement & Data', e:'1 liter = 1,000 milliliters, so 2 liters = 2,000 milliliters.'},
+{t:'Which fraction is greater?', c:['1/6','1/4','They are equal','Cannot tell'], a:'1/4', d:'Number & Operations—Fractions', e:'With the same numerator, fourths are larger parts than sixths.'},
+{t:'A figure is divided into 8 equal parts. Three parts are shaded. What fraction is shaded?', c:['3/8','5/8','8/3','3/5'], a:'3/8', d:'Number & Operations—Fractions', e:'3 shaded parts out of 8 equal parts is 3/8.'},
+{t:'A pencil is about 18 ___ long.', c:['inches','yards','miles','pounds'], a:'inches', d:'Measurement & Data', e:'A pencil length is commonly measured in inches.'},
+{t:'How many sides does a hexagon have?', c:['4','5','6','8'], a:'6', d:'Geometry', e:'A hexagon has 6 sides.'},
+{t:'Short answer: Find the missing number: ___ × 9 = 63.', short:'7', d:'Operations & Algebraic Thinking', e:'7 × 9 = 63.'},
+{t:'Explain: A rectangle has side lengths 7 cm and 2 cm. Explain how to find its area.', write:true, d:'Measurement & Data', e:'Multiply length by width: 7 × 2 = 14 square centimeters.'}
+]},
+{title:'Test 4: Multi-Step Problems', qs:[
+{t:'Nora has 3 boxes with 8 crayons in each box. She gives away 5 crayons. How many crayons are left?', c:['19','21','24','29'], a:'19', d:'Operations & Algebraic Thinking', e:'3 × 8 = 24, then 24 − 5 = 19.'},
+{t:'What is 476 + 219?', c:['685','695','705','795'], a:'695', d:'Number & Operations in Base Ten', e:'476 + 219 = 695.'},
+{t:'What is 900 − 347?', c:['453','553','563','657'], a:'553', d:'Number & Operations in Base Ten', e:'900 − 347 = 553.'},
+{t:'A clock shows 7:40. What time will it be in 25 minutes?', c:['7:55','8:00','8:05','8:15'], a:'8:05', d:'Measurement & Data', e:'20 minutes after 7:40 is 8:00; 5 more minutes is 8:05.'},
+{t:'Which point would show 3/4 on a number line from 0 to 1 divided into 4 equal parts?', c:['first mark','second mark','third mark','fourth mark'], a:'third mark', d:'Number & Operations—Fractions', e:'3/4 is the third equal mark after 0.'},
+{t:'A square has side length 6 inches. What is its perimeter?', c:['12 inches','18 inches','24 inches','36 inches'], a:'24 inches', d:'Measurement & Data', e:'6 + 6 + 6 + 6 = 24.'},
+{t:'What number makes this true? 48 = 6 × ___', c:['6','7','8','9'], a:'8', d:'Operations & Algebraic Thinking', e:'6 × 8 = 48.'},
+{t:'Which shape is NOT a polygon?', c:['triangle','rectangle','circle','pentagon'], a:'circle', d:'Geometry', e:'A polygon has straight sides. A circle has no straight sides.'},
+{t:'Short answer: Divide 72 ÷ 8.', short:'9', d:'Operations & Algebraic Thinking', e:'72 ÷ 8 = 9.'},
+{t:'Explain: How do you know whether to multiply or divide in a word problem about equal groups?', write:true, d:'Operations & Algebraic Thinking', e:'Multiply when finding the total from equal groups. Divide when sharing a total equally or finding the number in each group.'}
+]},
+{title:'Test 5: Area, Perimeter, and Fractions', qs:[
+{t:'A rectangle is 8 units long and 3 units wide. What is the area?', c:['11 square units','22 square units','24 square units','48 square units'], a:'24 square units', d:'Measurement & Data', e:'8 × 3 = 24 square units.'},
+{t:'A rectangle is 8 units long and 3 units wide. What is the perimeter?', c:['11 units','22 units','24 units','48 units'], a:'22 units', d:'Measurement & Data', e:'8 + 3 + 8 + 3 = 22 units.'},
+{t:'Which fraction is equal to one whole?', c:['1/3','2/3','3/3','3/4'], a:'3/3', d:'Number & Operations—Fractions', e:'All 3 of 3 equal parts make one whole.'},
+{t:'Which is greater: 2/6 or 4/6?', c:['2/6','4/6','They are equal','Cannot tell'], a:'4/6', d:'Number & Operations—Fractions', e:'The denominators are the same; 4 parts is greater than 2 parts.'},
+{t:'A baker makes 7 trays of muffins with 5 muffins on each tray. How many muffins?', c:['12','30','35','40'], a:'35', d:'Operations & Algebraic Thinking', e:'7 × 5 = 35.'},
+{t:'What is 81 ÷ 9?', c:['7','8','9','10'], a:'9', d:'Operations & Algebraic Thinking', e:'9 × 9 = 81.'},
+{t:'Round 732 to the nearest hundred.', c:['700','730','740','800'], a:'700', d:'Number & Operations in Base Ten', e:'732 is closer to 700 than 800.'},
+{t:'Which unit would you use to measure the mass of an apple?', c:['grams','liters','meters','hours'], a:'grams', d:'Measurement & Data', e:'Mass can be measured in grams.'},
+{t:'Short answer: 425 + 376 = ?', short:'801', d:'Number & Operations in Base Ten', e:'425 + 376 = 801.'},
+{t:'Explain: Why is 1/8 less than 1/4?', write:true, d:'Number & Operations—Fractions', e:'When the same whole is divided into more equal parts, each part is smaller. Eighths are smaller than fourths.'}
+]},
+{title:'Test 6: Patterns and Properties', qs:[
+{t:'What is the next number? 6, 12, 18, 24, ___', c:['28','30','32','36'], a:'30', d:'Operations & Algebraic Thinking', e:'The pattern adds 6 each time.'},
+{t:'Which equation shows the distributive property for 6 × 7?', c:['6 × 7 = 7 × 6','6 × 7 = (6 × 5) + (6 × 2)','6 × 7 = 6 + 7','6 × 7 = 42 ÷ 6'], a:'6 × 7 = (6 × 5) + (6 × 2)', d:'Operations & Algebraic Thinking', e:'7 can be broken into 5 + 2, so 6 × 7 = 6 × 5 + 6 × 2.'},
+{t:'What is 5 × 0?', c:['0','1','5','50'], a:'0', d:'Operations & Algebraic Thinking', e:'Any number times 0 equals 0.'},
+{t:'What is 5 × 1?', c:['0','1','5','10'], a:'5', d:'Operations & Algebraic Thinking', e:'Any number times 1 equals itself.'},
+{t:'Which number is 10 less than 403?', c:['303','393','413','503'], a:'393', d:'Number & Operations in Base Ten', e:'403 − 10 = 393.'},
+{t:'A ribbon is 1 meter long. How many centimeters is that?', c:['10','50','100','1,000'], a:'100', d:'Measurement & Data', e:'1 meter = 100 centimeters.'},
+{t:'Which fraction is shown by 2 shaded parts out of 3 equal parts?', c:['1/3','2/3','3/2','2/5'], a:'2/3', d:'Number & Operations—Fractions', e:'2 shaded out of 3 equal parts is 2/3.'},
+{t:'How many angles does a quadrilateral have?', c:['3','4','5','6'], a:'4', d:'Geometry', e:'A quadrilateral has 4 sides and 4 angles.'},
+{t:'Short answer: 640 − 275 = ?', short:'365', d:'Number & Operations in Base Ten', e:'640 − 275 = 365.'},
+{t:'Explain: Use a pattern to explain 4 × 6.', write:true, d:'Operations & Algebraic Thinking', e:'You can count by 6 four times: 6, 12, 18, 24, so 4 × 6 = 24.'}
+]},
+{title:'Test 7: Real-World Math', qs:[
+{t:'A zoo has 9 cages with 3 birds in each cage. How many birds are there?', c:['12','18','27','36'], a:'27', d:'Operations & Algebraic Thinking', e:'9 × 3 = 27.'},
+{t:'A teacher has 45 pencils and puts them equally into 5 cups. How many pencils are in each cup?', c:['7','8','9','10'], a:'9', d:'Operations & Algebraic Thinking', e:'45 ÷ 5 = 9.'},
+{t:'What is 1,000 − 456?', c:['444','544','554','654'], a:'544', d:'Number & Operations in Base Ten', e:'1,000 − 456 = 544.'},
+{t:'What is 238 + 487?', c:['615','715','725','825'], a:'725', d:'Number & Operations in Base Ten', e:'238 + 487 = 725.'},
+{t:'Which fraction is less than 1/2?', c:['1/3','2/2','3/4','4/4'], a:'1/3', d:'Number & Operations—Fractions', e:'1/3 is less than 1/2.'},
+{t:'The line plot shows lengths: 4, 4, 5, 6, 6, 6 inches. Which length appears most often?', c:['4 inches','5 inches','6 inches','10 inches'], a:'6 inches', d:'Measurement & Data', e:'6 appears three times, more than any other length.'},
+{t:'A soccer game starts at 10:30 and lasts 1 hour 15 minutes. What time does it end?', c:['11:15','11:30','11:45','12:00'], a:'11:45', d:'Measurement & Data', e:'10:30 + 1 hour = 11:30; + 15 minutes = 11:45.'},
+{t:'Which shape has 5 sides?', c:['triangle','square','pentagon','hexagon'], a:'pentagon', d:'Geometry', e:'A pentagon has 5 sides.'},
+{t:'Short answer: Find the missing number: 7 × ___ = 56.', short:'8', d:'Operations & Algebraic Thinking', e:'7 × 8 = 56.'},
+{t:'Explain: A student says 72 ÷ 9 = 7. Explain the mistake.', write:true, d:'Operations & Algebraic Thinking', e:'The student should check with multiplication. Since 9 × 8 = 72, 72 ÷ 9 = 8, not 7.'}
+]},
+{title:'Test 8: Reasoning with Numbers', qs:[
+{t:'Which expression has the same value as 9 × 4?', c:['9 + 4','4 + 4 + 4 + 4','9 + 9 + 9 + 9','9 − 4'], a:'9 + 9 + 9 + 9', d:'Operations & Algebraic Thinking', e:'9 × 4 means 4 groups of 9.'},
+{t:'Which number makes the equation true? ___ ÷ 4 = 6', c:['10','20','24','28'], a:'24', d:'Operations & Algebraic Thinking', e:'6 groups of 4 equals 24, so 24 ÷ 4 = 6.'},
+{t:'Round 586 to the nearest ten.', c:['580','590','600','500'], a:'590', d:'Number & Operations in Base Ten', e:'The ones digit is 6, so round up to 590.'},
+{t:'Which number is 1,000 more than 3,245?', c:['3,345','4,245','13,245','2,245'], a:'4,245', d:'Number & Operations in Base Ten', e:'3,245 + 1,000 = 4,245.'},
+{t:'Which comparison is true?', c:['1/2 < 1/3','1/4 > 1/2','3/6 = 1/2','2/8 = 2/4'], a:'3/6 = 1/2', d:'Number & Operations—Fractions', e:'3 out of 6 equal parts is half of the whole.'},
+{t:'A bottle holds 500 milliliters. Two bottles hold how many milliliters?', c:['250','500','1,000','5,000'], a:'1,000', d:'Measurement & Data', e:'500 + 500 = 1,000 milliliters.'},
+{t:'A rectangle has an area of 18 square units. One side is 3 units. What is the other side?', c:['3','6','9','15'], a:'6', d:'Measurement & Data', e:'3 × 6 = 18.'},
+{t:'Which is always true about a square?', c:['It has 3 sides','It has no angles','It has 4 equal sides','It has 5 sides'], a:'It has 4 equal sides', d:'Geometry', e:'A square has four equal sides.'},
+{t:'Short answer: 709 − 386 = ?', short:'323', d:'Number & Operations in Base Ten', e:'709 − 386 = 323.'},
+{t:'Explain: How can you use rounding to estimate 586 + 213?', write:true, d:'Number & Operations in Base Ten', e:'Round 586 to 600 and 213 to 200. The estimate is 800.'}
+]},
+{title:'Test 9: Challenge Practice', qs:[
+{t:'Jared read 8 pages each day for 7 days. Then he read 10 more pages. How many pages did he read?', c:['56','58','66','70'], a:'66', d:'Operations & Algebraic Thinking', e:'8 × 7 = 56; 56 + 10 = 66.'},
+{t:'Jamie has 64 blocks. He builds 8 equal towers. How many blocks are in each tower?', c:['6','7','8','9'], a:'8', d:'Operations & Algebraic Thinking', e:'64 ÷ 8 = 8.'},
+{t:'Which number sentence is true?', c:['345 + 100 = 445','345 + 10 = 445','345 − 100 = 445','345 − 10 = 445'], a:'345 + 100 = 445', d:'Number & Operations in Base Ten', e:'Adding 100 to 345 gives 445.'},
+{t:'What is 999 − 101?', c:['798','888','898','908'], a:'898', d:'Number & Operations in Base Ten', e:'999 − 101 = 898.'},
+{t:'Which fraction is closest to 1 whole?', c:['1/6','2/6','4/6','5/6'], a:'5/6', d:'Number & Operations—Fractions', e:'5/6 is one sixth away from 1 whole.'},
+{t:'A rectangle has side lengths 9 cm and 4 cm. What is its perimeter?', c:['13 cm','26 cm','36 cm','81 cm'], a:'26 cm', d:'Measurement & Data', e:'9 + 4 + 9 + 4 = 26 cm.'},
+{t:'A table is 2 meters long. How many centimeters long is it?', c:['20','100','200','2,000'], a:'200', d:'Measurement & Data', e:'1 meter = 100 centimeters, so 2 meters = 200 centimeters.'},
+{t:'A shape has 6 sides and 6 angles. What is it?', c:['triangle','quadrilateral','pentagon','hexagon'], a:'hexagon', d:'Geometry', e:'A hexagon has 6 sides and 6 angles.'},
+{t:'Short answer: 9 × 9 = ?', short:'81', d:'Operations & Algebraic Thinking', e:'9 × 9 = 81.'},
+{t:'Explain: How can you break apart 8 × 6 to make it easier?', write:true, d:'Operations & Algebraic Thinking', e:'For example, break 8 into 5 + 3: 8 × 6 = 5 × 6 + 3 × 6 = 30 + 18 = 48.'}
+]},
+{title:'Test 10: Mixed Review', qs:[
+{t:'There are 42 students on 6 teams. Each team has the same number of students. How many students are on each team?', c:['6','7','8','9'], a:'7', d:'Operations & Algebraic Thinking', e:'42 ÷ 6 = 7.'},
+{t:'Which expression equals 54?', c:['6 × 8','6 × 9','7 × 9','8 × 8'], a:'6 × 9', d:'Operations & Algebraic Thinking', e:'6 × 9 = 54.'},
+{t:'What is 367 + 458?', c:['715','815','825','835'], a:'825', d:'Number & Operations in Base Ten', e:'367 + 458 = 825.'},
+{t:'What is 804 − 275?', c:['429','529','579','629'], a:'529', d:'Number & Operations in Base Ten', e:'804 − 275 = 529.'},
+{t:'Which fraction is equivalent to 3/6?', c:['1/2','1/3','2/3','6/3'], a:'1/2', d:'Number & Operations—Fractions', e:'3 of 6 equal parts is half.'},
+{t:'A pizza is cut into 8 equal slices. Ana eats 2 slices. What fraction did Ana eat?', c:['2/8','6/8','8/2','2/6'], a:'2/8', d:'Number & Operations—Fractions', e:'2 slices out of 8 equal slices is 2/8.'},
+{t:'A field is 10 yards long and 5 yards wide. What is the area?', c:['15 square yards','25 square yards','50 square yards','100 square yards'], a:'50 square yards', d:'Measurement & Data', e:'10 × 5 = 50 square yards.'},
+{t:'Which measurement is most reasonable for the weight of a backpack?', c:['4 grams','4 kilograms','4 liters','4 centimeters'], a:'4 kilograms', d:'Measurement & Data', e:'A backpack’s weight is reasonably measured in kilograms.'},
+{t:'Short answer: Round 849 to the nearest hundred.', short:'800', d:'Number & Operations in Base Ten', e:'849 is less than 850, so it rounds to 800.'},
+{t:'Explain: Describe the difference between area and perimeter.', write:true, d:'Measurement & Data', e:'Area measures the space inside a shape in square units. Perimeter measures the distance around the outside of a shape in units.'}
+]}
+];
+function render(){
+ const tabs=document.getElementById('tabs'), holder=document.getElementById('tests');
+ tests.forEach((test,ti)=>{
+   const tab=document.createElement('button'); tab.className='tab'+(ti===0?' active':''); tab.textContent='Test '+(ti+1); tab.onclick=()=>showTest(ti); tabs.appendChild(tab);
+   const sec=document.createElement('section'); sec.className='test'+(ti===0?' active':''); sec.id='test'+ti;
+   sec.innerHTML=`<h2>${test.title}</h2><div class="meta">10 questions: multiple choice, short answer, and explanation. Auto-score checks multiple-choice and exact short-answer items.</div>`;
+   test.qs.forEach((q,qi)=>{
+    const div=document.createElement('div'); div.className='q'; const qid=`t${ti}q${qi}`;
+    let inner=`<div class="q-title">${qi+1}. ${q.t} <span class="domain">${q.d}</span></div>`;
+    if(q.c){ q.c.forEach(ch=>{inner+=`<label class="choice"><input type="radio" name="${qid}" value="${escapeAttr(ch)}"> ${ch}</label>`}); }
+    else if(q.short){ inner+=`<input type="text" name="${qid}" placeholder="Type your answer">`; }
+    else { inner+=`<textarea name="${qid}" placeholder="Show your thinking here..."></textarea>`; }
+    inner+=`<div class="explain" id="exp-${qid}"><strong>Answer / explanation:</strong> ${q.c||q.short? q.a||q.short : 'Sample response'} — ${q.e}</div>`;
+    div.innerHTML=inner; sec.appendChild(div);
+   });
+   const btns=document.createElement('div'); btns.className='buttons'; btns.innerHTML=`<button class="btn" onclick="scoreTest(${ti})">Check Score</button><button class="btn secondary" onclick="toggleAnswers(${ti})">Show / Hide Explanations</button><button class="btn secondary" onclick="window.print()">Print</button>`; sec.appendChild(btns);
+   const score=document.createElement('div'); score.className='score'; score.id='score'+ti; sec.appendChild(score); holder.appendChild(sec);
+ });
+}
+function escapeAttr(s){return String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;')}
+function showTest(i){document.querySelectorAll('.tab').forEach((t,idx)=>t.classList.toggle('active',idx===i));document.querySelectorAll('.test').forEach((s,idx)=>s.classList.toggle('active',idx===i));window.scrollTo({top:0,behavior:'smooth'});}
+function scoreTest(ti){let score=0,total=0; const test=tests[ti];
+ test.qs.forEach((q,qi)=>{const qid=`t${ti}q${qi}`; document.querySelectorAll(`[name="${qid}"]`).forEach(el=>{el.closest('label')?.classList.remove('correct','incorrect'); el.classList.remove('correct','incorrect')});
+  if(q.c){total++; const sel=document.querySelector(`input[name="${qid}"]:checked`); if(sel){ if(sel.value===q.a){score++; sel.closest('label').classList.add('correct')} else {sel.closest('label').classList.add('incorrect')} }}
+  else if(q.short){total++; const inp=document.querySelector(`input[name="${qid}"]`); const val=(inp.value||'').trim().toLowerCase().replace(/\s+/g,''); const ans=String(q.short).trim().toLowerCase().replace(/\s+/g,''); if(val===ans){score++; inp.classList.add('correct')} else if(val){inp.classList.add('incorrect')} }
+ });
+ const box=document.getElementById('score'+ti); box.style.display='block'; box.textContent=`Score: ${score} out of ${total} auto-scored questions. Explanation questions should be reviewed by a parent or teacher.`;
+}
+function toggleAnswers(ti){tests[ti].qs.forEach((_,qi)=>{const el=document.getElementById(`exp-t${ti}q${qi}`); el.style.display=el.style.display==='block'?'none':'block';});}
+render();
+</script>
+</body>
+</html>
