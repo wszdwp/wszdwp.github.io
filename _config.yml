@@ -41,6 +41,10 @@ whitelist:
   - jekyll-paginate
   - jekyll-redirect-from
 
+# Avoid remote gist fetches during render (prevents SSL/TimeoutError failures).
+jekyll_gist:
+  noscript: false
+
 # Style
 sass:
   sass_dir: _sass

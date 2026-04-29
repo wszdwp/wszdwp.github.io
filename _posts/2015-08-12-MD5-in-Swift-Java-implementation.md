@@ -6,7 +6,7 @@ tags: Android iOS
 
 ## Swift  
 
-{% gist 58811f685ddcf97a79a3%}
+<script src="https://gist.github.com/58811f685ddcf97a79a3.js"></script>
 
 ## Java  
-{% gist 601f2bcbc79474deb702%}
+<script src="https://gist.github.com/601f2bcbc79474deb702.js"></script>
