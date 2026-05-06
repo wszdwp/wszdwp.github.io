@@ -42,5 +42,7 @@ redirect_from:
     <li><a href="/examagents/grade-5-ela-sba-practice-2026-05-04.html">Grade 5 ELA SBA Practice - 10 Mini Tests</a> - 2026-05-04</li>
     <li><a href="/examagents/grade-5-math-sba-practice-2026-05-04.html">Grade 5 MATH SBA Practice - 10 Mini Tests</a> - 2026-05-04</li>
     <li><a href="/examagents/grade-5-ela-sba-practice-2026-05-03.html">Grade 5 ELA SBA Practice - 10 Mini Tests</a> - 2026-05-03</li>
+    <li><a href="/examagents/grade-5-ela-sba-practice-2026-05-05.html">Grade 5 ELA SBA Practice - 5 Mini Tests</a> - 2026-05-05</li>
+    <li><a href="/examagents/grade-5-math-sba-practice-2026-05-05.html">Grade 5 MATH SBA Practice - 5 Mini Tests</a> - 2026-05-05</li>
   </ul>
 </div>
